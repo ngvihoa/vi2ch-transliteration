@@ -12,19 +12,19 @@ def clean_vocab(input_path, output_path):
     new_vocab = {}
     
     # Chuyển value thành key
-    for nom_char, readings in vocab_old.items():
+    for han_char, readings in vocab_old.items():
         for reading in readings:
             reading = reading.lower().strip()
             
 
             if reading and reading not in new_vocab:
-                new_vocab[reading] = nom_char
+                new_vocab[reading] = han_char
 
     # Lưu vocab
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(new_vocab, f, ensure_ascii=False, indent=2)
 
-    print(f"Processed {len(vocab_old)} Nôm characters.")
+    print(f"Processed {len(vocab_old)} Hán characters.")
     print(f"Generated {len(new_vocab)} unique Vietnamese readings in {output_path}.")
 
 if __name__ == "__main__":
