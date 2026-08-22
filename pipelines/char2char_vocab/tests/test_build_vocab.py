@@ -40,10 +40,10 @@ class BuildVocabTests(unittest.TestCase):
         vocab, _ = MODULE.build_vocab(sources, {"một": ["一"]})
         self.assertEqual(["一", "壹"], vocab["một"])
 
-    def test_reading_evidence_ranks_but_does_not_create_candidates(self):
+    def test_reading_evidence_does_not_rank_or_create_candidates(self):
         sources = {
             "cvdict_standalone_gloss": {"từ": Counter({"文": 1, "字": 1})},
-            "kvietnamese_hanzi_reading": {"từ": Counter({"字": 1, "辭": 1})},
+            "kvietnamese_hanzi_reading": {"từ": Counter({"文": 1, "辭": 1})},
             "hanviet_reading": {"rốt": Counter({"卒": 1})},
         }
         vocab, rows = MODULE.build_vocab(sources, {})

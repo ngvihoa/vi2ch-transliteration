@@ -168,14 +168,12 @@ def build_vocab(
         # not introduce a candidate by themselves.
         chars = set(curated_chars) | set(semantic_counts)
 
-        def ranking_key(char: str) -> tuple[int, int, int, int, str]:
+        def ranking_key(char: str) -> tuple[int, int, int, str]:
             curated_rank = curated_chars.index(char) if char in curated_chars else len(curated_chars)
             return (
                 0 if char in curated_chars else 1,
                 curated_rank,
                 -semantic_counts[char],
-                -evidence_by_source["kvietnamese_hanzi_reading"].get(token, Counter())[char]
-                - evidence_by_source["hanviet_reading"].get(token, Counter())[char],
                 char,
             )
 
@@ -238,7 +236,7 @@ def build_report(
         "mapping_contract": "one_vietnamese_token_to_one_or_more_ranked_hanzi_candidates",
         "empty_placeholder": EMPTY_PLACEHOLDER,
         "candidate_sources": ["curated", "raw-collections/CVDICT.u8"],
-        "ranking_only_sources": [
+        "phonetic_filter_sources": [
             "raw-collections/kVietnamese.json (verified Hanzi only)",
             "raw-collections/hanviet.csv",
         ],
@@ -265,7 +263,7 @@ def build_report(
         "caveats": [
             "Only standalone one-token CVDICT glosses are accepted; multiword glosses are not decomposed.",
             "kVietnamese characters absent from the CVDICT/hanviet Hanzi inventory are excluded as Nom or unverified glyphs.",
-            "kVietnamese and hanviet only rank or corroborate existing semantic candidates; reading-only candidates are filtered.",
+            "kVietnamese and hanviet identify phonetic evidence only; they do not create or rank semantic candidates.",
             f"Tokens without a lexical candidate are assigned the explicit placeholder {EMPTY_PLACEHOLDER}.",
         ],
     }

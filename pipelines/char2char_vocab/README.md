@@ -11,7 +11,7 @@ Các nguồn được xếp theo độ ưu tiên:
 
 1. Mapping đã duyệt trong `resources/curated_vocab.json`.
 2. Nghĩa từ vựng độc lập trong `raw-collections/CVDICT.u8`.
-3. Cách đọc trong `raw-collections/kVietnamese.json` và `raw-collections/hanviet.csv` chỉ dùng để xếp hạng/xác nhận candidate đã có nghĩa; chúng không tự sinh candidate mới.
+3. Cách đọc trong `raw-collections/kVietnamese.json` và `raw-collections/hanviet.csv` chỉ dùng để nhận diện/lọc candidate thuần âm; chúng không tự sinh candidate mới và không tác động thứ hạng nghĩa.
 
 Pipeline không đọc:
 
@@ -27,8 +27,8 @@ Các glyph Nôm riêng trong `kVietnamese.json` bị loại. Candidate chỉ có
 Chạy từ thư mục gốc `vi2ch-model`:
 
 ```bash
-python3 pipelines/lexical_char2char_poetry/scripts/build_vocab.py
-python3 -B -m unittest discover -s pipelines/lexical_char2char_poetry/tests -v
+python3 pipelines/char2char_vocab/scripts/build_vocab.py
+python3 -B -m unittest discover -s pipelines/char2char_vocab/tests -v
 ```
 
 Output trung gian:
@@ -37,4 +37,4 @@ Output trung gian:
 - `outputs/vocab_evidence.jsonl`: nguồn bằng chứng cho từng candidate.
 - `outputs/vocab_report.json`: thống kê và danh sách nguồn bị loại.
 
-Layer này chưa đọc thơ, chưa dùng corpus train, chưa chọn một chữ cuối cùng theo ngữ cảnh và chưa tạo dataset.
+Pipeline này không đọc thơ và không tạo dữ liệu thơ. Việc sử dụng vocab để tạo data thuộc pipeline độc lập `pipelines/poetry_char2char_data/`.

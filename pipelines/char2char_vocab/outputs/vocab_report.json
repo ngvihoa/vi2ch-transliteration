@@ -6,7 +6,7 @@
     "curated",
     "raw-collections/CVDICT.u8"
   ],
-  "ranking_only_sources": [
+  "phonetic_filter_sources": [
     "raw-collections/kVietnamese.json (verified Hanzi only)",
     "raw-collections/hanviet.csv"
   ],
@@ -77,7 +77,7 @@
   "caveats": [
     "Only standalone one-token CVDICT glosses are accepted; multiword glosses are not decomposed.",
     "kVietnamese characters absent from the CVDICT/hanviet Hanzi inventory are excluded as Nom or unverified glyphs.",
-    "kVietnamese and hanviet only rank or corroborate existing semantic candidates; reading-only candidates are filtered.",
+    "kVietnamese and hanviet identify phonetic evidence only; they do not create or rank semantic candidates.",
     "Tokens without a lexical candidate are assigned the explicit placeholder 𠀗."
   ]
 }
