@@ -1,21 +1,22 @@
 {
-  "schema_version": "hanzi-report-v1",
+  "schema_version": "hanzi-report-v2",
   "label_quality": "synthetic_silver",
   "candidate_sets": 2484,
   "line_count": 4537,
   "syllable_occurrences": 31761,
   "top_n": 5,
   "weights": {
-    "phonetic": 0.75,
-    "reference_pool": 0.15,
-    "frequency": 0.1
+    "phonetic": 0.97,
+    "transliteration_character": 0.01,
+    "frequency": 0.02
   },
-  "reference_selected_sets": 2349,
-  "reference_selected_set_rate": 0.945652,
-  "reference_selected_occurrences": 30162,
-  "reference_selected_occurrence_rate": 0.949655,
-  "fallback_selected_sets": 135,
-  "lines_requiring_review": 1389,
+  "reference_selected_sets": 1231,
+  "reference_selected_set_rate": 0.495572,
+  "reference_selected_occurrences": 17525,
+  "reference_selected_occurrence_rate": 0.551777,
+  "fallback_selected_sets": 1253,
+  "expanded_selected_sets": 286,
+  "lines_requiring_review": 589,
   "reference": {
     "schema_version": "xinhua-english-reference-v1",
     "source_url": "https://en.wikipedia.org/wiki/Transcription_into_Chinese_characters",

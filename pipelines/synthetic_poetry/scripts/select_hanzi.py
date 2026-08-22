@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import itertools
 import json
 import math
 import os
@@ -28,7 +29,7 @@ DEFAULT_CORPUS_DIR = PROJECT_ROOT / "raw-collections" / "cn-vi"
 DEFAULT_DEPS = PROJECT_ROOT / "tools" / "pinyin-python"
 DEFAULT_LOCK = SCRIPT_DIR / "pinyin.lock.json"
 
-WEIGHTS = {"phonetic": 0.75, "reference_pool": 0.15, "frequency": 0.10}
+WEIGHTS = {"phonetic": 0.97, "transliteration_character": 0.01, "frequency": 0.02}
 
 
 def read_jsonl(path: Path) -> list[dict[str, object]]:
@@ -87,7 +88,9 @@ def build_reverse_pinyin() -> dict[str, set[str]]:
         char = chr(codepoint)
         if not "\u4e00" <= char <= "\u9fff":
             continue
-        for reading in readings.split(","):
+        # The first dictionary reading is the common/default pronunciation.
+        # Rare heteronyms make frequent but misleading choices (e.g. 式 as te4).
+        for reading in readings.split(",")[:1]:
             numbered = to_tone3(reading, neutral_tone_with_five=True, v_to_u=True)
             if numbered[-1:] in {"1", "2", "3", "4"}:
                 reverse[numbered].add(char)
@@ -123,41 +126,75 @@ def select_candidates(
     best_by_char: dict[str, dict[str, object]] = {}
 
     for pinyin_rank, pinyin_candidate in enumerate(row["candidates"], start=1):
-        pinyin = pinyin_candidate["pinyin"]
-        reference_chars = set(reference.get(pinyin, ""))
-        corpus_chars = {char for char in reverse.get(pinyin, set()) if frequencies[char] > 0}
-        options = [(char, "xinhua_english_reference") for char in reference_chars]
-        options.extend(
-            (char, "corpus_frequency_fallback")
-            for char in corpus_chars - reference_chars
-        )
-        if not options:
-            options.extend(
-                (char, "unseen_dictionary_fallback")
-                for char in pinyin_candidate.get("example_hanzi", [])
-                if "\u4e00" <= char <= "\u9fff"
+        pinyin_units = pinyin_candidate.get("pinyin_syllables", [pinyin_candidate["pinyin"]])
+        unit_options = []
+        for unit in pinyin_units:
+            reference_chars = set(reference.get(unit, ""))
+            attested = set(reverse.get(unit, set()))
+            options = []
+            for char in attested:
+                if frequencies[char] > 0:
+                    provenance = (
+                        "xinhua_english_reference" if char in reference_chars
+                        else "corpus_frequency"
+                    )
+                    options.append((char, provenance, False))
+            if not options:
+                options = [
+                    (char, "unseen_dictionary_fallback", True)
+                    for char in sorted(attested)
+                    if "\u4e00" <= char <= "\u9fff"
+                ]
+            options.sort(
+                key=lambda item: (
+                    item[0] not in reference_chars,
+                    frequency_penalty(frequencies[item[0]], maximum),
+                    item[0],
+                )
             )
+            unit_options.append(options[:top_n])
+        if not unit_options or any(not options for options in unit_options):
+            continue
 
-        for char, provenance in options:
-            pool_penalty = 0.0 if provenance == "xinhua_english_reference" else 1.0
-            char_frequency_penalty = frequency_penalty(frequencies[char], maximum)
+        for combination in itertools.product(*unit_options):
+            chars = [option[0] for option in combination]
+            provenances = [option[1] for option in combination]
+            review_flags = [option[2] for option in combination]
+            char = "".join(chars)
+            penalties = [frequency_penalty(frequencies[item], maximum) for item in chars]
+            char_frequency_penalty = sum(penalties) / len(penalties)
+            reference_penalty = sum(
+                provenance != "xinhua_english_reference" for provenance in provenances
+            ) / len(provenances)
             selection_score = (
                 WEIGHTS["phonetic"] * pinyin_candidate["score"]
-                + WEIGHTS["reference_pool"] * pool_penalty
+                + WEIGHTS["transliteration_character"] * reference_penalty
                 + WEIGHTS["frequency"] * char_frequency_penalty
             )
+            if all(value == "xinhua_english_reference" for value in provenances):
+                provenance = "xinhua_english_reference"
+            elif any(value == "unseen_dictionary_fallback" for value in provenances):
+                provenance = "unseen_dictionary_fallback"
+            else:
+                provenance = "corpus_frequency"
             candidate = {
                 "char": char,
-                "pinyin": pinyin,
+                "chars": chars,
+                "pinyin": pinyin_candidate["pinyin"],
+                "pinyin_syllables": pinyin_units,
                 "pinyin_rank": pinyin_rank,
                 "ipa": pinyin_candidate["ipa"],
+                "ipa_syllables": pinyin_candidate.get("ipa_syllables", [pinyin_candidate["ipa"]]),
+                "mapping_length": len(pinyin_units),
+                "coda_strategy": pinyin_candidate.get("coda_strategy", "single_syllable"),
                 "phonetic_score": pinyin_candidate["score"],
                 "selection_score": round(selection_score, 6),
-                "reference_pool_penalty": pool_penalty,
+                "reference_pool_penalty": round(reference_penalty, 6),
                 "frequency_penalty": round(char_frequency_penalty, 6),
-                "corpus_frequency": frequencies[char],
+                "corpus_frequency": sum(frequencies[item] for item in chars),
                 "provenance": provenance,
-                "requires_review": provenance != "xinhua_english_reference",
+                "unit_provenance": provenances,
+                "requires_review": any(review_flags),
             }
             previous = best_by_char.get(char)
             if previous is None or (
@@ -169,7 +206,7 @@ def select_candidates(
 
     return sorted(
         best_by_char.values(),
-        key=lambda item: (item["selection_score"], -item["corpus_frequency"], item["char"]),
+        key=lambda item: (item["selection_score"], item["pinyin_rank"], -item["corpus_frequency"], item["char"]),
     )[:top_n]
 
 
@@ -187,7 +224,7 @@ def build_candidate_rows(
             raise RuntimeError(f"No Hanzi candidates for {row['candidate_set_id']}")
         output.append(
             {
-                "schema_version": "hanzi-candidates-v1",
+                "schema_version": "hanzi-candidates-v2",
                 "candidate_set_id": row["candidate_set_id"],
                 "source_dialect": row["source_dialect"],
                 "source_ipa_segments": row["source_ipa_segments"],
@@ -223,7 +260,7 @@ def build_line_rows(
             )
         output.append(
             {
-                "schema_version": "poem-hanzi-v1",
+                "schema_version": "poem-hanzi-v2",
                 "label_quality": "synthetic_silver",
                 "line_id": line["line_id"],
                 "work": line["work"],
@@ -257,7 +294,7 @@ def build_report(
     )
     total_occurrences = sum(row["occurrences"] for row in candidate_rows)
     return {
-        "schema_version": "hanzi-report-v1",
+        "schema_version": "hanzi-report-v2",
         "label_quality": "synthetic_silver",
         "candidate_sets": len(candidate_rows),
         "line_count": len(line_rows),
@@ -269,6 +306,7 @@ def build_report(
         "reference_selected_occurrences": reference_occurrences,
         "reference_selected_occurrence_rate": round(reference_occurrences / total_occurrences, 6),
         "fallback_selected_sets": len(candidate_rows) - reference_sets,
+        "expanded_selected_sets": sum(item["mapping_length"] == 2 for item in selected),
         "lines_requiring_review": sum(row["requires_review"] for row in line_rows),
         "reference": reference_metadata,
         "frequency_corpus": {
@@ -337,7 +375,7 @@ def main() -> int:
     _atomic_write_text(args.report, json.dumps(report, ensure_ascii=False, indent=2) + "\n")
     print(
         f"Selected Hanzi for {report['syllable_occurrences']} syllable occurrences; "
-        f"reference coverage {report['reference_selected_occurrence_rate']:.1%}; "
+        f"reference-character coverage {report['reference_selected_occurrence_rate']:.1%}; "
         f"review lines {report['lines_requiring_review']}."
     )
     print(args.candidates_output)

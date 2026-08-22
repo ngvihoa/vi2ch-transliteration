@@ -130,7 +130,7 @@ def build_outputs(
         status = "candidate" if not reasons else "needs_review"
         row = {
             **decoded,
-            "schema_version": "poem-quality-v1",
+            "schema_version": "poem-quality-v2",
             "source_file": source["source_file"],
             "source_line_no": source["source_line_no"],
             "original_text": source["original_text"],
@@ -168,9 +168,9 @@ def build_report(
     maximums = [row["quality_gate"]["metrics"]["max_selection_score"] for row in scored]
     total = len(scored)
     return {
-        "schema_version": "quality-report-v1",
+        "schema_version": "quality-report-v2",
         "label_quality": "synthetic_silver",
-        "gate": "deterministic-line-quality-v1",
+        "gate": "deterministic-line-quality-v2",
         "input_lines": total,
         "candidate_lines": len(candidates),
         "candidate_rate": round(len(candidates) / total, 6) if total else 0.0,

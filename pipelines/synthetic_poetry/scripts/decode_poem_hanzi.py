@@ -194,6 +194,7 @@ def pinyin_rhyme_tokens(pinyin: str, matched_ipa: str) -> tuple[str, ...]:
     from pinyin_to_ipa import pinyin_to_ipa
     from pypinyin.contrib.tone_convert import to_initials
 
+    pinyin, matched_ipa = last_pinyin_unit(pinyin, matched_ipa)
     base = pinyin[:-1]
     has_initial = bool(to_initials(base, strict=True))
     variants = list(pinyin_to_ipa(pinyin))
@@ -206,6 +207,10 @@ def pinyin_rhyme_tokens(pinyin: str, matched_ipa: str) -> tuple[str, ...]:
     if has_initial:
         parts = parts[1:]
     return tuple(phone for part in parts for phone in tokenize_ipa(part))
+
+
+def last_pinyin_unit(pinyin: str, matched_ipa: str) -> tuple[str, str]:
+    return pinyin.split()[-1], matched_ipa.split()[-1]
 
 
 def candidate_rhyme_distance(
@@ -251,7 +256,11 @@ def build_decoded_lines(
                     "source_ipa": source["source_ipa"],
                     "candidate_set_id": source["candidate_set_id"],
                     "char": choice["char"],
+                    "chars": choice.get("chars", [choice["char"]]),
                     "pinyin": choice["pinyin"],
+                    "pinyin_syllables": choice.get("pinyin_syllables", [choice["pinyin"]]),
+                    "mapping_length": choice.get("mapping_length", 1),
+                    "coda_strategy": choice.get("coda_strategy", "single_syllable"),
                     "selection_score": choice["selection_score"],
                     "provenance": choice["provenance"],
                     "requires_review": choice["requires_review"],
@@ -261,9 +270,9 @@ def build_decoded_lines(
             )
         output.append(
             {
-                "schema_version": "poem-hanzi-decoded-v1",
+                "schema_version": "poem-hanzi-decoded-v2",
                 "label_quality": "synthetic_silver",
-                "decoder": "rhyme-graph-viterbi-v1",
+                "decoder": "rhyme-graph-viterbi-v2",
                 "line_id": line["line_id"],
                 "work": line["work"],
                 "form": line["form"],
@@ -313,9 +322,9 @@ def build_report(
     greedy_rhyme = edge_average(edges, options, greedy, candidate_rhyme_distance)
     decoded_rhyme = edge_average(edges, options, selections, candidate_rhyme_distance)
     return {
-        "schema_version": "decoder-report-v1",
+        "schema_version": "decoder-report-v2",
         "label_quality": "synthetic_silver",
-        "decoder": "rhyme-graph-viterbi-v1",
+        "decoder": "rhyme-graph-viterbi-v2",
         "line_count": len(lines),
         "syllable_count": total_syllables,
         "rhyme_edge_count": len(edges),
@@ -334,6 +343,8 @@ def build_report(
         "reference_selected_syllables": sum(
             option["provenance"] == "xinhua_english_reference" for option in selected_options
         ),
+        "expanded_source_syllables": sum(option.get("mapping_length", 1) == 2 for option in selected_options),
+        "target_hanzi_count": sum(len(option["char"]) for option in selected_options),
     }
 
 

@@ -93,6 +93,12 @@ class DecodePoemHanziTests(unittest.TestCase):
         self.assertEqual(decoded[0]["hanzi"], "达")
         self.assertFalse(decoded[0]["changed_from_greedy"])
 
+    def test_rhyme_uses_last_unit_of_expanded_pinyin(self):
+        self.assertEqual(
+            module.last_pinyin_unit("mo4 long2", "mwo lʊŋ"),
+            ("long2", "lʊŋ"),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -17,10 +17,17 @@ class MapIpaToPinyinTests(unittest.TestCase):
         self.assertEqual(onset, ("k", "w"))
         self.assertEqual(rhyme, ("i",))
 
+        onset, rhyme = module.split_vietnamese_ipa("tɕaːj")
+        self.assertEqual(onset, ("tɕ",))
+        self.assertEqual(rhyme, ("a", "i"))
+
     def test_feature_distance_prefers_similar_phones(self):
         self.assertEqual(module.phoneme_distance("a", "a"), 0.0)
         self.assertLess(module.phoneme_distance("a", "ə"), module.phoneme_distance("a", "i"))
         self.assertLess(module.phoneme_distance("tɕ", "tɕʰ"), module.phoneme_distance("tɕ", "m"))
+
+    def test_predictable_labial_glide_does_not_penalize_mo(self):
+        self.assertEqual(module.normalize_mandarin_rhyme(("m",), ("w", "o")), ("o",))
 
     def test_tone_distance_uses_contour(self):
         self.assertLess(module.tone_distance("33", "35"), module.tone_distance("33", "51"))
@@ -43,6 +50,74 @@ class MapIpaToPinyinTests(unittest.TestCase):
         self.assertEqual(candidates[0]["pinyin"], "zhan1")
         self.assertIn("onset_distance", candidates[0])
         self.assertIn("rhyme_distance", candidates[0])
+
+    def test_trai_prefers_zhai_after_glide_normalization(self):
+        inventory = [
+            {
+                "pinyin": "zhai1", "base": "zhai", "tone_number": 1,
+                "tone_chao": "55", "variants": [{"ipa": "ʈʂai", "onset": ("ʈʂ",), "rhyme": ("a", "i")}],
+                "hanzi_count": 4, "example_hanzi": ["斋"],
+            },
+            {
+                "pinyin": "zhan1", "base": "zhan", "tone_number": 1,
+                "tone_chao": "55", "variants": [{"ipa": "ʈʂan", "onset": ("ʈʂ",), "rhyme": ("a", "n")}],
+                "hanzi_count": 4, "example_hanzi": ["詹"],
+            },
+        ]
+        candidates = module.rank_candidates("tɕaːj", "33", inventory, 2)
+        self.assertEqual(candidates[0]["pinyin"], "zhai1")
+
+    def test_stop_coda_can_expand_to_two_pinyin_syllables(self):
+        inventory = [
+            {
+                "pinyin": "mo4", "base": "mo", "tone_number": 4,
+                "tone_chao": "51", "variants": [{"ipa": "mo", "onset": ("m",), "rhyme": ("o",)}],
+                "hanzi_count": 4, "example_hanzi": ["莫"],
+            },
+            {
+                "pinyin": "nong3", "base": "nong", "tone_number": 3,
+                "tone_chao": "214", "variants": [{"ipa": "nʊŋ", "onset": ("n",), "rhyme": ("ʊ", "ŋ")}],
+                "hanzi_count": 2, "example_hanzi": ["侬"],
+            },
+            {
+                "pinyin": "te4", "base": "te", "tone_number": 4,
+                "tone_chao": "51", "variants": [{"ipa": "tʰɤ", "onset": ("tʰ",), "rhyme": ("ɤ",)}],
+                "hanzi_count": 5, "example_hanzi": ["特"],
+            },
+        ]
+        candidate = module.rank_candidates("mot", "21", inventory, 1)[0]
+        self.assertEqual(candidate["pinyin_syllables"], ["mo4", "te4"])
+        self.assertEqual(candidate["mapping_length"], 2)
+
+    def test_sample_regressions_keep_rhyme_and_expose_weak_matches(self):
+        inventory = [
+            {
+                "pinyin": "long2", "base": "long", "tone_number": 2,
+                "tone_chao": "35", "variants": [{"ipa": "lʊŋ", "onset": ("l",), "rhyme": ("ʊ", "ŋ")}],
+                "hanzi_count": 5, "example_hanzi": ["龙"],
+            },
+            {
+                "pinyin": "di2", "base": "di", "tone_number": 2,
+                "tone_chao": "35", "variants": [{"ipa": "ti", "onset": ("t",), "rhyme": ("i",)}],
+                "hanzi_count": 5, "example_hanzi": ["迪"],
+            },
+            {
+                "pinyin": "mo2", "base": "mo", "tone_number": 2,
+                "tone_chao": "35", "variants": [{"ipa": "mo", "onset": ("m",), "rhyme": ("o",)}],
+                "hanzi_count": 5, "example_hanzi": ["模"],
+            },
+            {
+                "pinyin": "te4", "base": "te", "tone_number": 4,
+                "tone_chao": "51", "variants": [{"ipa": "tʰɤ", "onset": ("tʰ",), "rhyme": ("ɤ",)}],
+                "hanzi_count": 5, "example_hanzi": ["特"],
+            },
+        ]
+        self.assertEqual(module.rank_candidates("lɔŋ", "32", inventory, 1)[0]["pinyin"], "long2")
+        weak = module.rank_candidates("thɨ", "24", inventory, 1)[0]
+        self.assertGreater(weak["score"], 0.35)
+        expanded = module.rank_candidates("zot", "45", inventory, 1)[0]
+        self.assertEqual(expanded["pinyin_syllables"][-1], "te4")
+        self.assertEqual(expanded["mapping_length"], 2)
 
     def test_build_outputs_deduplicates_pronunciations(self):
         row = {

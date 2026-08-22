@@ -36,7 +36,7 @@ class SelectHanziTests(unittest.TestCase):
         self.assertEqual(selected[0]["provenance"], "xinhua_english_reference")
         self.assertFalse(selected[0]["requires_review"])
 
-    def test_fallback_is_marked_for_review(self):
+    def test_corpus_character_does_not_require_phonetic_review(self):
         selected = module.select_candidates(
             self.row,
             {},
@@ -44,8 +44,28 @@ class SelectHanziTests(unittest.TestCase):
             Counter({"达": 100, "妲": 1, "塔": 50}),
             2,
         )
-        self.assertEqual(selected[0]["provenance"], "corpus_frequency_fallback")
-        self.assertTrue(selected[0]["requires_review"])
+        self.assertEqual(selected[0]["provenance"], "corpus_frequency")
+        self.assertFalse(selected[0]["requires_review"])
+
+    def test_two_syllable_pinyin_produces_two_hanzi(self):
+        row = {
+            "candidate_set_id": "ipa_n_stop",
+            "candidates": [{
+                "pinyin": "mo4 te4", "pinyin_syllables": ["mo4", "te4"],
+                "ipa": "mo tʰɤ", "ipa_syllables": ["mo", "tʰɤ"],
+                "score": 0.1, "coda_strategy": "expanded_t",
+            }],
+        }
+        selected = module.select_candidates(
+            row,
+            {"mo4": "莫", "te4": "特"},
+            {"mo4": {"莫"}, "te4": {"特"}},
+            Counter({"莫": 100, "特": 100}),
+            2,
+        )
+        self.assertEqual(selected[0]["char"], "莫特")
+        self.assertEqual(selected[0]["pinyin_syllables"], ["mo4", "te4"])
+        self.assertEqual(selected[0]["mapping_length"], 2)
 
     def test_line_output_uses_top_candidate(self):
         pinyin_lines = [

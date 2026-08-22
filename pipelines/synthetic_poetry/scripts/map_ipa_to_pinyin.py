@@ -29,7 +29,9 @@ DEFAULT_LOCK = SCRIPT_DIR / "pinyin.lock.json"
 
 TONE_MARKS = str.maketrans("", "", "˥˦˧˨˩")
 MANDARIN_TONES = {1: "55", 2: "35", 3: "214", 4: "51"}
-WEIGHTS = {"onset": 0.35, "rhyme": 0.45, "tone": 0.20}
+WEIGHTS = {"onset": 0.38, "rhyme": 0.57, "tone": 0.05}
+STOP_CODA_REPAIRS = {"p": "bu4", "t": "te4", "k": "ke4"}
+EXPANSION_PENALTY = 0.04
 VI_ONSETS = tuple(
     sorted(
         ("tɕ", "tʰ", "kw", "ɓ", "c", "j", "ɗ", "ɣ", "h", "k", "l", "m", "n", "ŋ", "ɲ", "f", "p", "r", "ʂ", "t", "v", "x", "s", "z", "ʈ", "w"),
@@ -139,7 +141,20 @@ def split_vietnamese_ipa(segments: str) -> tuple[tuple[str, ...], tuple[str, ...
         onset_tokens = ("k", "w")
     else:
         onset_tokens = tokenize_ipa(onset_text)
-    return onset_tokens, tokenize_ipa(segments[len(onset_text):])
+    rhyme = tuple({"j": "i", "w": "u"}.get(phone, phone) for phone in tokenize_ipa(segments[len(onset_text):]))
+    return onset_tokens, rhyme
+
+
+def normalize_mandarin_rhyme(
+    onset: tuple[str, ...], rhyme: tuple[str, ...]
+) -> tuple[str, ...]:
+    normalized = tuple({"j": "i", "w": "u"}.get(phone, phone) for phone in rhyme)
+    # pinyin-to-ipa exposes the predictable labial glide in e.g. mo as /mwo/.
+    # It should not make Vietnamese /mo/ rank below Mandarin /mu/.
+    if onset and onset[-1] in {"m", "p", "pʰ", "f"} and len(normalized) >= 2:
+        if normalized[0] == "u" and normalized[1] in {"o", "ɔ"}:
+            normalized = normalized[1:]
+    return normalized
 
 
 def phoneme_distance(left: str, right: str) -> float:
@@ -148,11 +163,16 @@ def phoneme_distance(left: str, right: str) -> float:
     if left in VOWEL_FEATURES and right in VOWEL_FEATURES:
         lh, lb, lr = VOWEL_FEATURES[left]
         rh, rb, rr = VOWEL_FEATURES[right]
-        return 0.4 * abs(lh - rh) + 0.4 * abs(lb - rb) + 0.2 * (lr != rr)
+        feature_distance = 0.4 * abs(lh - rh) + 0.4 * abs(lb - rb) + 0.2 * (lr != rr)
+        return min(1.0, 0.15 + feature_distance)
     if left in CONSONANT_FEATURES and right in CONSONANT_FEATURES:
         lp, lm, lv, la = CONSONANT_FEATURES[left]
         rp, rm, rv, ra = CONSONANT_FEATURES[right]
-        return 0.35 * abs(lp - rp) + 0.35 * abs(lm - rm) + 0.15 * (lv != rv) + 0.15 * (la != ra)
+        feature_distance = (
+            0.35 * abs(lp - rp) + 0.35 * abs(lm - rm)
+            + 0.15 * (lv != rv) + 0.15 * (la != ra)
+        )
+        return min(1.0, 0.25 + feature_distance)
     return 1.0
 
 
@@ -225,7 +245,7 @@ def build_inventory() -> list[dict[str, object]]:
                 {
                     "ipa": "".join(raw_parts),
                     "onset": onset,
-                    "rhyme": rhyme,
+                    "rhyme": normalize_mandarin_rhyme(onset, rhyme),
                 }
             )
         inventory.append(
@@ -242,7 +262,7 @@ def build_inventory() -> list[dict[str, object]]:
     return inventory
 
 
-def rank_candidates(
+def _rank_single_candidates(
     ipa_segments: str, source_tone: str, inventory: list[dict[str, object]], top_k: int
 ) -> list[dict[str, object]]:
     source_onset, source_rhyme = split_vietnamese_ipa(ipa_segments)
@@ -261,10 +281,19 @@ def rank_candidates(
         ranked.append(
             {
                 "pinyin": target["pinyin"],
+                "pinyin_syllables": [target["pinyin"]],
                 "base": target["base"],
                 "tone_number": target["tone_number"],
                 "tone_chao": target["tone_chao"],
                 "ipa": matched_ipa,
+                "ipa_syllables": [matched_ipa],
+                "mapping_length": 1,
+                "coda_strategy": "single_syllable",
+                "segmental_score": round(
+                    (WEIGHTS["onset"] * onset + WEIGHTS["rhyme"] * rhyme)
+                    / (WEIGHTS["onset"] + WEIGHTS["rhyme"]),
+                    6,
+                ),
                 "score": round(score, 6),
                 "onset_distance": round(onset, 6),
                 "rhyme_distance": round(rhyme, 6),
@@ -274,6 +303,53 @@ def rank_candidates(
             }
         )
     return heapq.nsmallest(top_k, ranked, key=lambda item: (item["score"], -item["hanzi_count"], item["pinyin"]))
+
+
+def rank_candidates(
+    ipa_segments: str, source_tone: str, inventory: list[dict[str, object]], top_k: int
+) -> list[dict[str, object]]:
+    """Rank Mandarin realizations, expanding Vietnamese stop codas when needed."""
+    source_onset, source_rhyme = split_vietnamese_ipa(ipa_segments)
+    coda = source_rhyme[-1] if source_rhyme and source_rhyme[-1] in STOP_CODA_REPAIRS else None
+    singles = _rank_single_candidates(ipa_segments, source_tone, inventory, top_k)
+    if coda is None:
+        return singles
+
+    repair_pinyin = STOP_CODA_REPAIRS[coda]
+    repair = next((item for item in inventory if item["pinyin"] == repair_pinyin), None)
+    if repair is None:
+        raise ValueError(f"Missing coda-repair syllable {repair_pinyin} from Mandarin inventory")
+    repair_variant = repair["variants"][0]
+    stem = ipa_segments[:-len(coda)]
+    stem_candidates = _rank_single_candidates(stem, source_tone, inventory, max(top_k, 24))
+    expanded = []
+    for main in stem_candidates:
+        score = min(1.0, float(main["score"]) + EXPANSION_PENALTY)
+        expanded.append(
+            {
+                **main,
+                "pinyin": f"{main['pinyin']} {repair_pinyin}",
+                "pinyin_syllables": [main["pinyin"], repair_pinyin],
+                "ipa": f"{main['ipa']} {repair_variant['ipa']}",
+                "ipa_syllables": [main["ipa"], repair_variant["ipa"]],
+                "mapping_length": 2,
+                "coda_strategy": f"expanded_{coda}",
+                "score": round(score, 6),
+                "hanzi_count": min(int(main["hanzi_count"]), int(repair["hanzi_count"])),
+                "example_hanzi": main["example_hanzi"],
+            }
+        )
+    combined = expanded + singles
+    return heapq.nsmallest(
+        top_k,
+        combined,
+        key=lambda item: (
+            item["score"],
+            item["mapping_length"] == 1,
+            -item["hanzi_count"],
+            item["pinyin"],
+        ),
+    )
 
 
 def candidate_set_id(dialect: str, segments: str, tone: str) -> str:
@@ -295,7 +371,7 @@ def build_outputs(
             entry = pronunciations.setdefault(
                 key,
                 {
-                    "schema_version": "pinyin-candidates-v1",
+                    "schema_version": "pinyin-candidates-v2",
                     "candidate_set_id": set_id,
                     "source_dialect": dialect,
                     "source_ipa_segments": item["ipa_segments"],
@@ -315,7 +391,7 @@ def build_outputs(
             )
         line_rows.append(
             {
-                "schema_version": "poem-pinyin-v1",
+                "schema_version": "poem-pinyin-v2",
                 "line_id": row["line_id"],
                 "work": row["work"],
                 "form": row["form"],
@@ -349,7 +425,7 @@ def build_report(
 ) -> dict[str, object]:
     top_scores = [row["candidates"][0]["score"] for row in candidate_rows]
     return {
-        "schema_version": "pinyin-report-v1",
+        "schema_version": "pinyin-report-v2",
         "source_lines": len(ipa_rows),
         "output_lines": len(ipa_rows),
         "source_syllable_occurrences": sum(len(row["ipa_syllables"]) for row in ipa_rows),
@@ -357,6 +433,11 @@ def build_report(
         "mandarin_inventory_size": len(inventory),
         "top_k": top_k,
         "weights": WEIGHTS,
+        "stop_coda_repairs": STOP_CODA_REPAIRS,
+        "expansion_penalty": EXPANSION_PENALTY,
+        "expanded_top1_candidate_sets": sum(
+            row["candidates"][0]["mapping_length"] == 2 for row in candidate_rows
+        ),
         "mandarin_tone_contours": {str(key): value for key, value in MANDARIN_TONES.items()},
         "top1_score_distribution": {
             "min": min(top_scores), "p50": percentile(top_scores, 0.5),

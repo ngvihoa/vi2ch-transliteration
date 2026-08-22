@@ -1,5 +1,5 @@
 {
-  "schema_version": "pinyin-report-v1",
+  "schema_version": "pinyin-report-v2",
   "source_lines": 4537,
   "output_lines": 4537,
   "source_syllable_occurrences": 31761,
@@ -7,10 +7,17 @@
   "mandarin_inventory_size": 1419,
   "top_k": 20,
   "weights": {
-    "onset": 0.35,
-    "rhyme": 0.45,
-    "tone": 0.2
+    "onset": 0.38,
+    "rhyme": 0.57,
+    "tone": 0.05
   },
+  "stop_coda_repairs": {
+    "p": "bu4",
+    "t": "te4",
+    "k": "ke4"
+  },
+  "expansion_penalty": 0.04,
+  "expanded_top1_candidate_sets": 279,
   "mandarin_tone_contours": {
     "1": "55",
     "2": "35",
@@ -18,11 +25,11 @@
     "4": "51"
   },
   "top1_score_distribution": {
-    "min": 0.02,
-    "p50": 0.133563,
-    "p90": 0.229,
-    "p99": 0.300167,
-    "max": 0.404
+    "min": 0.005,
+    "p50": 0.184883,
+    "p90": 0.33125,
+    "p99": 0.407033,
+    "max": 0.4419
   },
   "dependencies": {
     "packages": {
