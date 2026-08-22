@@ -16,13 +16,14 @@ from typing import Iterable
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = SCRIPT_DIR.parent
-DEFAULT_PINYIN_CANDIDATES = PROJECT_ROOT / "dataset" / "pinyin_candidates.jsonl"
-DEFAULT_PINYIN_LINES = PROJECT_ROOT / "dataset" / "poem_pinyin.jsonl"
-DEFAULT_HANZI_CANDIDATES = PROJECT_ROOT / "dataset" / "hanzi_candidates.jsonl"
-DEFAULT_HANZI_LINES = PROJECT_ROOT / "dataset" / "poem_hanzi.jsonl"
-DEFAULT_REPORT = PROJECT_ROOT / "dataset" / "hanzi_report.json"
-DEFAULT_REFERENCE = PROJECT_ROOT / "resources" / "xinhua_english_reference.json"
+PIPELINE_ROOT = SCRIPT_DIR.parent
+PROJECT_ROOT = PIPELINE_ROOT.parent.parent
+DEFAULT_PINYIN_CANDIDATES = PIPELINE_ROOT / "outputs" / "pinyin_candidates.jsonl"
+DEFAULT_PINYIN_LINES = PIPELINE_ROOT / "outputs" / "poem_pinyin.jsonl"
+DEFAULT_HANZI_CANDIDATES = PIPELINE_ROOT / "outputs" / "hanzi_candidates.jsonl"
+DEFAULT_HANZI_LINES = PIPELINE_ROOT / "outputs" / "poem_hanzi.jsonl"
+DEFAULT_REPORT = PIPELINE_ROOT / "outputs" / "hanzi_report.json"
+DEFAULT_REFERENCE = PIPELINE_ROOT / "resources" / "xinhua_english_reference.json"
 DEFAULT_CORPUS_DIR = PROJECT_ROOT / "raw-collections" / "cn-vi"
 DEFAULT_DEPS = PROJECT_ROOT / "tools" / "pinyin-python"
 DEFAULT_LOCK = SCRIPT_DIR / "pinyin.lock.json"
@@ -50,7 +51,8 @@ def activate_and_verify_dependencies(deps: Path, lock_path: Path) -> dict[str, o
     if not deps.is_dir():
         raise FileNotFoundError(
             f"Pinyin dependencies not found at {deps}. Run: "
-            "python -m pip install --target tools/pinyin-python -r requirements-pinyin.txt"
+            "python -m pip install --target tools/pinyin-python "
+            "-r pipelines/synthetic_poetry/requirements-pinyin.txt"
         )
     sys.path.insert(0, str(deps))
     with lock_path.open(encoding="utf-8") as handle:

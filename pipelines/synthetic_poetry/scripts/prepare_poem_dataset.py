@@ -19,10 +19,11 @@ from typing import Iterable
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = SCRIPT_DIR.parent
+PIPELINE_ROOT = SCRIPT_DIR.parent
+PROJECT_ROOT = PIPELINE_ROOT.parent.parent
 DEFAULT_MANIFEST = SCRIPT_DIR / "poem_manifest.json"
 DEFAULT_RAW_DIR = PROJECT_ROOT / "raw-collections" / "poem"
-DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "dataset"
+DEFAULT_OUTPUT_DIR = PIPELINE_ROOT / "outputs"
 
 
 @dataclass(frozen=True)

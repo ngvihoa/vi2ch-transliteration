@@ -17,10 +17,11 @@ from typing import Iterable
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = SCRIPT_DIR.parent
-DEFAULT_INPUT = PROJECT_ROOT / "dataset" / "poem_lines.jsonl"
-DEFAULT_OUTPUT = PROJECT_ROOT / "dataset" / "poem_ipa.jsonl"
-DEFAULT_REPORT = PROJECT_ROOT / "dataset" / "poem_ipa_report.json"
+PIPELINE_ROOT = SCRIPT_DIR.parent
+PROJECT_ROOT = PIPELINE_ROOT.parent.parent
+DEFAULT_INPUT = PIPELINE_ROOT / "outputs" / "poem_lines.jsonl"
+DEFAULT_OUTPUT = PIPELINE_ROOT / "outputs" / "poem_ipa.jsonl"
+DEFAULT_REPORT = PIPELINE_ROOT / "outputs" / "poem_ipa_report.json"
 DEFAULT_VPHON = PROJECT_ROOT / "tools" / "vPhon" / "vPhon.py"
 DEFAULT_OVERRIDES = SCRIPT_DIR / "ipa_overrides.json"
 DEFAULT_LOCK = SCRIPT_DIR / "vphon.lock.json"

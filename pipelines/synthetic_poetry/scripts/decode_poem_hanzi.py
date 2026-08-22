@@ -24,11 +24,12 @@ from map_ipa_to_pinyin import (
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = SCRIPT_DIR.parent
-DEFAULT_CANDIDATES = PROJECT_ROOT / "dataset" / "hanzi_candidates.jsonl"
-DEFAULT_LINES = PROJECT_ROOT / "dataset" / "poem_pinyin.jsonl"
-DEFAULT_OUTPUT = PROJECT_ROOT / "dataset" / "poem_hanzi_decoded.jsonl"
-DEFAULT_REPORT = PROJECT_ROOT / "dataset" / "decoder_report.json"
+PIPELINE_ROOT = SCRIPT_DIR.parent
+PROJECT_ROOT = PIPELINE_ROOT.parent.parent
+DEFAULT_CANDIDATES = PIPELINE_ROOT / "outputs" / "hanzi_candidates.jsonl"
+DEFAULT_LINES = PIPELINE_ROOT / "outputs" / "poem_pinyin.jsonl"
+DEFAULT_OUTPUT = PIPELINE_ROOT / "outputs" / "poem_hanzi_decoded.jsonl"
+DEFAULT_REPORT = PIPELINE_ROOT / "outputs" / "decoder_report.json"
 DEFAULT_RHYME_WEIGHT = 0.12
 Node = tuple[int, int]
 

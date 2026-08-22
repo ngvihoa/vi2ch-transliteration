@@ -18,11 +18,12 @@ from typing import Iterable
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = SCRIPT_DIR.parent
-DEFAULT_INPUT = PROJECT_ROOT / "dataset" / "poem_ipa.jsonl"
-DEFAULT_CANDIDATES = PROJECT_ROOT / "dataset" / "pinyin_candidates.jsonl"
-DEFAULT_LINES = PROJECT_ROOT / "dataset" / "poem_pinyin.jsonl"
-DEFAULT_REPORT = PROJECT_ROOT / "dataset" / "pinyin_report.json"
+PIPELINE_ROOT = SCRIPT_DIR.parent
+PROJECT_ROOT = PIPELINE_ROOT.parent.parent
+DEFAULT_INPUT = PIPELINE_ROOT / "outputs" / "poem_ipa.jsonl"
+DEFAULT_CANDIDATES = PIPELINE_ROOT / "outputs" / "pinyin_candidates.jsonl"
+DEFAULT_LINES = PIPELINE_ROOT / "outputs" / "poem_pinyin.jsonl"
+DEFAULT_REPORT = PIPELINE_ROOT / "outputs" / "pinyin_report.json"
 DEFAULT_DEPS = PROJECT_ROOT / "tools" / "pinyin-python"
 DEFAULT_LOCK = SCRIPT_DIR / "pinyin.lock.json"
 
@@ -74,7 +75,8 @@ def activate_and_verify_dependencies(deps: Path, lock_path: Path) -> dict[str, o
     if not deps.is_dir():
         raise FileNotFoundError(
             f"Pinyin dependencies not found at {deps}. Run: "
-            "python -m pip install --target tools/pinyin-python -r requirements-pinyin.txt"
+            "python -m pip install --target tools/pinyin-python "
+            "-r pipelines/synthetic_poetry/requirements-pinyin.txt"
         )
     sys.path.insert(0, str(deps))
     with lock_path.open(encoding="utf-8") as handle:
