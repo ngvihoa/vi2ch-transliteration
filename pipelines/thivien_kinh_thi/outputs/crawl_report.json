@@ -1,0 +1,34 @@
+{
+  "schema_version": "thivien-kinh-thi-crawl-v1",
+  "source": "https://www.thivien.net/Kh%E1%BB%95ng-T%E1%BB%AD/Thi-kinh-Kinh-thi/group-ZDB2Tl5514uy8PI478SU_g",
+  "discovered_poems": 854,
+  "written_csv_files": 848,
+  "sentence_pairs": 5259,
+  "skipped_poems": 6,
+  "skipped": [
+    {
+      "url": "https://www.thivien.net/Kh%E1%BB%95ng-T%E1%BB%AD/Nam-cai/poem-Zx1UgorIP0JWyMEC7WHE3g",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Kh%E1%BB%95ng-T%E1%BB%AD/Nam-cai/poem-Zx1UgorIP0JWyMEC7WHE3g"
+    },
+    {
+      "url": "https://www.thivien.net/Kh%E1%BB%95ng-T%E1%BB%AD/B%E1%BA%A1ch-hoa/poem-1eqdHxDNIchQr9836W36fg",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Kh%E1%BB%95ng-T%E1%BB%AD/B%E1%BA%A1ch-hoa/poem-1eqdHxDNIchQr9836W36fg"
+    },
+    {
+      "url": "https://www.thivien.net/Kh%E1%BB%95ng-T%E1%BB%AD/Hoa-th%E1%BB%AD/poem-31GWC6yY0N9vG9hcF4EWjQ",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Kh%E1%BB%95ng-T%E1%BB%AD/Hoa-th%E1%BB%AD/poem-31GWC6yY0N9vG9hcF4EWjQ"
+    },
+    {
+      "url": "https://www.thivien.net/Kh%E1%BB%95ng-T%E1%BB%AD/Do-canh/poem-jw68lRJKvQP3YpXiNRxK1g",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Kh%E1%BB%95ng-T%E1%BB%AD/Do-canh/poem-jw68lRJKvQP3YpXiNRxK1g"
+    },
+    {
+      "url": "https://www.thivien.net/Kh%E1%BB%95ng-T%E1%BB%AD/S%C3%B9ng-kh%C3%A2u/poem-SxknCo-RHBG77o5AgP3c7g",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Kh%E1%BB%95ng-T%E1%BB%AD/S%C3%B9ng-kh%C3%A2u/poem-SxknCo-RHBG77o5AgP3c7g"
+    },
+    {
+      "url": "https://www.thivien.net/Kh%E1%BB%95ng-T%E1%BB%AD/Do-nghi/poem-si7VpcYCOSpAoA5zm6B4Ag",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Kh%E1%BB%95ng-T%E1%BB%AD/Do-nghi/poem-si7VpcYCOSpAoA5zm6B4Ag"
+    }
+  ]
+}
