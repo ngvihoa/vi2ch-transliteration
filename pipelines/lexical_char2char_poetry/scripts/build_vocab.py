@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import argparse
+import ast
+import csv
 import json
 import os
 import re
@@ -17,6 +19,8 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 PIPELINE_ROOT = SCRIPT_DIR.parent
 PROJECT_ROOT = PIPELINE_ROOT.parent.parent
 DEFAULT_DICTIONARY = PROJECT_ROOT / "raw-collections" / "CVDICT.u8"
+DEFAULT_HANVIET = PROJECT_ROOT / "raw-collections" / "hanviet.csv"
+DEFAULT_KVIETNAMESE = PROJECT_ROOT / "raw-collections" / "kVietnamese.json"
 DEFAULT_CURATED = PIPELINE_ROOT / "resources" / "curated_vocab.json"
 DEFAULT_VOCAB = PIPELINE_ROOT / "outputs" / "vocab.json"
 DEFAULT_EVIDENCE = PIPELINE_ROOT / "outputs" / "vocab_evidence.jsonl"
@@ -46,8 +50,11 @@ def lexical_glosses(raw_senses: str) -> list[str]:
     return glosses
 
 
-def parse_cvdict(path: Path) -> tuple[dict[str, Counter[str]], dict[str, int]]:
+def parse_cvdict(
+    path: Path,
+) -> tuple[dict[str, Counter[str]], set[str], dict[str, int]]:
     evidence: dict[str, Counter[str]] = defaultdict(Counter)
+    inventory: set[str] = set()
     stats = Counter()
     with path.open(encoding="utf-8") as handle:
         for line in handle:
@@ -56,7 +63,9 @@ def parse_cvdict(path: Path) -> tuple[dict[str, Counter[str]], dict[str, int]]:
             if not match:
                 continue
             stats["parsed_entries"] += 1
+            traditional = match.group(1)
             simplified = match.group(2)
+            inventory.update(char for char in (traditional, simplified) if is_hanzi(char))
             if not is_hanzi(simplified):
                 stats["non_single_hanzi_entries"] += 1
                 continue
@@ -64,6 +73,62 @@ def parse_cvdict(path: Path) -> tuple[dict[str, Counter[str]], dict[str, int]]:
             stats["standalone_gloss_occurrences"] += len(glosses)
             for gloss in glosses:
                 evidence[gloss][simplified] += 1
+    return evidence, inventory, dict(stats)
+
+
+def parse_hanviet(
+    path: Path,
+) -> tuple[dict[str, Counter[str]], set[str], dict[str, int]]:
+    evidence: dict[str, Counter[str]] = defaultdict(Counter)
+    inventory: set[str] = set()
+    stats = Counter()
+    with path.open(encoding="utf-8", newline="") as handle:
+        for row in csv.DictReader(handle):
+            stats["rows"] += 1
+            char = row.get("char", "").strip()
+            if not is_hanzi(char):
+                stats["invalid_char_rows"] += 1
+                continue
+            inventory.add(char)
+            try:
+                readings = ast.literal_eval(row.get("hanviet", ""))
+            except (SyntaxError, ValueError):
+                stats["invalid_reading_rows"] += 1
+                continue
+            if not isinstance(readings, list):
+                stats["invalid_reading_rows"] += 1
+                continue
+            for reading in readings:
+                token = normalize(reading) if isinstance(reading, str) else ""
+                if WORD_PATTERN.fullmatch(token):
+                    evidence[token][char] += 1
+                    stats["reading_occurrences"] += 1
+    return evidence, inventory, dict(stats)
+
+
+def parse_kvietnamese(
+    path: Path, allowed_hanzi: set[str]
+) -> tuple[dict[str, Counter[str]], dict[str, int]]:
+    evidence: dict[str, Counter[str]] = defaultdict(Counter)
+    stats = Counter()
+    resource = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(resource, dict):
+        raise ValueError(f"Expected an object in {path}")
+    for char, readings in resource.items():
+        stats["entries"] += 1
+        # kVietnamese also contains purpose-built Nom glyphs. Only reuse a
+        # character already attested by the Chinese dictionaries.
+        if char not in allowed_hanzi:
+            stats["nom_or_unverified_chars_excluded"] += 1
+            continue
+        if not isinstance(readings, list):
+            stats["invalid_entries"] += 1
+            continue
+        for reading in readings:
+            token = normalize(reading) if isinstance(reading, str) else ""
+            if WORD_PATTERN.fullmatch(token):
+                evidence[token][char] += 1
+                stats["reading_occurrences"] += 1
     return evidence, dict(stats)
 
 
@@ -82,14 +147,21 @@ def load_curated(path: Path) -> dict[str, list[str]]:
 
 
 def build_vocab(
-    evidence: dict[str, Counter[str]], curated: dict[str, list[str]]
+    evidence_by_source: dict[str, dict[str, Counter[str]]],
+    curated: dict[str, list[str]],
 ) -> tuple[dict[str, list[str]], list[dict[str, object]]]:
     vocab = {}
     rows = []
-    for token in sorted(set(evidence) | set(curated)):
-        counts = evidence.get(token, Counter())
-        ranked_dictionary = sorted(counts, key=lambda char: (-counts[char], char))
-        chars = list(dict.fromkeys(curated.get(token, []) + ranked_dictionary))
+    source_order = ("cvdict_standalone_gloss", "kvietnamese_hanzi_reading", "hanviet_reading")
+    tokens = set(curated)
+    for evidence in evidence_by_source.values():
+        tokens.update(evidence)
+    for token in sorted(tokens):
+        chars = list(curated.get(token, []))
+        for source in source_order:
+            counts = evidence_by_source[source].get(token, Counter())
+            chars.extend(sorted(counts, key=lambda char: (-counts[char], char)))
+        chars = list(dict.fromkeys(chars))
         vocab[token] = chars
         rows.append({
             "schema_version": "lexical-vocab-evidence-v1",
@@ -98,8 +170,15 @@ def build_vocab(
                 {
                     "char": char,
                     "sources": (["curated"] if char in curated.get(token, []) else [])
-                        + (["cvdict_standalone_gloss"] if counts[char] else []),
-                    "cvdict_evidence_count": counts[char],
+                        + [
+                            source for source in source_order
+                            if evidence_by_source[source].get(token, Counter())[char]
+                        ],
+                    "evidence_counts": {
+                        source: evidence_by_source[source].get(token, Counter())[char]
+                        for source in source_order
+                        if evidence_by_source[source].get(token, Counter())[char]
+                    },
                 }
                 for char in chars
             ],
@@ -108,20 +187,24 @@ def build_vocab(
 
 
 def build_report(
-    vocab: dict[str, list[str]], parser_stats: dict[str, int], curated: dict[str, list[str]]
+    vocab: dict[str, list[str]], parser_stats: dict[str, dict[str, int]],
+    evidence_by_source: dict[str, dict[str, Counter[str]]], curated: dict[str, list[str]]
 ) -> dict[str, object]:
     candidate_counts = Counter(len(chars) for chars in vocab.values())
     ambiguous = sum(count for size, count in candidate_counts.items() if size > 1)
     return {
         "schema_version": "lexical-vocab-report-v1",
         "mapping_contract": "one_vietnamese_token_to_one_or_more_hanzi_candidates",
-        "source": "raw-collections/CVDICT.u8",
+        "sources_by_priority": [
+            "curated",
+            "raw-collections/CVDICT.u8",
+            "raw-collections/kVietnamese.json (verified Hanzi only)",
+            "raw-collections/hanviet.csv",
+        ],
         "excluded_sources": [
             "raw-collections/chinese-vietnamese.csv",
             "raw-collections/cn-vi/",
             "pipelines/synthetic_poetry/",
-            "raw-collections/hanviet.csv",
-            "raw-collections/kVietnamese.json",
             "vocab_old.json",
         ],
         "vietnamese_tokens": len(vocab),
@@ -129,9 +212,16 @@ def build_report(
         "ambiguous_tokens": ambiguous,
         "ambiguous_token_rate": round(ambiguous / len(vocab), 6) if vocab else 0.0,
         "curated_tokens": len(curated),
+        "tokens_by_source": {
+            source: len(evidence) for source, evidence in evidence_by_source.items()
+        },
         "candidate_count_distribution": dict(sorted(candidate_counts.items())),
-        "parser": parser_stats,
-        "caveat": "Only standalone one-token Vietnamese glosses are accepted automatically; multiword glosses are not decomposed.",
+        "parsers": parser_stats,
+        "caveats": [
+            "Only standalone one-token CVDICT glosses are accepted; multiword glosses are not decomposed.",
+            "kVietnamese characters absent from the CVDICT/hanviet Hanzi inventory are excluded as Nom or unverified glyphs.",
+            "kVietnamese and hanviet are reading evidence, so their candidates rank below curated and semantic CVDICT candidates.",
+        ],
     }
 
 
@@ -153,6 +243,8 @@ def atomic_write(path: Path, text: str) -> None:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build a semantic Vietnamese -> Hanzi 1:N vocab.")
     parser.add_argument("--dictionary", type=Path, default=DEFAULT_DICTIONARY)
+    parser.add_argument("--hanviet", type=Path, default=DEFAULT_HANVIET)
+    parser.add_argument("--kvietnamese", type=Path, default=DEFAULT_KVIETNAMESE)
     parser.add_argument("--curated", type=Path, default=DEFAULT_CURATED)
     parser.add_argument("--vocab-output", type=Path, default=DEFAULT_VOCAB)
     parser.add_argument("--evidence-output", type=Path, default=DEFAULT_EVIDENCE)
@@ -162,10 +254,24 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    evidence, parser_stats = parse_cvdict(args.dictionary)
+    cvdict, cvdict_inventory, cvdict_stats = parse_cvdict(args.dictionary)
+    hanviet, hanviet_inventory, hanviet_stats = parse_hanviet(args.hanviet)
+    kvietnamese, kvietnamese_stats = parse_kvietnamese(
+        args.kvietnamese, cvdict_inventory | hanviet_inventory
+    )
+    evidence_by_source = {
+        "cvdict_standalone_gloss": cvdict,
+        "kvietnamese_hanzi_reading": kvietnamese,
+        "hanviet_reading": hanviet,
+    }
     curated = load_curated(args.curated)
-    vocab, evidence_rows = build_vocab(evidence, curated)
-    report = build_report(vocab, parser_stats, curated)
+    vocab, evidence_rows = build_vocab(evidence_by_source, curated)
+    report = build_report(
+        vocab,
+        {"cvdict": cvdict_stats, "kvietnamese": kvietnamese_stats, "hanviet": hanviet_stats},
+        evidence_by_source,
+        curated,
+    )
     atomic_write(args.vocab_output, json.dumps(vocab, ensure_ascii=False, indent=2) + "\n")
     atomic_write(
         args.evidence_output,
@@ -174,7 +280,7 @@ def main() -> int:
     atomic_write(args.report, json.dumps(report, ensure_ascii=False, indent=2) + "\n")
     print(
         f"Built {report['vietnamese_tokens']} tokens / "
-        f"{report['total_token_hanzi_pairs']} token-Hanzi pairs from CVDICT."
+        f"{report['total_token_hanzi_pairs']} token-Hanzi pairs from approved lexical sources."
     )
     return 0
 

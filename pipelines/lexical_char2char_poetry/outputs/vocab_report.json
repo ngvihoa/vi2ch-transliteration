@@ -1,52 +1,90 @@
 {
   "schema_version": "lexical-vocab-report-v1",
   "mapping_contract": "one_vietnamese_token_to_one_or_more_hanzi_candidates",
-  "source": "raw-collections/CVDICT.u8",
+  "sources_by_priority": [
+    "curated",
+    "raw-collections/CVDICT.u8",
+    "raw-collections/kVietnamese.json (verified Hanzi only)",
+    "raw-collections/hanviet.csv"
+  ],
   "excluded_sources": [
     "raw-collections/chinese-vietnamese.csv",
     "raw-collections/cn-vi/",
     "pipelines/synthetic_poetry/",
-    "raw-collections/hanviet.csv",
-    "raw-collections/kVietnamese.json",
     "vocab_old.json"
   ],
-  "vietnamese_tokens": 2119,
-  "total_token_hanzi_pairs": 6672,
-  "ambiguous_tokens": 1129,
-  "ambiguous_token_rate": 0.532798,
+  "vietnamese_tokens": 4193,
+  "total_token_hanzi_pairs": 19269,
+  "ambiguous_tokens": 2781,
+  "ambiguous_token_rate": 0.663248,
   "curated_tokens": 3,
+  "tokens_by_source": {
+    "cvdict_standalone_gloss": 2118,
+    "kvietnamese_hanzi_reading": 2542,
+    "hanviet_reading": 2075
+  },
   "candidate_count_distribution": {
-    "1": 990,
-    "2": 382,
-    "3": 243,
-    "4": 163,
-    "5": 95,
-    "6": 62,
-    "7": 42,
-    "8": 34,
-    "9": 21,
-    "10": 17,
-    "11": 19,
-    "12": 13,
-    "13": 5,
-    "14": 5,
-    "15": 5,
-    "16": 5,
-    "17": 6,
-    "18": 3,
-    "19": 2,
-    "20": 1,
-    "21": 2,
-    "28": 1,
+    "1": 1412,
+    "2": 618,
+    "3": 460,
+    "4": 332,
+    "5": 247,
+    "6": 192,
+    "7": 170,
+    "8": 135,
+    "9": 117,
+    "10": 76,
+    "11": 89,
+    "12": 78,
+    "13": 43,
+    "14": 34,
+    "15": 31,
+    "16": 28,
+    "17": 25,
+    "18": 22,
+    "19": 16,
+    "20": 10,
+    "21": 10,
+    "22": 7,
+    "23": 7,
+    "24": 3,
+    "25": 7,
+    "26": 4,
+    "27": 3,
+    "28": 2,
+    "30": 2,
+    "31": 2,
+    "32": 1,
     "33": 1,
-    "51": 1,
+    "34": 2,
+    "36": 1,
+    "37": 2,
+    "38": 1,
+    "42": 1,
+    "55": 1,
     "742": 1
   },
-  "parser": {
-    "lines": 122627,
-    "parsed_entries": 122596,
-    "non_single_hanzi_entries": 109179,
-    "standalone_gloss_occurrences": 6814
+  "parsers": {
+    "cvdict": {
+      "lines": 122627,
+      "parsed_entries": 122596,
+      "non_single_hanzi_entries": 109179,
+      "standalone_gloss_occurrences": 6814
+    },
+    "kvietnamese": {
+      "entries": 8300,
+      "nom_or_unverified_chars_excluded": 4712,
+      "reading_occurrences": 3748
+    },
+    "hanviet": {
+      "rows": 11213,
+      "reading_occurrences": 11499,
+      "invalid_char_rows": 1
+    }
   },
-  "caveat": "Only standalone one-token Vietnamese glosses are accepted automatically; multiword glosses are not decomposed."
+  "caveats": [
+    "Only standalone one-token CVDICT glosses are accepted; multiword glosses are not decomposed.",
+    "kVietnamese characters absent from the CVDICT/hanviet Hanzi inventory are excluded as Nom or unverified glyphs.",
+    "kVietnamese and hanviet are reading evidence, so their candidates rank below curated and semantic CVDICT candidates."
+  ]
 }

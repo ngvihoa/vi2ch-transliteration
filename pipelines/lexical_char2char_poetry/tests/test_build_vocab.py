@@ -27,14 +27,28 @@ class BuildVocabTests(unittest.TestCase):
                 "歿 殁 [mo4] /kết thúc/chết/\n",
                 encoding="utf-8",
             )
-            evidence, _ = MODULE.parse_cvdict(source)
+            evidence, _, _ = MODULE.parse_cvdict(source)
             self.assertIn("一", evidence["một"])
             self.assertNotIn("殁", evidence["một"])
 
     def test_vocab_is_one_to_many_and_curated_candidate_is_first(self):
-        evidence = {"một": Counter({"壹": 2, "一": 1})}
-        vocab, _ = MODULE.build_vocab(evidence, {"một": ["一"]})
-        self.assertEqual(["一", "壹"], vocab["một"])
+        sources = {
+            "cvdict_standalone_gloss": {"một": Counter({"壹": 2, "一": 1})},
+            "kvietnamese_hanzi_reading": {"một": Counter({"沒": 1})},
+            "hanviet_reading": {"một": Counter({"歿": 1})},
+        }
+        vocab, _ = MODULE.build_vocab(sources, {"một": ["一"]})
+        self.assertEqual(["一", "壹", "沒", "歿"], vocab["một"])
+
+    def test_kvietnamese_excludes_nom_only_characters(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "kvietnamese.json"
+            source.write_text(
+                '{"昆": ["con"], "𡥵": ["con"]}', encoding="utf-8"
+            )
+            evidence, stats = MODULE.parse_kvietnamese(source, {"昆"})
+            self.assertEqual(Counter({"昆": 1}), evidence["con"])
+            self.assertEqual(1, stats["nom_or_unverified_chars_excluded"])
 
 
 if __name__ == "__main__":
