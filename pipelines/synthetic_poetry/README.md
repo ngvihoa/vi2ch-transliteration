@@ -121,6 +121,33 @@ Outputs:
 The default pairwise rhyme weight is 0.12 and can be changed with
 `--rhyme-weight`.
 
+## 6. Quality gate and release candidates
+
+```bash
+python pipelines/synthetic_poetry/scripts/quality_gate_poems.py
+```
+
+This layer validates the decoded/source alignment and applies deterministic,
+configurable line-level gates. By default, a release candidate must use no
+fallback Hanzi, have an average selection score at most 0.22, have no syllable
+score above 0.35, and use no decoder candidate below rank 3. These thresholds
+are heuristics for triage, not calibrated probabilities or human ground truth.
+
+Outputs remain inside the pipeline:
+
+- `pipelines/synthetic_poetry/outputs/poem_quality_scored.jsonl`: every decoded
+  line with source provenance, metrics, status, and reason codes;
+- `pipelines/synthetic_poetry/outputs/poem_release_candidates.jsonl`: lines
+  passing all automatic gates, still labelled synthetic silver;
+- `pipelines/synthetic_poetry/outputs/poem_quality_review.jsonl`: lines needing
+  human review;
+- `pipelines/synthetic_poetry/outputs/quality_report.json`: thresholds,
+  distributions, pass rate, and reason counts.
+
+Use `--max-average-score`, `--max-syllable-score`, and
+`--max-candidate-rank` to tune the gate. Nothing is copied to `dataset/` at
+this stage.
+
 ## Tests
 
 ```bash

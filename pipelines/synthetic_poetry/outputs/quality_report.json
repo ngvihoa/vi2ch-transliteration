@@ -1,0 +1,38 @@
+{
+  "schema_version": "quality-report-v1",
+  "label_quality": "synthetic_silver",
+  "gate": "deterministic-line-quality-v1",
+  "input_lines": 4537,
+  "candidate_lines": 3098,
+  "candidate_rate": 0.68283,
+  "review_lines": 1439,
+  "review_rate": 0.31717,
+  "thresholds": {
+    "max_average_selection_score": 0.22,
+    "max_syllable_selection_score": 0.35,
+    "max_candidate_rank": 3,
+    "fallback_syllables_allowed": 0
+  },
+  "review_reason_counts": {
+    "deep_decoder_candidate": 52,
+    "fallback_hanzi": 1389,
+    "high_average_selection_score": 123,
+    "high_syllable_selection_score": 393
+  },
+  "average_selection_score_distribution": {
+    "p50": 0.169368,
+    "p90": 0.200789,
+    "p95": 0.210476,
+    "p99": 0.232813,
+    "max": 0.278284
+  },
+  "max_selection_score_distribution": {
+    "p50": 0.258763,
+    "p90": 0.348409,
+    "p95": 0.360757,
+    "p99": 0.420032,
+    "max": 0.42164
+  },
+  "duplicate_source_lines": 52,
+  "decoder_changed_lines": 648
+}
