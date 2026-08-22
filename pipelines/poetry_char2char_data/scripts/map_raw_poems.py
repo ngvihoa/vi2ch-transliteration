@@ -69,7 +69,7 @@ def map_tokens(tokens: list[str], vocab: dict[str, list[str]]) -> tuple[list[str
 
 def map_poem_directory(poem_dir: Path, vocab: dict[str, list[str]]) -> list[dict[str, object]]:
     rows = []
-    for path in sorted(poem_dir.glob("*.txt")):
+    for path in sorted(poem_dir.glob("*.vi.txt")):
         for line_no, original in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
             text = normalize_text(original)
             if not text:
@@ -108,7 +108,7 @@ def build_report(rows: list[dict[str, object]]) -> dict[str, object]:
     placeholders = sum(row["placeholder_count"] for row in rows)
     return {
         "schema_version": "raw-poem-char2char-report-v1",
-        "input_source": "raw-collections/poem/*.txt",
+        "input_source": "raw-collections/poem/*.vi.txt",
         "vocab_source": "pipelines/char2char_vocab/outputs/vocab.json",
         "placeholder": PLACEHOLDER,
         "lines": len(rows),
@@ -122,7 +122,6 @@ def build_report(rows: list[dict[str, object]]) -> dict[str, object]:
         "lines_by_source_file": dict(sorted(file_counts.items())),
         "selection": "top_ranked_vocab_candidate",
         "uses_training_corpus": False,
-        "uses_synthetic_poetry_pipeline": False,
     }
 
 

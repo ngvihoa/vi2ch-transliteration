@@ -243,7 +243,6 @@ def build_report(
         "excluded_sources": [
             "raw-collections/chinese-vietnamese.csv",
             "raw-collections/cn-vi/",
-            "pipelines/synthetic_poetry/",
             "vocab_old.json",
         ],
         "vietnamese_tokens": len(vocab),

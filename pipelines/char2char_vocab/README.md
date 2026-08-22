@@ -17,7 +17,6 @@ Pipeline không đọc:
 
 - `raw-collections/chinese-vietnamese.csv`
 - `raw-collections/cn-vi/`
-- `pipelines/synthetic_poetry/`
 - `vocab_old.json`
 
 Chỉ gloss tiếng Việt độc lập gồm một token được đưa vào vocab. Gloss nhiều từ không bị tách máy móc, vì gán mỗi thành phần của một cụm cho cùng một Hán tự sẽ làm sai hợp đồng char2char.

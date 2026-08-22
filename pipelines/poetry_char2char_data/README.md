@@ -4,10 +4,11 @@ Pipeline này tạo dữ liệu char2char từ thơ và hoàn toàn tách khỏi
 
 Input:
 
-- Thơ gốc: `raw-collections/poem/*.txt`.
+- Thơ Quốc ngữ nguồn: `raw-collections/poem/*.vi.txt`.
 - Vocab đã build: `pipelines/char2char_vocab/outputs/vocab.json`.
 
-Pipeline chỉ đọc hai input trên; nó không sửa hoặc build lại vocab, không dùng corpus train và không đọc output của `synthetic_poetry`.
+Pipeline chỉ đọc hai input trên; nó không sửa hoặc build lại vocab và không dùng corpus train.
+Các file `*.no.txt` là target Nôm có sẵn và không được đưa vào nhánh tự sinh này.
 
 Quy tắc ánh xạ:
 

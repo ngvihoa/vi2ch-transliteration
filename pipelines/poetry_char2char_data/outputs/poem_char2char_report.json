@@ -1,6 +1,6 @@
 {
   "schema_version": "raw-poem-char2char-report-v1",
-  "input_source": "raw-collections/poem/*.txt",
+  "input_source": "raw-collections/poem/*.vi.txt",
   "vocab_source": "pipelines/char2char_vocab/outputs/vocab.json",
   "placeholder": "𠀗",
   "lines": 4558,
@@ -18,6 +18,5 @@
     "thohoxuanhuong.vi.txt": 83
   },
   "selection": "top_ranked_vocab_candidate",
-  "uses_training_corpus": false,
-  "uses_synthetic_poetry_pipeline": false
+  "uses_training_corpus": false
 }
