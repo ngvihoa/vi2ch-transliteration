@@ -15,7 +15,7 @@ import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import urljoin, urlparse
+from urllib.parse import parse_qs, urljoin, urlparse
 from urllib.request import Request, urlopen
 from urllib.robotparser import RobotFileParser
 
@@ -24,6 +24,8 @@ from bs4 import BeautifulSoup, Tag
 
 BASE_URL = "https://www.thivien.net"
 SEARCH_URL = f"{BASE_URL}/search-poem.php?PoemType=2&ViewType=2"
+GENRE_LABEL = "Phú"
+REPORT_SCHEMA = "thivien-phu-crawl-v1"
 ROBOTS_URL = f"{BASE_URL}/robots.txt"
 USER_AGENT = "vi2ch-dataset-research/1.0 (polite crawler; contact repository owner)"
 
@@ -116,14 +118,23 @@ def parse_search_page(html: str) -> list[str]:
 
 def parse_total_pages(html: str) -> int:
     soup = BeautifulSoup(html, "html.parser")
+    pages: list[int] = []
+
+    # Danh sách nhỏ dùng <select name="Page">.
     page_select = soup.select_one('select[name="Page"]')
-    if page_select is None:
-        return 1
-    pages = [
-        int(str(option["value"]))
-        for option in page_select.select("option[value]")
-        if str(option["value"]).isdigit()
-    ]
+    if page_select is not None:
+        pages.extend(
+            int(str(option["value"]))
+            for option in page_select.select("option[value]")
+            if str(option["value"]).isdigit()
+        )
+
+    # Danh sách lớn dùng <input name="Page">; số trang cuối chỉ xuất hiện
+    # trong các link phân trang, ví dụ ...&Page=129.
+    for anchor in soup.select('a[href*="Page="]'):
+        query = parse_qs(urlparse(str(anchor["href"])).query)
+        pages.extend(int(value) for value in query.get("Page", []) if value.isdigit())
+
     return max(pages, default=1)
 
 
@@ -219,7 +230,9 @@ def collect_urls(client: HttpClient, limit: int) -> list[str]:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Crawl thể loại Phú chữ Hán từ Thi Viện.")
+    parser = argparse.ArgumentParser(
+        description=f"Crawl thể loại {GENRE_LABEL} chữ Hán từ Thi Viện."
+    )
     parser.add_argument("--limit", type=int, default=5, help="0 để crawl toàn bộ.")
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--report", type=Path, default=DEFAULT_REPORT)
@@ -239,7 +252,7 @@ def main() -> int:
     assert_allowed(client)
     urls = collect_urls(client, args.limit)
     if not urls:
-        raise CrawlError("Không tìm thấy bài Phú chữ Hán nào")
+        raise CrawlError(f"Không tìm thấy bài {GENRE_LABEL} chữ Hán nào")
 
     used_stems: set[str] = set()
     written = 0
@@ -261,7 +274,7 @@ def main() -> int:
             print(f"[{index}/{len(urls)}] BỎ QUA: {error}")
 
     report = {
-        "schema_version": "thivien-phu-crawl-v1",
+        "schema_version": REPORT_SCHEMA,
         "source": SEARCH_URL,
         "discovered_poems": len(urls),
         "written_csv_files": written,
@@ -276,4 +289,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
