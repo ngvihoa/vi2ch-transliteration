@@ -1,0 +1,50 @@
+{
+  "schema_version": "thivien-phu-crawl-v1",
+  "source": "https://www.thivien.net/search-poem.php?PoemType=2&ViewType=2",
+  "discovered_poems": 65,
+  "written_csv_files": 55,
+  "sentence_pairs": 2231,
+  "skipped_poems": 10,
+  "skipped": [
+    {
+      "url": "https://www.thivien.net/Phan-B%E1%BB%99i-Ch%C3%A2u/B%C3%A1i-th%E1%BA%A1ch-vi-huynh-ph%C3%BA/poem-__2HLsuUGJjXxQ2p6L30mA",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Phan-B%E1%BB%99i-Ch%C3%A2u/B%C3%A1i-th%E1%BA%A1ch-vi-huynh-ph%C3%BA/poem-__2HLsuUGJjXxQ2p6L30mA"
+    },
+    {
+      "url": "https://www.thivien.net/Nguy%E1%BB%85n-Th%C6%B0%E1%BB%A3ng-Hi%E1%BB%81n/Chi%C3%AAu-qu%E1%BB%91c-h%E1%BB%93n-v%C4%83n/poem-95L4jvaZ_qyGQRIKrWDX9Q",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Nguy%E1%BB%85n-Th%C6%B0%E1%BB%A3ng-Hi%E1%BB%81n/Chi%C3%AAu-qu%E1%BB%91c-h%E1%BB%93n-v%C4%83n/poem-95L4jvaZ_qyGQRIKrWDX9Q"
+    },
+    {
+      "url": "https://www.thivien.net/L%C3%AA-Th%C3%AC-H%E1%BA%A3i/Chu%E1%BA%A9n-tu%E1%BA%A5t-u-h%E1%BB%93n-t%E1%BA%A1i-%C4%90a-Gi%C3%A1-Th%C6%B0%E1%BB%A3ng-x%C3%A3-t%E1%BA%BF-v%C4%83n/poem-iXIjaXdRlusvStUtPSadCg",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/L%C3%AA-Th%C3%AC-H%E1%BA%A3i/Chu%E1%BA%A9n-tu%E1%BA%A5t-u-h%E1%BB%93n-t%E1%BA%A1i-%C4%90a-Gi%C3%A1-Th%C6%B0%E1%BB%A3ng-x%C3%A3-t%E1%BA%BF-v%C4%83n/poem-iXIjaXdRlusvStUtPSadCg"
+    },
+    {
+      "url": "https://www.thivien.net/Tr%E1%BA%A7n-Qu%C3%BD-C%C3%A1p/Danh-s%C6%A1n-l%C6%B0%C6%A1ng-ng%E1%BB%8Dc-ph%C3%BA/poem-JD-rlpnnZxd4eq8z7G3GZg",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Tr%E1%BA%A7n-Qu%C3%BD-C%C3%A1p/Danh-s%C6%A1n-l%C6%B0%C6%A1ng-ng%E1%BB%8Dc-ph%C3%BA/poem-JD-rlpnnZxd4eq8z7G3GZg"
+    },
+    {
+      "url": "https://www.thivien.net/Nguy%E1%BB%85n-Th%C6%B0%E1%BB%A3ng-Hi%E1%BB%81n/Giang-h%E1%BB%93-ng%E1%BB%A5-h%E1%BB%A9ng/poem-yFmUk0GjmsN_SX-M0cd5eA",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Nguy%E1%BB%85n-Th%C6%B0%E1%BB%A3ng-Hi%E1%BB%81n/Giang-h%E1%BB%93-ng%E1%BB%A5-h%E1%BB%A9ng/poem-yFmUk0GjmsN_SX-M0cd5eA"
+    },
+    {
+      "url": "https://www.thivien.net/M%E1%BA%A1c-Thi%C3%AAn-T%C3%ADch/L%C6%B0-Kh%C3%AA-nh%C3%A0n-%C4%91i%E1%BA%BFu-ph%C3%BA/poem-B9bPo3mN1zuy2iXYEjhbcA",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/M%E1%BA%A1c-Thi%C3%AAn-T%C3%ADch/L%C6%B0-Kh%C3%AA-nh%C3%A0n-%C4%91i%E1%BA%BFu-ph%C3%BA/poem-B9bPo3mN1zuy2iXYEjhbcA"
+    },
+    {
+      "url": "https://www.thivien.net/%C4%90o%C3%A0n-Nguy%E1%BB%85n-Tu%E1%BA%A5n/Nh%E1%BA%A1c-D%C6%B0%C6%A1ng-l%C3%A2u-ph%C3%BA/poem-i4bDH_Eik6p2SeZtNoV-Zw",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/%C4%90o%C3%A0n-Nguy%E1%BB%85n-Tu%E1%BA%A5n/Nh%E1%BA%A1c-D%C6%B0%C6%A1ng-l%C3%A2u-ph%C3%BA/poem-i4bDH_Eik6p2SeZtNoV-Zw"
+    },
+    {
+      "url": "https://www.thivien.net/Phan-Huy-Ch%C3%BA/Phi%E1%BA%BFm-h%E1%BB%93-ph%C3%BA/poem--ht1Ch6sRgnRogmPI-lxhw",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Phan-Huy-Ch%C3%BA/Phi%E1%BA%BFm-h%E1%BB%93-ph%C3%BA/poem--ht1Ch6sRgnRogmPI-lxhw"
+    },
+    {
+      "url": "https://www.thivien.net/L%C3%AA-Th%C3%A1nh-T%C3%B4ng/Th%C3%A1nh-T%C3%B4ng-Thu%E1%BA%A7n-ho%C3%A0ng-%C4%91%E1%BA%BF-khuy%E1%BA%BFn-h%E1%BB%8Dc-v%C4%83n/poem-7e3LD4fEO6af8kvGM6x7ZQ",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/L%C3%AA-Th%C3%A1nh-T%C3%B4ng/Th%C3%A1nh-T%C3%B4ng-Thu%E1%BA%A7n-ho%C3%A0ng-%C4%91%E1%BA%BF-khuy%E1%BA%BFn-h%E1%BB%8Dc-v%C4%83n/poem-7e3LD4fEO6af8kvGM6x7ZQ"
+    },
+    {
+      "url": "https://www.thivien.net/Phan-Huy-%C3%8Dch/V%C4%83n-t%E1%BA%BF-%C4%91i%E1%BB%87n-l%C3%A0m-v%C3%A0o-th%C3%A1ng-11-n%C4%83m-Nh%C3%A2m-T%C3%BD-%C4%91%E1%BB%83-nh%C3%A0-vua-c%C3%B9ng-c%C3%A1c-v%E1%BB%8B-ho%C3%A0ng-%C4%91%E1%BB%87-c%C3%B4ng-ch%C3%BAa-t%E1%BA%BF-%C4%91%E1%BB%A9c-ho%C3%A0ng-kh%E1%BA%A3o/poem-p0V6vXa_DMT0QP61ROlmGw",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Phan-Huy-%C3%8Dch/V%C4%83n-t%E1%BA%BF-%C4%91i%E1%BB%87n-l%C3%A0m-v%C3%A0o-th%C3%A1ng-11-n%C4%83m-Nh%C3%A2m-T%C3%BD-%C4%91%E1%BB%83-nh%C3%A0-vua-c%C3%B9ng-c%C3%A1c-v%E1%BB%8B-ho%C3%A0ng-%C4%91%E1%BB%87-c%C3%B4ng-ch%C3%BAa-t%E1%BA%BF-%C4%91%E1%BB%A9c-ho%C3%A0ng-kh%E1%BA%A3o/poem-p0V6vXa_DMT0QP61ROlmGw"
+    }
+  ]
+}
