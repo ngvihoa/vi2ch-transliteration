@@ -72,6 +72,27 @@ Character frequency is measured from the local Chinese train/dev/test corpus.
 The reference mapping and its retrieval metadata are stored in
 `resources/xinhua_english_reference.json`.
 
+## 5. Decode with poetic rhyme constraints
+
+```bash
+python scripts/decode_poem_hanzi.py
+```
+
+The decoder constructs rhyme links between adjacent lục/bát and song-thất
+lục-bát lines. Each connected rhyme path is optimized with Viterbi dynamic
+programming over the Hanzi candidate lattice. Unlinked syllables retain their
+best local candidate.
+
+Outputs:
+
+- `dataset/poem_hanzi_decoded.jsonl`: decoded synthetic silver lines, including
+  candidate ranks and flags for changes from greedy selection;
+- `dataset/decoder_report.json`: rhyme distance before/after decoding, local
+  score tradeoff, total objective, change counts, and review counts.
+
+The default pairwise rhyme weight is 0.12 and can be changed with
+`--rhyme-weight`.
+
 ## Tests
 
 ```bash
