@@ -1,0 +1,55 @@
+{
+  "schema_version": "hanzi-report-v2",
+  "label_quality": "synthetic_silver",
+  "candidate_sets": 2484,
+  "line_count": 4537,
+  "syllable_occurrences": 31761,
+  "top_n": 5,
+  "weights": {
+    "phonetic": 0.97,
+    "transliteration_character": 0.01,
+    "frequency": 0.02
+  },
+  "reference_selected_sets": 1231,
+  "reference_selected_set_rate": 0.495572,
+  "reference_selected_occurrences": 17525,
+  "reference_selected_occurrence_rate": 0.551777,
+  "fallback_selected_sets": 1253,
+  "expanded_selected_sets": 286,
+  "lines_requiring_review": 589,
+  "reference": {
+    "schema_version": "xinhua-english-reference-v1",
+    "source_url": "https://en.wikipedia.org/wiki/Transcription_into_Chinese_characters",
+    "source_table": "Transcription from English (IPA) into Chinese",
+    "source_attribution": "Wikipedia table reproducing the English table from Xinhua's Names of the World's Peoples",
+    "retrieved_on": "2026-08-22",
+    "source_html_sha256": "db103bab261d525b0eeb53822429557494ce5543e8d9e5b793b4979188104307",
+    "scope_note": "Reference character pool only. Xinhua does not provide this as an official Vietnamese-to-Chinese table.",
+    "reading_count": 268,
+    "character_count": 291
+  },
+  "frequency_corpus": {
+    "files": [
+      "raw-collections/cn-vi/dev2021.tok.cn",
+      "raw-collections/cn-vi/train.tok.cn",
+      "raw-collections/cn-vi/tst2021.tok.cn"
+    ],
+    "total_hanzi": 6930154,
+    "unique_hanzi": 4833
+  },
+  "dependencies": {
+    "packages": {
+      "pinyin-to-ipa": "1.0.0",
+      "pypinyin": "0.55.0",
+      "ordered-set": "4.1.0"
+    },
+    "files": {
+      "pinyin_to_ipa/transcription.py": "810e399af127801d14d90cf28b764e3c9189077ce9757a0e64b33e5d0d24c51c",
+      "pypinyin/pinyin_dict.json": "5f294c01e6c6c0a1c8e329c79335a3f8e0b27d06bf1de7a99244b765892d1e5b"
+    },
+    "sources": {
+      "pinyin-to-ipa": "https://github.com/stefantaubert/pinyin-to-ipa",
+      "pypinyin": "https://github.com/mozillazg/python-pinyin"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+pinyin-to-ipa==1.0.0
+pypinyin==0.55.0
+ordered-set==4.1.0

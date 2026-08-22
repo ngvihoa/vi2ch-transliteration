@@ -1,0 +1,9 @@
+{
+  "schema_version": "curated-lexical-vocab-v1",
+  "scope_note": "Audited lexical mappings discussed for strict Vietnamese-token to Hanzi candidate generation.",
+  "tokens": {
+    "một": ["一"],
+    "trong": ["中"],
+    "tiết": ["节"]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "vPhon",
+  "version": "2.1.1",
+  "repository": "https://github.com/kirbyj/vPhon",
+  "commit": "076a5d3611d688325a71ad6dbbcd5868399bf5e7",
+  "license": "GPL-3.0-or-later",
+  "files": {
+    "vPhon.py": "09939767f18d868bdc80c712f8e1db0ef293180fdb8ca5e4d86746130afb1d13",
+    "rules.py": "204c966b861c968dd4d1e1446b7a9255db4db0cd3c18bc02497df6298232e56d"
+  }
+}
