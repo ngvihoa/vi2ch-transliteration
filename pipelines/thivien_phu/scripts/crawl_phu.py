@@ -15,7 +15,7 @@ import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import parse_qs, urljoin, urlparse
+from urllib.parse import parse_qs, urlencode, urljoin, urlparse
 from urllib.request import Request, urlopen
 from urllib.robotparser import RobotFileParser
 
@@ -37,10 +37,28 @@ DEFAULT_REPORT = PIPELINE_ROOT / "outputs" / "crawl_report.json"
 DEFAULT_URL_CHECKPOINT = PIPELINE_ROOT / "outputs" / "poem_urls.json"
 
 POEM_LINK_RE = re.compile(r"/poem-([A-Za-z0-9_-]+)$")
+AUTHOR_LINK_RE = re.compile(r"/author-([A-Za-z0-9_-]+)$")
 NON_FILENAME_RE = re.compile(r"[^a-z0-9]+")
+RESULT_COUNT_RE = re.compile(r"tổng số\s+\d+\s+trang\s+\(([\d.]+)\s+bài thơ\)")
+TOO_MANY_RE = re.compile(r"Có quá nhiều\s+\(([\d.]+)\)\s+kết quả")
+AUTHOR_COUNT_RE = re.compile(r"tổng số\s+\d+\s+trang\s+\(([\d.]+)\s+tác giả\)")
+
+# Các thời đại lá trên form Thi Viện. Chỉ dùng khi một quốc gia có hơn 100
+# kết quả, nhằm tránh giới hạn chỉ xem được 10 trang đầu của website.
+LEAF_AGES: dict[str, list[str]] = {
+    "2": ["50", "52", "53", "54", "55", "56", "57", "2", "3"],
+    "3": [
+        "21", "22", "23", "24", "25", "26", "27", "7", "8", "9",
+        "10", "12", "28", "29", "14", "15", "16", "17", "18",
+    ],
+}
 
 
 class CrawlError(RuntimeError):
+    pass
+
+
+class AccessChallengeError(CrawlError):
     pass
 
 
@@ -80,7 +98,18 @@ class HttpClient:
                 self._last_request_at = time.monotonic()
                 with urlopen(request, timeout=self.timeout) as response:
                     charset = response.headers.get_content_charset() or "utf-8"
-                    return response.read().decode(charset, errors="strict")
+                    html = response.read().decode(charset, errors="strict")
+                    if (
+                        "Xác nhận không phải máy truy cập tự động" in html
+                        or 'class="g-recaptcha"' in html
+                    ):
+                        raise AccessChallengeError(
+                            "Thi Viện đang yêu cầu xác minh CAPTCHA; "
+                            "checkpoint vẫn được giữ nguyên"
+                        )
+                    return html
+            except AccessChallengeError as error:
+                last_error = error
             except HTTPError as error:
                 last_error = error
                 if error.code not in {429, 500, 502, 503, 504}:
@@ -89,6 +118,8 @@ class HttpClient:
                 last_error = error
             if attempt < self.retries:
                 time.sleep(min(2**attempt, 8))
+        if isinstance(last_error, AccessChallengeError):
+            raise last_error
         raise CrawlError(f"Không tải được {url}: {last_error}") from last_error
 
 
@@ -225,7 +256,15 @@ def load_url_checkpoint(path: Path) -> dict[str, object] | None:
         checkpoint = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as error:
         raise CrawlError(f"Checkpoint URL không hợp lệ ({path}): {error}") from error
-    if not isinstance(checkpoint, dict) or checkpoint.get("source") != SEARCH_URL:
+    if (
+        not isinstance(checkpoint, dict)
+        or checkpoint.get("source") != SEARCH_URL
+        or checkpoint.get("schema_version") not in {
+            "thivien-partition-checkpoint-v2",
+            "thivien-partition-checkpoint-v3",
+            "thivien-partition-checkpoint-v4",
+        }
+    ):
         return None
     urls = checkpoint.get("urls")
     if not isinstance(urls, list) or not all(isinstance(url, str) for url in urls):
@@ -233,23 +272,165 @@ def load_url_checkpoint(path: Path) -> dict[str, object] | None:
     return checkpoint
 
 
-def save_url_checkpoint(
-    path: Path,
-    urls: list[str],
-    total_pages: int,
-    last_completed_page: int,
-    complete: bool,
-) -> None:
+def save_url_checkpoint(path: Path, state: dict[str, object]) -> None:
     checkpoint = {
-        "schema_version": "thivien-url-checkpoint-v1",
+        "schema_version": "thivien-partition-checkpoint-v4",
         "source": SEARCH_URL,
-        "total_pages": total_pages,
-        "last_completed_page": last_completed_page,
-        "discovered_urls": len(urls),
-        "complete": complete,
-        "urls": urls,
+        **state,
     }
     atomic_write(path, json.dumps(checkpoint, ensure_ascii=False, indent=2) + "\n")
+
+
+def parse_result_count(html: str) -> int:
+    text = BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
+    match = RESULT_COUNT_RE.search(text) or TOO_MANY_RE.search(text)
+    if match:
+        return int(match.group(1).replace(".", ""))
+    return len(parse_search_page(html))
+
+
+def parse_country_ids(html: str) -> list[str]:
+    soup = BeautifulSoup(html, "html.parser")
+    return [
+        str(option["value"])
+        for option in soup.select('select[name="Country"] option[value]')
+        if str(option["value"]).isdigit()
+    ]
+
+
+def parse_author_count(html: str) -> int:
+    text = BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
+    match = AUTHOR_COUNT_RE.search(text)
+    if match:
+        return int(match.group(1).replace(".", ""))
+    return len(parse_author_entries(html))
+
+
+def parse_author_entries(html: str) -> dict[str, str]:
+    soup = BeautifulSoup(html, "html.parser")
+    authors: dict[str, str] = {}
+    for anchor in soup.select("h4.list-item-header > a[href]"):
+        url = urljoin(BASE_URL, str(anchor["href"]))
+        if not AUTHOR_LINK_RE.search(urlparse(url).path):
+            continue
+        display_name = anchor.get_text(" ", strip=True)
+        # Phần trước dấu " - " là tên Việt dùng được trong trường Author.
+        authors[url] = display_name.split(" - ", 1)[0].strip()
+    return authors
+
+
+def partition_url(country: str, age: str | None = None, page: int | None = None) -> str:
+    url = f"{SEARCH_URL}&Country={country}"
+    if age is not None:
+        url += f"&Age%5B%5D={age}"
+    if page is not None:
+        url += f"&Page={page}"
+    return url
+
+
+def author_uid(author_url: str) -> str:
+    match = AUTHOR_LINK_RE.search(urlparse(author_url).path)
+    if match is None:
+        raise CrawlError(f"URL tác giả không có UID: {author_url}")
+    return match.group(1)
+
+
+def author_poem_url(country: str, age: str, author_url: str) -> str:
+    # Trường Author chỉ là ô hiển thị của autocomplete. IAuthor mới là UID
+    # được backend dùng để lọc đúng một tác giả.
+    return f"{partition_url(country, age)}&{urlencode({'IAuthor': author_uid(author_url)})}"
+
+
+def author_catalog_url(
+    country: str,
+    age: str,
+    sort: str,
+    sort_order: str,
+    page: int | None = None,
+) -> str:
+    url = f"{BASE_URL}/search-author.php?Country={country}&Age%5B%5D={age}&Sort={sort}"
+    # Thi Viện biểu diễn chiều tăng dần bằng cách không có SortOrder.
+    if sort_order == "desc":
+        url += "&SortOrder=desc"
+    if page is not None:
+        url += f"&Page={page}"
+    return url
+
+
+def discover_partition_authors(client: HttpClient, country: str, age: str) -> dict[str, str]:
+    variants = [
+        ("Author", "asc"),
+        ("Author", "desc"),
+        ("Date", "asc"),
+        ("Date", "desc"),
+        ("Views", "asc"),
+        ("Views", "desc"),
+        ("BirthYear", "asc"),
+        ("BirthYear", "desc"),
+        ("DeathYear", "asc"),
+        ("DeathYear", "desc"),
+        ("Poster", "asc"),
+        ("Poster", "desc"),
+    ]
+    authors: dict[str, str] = {}
+    expected: int | None = None
+    label = f"country={country}&age={age}"
+
+    for sort, order in variants:
+        first_url = author_catalog_url(country, age, sort, order)
+        print(f"[tác giả {label}] đang tải {sort}/{order}...", flush=True)
+        first_html = client.get_text(first_url)
+        if expected is None:
+            expected = parse_author_count(first_html)
+        authors.update(parse_author_entries(first_html))
+        pages = min(parse_total_pages(first_html), 10)
+        for page in range(2, pages + 1):
+            html = client.get_text(author_catalog_url(country, age, sort, order, page))
+            authors.update(parse_author_entries(html))
+        print(
+            f"[tác giả {label}] đã có {len(authors)}/{expected} tác giả",
+            flush=True,
+        )
+        if len(authors) >= expected:
+            return authors
+
+    raise CrawlError(
+        f"Không khám phá đủ tác giả cho {label}: {len(authors)}/{expected}"
+    )
+
+
+def collect_small_partition(
+    client: HttpClient,
+    first_html: str,
+    base_url: str,
+    label: str,
+) -> list[str]:
+    total_pages = parse_total_pages(first_html)
+    urls = parse_search_page(first_html)
+    print(
+        f"[phân vùng {label}] trang 1/{total_pages}: {len(urls)} URL",
+        flush=True,
+    )
+    for page in range(2, total_pages + 1):
+        print(f"[phân vùng {label}] đang tải trang {page}/{total_pages}...", flush=True)
+        page_urls = parse_search_page(client.get_text(f"{base_url}&Page={page}"))
+        known = set(urls)
+        urls.extend(url for url in page_urls if url not in known)
+    return urls
+
+
+def collect_capped_window(client: HttpClient, base_url: str, label: str) -> list[str]:
+    """Collect the ten result pages Thi Viện exposes for an oversized query."""
+    print(f"[cửa sổ {label}] đang tải trang 1...", flush=True)
+    first_html = client.get_text(base_url)
+    urls = parse_search_page(first_html)
+    pages = min(parse_total_pages(first_html), 10)
+    for page in range(2, pages + 1):
+        html = client.get_text(f"{base_url}&Page={page}")
+        known = set(urls)
+        urls.extend(url for url in parse_search_page(html) if url not in known)
+    print(f"[cửa sổ {label}] thu được {len(urls)} URL", flush=True)
+    return urls
 
 
 def collect_urls(
@@ -279,54 +460,194 @@ def collect_urls(
     checkpoint = None if refresh_checkpoint else load_url_checkpoint(checkpoint_path)
     if checkpoint is not None and checkpoint.get("complete") is True:
         urls = list(checkpoint["urls"])
-        print(
-            f"[danh sách] Dùng checkpoint hoàn chỉnh: {len(urls)} URL "
-            f"từ {checkpoint_path}",
-            flush=True,
-        )
+        print(f"[danh sách] Dùng checkpoint hoàn chỉnh: {len(urls)} URL", flush=True)
         return urls
 
-    if checkpoint is not None:
-        urls = list(checkpoint["urls"])
-        total_pages = int(checkpoint.get("total_pages", 1))
-        last_completed_page = int(checkpoint.get("last_completed_page", 0))
-        start_page = last_completed_page + 1
-        print(
-            f"[danh sách] Tiếp tục checkpoint tại trang {start_page}/{total_pages}; "
-            f"đã có {len(urls)} URL.",
-            flush=True,
-        )
+    urls = list(checkpoint["urls"]) if checkpoint else []
+    completed = set(checkpoint.get("completed_partitions", [])) if checkpoint else set()
+    previous_unresolved = list(checkpoint.get("unresolved_partitions", [])) if checkpoint else []
+    unresolved: list[dict[str, object]] = []
+
+    if checkpoint is None:
+        print("[danh sách] Đang đọc tổng kết quả và danh sách quốc gia...", flush=True)
+        root_html = client.get_text(SEARCH_URL)
+        expected_total = parse_result_count(root_html)
+        country_ids = parse_country_ids(root_html)
+        if not country_ids:
+            raise CrawlError("Không đọc được danh sách quốc gia từ form tìm kiếm")
     else:
-        print("[danh sách] Đang tải trang 1...", flush=True)
-        first_html = client.get_text(SEARCH_URL)
-        total_pages = parse_total_pages(first_html)
-        urls = parse_search_page(first_html)
-        start_page = 2
-        save_url_checkpoint(checkpoint_path, urls, total_pages, 1, total_pages == 1)
+        expected_total = int(checkpoint.get("expected_total", 0))
+        stored_country_ids = checkpoint.get("country_ids", [])
+        country_ids = [str(value) for value in stored_country_ids if str(value).isdigit()]
+        if not country_ids:
+            country_ids = sorted(
+                set(LEAF_AGES).union(
+                    match.group(1)
+                    for key in completed
+                    if (match := re.fullmatch(r"country=(\d+)", key))
+                ),
+                key=int,
+            )
+        if expected_total <= 0 or not country_ids:
+            raise CrawlError("Checkpoint thiếu expected_total/country_ids để tiếp tục")
         print(
-            f"[danh sách 1/{total_pages}] {len(urls)} URL; "
-            f"đã lưu checkpoint.",
+            f"[danh sách] Tiếp tục từ checkpoint: {len(urls)}/{expected_total} URL; "
+            "không tải lại form gốc.",
             flush=True,
         )
 
-    for page in range(start_page, total_pages + 1):
-        print(f"[danh sách {page}/{total_pages}] Đang tải...", flush=True)
-        page_urls = parse_search_page(client.get_text(f"{SEARCH_URL}&Page={page}"))
-        known_urls = set(urls)
-        urls.extend(url for url in page_urls if url not in known_urls)
-        save_url_checkpoint(
-            checkpoint_path,
-            urls,
-            total_pages,
-            page,
-            page == total_pages,
-        )
-        print(
-            f"[danh sách {page}/{total_pages}] +{len(page_urls)} kết quả, "
-            f"tổng {len(urls)} URL; đã lưu checkpoint.",
-            flush=True,
-        )
+    # v2/v3 dùng Author=<tên>, có thể bỏ sót do tên thay thế/trùng tên. Giữ
+    # toàn bộ URL đã tìm được, nhưng mở lại hai cây country/age để chuyển sang
+    # IAuthor=<UID>. Các author checkpoint mới sẽ được ghi theo schema v4.
+    if checkpoint and checkpoint.get("schema_version") != "thivien-partition-checkpoint-v4":
+        for country in LEAF_AGES:
+            prefix = f"country={country}"
+            completed = {
+                key for key in completed
+                if key != prefix and not key.startswith(f"{prefix}&age=")
+            }
+        completed = {
+            key for key in completed
+            if "&author=" not in key and not key.startswith("recovery-")
+        }
 
+    # Di trú checkpoint v2: giữ URL đã có nhưng mở lại phân vùng từng bị >100.
+    for item in previous_unresolved:
+        if not isinstance(item, dict) or not isinstance(item.get("partition"), str):
+            continue
+        partition = str(item["partition"])
+        completed.discard(partition)
+        if "&age=" in partition:
+            completed.discard(partition.split("&age=", 1)[0])
+
+    def persist(complete: bool = False) -> None:
+        save_url_checkpoint(checkpoint_path, {
+            "strategy": "country-age-v1",
+            "expected_total": expected_total,
+            "country_ids": country_ids,
+            "discovered_urls": len(urls),
+            "completed_partitions": sorted(completed),
+            "unresolved_partitions": unresolved,
+            "complete": complete,
+            "urls": urls,
+        })
+
+    for country in country_ids:
+        country_key = f"country={country}"
+        if country_key in completed:
+            continue
+        country_url = partition_url(country)
+        print(f"[phân vùng {country_key}] đang kiểm tra...", flush=True)
+        country_html = client.get_text(country_url)
+        country_count = parse_result_count(country_html)
+
+        if country_count <= 100:
+            found = collect_small_partition(client, country_html, country_url, country_key)
+            known = set(urls)
+            urls.extend(url for url in found if url not in known)
+        elif country in LEAF_AGES:
+            country_resolved = True
+            for age in LEAF_AGES[country]:
+                age_key = f"country={country}&age={age}"
+                if age_key in completed:
+                    continue
+                age_url = partition_url(country, age)
+                print(f"[phân vùng {age_key}] đang kiểm tra...", flush=True)
+                age_html = client.get_text(age_url)
+                age_count = parse_result_count(age_html)
+                if age_count > 100:
+                    print(
+                        f"[phân vùng {age_key}] {age_count} kết quả; chia tiếp theo tác giả",
+                        flush=True,
+                    )
+                    try:
+                        authors = discover_partition_authors(client, country, age)
+                    except CrawlError as error:
+                        unresolved.append({
+                            "partition": age_key,
+                            "results": age_count,
+                            "error": str(error),
+                        })
+                        country_resolved = False
+                        persist()
+                        continue
+
+                    for author_url, author_name in authors.items():
+                        uid = author_uid(author_url)
+                        author_key = f"{age_key}&author_uid={uid}"
+                        if author_key in completed:
+                            continue
+                        query_url = author_poem_url(country, age, author_url)
+                        print(
+                            f"[phân vùng tác giả] {author_name} ({age_key})...",
+                            flush=True,
+                        )
+                        author_html = client.get_text(query_url)
+                        author_count = parse_result_count(author_html)
+                        if author_count > 100:
+                            unresolved.append({
+                                "partition": author_key,
+                                "results": author_count,
+                                "error": "Một tác giả vẫn vượt giới hạn 100 bài",
+                            })
+                            country_resolved = False
+                        else:
+                            found = collect_small_partition(
+                                client,
+                                author_html,
+                                query_url,
+                                f"{age_key}&author={author_name}",
+                            )
+                            known = set(urls)
+                            urls.extend(url for url in found if url not in known)
+                        completed.add(author_key)
+                        persist()
+                    if any(item.get("partition", "").startswith(age_key) for item in unresolved):
+                        country_resolved = False
+                        continue
+                else:
+                    found = collect_small_partition(client, age_html, age_url, age_key)
+                    known = set(urls)
+                    urls.extend(url for url in found if url not in known)
+                completed.add(age_key)
+                persist()
+        else:
+            unresolved.append({"partition": country_key, "results": country_count})
+
+        if country_count <= 100 or country not in LEAF_AGES or country_resolved:
+            completed.add(country_key)
+        persist()
+        status = "hoàn tất" if country_key in completed else "chưa hoàn tất"
+        print(f"[phân vùng {country_key}] {status}; tổng {len(urls)}/{expected_total} URL", flush=True)
+
+    # Một số bài thiếu metadata country/age nên không xuất hiện trong các phân
+    # vùng trên. Sort theo Country ở hai chiều đưa nhóm rỗng ra một trong hai
+    # đầu danh sách, cho phép phục hồi chúng trong giới hạn 10 trang.
+    if len(urls) < expected_total:
+        for order in ("asc", "desc"):
+            recovery_key = f"recovery-country-{order}"
+            if recovery_key in completed:
+                continue
+            recovery_url = f"{SEARCH_URL}&Sort=Country"
+            if order == "desc":
+                recovery_url += "&SortOrder=desc"
+            found = collect_capped_window(client, recovery_url, recovery_key)
+            known = set(urls)
+            urls.extend(url for url in found if url not in known)
+            completed.add(recovery_key)
+            persist()
+            print(
+                f"[cửa sổ {recovery_key}] tổng {len(urls)}/{expected_total} URL",
+                flush=True,
+            )
+
+    complete = not unresolved and len(urls) == expected_total
+    persist(complete=complete)
+    if not complete:
+        raise CrawlError(
+            f"Khám phá URL chưa đầy đủ: {len(urls)}/{expected_total}; "
+            f"phân vùng chưa giải quyết: {unresolved}"
+        )
     return urls
 
 
