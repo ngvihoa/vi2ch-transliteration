@@ -38,17 +38,31 @@ class BuildVocabTests(unittest.TestCase):
             "hanviet_reading": {"một": Counter({"歿": 1})},
         }
         vocab, _ = MODULE.build_vocab(sources, {"một": ["一"]})
-        self.assertEqual(["一", "壹", "沒", "歿"], vocab["một"])
+        self.assertEqual(["一", "壹"], vocab["một"])
+
+    def test_reading_evidence_ranks_but_does_not_create_candidates(self):
+        sources = {
+            "cvdict_standalone_gloss": {"từ": Counter({"文": 1, "字": 1})},
+            "kvietnamese_hanzi_reading": {"từ": Counter({"字": 1, "辭": 1})},
+            "hanviet_reading": {"rốt": Counter({"卒": 1})},
+        }
+        vocab, rows = MODULE.build_vocab(sources, {})
+        self.assertEqual(["字", "文"], vocab["từ"])
+        self.assertEqual(["𠀗"], vocab["rốt"])
+        rốt = next(row for row in rows if row["token"] == "rốt")
+        self.assertEqual(["卒"], [item["char"] for item in rốt["filtered_phonetic_candidates"]])
+        self.assertTrue(rốt["uses_placeholder"])
 
     def test_kvietnamese_excludes_nom_only_characters(self):
         with tempfile.TemporaryDirectory() as directory:
             source = Path(directory) / "kvietnamese.json"
             source.write_text(
-                '{"昆": ["con"], "𡥵": ["con"]}', encoding="utf-8"
+                '{"昆": ["con"], "𡥵": ["con"], "𡳝": ["rốt"]}', encoding="utf-8"
             )
             evidence, stats = MODULE.parse_kvietnamese(source, {"昆"})
             self.assertEqual(Counter({"昆": 1}), evidence["con"])
-            self.assertEqual(1, stats["nom_or_unverified_chars_excluded"])
+            self.assertEqual(Counter(), evidence["rốt"])
+            self.assertEqual(2, stats["nom_or_unverified_chars_excluded"])
 
 
 if __name__ == "__main__":
