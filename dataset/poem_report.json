@@ -1,0 +1,101 @@
+{
+  "schema_version": "poem-report-v1",
+  "total_lines": 4558,
+  "benchmark_lines": 4537,
+  "excluded_lines": 7,
+  "needs_review_lines": 14,
+  "works": {
+    "Truyện Kiều": {
+      "source_file": "kieu1866.vi.txt",
+      "form": "luc_bat",
+      "total_lines": 2131,
+      "benchmark_lines": 2123,
+      "status_counts": {
+        "needs_review": 8,
+        "valid": 2123
+      },
+      "role_counts": {
+        "bat": 1062,
+        "irregular": 8,
+        "luc": 1061
+      },
+      "syllable_count_distribution": {
+        "5": 3,
+        "6": 1061,
+        "7": 5,
+        "8": 1062
+      },
+      "duplicate_line_occurrences": 48
+    },
+    "Lục Vân Tiên": {
+      "source_file": "lucvantien.vi.txt",
+      "form": "luc_bat_mixed",
+      "total_lines": 1967,
+      "benchmark_lines": 1963,
+      "status_counts": {
+        "excluded": 3,
+        "needs_review": 1,
+        "valid": 1963
+      },
+      "role_counts": {
+        "bat": 969,
+        "embedded_that_ngon": 24,
+        "irregular": 1,
+        "luc": 970,
+        "section_marker": 3
+      },
+      "syllable_count_distribution": {
+        "2": 3,
+        "6": 970,
+        "7": 25,
+        "8": 969
+      },
+      "duplicate_line_occurrences": 6
+    },
+    "Chinh phụ ngâm": {
+      "source_file": "chinhphungam.vi.txt",
+      "form": "song_that_luc_bat",
+      "total_lines": 377,
+      "benchmark_lines": 377,
+      "status_counts": {
+        "valid": 377
+      },
+      "role_counts": {
+        "bat": 95,
+        "luc": 93,
+        "that": 189
+      },
+      "syllable_count_distribution": {
+        "6": 93,
+        "7": 189,
+        "8": 95
+      },
+      "duplicate_line_occurrences": 0
+    },
+    "Thơ Hồ Xuân Hương": {
+      "source_file": "thohoxuanhuong.vi.txt",
+      "form": "that_ngon_mixed",
+      "total_lines": 83,
+      "benchmark_lines": 74,
+      "status_counts": {
+        "excluded": 4,
+        "needs_review": 5,
+        "valid": 74
+      },
+      "role_counts": {
+        "heading_candidate": 4,
+        "irregular": 5,
+        "that_ngon": 74
+      },
+      "syllable_count_distribution": {
+        "3": 1,
+        "4": 3,
+        "6": 3,
+        "7": 74,
+        "8": 1,
+        "9": 1
+      },
+      "duplicate_line_occurrences": 0
+    }
+  }
+}

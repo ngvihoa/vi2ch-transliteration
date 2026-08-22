@@ -1,0 +1,133 @@
+{
+  "schema_version": "poem-ipa-report-v1",
+  "backend": {
+    "name": "vPhon",
+    "version": "2.1.1",
+    "source": "https://github.com/kirbyj/vPhon",
+    "commit": "076a5d3611d688325a71ad6dbbcd5868399bf5e7",
+    "license": "GPL-3.0-or-later",
+    "dialect": "n",
+    "representation": "phonemic",
+    "tone_system": "chao",
+    "predictable_glottal_onsets": "suppressed",
+    "vphon_sha256": "09939767f18d868bdc80c712f8e1db0ef293180fdb8ca5e4d86746130afb1d13",
+    "rules_sha256": "204c966b861c968dd4d1e1446b7a9255db4db0cd3c18bc02497df6298232e56d",
+    "override_count": 19,
+    "overrides_sha256": "d460e2eb45532f33b5dbeaeeaba2c6c61ba81f6972548fb094fae7d6736fb943",
+    "arguments": [
+      "--dialect",
+      "n",
+      "--chao",
+      "--nosuper",
+      "--phonemic",
+      "--glottal"
+    ]
+  },
+  "source_lines": 4558,
+  "eligible_lines": 4537,
+  "output_lines": 4537,
+  "complete_lines": 4537,
+  "partial_lines": 0,
+  "unique_syllables": 2660,
+  "syllable_status_counts": {
+    "ok": 31761
+  },
+  "failed_syllables": [],
+  "pronunciation_overrides": [
+    {
+      "text": "nàỏ",
+      "phonemized_as": "nào",
+      "occurrences": 5
+    },
+    {
+      "text": "qùi",
+      "phonemized_as": "quỳ",
+      "occurrences": 5
+    },
+    {
+      "text": "qủi",
+      "phonemized_as": "quỷ",
+      "occurrences": 3
+    },
+    {
+      "text": "nàỵ",
+      "phonemized_as": "này",
+      "occurrences": 2
+    },
+    {
+      "text": "đâỷ",
+      "phonemized_as": "đây",
+      "occurrences": 2
+    },
+    {
+      "text": "câỵ",
+      "phonemized_as": "cây",
+      "occurrences": 1
+    },
+    {
+      "text": "cườị",
+      "phonemized_as": "cười",
+      "occurrences": 1
+    },
+    {
+      "text": "dầỵ",
+      "phonemized_as": "dậy",
+      "occurrences": 1
+    },
+    {
+      "text": "khuâỷ",
+      "phonemized_as": "khuây",
+      "occurrences": 1
+    },
+    {
+      "text": "maỵ",
+      "phonemized_as": "may",
+      "occurrences": 1
+    },
+    {
+      "text": "màụ",
+      "phonemized_as": "màu",
+      "occurrences": 1
+    },
+    {
+      "text": "ngâỵ",
+      "phonemized_as": "ngây",
+      "occurrences": 1
+    },
+    {
+      "text": "nàỷ",
+      "phonemized_as": "này",
+      "occurrences": 1
+    },
+    {
+      "text": "qúi",
+      "phonemized_as": "quý",
+      "occurrences": 1
+    },
+    {
+      "text": "qúit",
+      "phonemized_as": "quýt",
+      "occurrences": 1
+    },
+    {
+      "text": "ràỵ",
+      "phonemized_as": "rày",
+      "occurrences": 1
+    },
+    {
+      "text": "rầụ",
+      "phonemized_as": "rầu",
+      "occurrences": 1
+    },
+    {
+      "text": "rồị",
+      "phonemized_as": "rồi",
+      "occurrences": 1
+    },
+    {
+      "text": "đờị",
+      "phonemized_as": "đời",
+      "occurrences": 1
+    }
+  ]
+}
