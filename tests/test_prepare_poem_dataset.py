@@ -6,15 +6,15 @@ import unittest
 from pathlib import Path
 
 
-SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "generate_test-set.py"
-SPEC = importlib.util.spec_from_file_location("generate_test_set", SCRIPT)
+SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "prepare_poem_dataset.py"
+SPEC = importlib.util.spec_from_file_location("prepare_poem_dataset", SCRIPT)
 MODULE = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None
 sys.modules[SPEC.name] = MODULE
 SPEC.loader.exec_module(MODULE)
 
 
-class GenerateTestSetTests(unittest.TestCase):
+class PreparePoemDatasetTests(unittest.TestCase):
     def test_luc_bat_classification(self):
         result = MODULE.classify_lines(
             "luc_bat",

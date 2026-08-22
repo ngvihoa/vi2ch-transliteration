@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a normalized, auditable poetry benchmark from the raw text files.
+"""Prepare a normalized, auditable poetry dataset from the raw text files.
 
 This script intentionally stops before phonemization.  Its outputs are the stable
 input layer for a later Vietnamese -> IPA -> Pinyin/Hanzi pipeline.
@@ -244,7 +244,7 @@ def write_outputs(records: list[LineRecord], output_dir: Path) -> tuple[Path, Pa
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Normalize poem sources and create an auditable JSONL benchmark."
+        description="Prepare normalized poem sources as an auditable JSONL dataset."
     )
     parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
     parser.add_argument("--raw-dir", type=Path, default=DEFAULT_RAW_DIR)

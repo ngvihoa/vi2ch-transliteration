@@ -3,7 +3,7 @@
 ## 1. Normalize source poems
 
 ```bash
-python scripts/generate_test-set.py
+python scripts/prepare_poem_dataset.py
 ```
 
 Outputs `poem_lines.jsonl`, `poem_review.jsonl`, and `poem_report.json` under
