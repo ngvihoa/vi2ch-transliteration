@@ -1,9 +1,9 @@
 {
   "schema_version": "thivien-ngu-ngon-tu-tuyet-crawl-v1",
   "source": "https://www.thivien.net/search-poem.php?PoemType=3&ViewType=2",
-  "discovered_poems": 10,
-  "written_csv_files": 10,
-  "sentence_pairs": 44,
+  "discovered_poems": 100,
+  "written_csv_files": 100,
+  "sentence_pairs": 404,
   "skipped_poems": 0,
   "skipped": []
 }

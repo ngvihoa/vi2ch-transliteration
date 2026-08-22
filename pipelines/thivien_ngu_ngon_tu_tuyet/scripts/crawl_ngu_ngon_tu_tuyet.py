@@ -40,9 +40,9 @@ def main() -> int:
         / "ngu-ngon-tu-tuyet"
     )
     crawler.DEFAULT_REPORT = PIPELINE_ROOT / "outputs" / "crawl_report.json"
+    crawler.DEFAULT_URL_CHECKPOINT = PIPELINE_ROOT / "outputs" / "poem_urls.json"
     return crawler.main()
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

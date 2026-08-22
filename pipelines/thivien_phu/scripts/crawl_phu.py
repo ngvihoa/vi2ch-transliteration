@@ -34,6 +34,7 @@ PIPELINE_ROOT = SCRIPT_DIR.parent
 PROJECT_ROOT = PIPELINE_ROOT.parent.parent
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "raw-collections" / "poetry-collecions" / "phu"
 DEFAULT_REPORT = PIPELINE_ROOT / "outputs" / "crawl_report.json"
+DEFAULT_URL_CHECKPOINT = PIPELINE_ROOT / "outputs" / "poem_urls.json"
 
 POEM_LINK_RE = re.compile(r"/poem-([A-Za-z0-9_-]+)$")
 NON_FILENAME_RE = re.compile(r"[^a-z0-9]+")
@@ -217,16 +218,116 @@ def assert_allowed(client: HttpClient) -> None:
         raise CrawlError(f"robots.txt không cho phép crawl {SEARCH_URL}")
 
 
-def collect_urls(client: HttpClient, limit: int) -> list[str]:
-    first_html = client.get_text(SEARCH_URL)
-    urls = parse_search_page(first_html)
-    for page in range(2, parse_total_pages(first_html) + 1):
-        if limit and len(urls) >= limit:
-            break
-        for url in parse_search_page(client.get_text(f"{SEARCH_URL}&Page={page}")):
-            if url not in urls:
-                urls.append(url)
-    return urls if limit == 0 else urls[:limit]
+def load_url_checkpoint(path: Path) -> dict[str, object] | None:
+    if not path.exists():
+        return None
+    try:
+        checkpoint = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as error:
+        raise CrawlError(f"Checkpoint URL không hợp lệ ({path}): {error}") from error
+    if not isinstance(checkpoint, dict) or checkpoint.get("source") != SEARCH_URL:
+        return None
+    urls = checkpoint.get("urls")
+    if not isinstance(urls, list) or not all(isinstance(url, str) for url in urls):
+        raise CrawlError(f"Checkpoint URL không có danh sách urls hợp lệ: {path}")
+    return checkpoint
+
+
+def save_url_checkpoint(
+    path: Path,
+    urls: list[str],
+    total_pages: int,
+    last_completed_page: int,
+    complete: bool,
+) -> None:
+    checkpoint = {
+        "schema_version": "thivien-url-checkpoint-v1",
+        "source": SEARCH_URL,
+        "total_pages": total_pages,
+        "last_completed_page": last_completed_page,
+        "discovered_urls": len(urls),
+        "complete": complete,
+        "urls": urls,
+    }
+    atomic_write(path, json.dumps(checkpoint, ensure_ascii=False, indent=2) + "\n")
+
+
+def collect_urls(
+    client: HttpClient,
+    limit: int,
+    checkpoint_path: Path,
+    refresh_checkpoint: bool,
+) -> list[str]:
+    # Các lần test có limit nhỏ chỉ cần trang đầu và không thay đổi checkpoint
+    # của lần crawl toàn bộ.
+    if limit:
+        print("[danh sách] Đang tải trang 1...", flush=True)
+        first_html = client.get_text(SEARCH_URL)
+        total_pages = parse_total_pages(first_html)
+        urls = parse_search_page(first_html)
+        for page in range(2, total_pages + 1):
+            if len(urls) >= limit:
+                break
+            print(f"[danh sách {page}/{total_pages}] Đang tải bản test...", flush=True)
+            known_urls = set(urls)
+            page_urls = parse_search_page(client.get_text(f"{SEARCH_URL}&Page={page}"))
+            urls.extend(url for url in page_urls if url not in known_urls)
+        urls = urls[:limit]
+        print(f"[danh sách] Đã lấy {len(urls)} URL thử nghiệm.", flush=True)
+        return urls
+
+    checkpoint = None if refresh_checkpoint else load_url_checkpoint(checkpoint_path)
+    if checkpoint is not None and checkpoint.get("complete") is True:
+        urls = list(checkpoint["urls"])
+        print(
+            f"[danh sách] Dùng checkpoint hoàn chỉnh: {len(urls)} URL "
+            f"từ {checkpoint_path}",
+            flush=True,
+        )
+        return urls
+
+    if checkpoint is not None:
+        urls = list(checkpoint["urls"])
+        total_pages = int(checkpoint.get("total_pages", 1))
+        last_completed_page = int(checkpoint.get("last_completed_page", 0))
+        start_page = last_completed_page + 1
+        print(
+            f"[danh sách] Tiếp tục checkpoint tại trang {start_page}/{total_pages}; "
+            f"đã có {len(urls)} URL.",
+            flush=True,
+        )
+    else:
+        print("[danh sách] Đang tải trang 1...", flush=True)
+        first_html = client.get_text(SEARCH_URL)
+        total_pages = parse_total_pages(first_html)
+        urls = parse_search_page(first_html)
+        start_page = 2
+        save_url_checkpoint(checkpoint_path, urls, total_pages, 1, total_pages == 1)
+        print(
+            f"[danh sách 1/{total_pages}] {len(urls)} URL; "
+            f"đã lưu checkpoint.",
+            flush=True,
+        )
+
+    for page in range(start_page, total_pages + 1):
+        print(f"[danh sách {page}/{total_pages}] Đang tải...", flush=True)
+        page_urls = parse_search_page(client.get_text(f"{SEARCH_URL}&Page={page}"))
+        known_urls = set(urls)
+        urls.extend(url for url in page_urls if url not in known_urls)
+        save_url_checkpoint(
+            checkpoint_path,
+            urls,
+            total_pages,
+            page,
+            page == total_pages,
+        )
+        print(
+            f"[danh sách {page}/{total_pages}] +{len(page_urls)} kết quả, "
+            f"tổng {len(urls)} URL; đã lưu checkpoint.",
+            flush=True,
+        )
+
+    return urls
 
 
 def parse_args() -> argparse.Namespace:
@@ -236,6 +337,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--limit", type=int, default=5, help="0 để crawl toàn bộ.")
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--report", type=Path, default=DEFAULT_REPORT)
+    parser.add_argument("--url-checkpoint", type=Path, default=DEFAULT_URL_CHECKPOINT)
+    parser.add_argument(
+        "--refresh-url-checkpoint",
+        action="store_true",
+        help="Bỏ qua checkpoint URL cũ và đọc lại danh sách từ trang 1.",
+    )
     parser.add_argument("--delay", type=float, default=1.0)
     parser.add_argument("--timeout", type=float, default=30.0)
     parser.add_argument("--retries", type=int, default=3)
@@ -250,7 +357,12 @@ def main() -> int:
     args = parse_args()
     client = HttpClient(args.delay, args.timeout, args.retries)
     assert_allowed(client)
-    urls = collect_urls(client, args.limit)
+    urls = collect_urls(
+        client,
+        args.limit,
+        args.url_checkpoint,
+        args.refresh_url_checkpoint,
+    )
     if not urls:
         raise CrawlError(f"Không tìm thấy bài {GENRE_LABEL} chữ Hán nào")
 
