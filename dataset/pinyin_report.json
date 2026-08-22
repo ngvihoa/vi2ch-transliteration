@@ -5,7 +5,7 @@
   "source_syllable_occurrences": 31761,
   "unique_source_pronunciations": 2484,
   "mandarin_inventory_size": 1419,
-  "top_k": 5,
+  "top_k": 20,
   "weights": {
     "onset": 0.35,
     "rhyme": 0.45,

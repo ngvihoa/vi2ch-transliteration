@@ -1,0 +1,33 @@
+{
+  "schema_version": "xinhua-english-reference-v1",
+  "source_url": "https://en.wikipedia.org/wiki/Transcription_into_Chinese_characters",
+  "source_table": "Transcription from English (IPA) into Chinese",
+  "source_attribution": "Wikipedia table reproducing the English table from Xinhua's Names of the World's Peoples",
+  "retrieved_on": "2026-08-22",
+  "source_html_sha256": "db103bab261d525b0eeb53822429557494ce5543e8d9e5b793b4979188104307",
+  "scope_note": "Reference character pool only. Xinhua does not provide this as an official Vietnamese-to-Chinese table.",
+  "readings": {
+    "a1":"阿","ai1":"埃","ai4":"艾","an1":"安","ang2":"昂","ao4":"奥",
+    "ba1":"巴","bai4":"拜","ban1":"班","bang1":"邦","bao3":"保","bao4":"鲍","bei4":"贝","ben3":"本","bi3":"比","bin1":"宾","bo1":"波","bo2":"伯博","bu4":"布",
+    "cai4":"蔡","can4":"灿","cang1":"仓","cao2":"曹","ce4":"策","cen2":"岑","cha2":"察查","chai2":"柴","chang1":"昌","che4":"彻","chu3":"楚","chun1":"春","ci2":"茨","cong1":"聪","cuo4":"措",
+    "da2":"达","dai4":"代黛","dan1":"丹","dang1":"当","dao4":"道","de2":"德","deng1":"登","di2":"迪","di4":"蒂","ding1":"丁","dong1":"东","du4":"杜","dun1":"敦","duo1":"多",
+    "e4":"厄","en1":"恩","er3":"尔",
+    "fa3":"法","fan2":"凡","fang1":"方","fei1":"菲","fei4":"费","fen1":"芬","feng1":"丰","fu1":"夫","fu2":"弗福","fu4":"富",
+    "gai4":"盖","gan1":"甘","gang1":"冈","gao1":"高","ge1":"戈","ge2":"格","gen1":"根","gong4":"贡","gu3":"古","gua1":"瓜","guan1":"关","guang1":"光","gui1":"圭","guo3":"果",
+    "ha1":"哈","hai3":"海","han4":"汉","hang2":"杭","hao2":"豪","he4":"赫","hei1":"黑","heng1":"亨","hong2":"洪","hu2":"胡","hua2":"华","huai2":"怀","huan2":"环","huang2":"黄","hui4":"惠","huo4":"霍",
+    "ji1":"基","ji2":"吉","jia1":"加","jia3":"贾","jiao1":"焦","jie2":"杰","jin1":"津金","jing1":"京","jiu3":"久",
+    "ka3":"卡","kai3":"凯","kan3":"坎","kang1":"康","kao3":"考","ke1":"科","ke4":"克","ken3":"肯","kong3":"孔","ku4":"库","kua1":"夸","kuan1":"宽","kuang1":"匡","kui2":"奎","kun1":"昆","kuo4":"阔",
+    "la1":"拉","lai2":"莱","lai4":"赖","lan2":"兰","lang3":"朗","lao2":"劳","le4":"勒","lei2":"雷","lei3":"蕾","li3":"里","li4":"丽利莉","lin2":"林琳","liu2":"留","liu3":"柳","long2":"隆龙","lu2":"卢","lu3":"鲁","lun2":"伦","luo2":"罗萝","luo4":"洛",
+    "ma3":"玛马","mai4":"迈","man4":"曼","mang2":"芒","mao2":"毛","mei2":"梅","men2":"门","meng2":"蒙","mi3":"米","ming2":"明","miu4":"缪","mo4":"莫默","mu3":"姆","mu4":"穆",
+    "na4":"娜纳","nai4":"奈","nan2":"南","nao3":"瑙","nei4":"内","nen4":"嫩","ni1":"妮","ni2":"尼","ning2":"宁","niu3":"纽","nong2":"农","nu3":"努","nuo4":"诺",
+    "pa4":"帕","pai4":"派","pan1":"潘","pang2":"庞","pei4":"佩","peng2":"彭蓬","pi2":"皮","ping2":"平","po4":"珀","pu3":"普",
+    "qi2":"奇齐","qian2":"钱","qiao2":"乔","qie4":"切","qin1":"钦","qin2":"琴","qing1":"青","qiong2":"琼","qiu1":"丘",
+    "rang4":"让","re4":"热","ren4":"任","ri4":"日","rong2":"容","ru2":"茹","ruo4":"若",
+    "sa4":"萨","sai4":"塞赛","sang1":"桑","se4":"瑟","sen1":"森","sha1":"沙莎","shang4":"尚","shao4":"绍","she4":"舍","shen1":"申","shi2":"什","shu1":"舒","shun4":"顺","si1":"丝斯","song1":"松","su1":"苏","sun1":"孙","suo3":"索",
+    "ta3":"塔","tai4":"泰","tan3":"坦","tang2":"唐","tao2":"陶","te4":"特","teng2":"滕","ting2":"廷","tong1":"通","tu2":"图","tuo1":"托",
+    "wa2":"娃","wa3":"瓦","wan4":"万","wang4":"旺","wei1":"威","wei2":"维韦","wen1":"温","wen2":"文","weng1":"翁","wo4":"沃","wu1":"乌","wu3":"伍武",
+    "xi1":"希西","xia4":"夏","xiao1":"肖","xie4":"谢","xin1":"欣辛","xing4":"兴","xiong2":"雄","xiu1":"休",
+    "ya4":"亚娅","yan2":"延","yang2":"扬","yao2":"尧","ye1":"耶","yi1":"伊","yin1":"因","ying1":"英","yong3":"永","you2":"尤","yue1":"约","yun2":"云",
+    "zai3":"宰","zan4":"赞","zang4":"藏","zao3":"藻","ze2":"泽","zeng1":"曾","zha1":"扎","zhan1":"詹","zhang1":"章","zhe2":"哲","zhen1":"真","zhu1":"朱","zhun3":"准","zi1":"兹","zong1":"宗","zu3":"祖","zun1":"尊","zuo3":"佐"
+  }
+}

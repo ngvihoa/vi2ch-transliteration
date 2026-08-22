@@ -45,7 +45,32 @@ Outputs:
 - `dataset/pinyin_report.json`: inventory, score distribution, weights, and
   locked dependency metadata.
 
-The default is five candidates. Use `--top-k N` to change it.
+The default is twenty candidates so that the downstream transliteration
+character pool has sufficient coverage. Use `--top-k N` to change it.
+
+## 4. Select Hanzi
+
+```bash
+python scripts/select_hanzi.py
+```
+
+The selector reranks Hanzi with phonetic, reference-pool, and corpus-frequency
+weights of 0.75, 0.15, and 0.10. Its reference pool is derived from the English
+IPA table reproduced from Xinhua's *Names of the World's Peoples*. This is only
+a reference character pool: Xinhua does not define it as a Vietnamese-to-Hanzi
+standard. Characters outside the pool are marked as fallbacks requiring human
+review.
+
+Outputs:
+
+- `dataset/hanzi_candidates.jsonl`: top Hanzi candidates and component scores;
+- `dataset/poem_hanzi.jsonl`: synthetic silver poem lines with Hanzi and Pinyin;
+- `dataset/hanzi_report.json`: coverage, review counts, provenance, and corpus
+  statistics.
+
+Character frequency is measured from the local Chinese train/dev/test corpus.
+The reference mapping and its retrieval metadata are stored in
+`resources/xinhua_english_reference.json`.
 
 ## Tests
 
