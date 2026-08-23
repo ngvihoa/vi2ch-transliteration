@@ -1,7 +1,7 @@
 {
   "schema_version": "thivien-checkpoint-url-crawl-v1",
   "source": "https://www.thivien.net/search-poem.php?PoemType=3&ViewType=2",
-  "processed_urls": 510,
+  "processed_urls": 509,
   "items": {
     "https://www.thivien.net/Jingak-Hyesim/B%E1%BA%A1ch-V%C3%A2n-%C4%91%C3%A0i-th%C6%B0%E1%BB%A3ng-%E1%BB%A9c-ti%C3%AAn-s%C6%B0/poem-PsHmpMveAHz0-43BJnxgrQ": {
       "status": "existing",
@@ -3051,11 +3051,6 @@
       "output": "dangthanhxuanvong.csv",
       "title_vi": "Đăng thành xuân vọng",
       "sentence_pairs": 4
-    },
-    "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/%C4%90%C3%B4ng-giao-h%C3%A0nh-v%E1%BB%8Dng/poem-2iHJn3sJ8u66FuHTFTNoQg": {
-      "status": "skipped",
-      "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/%C4%90%C3%B4ng-giao-h%C3%A0nh-v%E1%BB%8Dng/poem-2iHJn3sJ8u66FuHTFTNoQg",
-      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/%C4%90%C3%B4ng-giao-h%C3%A0nh-v%E1%BB%8Dng/poem-2iHJn3sJ8u66FuHTFTNoQg"
     }
   }
 }
