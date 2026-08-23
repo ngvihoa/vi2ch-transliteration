@@ -29,6 +29,7 @@ BASE_URL = "https://www.thivien.net"
 SEARCH_URL = f"{BASE_URL}/search-poem.php?PoemType=2&ViewType=2"
 GENRE_LABEL = "Phú"
 REPORT_SCHEMA = "thivien-phu-crawl-v1"
+POEM_PROGRESS_SCHEMA = "thivien-poem-crawl-progress-v1"
 ROBOTS_URL = f"{BASE_URL}/robots.txt"
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
 
@@ -381,6 +382,46 @@ def save_url_checkpoint(path: Path, state: dict[str, object]) -> None:
         **state,
     }
     atomic_write(path, json.dumps(checkpoint, ensure_ascii=False, indent=2) + "\n")
+
+
+def load_poem_progress(path: Path) -> dict[str, dict[str, object]]:
+    if not path.exists():
+        return {}
+    try:
+        progress = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as error:
+        raise CrawlError(f"Progress bài thơ không hợp lệ ({path}): {error}") from error
+    if (
+        not isinstance(progress, dict)
+        or progress.get("schema_version") != POEM_PROGRESS_SCHEMA
+        or progress.get("source") != SEARCH_URL
+        or not isinstance(progress.get("items"), dict)
+    ):
+        raise CrawlError(f"Progress bài thơ không đúng schema/source: {path}")
+    return {
+        str(url): item
+        for url, item in progress["items"].items()
+        if isinstance(url, str) and isinstance(item, dict)
+    }
+
+
+def save_poem_progress(path: Path, items: dict[str, dict[str, object]]) -> None:
+    progress = {
+        "schema_version": POEM_PROGRESS_SCHEMA,
+        "source": SEARCH_URL,
+        "processed_urls": len(items),
+        "items": items,
+    }
+    atomic_write(path, json.dumps(progress, ensure_ascii=False, indent=2) + "\n")
+
+
+def progress_output_path(
+    output_dir: Path, item: dict[str, object]
+) -> Path | None:
+    output = item.get("output")
+    if not isinstance(output, str) or not output:
+        return None
+    return output_dir / output
 
 
 def parse_result_count(html: str) -> int:
@@ -762,6 +803,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--report", type=Path, default=DEFAULT_REPORT)
     parser.add_argument("--url-checkpoint", type=Path, default=DEFAULT_URL_CHECKPOINT)
     parser.add_argument(
+        "--progress",
+        type=Path,
+        default=None,
+        help="Checkpoint từng bài; mặc định nằm cạnh crawl_report.json.",
+    )
+    parser.add_argument(
         "--refresh-url-checkpoint",
         action="store_true",
         help="Bỏ qua checkpoint URL cũ và đọc lại danh sách từ trang 1.",
@@ -816,6 +863,19 @@ def parse_args() -> argparse.Namespace:
         default=3,
         help="Số lần chờ và thử lại CAPTCHA trước khi dừng hẳn (mặc định: 3).",
     )
+    parser.add_argument(
+        "--trust-progress",
+        action="store_true",
+        help=(
+            "Tin trạng thái written/existing trong progress JSON và bỏ qua URL "
+            "mà không kiểm tra file CSV còn tồn tại."
+        ),
+    )
+    parser.add_argument(
+        "--retry-skipped",
+        action="store_true",
+        help="Thử lại URL từng bị đánh dấu skipped trong progress JSON.",
+    )
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
     if (
@@ -835,6 +895,8 @@ def parse_args() -> argparse.Namespace:
             "limit/delay/jitter/pause/retries phải hợp lệ, timeout phải > 0 "
             "và các giá trị pause-max phải >= pause-min"
         )
+    if args.progress is None:
+        args.progress = args.report.parent / "poem_crawl_progress.json"
     return args
 
 
@@ -862,36 +924,99 @@ def main() -> int:
     if not urls:
         raise CrawlError(f"Không tìm thấy bài {GENRE_LABEL} chữ Hán nào")
 
-    used_stems: set[str] = set()
-    written = 0
-    sentence_pairs = 0
-    skipped: list[dict[str, str]] = []
+    progress_items = load_poem_progress(args.progress)
+    used_stems = {
+        Path(str(item["output"])).stem
+        for item in progress_items.values()
+        if isinstance(item.get("output"), str)
+    }
     for index, url in enumerate(urls, start=1):
+        previous = progress_items.get(url)
+        if previous is not None and not args.overwrite:
+            status = previous.get("status")
+            output = progress_output_path(args.output_dir, previous)
+            progress_says_complete = status in {"written", "existing"}
+            output_exists = output is not None and output.exists()
+            if progress_says_complete and (args.trust_progress or output_exists):
+                label = output.name if output is not None else "đã ghi trong JSON"
+                print(f"[{index}/{len(urls)}] ĐÃ CÓ: {label}", flush=True)
+                continue
+            if status == "skipped" and not args.retry_skipped:
+                print(f"[{index}/{len(urls)}] ĐÃ BỎ QUA: {url}", flush=True)
+                continue
+
+        # Lỗi mạng/CAPTCHA phải dừng để progress các bài trước được giữ nguyên,
+        # không được ghi nhầm thành một bài có nội dung không hợp lệ.
+        html = client.get_text(url)
         try:
-            poem = parse_poem(client.get_text(url), url)
-            stem = filename_stem(poem.title_vi, poem.uid)
-            if stem in used_stems:
-                stem = stem_with_uid(stem, poem.uid)
+            poem = parse_poem(html, url)
+            previous_output = (
+                progress_output_path(args.output_dir, previous)
+                if previous is not None
+                else None
+            )
+            if (
+                previous is not None
+                and previous.get("status") in {"written", "existing"}
+                and previous_output is not None
+            ):
+                stem = previous_output.stem
+            else:
+                stem = filename_stem(poem.title_vi, poem.uid)
+                if stem in used_stems:
+                    stem = stem_with_uid(stem, poem.uid)
             used_stems.add(stem)
-            write_poem(poem, args.output_dir, stem, args.overwrite)
-            written += 1
-            sentence_pairs += len(poem.lines_vi)
-            print(f"[{index}/{len(urls)}] {poem.title_vi}: {len(poem.lines_vi)} cặp câu")
+            output = args.output_dir / f"{stem}.csv"
+            if output.exists() and not args.overwrite:
+                status = "existing"
+            else:
+                write_poem(poem, args.output_dir, stem, args.overwrite)
+                status = "written"
+            progress_items[url] = {
+                "status": status,
+                "output": output.name,
+                "title_vi": poem.title_vi,
+                "sentence_pairs": len(poem.lines_vi),
+            }
+            save_poem_progress(args.progress, progress_items)
+            label = "ĐÃ CÓ" if status == "existing" else "ĐÃ GHI"
+            print(
+                f"[{index}/{len(urls)}] {label}: {poem.title_vi}: "
+                f"{len(poem.lines_vi)} cặp câu",
+                flush=True,
+            )
         except CrawlError as error:
-            skipped.append({"url": url, "error": str(error)})
-            print(f"[{index}/{len(urls)}] BỎ QUA: {error}")
+            progress_items[url] = {
+                "status": "skipped",
+                "url": url,
+                "error": str(error),
+            }
+            save_poem_progress(args.progress, progress_items)
+            print(f"[{index}/{len(urls)}] BỎ QUA: {error}", flush=True)
+
+    selected_items = [progress_items[url] for url in urls if url in progress_items]
+    successful = [
+        item
+        for item in selected_items
+        if item.get("status") in {"written", "existing"}
+    ]
+    skipped = [item for item in selected_items if item.get("status") == "skipped"]
+    sentence_pairs = sum(int(item.get("sentence_pairs", 0)) for item in successful)
 
     report = {
         "schema_version": REPORT_SCHEMA,
         "source": SEARCH_URL,
         "discovered_poems": len(urls),
-        "written_csv_files": written,
+        "written_csv_files": len(successful),
         "sentence_pairs": sentence_pairs,
         "skipped_poems": len(skipped),
         "skipped": skipped,
     }
     atomic_write(args.report, json.dumps(report, ensure_ascii=False, indent=2) + "\n")
-    print(f"Đã ghi {written} CSV; bỏ qua {len(skipped)} bài. Report: {args.report}")
+    print(
+        f"Hoàn tất {len(successful)}/{len(urls)} CSV; "
+        f"bỏ qua {len(skipped)} bài. Report: {args.report}"
+    )
     return 0
 
 

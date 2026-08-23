@@ -2,17 +2,197 @@
   "schema_version": "thivien-tu-ngon-crawl-v1",
   "source": "https://www.thivien.net/search-poem.php?PoemType=10&ViewType=2",
   "discovered_poems": 61,
-  "written_csv_files": 13,
-  "sentence_pairs": 259,
-  "skipped_poems": 2,
+  "written_csv_files": 14,
+  "sentence_pairs": 271,
+  "skipped_poems": 47,
   "skipped": [
     {
-      "url": "https://www.thivien.net/Tr%C6%B0%C6%A1ng-%C4%90%C4%83ng-Qu%E1%BA%BF/H%E1%BB%AFu-t%E1%BB%ADu/poem-x9C9skZQmZqLy6GXFDHVhg",
-      "error": "Output đã tồn tại (C:\\Users\\Kang\\Desktop\\CK_NLP\\vi2ch-transliteration\\raw-collections\\poetry-collecions\\tu-ngon\\huutuu.csv); dùng --overwrite để thay thế"
+      "url": "https://www.thivien.net/Ikky%C5%AB-S%C5%8Djun/T%E1%BB%AB-th%E1%BA%BF-thi/poem-WZVwIFWa7y8AvxlN8rBtHA",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Ikky%C5%AB-S%C5%8Djun/T%E1%BB%AB-th%E1%BA%BF-thi/poem-WZVwIFWa7y8AvxlN8rBtHA"
     },
     {
-      "url": "https://www.thivien.net/Phan-Tr%C6%B0%E1%BB%9Dng-Nguy%C3%AAn/Th%E1%BB%8B-%C4%91%E1%BA%A1o/poem-SdJec1gufHrPkeNptPW8Qg",
-      "error": "Output đã tồn tại (C:\\Users\\Kang\\Desktop\\CK_NLP\\vi2ch-transliteration\\raw-collections\\poetry-collecions\\tu-ngon\\thidao.csv); dùng --overwrite để thay thế"
+      "url": "https://www.thivien.net/Khuy%E1%BA%BFt-danh-Trung-Qu%E1%BB%91c/B%E1%BA%A1ch-c%C6%B0u-thi%C3%AAn/poem-trvfiX-5AZ1TXeAAo_p7Gg",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/bachcuuthien.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%C3%A0o-Th%C3%A1o/B%E1%BB%99-xu%E1%BA%A5t-H%E1%BA%A1-M%C3%B4n-h%C3%A0nh-k%E1%BB%B3-2-Quan-th%C6%B0%C6%A1ng-h%E1%BA%A3i/poem-t_B39s2D6aNzMBgMzGcx4w",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/boxuathamonhanhky2quanthuonghai.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%C3%A0o-Th%C3%A1o/B%E1%BB%99-xu%E1%BA%A5t-H%E1%BA%A1-M%C3%B4n-h%C3%A0nh-k%E1%BB%B3-3-%C4%90%C3%B4ng-th%E1%BA%ADp-nguy%E1%BB%87t/poem-YKAyF5mGn9Juk_OLsOQw9A",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/boxuathamonhanhky3dongthapnguyet.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%C3%A0o-Th%C3%A1o/B%E1%BB%99-xu%E1%BA%A5t-H%E1%BA%A1-M%C3%B4n-h%C3%A0nh-k%E1%BB%B3-4-Th%E1%BB%95-b%E1%BA%A5t-%C4%91%E1%BB%93ng/poem-RVsmp6SmyDj_IoUvsr45LA",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/boxuathamonhanhky4thobatdong.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-T%C6%B0%E1%BB%9Dng/Chi%C3%AAu-Qu%C3%A2n-o%C3%A1n/poem-FfX4aagPwuVC1fL0-DcNew",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/chieuquanoan.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%C3%A0o-Phi/%C4%90an-h%C3%A0-t%E1%BA%BF-nh%E1%BA%ADt-h%C3%A0nh/poem-boYTChYesjECp0dFfkAiLA",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/danhatenhathanh.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/Gia-C%C3%A1t-L%C6%B0%E1%BB%A3ng/%C4%90i%E1%BB%87u-Chu-Du/poem-RAt8erdgUAZ9-eGvlFEsYQ",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/dieuchudu.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%C3%A0o-Phi/%C4%90o%E1%BA%A3n-ca-h%C3%A0nh/poem-wNBKva-nEJ6ri1tid-A5tg",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/doancahanh.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/L%C6%B0-Long-V%C3%A2n/%C4%90o%E1%BA%A3n-ca-h%C3%A0nh-k%E1%BB%B3-1/poem-suL5VCFqtruWDpnNKPAceA",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/doancahanhky1.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%C3%A0o-Th%C3%A1o/%C4%90o%E1%BA%A3n-ca-h%C3%A0nh-k%E1%BB%B3-1/poem-43Lf49JtQxAUhD_uQQ76eA",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/doancahanhky1-43Lf49JtQxAUhD_uQQ76eA.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/L%C6%B0-Long-V%C3%A2n/%C4%90o%E1%BA%A3n-ca-h%C3%A0nh-k%E1%BB%B3-2/poem-jGWqgwxODpSsQX85yFL4Mw",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/doancahanhky2.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%C3%A0o-Th%C3%A1o/%C4%90o%E1%BA%A3n-ca-h%C3%A0nh-k%E1%BB%B3-2/poem-C9PCDqySOFxbjoObOD8Zsg",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/doancahanhky2-C9PCDqySOFxbjoObOD8Zsg.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/L%C6%B0-Long-V%C3%A2n/%C4%90o%E1%BA%A3n-ca-h%C3%A0nh-k%E1%BB%B3-3/poem-d-5SutQrB7gxr0KgnqzqPw",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/doancahanhky3.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/L%C6%B0-Long-V%C3%A2n/%C4%90o%E1%BA%A3n-ca-h%C3%A0nh-k%E1%BB%B3-4/poem-f6ZNuuVcUViaqFrE34_lMw",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/doancahanhky4.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/L%C6%B0-Long-V%C3%A2n/%C4%90o%E1%BA%A3n-ca-h%C3%A0nh-k%E1%BB%B3-5/poem-iBbIGY-MxoVh4EoPp5lAbg",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/doancahanhky5.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%C3%A0o-Th%C3%A1o/%C4%90%E1%BB%99-quan-san/poem-AacgT9F2TQnbuMwMeO8faw",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/doquansan.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%C3%A0o-Phi/Ho%C3%A0ng-ho%C3%A0ng-kinh-L%E1%BA%A1c-h%C3%A0nh/poem-5srlL4pPpCDDbNVQvPGJJw",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/hoanghoangkinhlachanh.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/L%C6%B0u-Bang/H%E1%BB%93ng-h%E1%BB%99c-ca/poem-s2L1nyIQDbAjoeSnTWNSHw",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/honghocca.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/Khuy%E1%BA%BFt-danh-Trung-Qu%E1%BB%91c/Kh%C3%B4ng-h%E1%BA%A7u-d%E1%BA%ABn/poem-6BU5g4Q-t0d9iKhchQ7Pig",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/khonghaudan.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%C3%A0o-Th%E1%BB%B1c/Khu%C3%AA-t%C3%ACnh-H%E1%BB%AFu-m%E1%BB%B9-nh%E1%BA%A5t-nh%C3%A2n/poem-X2_Q_QH74v04CaupeB0yUA",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/khuetinhhuumynhatnhan.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/Tr%C3%ACnh-H%E1%BA%A1o/Minh-%C4%90%E1%BA%A1o-gia-hu%E1%BA%A5n/poem-3aa2tlihTrwlAHWnLopSow",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/minhdaogiahuan.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/Ph%E1%BA%A1m-Phanh/Qu%E1%BA%ADt-tr%E1%BB%A7ng-ca/poem-rOXiyLVK0Bh_8Q3cSchxFw",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/quattrungca.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%C3%A0o-Th%E1%BB%B1c/S%C3%B3c-phong-thi/poem-BGvoVxt_29Pz0DmM939-mA",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/socphongthi.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%E1%BA%A7n-Gia/T%E1%BA%B7ng-ph%E1%BB%A5-thi-k%E1%BB%B3-2/poem-jOyMOPrtEqjp2LDt1zvAYQ",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/tangphuthiky2.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/K%C3%AA-Khang/T%E1%BA%B7ng-t%C3%BA-t%C3%A0i-nh%E1%BA%ADp-qu%C3%A2n-k%E1%BB%B3-07/poem-PH6kQIKDJa8kGJi3zuWOxg",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/tangtutainhapquanky07.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/K%C3%AA-Khang/T%E1%BA%B7ng-t%C3%BA-t%C3%A0i-nh%E1%BA%ADp-qu%C3%A2n-k%E1%BB%B3-09/poem-g08PZmAlou8raNGZ0ruoZA",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/tangtutainhapquanky09.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/K%C3%AA-Khang/T%E1%BA%B7ng-t%C3%BA-t%C3%A0i-nh%E1%BA%ADp-qu%C3%A2n-k%E1%BB%B3-13/poem-q2p7q2Zh9VsAee9FWep-6w",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/tangtutainhapquanky13.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/K%C3%AA-Khang/T%E1%BA%B7ng-t%C3%BA-t%C3%A0i-nh%E1%BA%ADp-qu%C3%A2n-k%E1%BB%B3-14/poem-qoGY1gThstvmMCjBfm4UqA",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/tangtutainhapquanky14.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%C3%A0o-Phi/Thi%E1%BB%87n-tai-h%C3%A0nh-k%E1%BB%B3-1/poem-daIq9cfHi_hGWVIYxePORw",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/thientaihanhky1.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%C3%A0o-Th%C3%A1o/Thi%E1%BB%87n-tai-h%C3%A0nh-k%E1%BB%B3-1/poem-QdlovL4Oi8oRAntuIKF-LQ",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/thientaihanhky1-QdlovL4Oi8oRAntuIKF-LQ.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%C3%A0o-Phi/Thi%E1%BB%87n-tai-h%C3%A0nh-k%E1%BB%B3-2/poem-jhb1uanfzyr1O2IqXB5-hw",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/thientaihanhky2.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/Khu%E1%BA%A5t-Nguy%C3%AAn/Thi%C3%AAn-v%E1%BA%A5n/poem-xfUL0RFU1M6WV9XOi__Sxg",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/thienvan.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-Duy/Th%C3%B9-ch%C6%B0-c%C3%B4ng-ki%E1%BA%BFn-qu%C3%A1/poem-Tz8vWHWQkWWRTYQ4Xaqoyw",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/thuchucongkienqua.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%E1%BA%A1-Linh-V%E1%BA%ADn/Thu-H%E1%BB%93-h%C3%A0nh-k%E1%BB%B3-1/poem-jxn87ZZRFzwNL0Dv_GL43Q",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/thuhohanhky1.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%C3%A0o-Phi/Thu-H%E1%BB%93-h%C3%A0nh-k%E1%BB%B3-1/poem-zDQoXCerAIEwqageOYXxZw",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/thuhohanhky1-zDQoXCerAIEwqageOYXxZw.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/T%C3%A0o-Phi/Thu-H%E1%BB%93-h%C3%A0nh-k%E1%BB%B3-2/poem-ABKEkE4oaW6QbVVB-MWgjg",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/thuhohanhky2.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/V%C4%83n-Thi%C3%AAn-T%C6%B0%E1%BB%9Dng/Tuy%E1%BB%87t-m%E1%BB%87nh-thi/poem-o9Q4y8tarKUvofEobo7f-A",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/tuyetmenhthi.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/Nguy%E1%BB%85n-T%E1%BB%8Bch/V%E1%BB%8Bnh-ho%C3%A0i-thi-t%E1%BB%A9-ng%C3%B4n-k%E1%BB%B3-02/poem-aWUW-_IKdDT2EKZvZ13edQ",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/vinhhoaithitungonky02.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/Do%C3%A3n-Khu%C3%AA/Canh-Tu%E1%BA%A5t-ni%C3%AAn-ch%E1%BA%BF/poem-x1HY9Hmqz-E6-xMz9JnWwA",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/canhtuatnienche.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/Tr%E1%BA%A7n-Th%C3%A1nh-T%C3%B4ng/Ch%C3%A2n-t%C3%A2m-chi-d%E1%BB%A5ng/poem-U1V9T5jxAGjG1nmeyCERzw",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/chantamchidung.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/Nguy%E1%BB%85n-H%C3%A0nh/Ch%C3%AD-ph%E1%BB%A5-th%E1%BB%A7-t%C3%A1n/poem-uOXrijsmYncW-Wi3VPJr7w",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/chiphuthutan.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/Tr%C3%AD-Thi%E1%BB%81n-thi%E1%BB%81n-s%C6%B0/%C4%90%E1%BA%A1m-nhi%C3%AAn/poem-oyYcxzXcRxPcuTSm0myA4g",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/damnhien.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/Nguy%E1%BB%87n-H%E1%BB%8Dc-thi%E1%BB%81n-s%C6%B0/%C4%90%E1%BA%A1o-v%C3%B4-%E1%BA%A3nh-t%C6%B0%E1%BB%A3ng/poem-qkeI8HOoGt0dEa9FCjfA6g",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/daovoanhtuong.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/Phan-Huy-%C3%8Dch/H%E1%BB%93i-gia-qu%C3%A1n-%C4%91i%E1%BB%81u-tr%C3%AD-ti%C3%AAn-c%C3%B4ng-t%E1%BB%B1-nghi-k%C3%ADnh-thu%E1%BA%ADt-d%C4%A9-minh/poem-8DyVj20hqYJDI5E0pNIk-A",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/hoigiaquandieutritiencongtunghikinhthuatdiminh.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/Tr%E1%BA%A7n-Nh%C3%A2n-T%C3%B4ng/H%E1%BB%AFu-c%C3%BA-v%C3%B4-c%C3%BA/poem-c2OkGpQkP4QQwP201dfBdQ",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/huucuvocu.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/Tr%C6%B0%C6%A1ng-%C4%90%C4%83ng-Qu%E1%BA%BF/H%E1%BB%AFu-t%E1%BB%ADu/poem-x9C9skZQmZqLy6GXFDHVhg",
+      "error": "Output đã tồn tại (/kaggle/working/vi2ch-transliteration/raw-collections/poetry-collecions/tu-ngon/huutuu.csv); dùng --overwrite để thay thế"
     }
   ]
 }
