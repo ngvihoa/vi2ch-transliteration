@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Chạy từ root vi2ch-model:
+# python3 pipelines/thivien_duong_luat_bien_the/scripts/crawl_duong_luat_bien_the.py --limit 0
 """Crawl Đường luật biến thể by configuring the shared Thi Viện crawler."""
 
 from __future__ import annotations

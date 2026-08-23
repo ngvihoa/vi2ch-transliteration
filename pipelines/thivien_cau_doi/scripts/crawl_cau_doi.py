@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Chạy từ root vi2ch-model:
+# python3 pipelines/thivien_cau_doi/scripts/crawl_cau_doi.py --limit 0
 """Crawl Câu đối by configuring the shared Thi Viện crawler."""
 
 from __future__ import annotations

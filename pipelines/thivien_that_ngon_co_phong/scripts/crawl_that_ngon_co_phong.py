@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Chạy từ root vi2ch-model:
+# python3 pipelines/thivien_that_ngon_co_phong/scripts/crawl_that_ngon_co_phong.py --limit 0
 """Crawl Thất ngôn cổ phong by configuring the shared Thi Viện crawler."""
 
 from __future__ import annotations
