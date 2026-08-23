@@ -157,6 +157,14 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Thử lại các URL từng bị bỏ qua vì nội dung không hợp lệ.",
     )
+    parser.add_argument(
+        "--trust-progress",
+        action="store_true",
+        help=(
+            "Tin trạng thái written/existing trong progress JSON và bỏ qua URL "
+            "mà không kiểm tra file CSV còn tồn tại."
+        ),
+    )
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
     if (
@@ -221,8 +229,11 @@ def main() -> int:
         if previous is not None:
             status = previous.get("status")
             output = output_from_item(args.output_dir, previous)
-            if status in {"written", "existing"} and output is not None and output.exists():
-                print(f"[{index}/{len(urls)}] ĐÃ CÓ: {output.name}", flush=True)
+            progress_says_complete = status in {"written", "existing"}
+            output_exists = output is not None and output.exists()
+            if progress_says_complete and (args.trust_progress or output_exists):
+                output_label = output.name if output is not None else "đã ghi trong JSON"
+                print(f"[{index}/{len(urls)}] ĐÃ CÓ: {output_label}", flush=True)
                 continue
             if status == "skipped" and not args.retry_skipped:
                 print(f"[{index}/{len(urls)}] ĐÃ BỎ QUA: {url}", flush=True)
