@@ -1,0 +1,34 @@
+{
+  "schema_version": "thivien-cau-doi-crawl-v1",
+  "source": "https://www.thivien.net/search-poem.php?PoemType=28&ViewType=2",
+  "discovered_poems": 89,
+  "written_csv_files": 83,
+  "sentence_pairs": 174,
+  "skipped_poems": 6,
+  "skipped": [
+    {
+      "url": "https://www.thivien.net/Phan-B%E1%BB%99i-Ch%C3%A2u/%C4%90%E1%BB%81-%E1%BA%A4u-Tri%E1%BB%87u-bi-%C4%91%C3%ACnh/poem-aKdTtnVRkZwBcKHXiHzXPw",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Phan-B%E1%BB%99i-Ch%C3%A2u/%C4%90%E1%BB%81-%E1%BA%A4u-Tri%E1%BB%87u-bi-%C4%91%C3%ACnh/poem-aKdTtnVRkZwBcKHXiHzXPw"
+    },
+    {
+      "url": "https://www.thivien.net/Nguy%E1%BB%85n-Th%C6%B0%E1%BB%A3ng-Hi%E1%BB%81n/%C4%90i%E1%BA%BFu-n%E1%BB%99i/poem-9Lj-7g8llWZi3D7tuclH0w",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Nguy%E1%BB%85n-Th%C6%B0%E1%BB%A3ng-Hi%E1%BB%81n/%C4%90i%E1%BA%BFu-n%E1%BB%99i/poem-9Lj-7g8llWZi3D7tuclH0w"
+    },
+    {
+      "url": "https://www.thivien.net/Phan-B%E1%BB%99i-Ch%C3%A2u/%C4%90i%E1%BA%BFu-Phan-V%C4%83n-Tr%C6%B0%E1%BB%9Dng/poem-FD7615a7Sr7TqjL5w-d3rA",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Phan-B%E1%BB%99i-Ch%C3%A2u/%C4%90i%E1%BA%BFu-Phan-V%C4%83n-Tr%C6%B0%E1%BB%9Dng/poem-FD7615a7Sr7TqjL5w-d3rA"
+    },
+    {
+      "url": "https://www.thivien.net/Hu%E1%BB%B3nh-Th%C3%BAc-Kh%C3%A1ng/T%E1%BA%B7ng-Tr%E1%BA%A7n-Qu%C3%BD-C%C3%A1p/poem-yeYcP6NlZ8y9q4aKxUuKbg",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Hu%E1%BB%B3nh-Th%C3%BAc-Kh%C3%A1ng/T%E1%BA%B7ng-Tr%E1%BA%A7n-Qu%C3%BD-C%C3%A1p/poem-yeYcP6NlZ8y9q4aKxUuKbg"
+    },
+    {
+      "url": "https://www.thivien.net/Nguy%E1%BB%85n-T%C6%B0-Gi%E1%BA%A3n/V%C3%A3n-H%C3%A0-Ninh-ch%E1%BA%BF-ph%E1%BB%A7-Ho%C3%A0ng-C%C3%B4ng-Di%E1%BB%87u/poem-OSfSkFGsa74RnZ7NVnC4WA",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Nguy%E1%BB%85n-T%C6%B0-Gi%E1%BA%A3n/V%C3%A3n-H%C3%A0-Ninh-ch%E1%BA%BF-ph%E1%BB%A7-Ho%C3%A0ng-C%C3%B4ng-Di%E1%BB%87u/poem-OSfSkFGsa74RnZ7NVnC4WA"
+    },
+    {
+      "url": "https://www.thivien.net/Ph%E1%BA%A1m-Th%E1%BA%ADn-Du%E1%BA%ADt/V%C3%A3n-H%C3%ACnh-b%E1%BB%99-bi%E1%BB%87n-l%C3%BD-%C4%90inh-Nho-%C4%90i%E1%BB%83n/poem-0oMfPUZz7oVCSXhc8M_yow",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Ph%E1%BA%A1m-Th%E1%BA%ADn-Du%E1%BA%ADt/V%C3%A3n-H%C3%ACnh-b%E1%BB%99-bi%E1%BB%87n-l%C3%BD-%C4%90inh-Nho-%C4%90i%E1%BB%83n/poem-0oMfPUZz7oVCSXhc8M_yow"
+    }
+  ]
+}
