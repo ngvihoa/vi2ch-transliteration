@@ -103,6 +103,9 @@ class HttpClient:
         retries: int,
         user_agent: str = USER_AGENT,
         cookie_file: Path | None = None,
+        captcha_pause_min: float = 0,
+        captcha_pause_max: float = 0,
+        captcha_retries: int = 0,
     ) -> None:
         self.delay = delay
         self.jitter = jitter
@@ -113,6 +116,9 @@ class HttpClient:
         self.retries = retries
         self.user_agent = user_agent
         self.cookie_file = cookie_file
+        self.captcha_pause_min = captcha_pause_min
+        self.captcha_pause_max = captcha_pause_max
+        self.captcha_retries = captcha_retries
         self.cookies = LWPCookieJar(str(cookie_file) if cookie_file else None)
         if cookie_file is not None and cookie_file.exists():
             try:
@@ -147,6 +153,25 @@ class HttpClient:
                 time.sleep(remaining)
 
     def get_text(self, url: str) -> str:
+        challenge_count = 0
+        while True:
+            try:
+                return self._get_text_once(url)
+            except AccessChallengeError:
+                if challenge_count >= self.captcha_retries:
+                    raise
+                challenge_count += 1
+                pause = random.uniform(
+                    self.captcha_pause_min, self.captcha_pause_max
+                )
+                print(
+                    f"[CAPTCHA] Ngừng request; nghỉ {pause / 60:.1f} phút "
+                    f"rồi thử lại ({challenge_count}/{self.captcha_retries})...",
+                    flush=True,
+                )
+                time.sleep(pause)
+
+    def _get_text_once(self, url: str) -> str:
         request = Request(
             url,
             headers={

@@ -130,6 +130,24 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--timeout", type=float, default=30.0)
     parser.add_argument("--retries", type=int, default=3)
     parser.add_argument(
+        "--captcha-pause-min",
+        type=float,
+        default=600.0,
+        help="Nghỉ tối thiểu khi gặp CAPTCHA, tính bằng giây (mặc định: 600).",
+    )
+    parser.add_argument(
+        "--captcha-pause-max",
+        type=float,
+        default=900.0,
+        help="Nghỉ tối đa khi gặp CAPTCHA, tính bằng giây (mặc định: 900).",
+    )
+    parser.add_argument(
+        "--captcha-retries",
+        type=int,
+        default=3,
+        help="Số lần chờ và thử lại CAPTCHA trước khi dừng hẳn (mặc định: 3).",
+    )
+    parser.add_argument(
         "--user-agent",
         default=None,
         help="User-Agent cần dùng; mặc định dùng giá trị của crawler dùng chung.",
@@ -150,10 +168,13 @@ def parse_args() -> argparse.Namespace:
         or args.pause_max < args.pause_min
         or args.timeout <= 0
         or args.retries < 0
+        or args.captcha_pause_min < 0
+        or args.captcha_pause_max < args.captcha_pause_min
+        or args.captcha_retries < 0
     ):
         parser.error(
             "limit/delay/jitter/pause/retries phải hợp lệ, timeout phải > 0 "
-            "và pause-max phải >= pause-min"
+            "và các giá trị pause-max phải >= pause-min"
         )
     return args
 
@@ -183,6 +204,9 @@ def main() -> int:
         args.retries,
         args.user_agent or crawler.USER_AGENT,
         args.cookie_file,
+        args.captcha_pause_min,
+        args.captcha_pause_max,
+        args.captcha_retries,
     )
     print(f"[kiểm tra robots] {crawler.ROBOTS_URL}", flush=True)
     crawler.assert_allowed(client)
