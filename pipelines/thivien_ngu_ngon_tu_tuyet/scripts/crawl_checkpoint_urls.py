@@ -244,9 +244,9 @@ def main() -> int:
         html = client.get_text(url)
         try:
             poem = crawler.parse_poem(html, url)
-            stem = crawler.filename_stem(poem.title_vi)
+            stem = crawler.filename_stem(poem.title_vi, poem.uid)
             if stem in used_stems:
-                stem = f"{stem}-{poem.uid}"
+                stem = crawler.stem_with_uid(stem, poem.uid)
             used_stems.add(stem)
             output = args.output_dir / f"{stem}.csv"
 

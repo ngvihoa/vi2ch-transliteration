@@ -81,6 +81,24 @@ class CrawlKinhThiTest(unittest.TestCase):
             self.assertEqual(output_path.name, "ankyloi1.csv")
             self.assertEqual(rows, [{"vi": "Ẩn kỳ lôi,", "ch": "殷其雷，"}])
 
+    def test_long_filename_is_truncated_with_uid(self) -> None:
+        stem = MODULE.filename_stem("Bạch vân " * 100, "test_UID-123")
+        self.assertLessEqual(len(stem), MODULE.MAX_FILENAME_STEM_LENGTH)
+        self.assertTrue(stem.endswith("-test_UID-123"))
+
+        poem = MODULE.Poem(
+            uid="test_UID-123",
+            url="https://example.test/poem-test_UID-123",
+            title_vi="Bạch vân " * 100,
+            title_ch="白雲",
+            lines_vi=["Bạch vân"],
+            lines_ch=["白雲"],
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            output_path = MODULE.write_poem(poem, Path(directory), stem, False)
+            self.assertTrue(output_path.exists())
+            self.assertLessEqual(len(output_path.name.encode("utf-8")), 255)
+
 
 if __name__ == "__main__":
     unittest.main()

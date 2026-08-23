@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import io
 import json
 import os
@@ -44,6 +45,7 @@ NON_FILENAME_RE = re.compile(r"[^a-z0-9]+")
 RESULT_COUNT_RE = re.compile(r"tổng số\s+\d+\s+trang\s+\(([\d.]+)\s+bài thơ\)")
 TOO_MANY_RE = re.compile(r"Có quá nhiều\s+\(([\d.]+)\)\s+kết quả")
 AUTHOR_COUNT_RE = re.compile(r"tổng số\s+\d+\s+trang\s+\(([\d.]+)\s+tác giả\)")
+MAX_FILENAME_STEM_LENGTH = 180
 
 # Các thời đại lá trên form Thi Viện. Chỉ dùng khi một quốc gia có hơn 100
 # kết quả, nhằm tránh giới hạn chỉ xem được 10 trang đầu của website.
@@ -290,7 +292,15 @@ def parse_poem(html: str, url: str) -> Poem:
     return Poem(match.group(1), url, title_lines[0], lines_vi, lines_ch)
 
 
-def filename_stem(title: str) -> str:
+def stem_with_uid(stem: str, uid: str) -> str:
+    safe_uid = re.sub(r"[^A-Za-z0-9_-]+", "", uid)[:48]
+    if not safe_uid:
+        safe_uid = hashlib.sha256(uid.encode("utf-8")).hexdigest()[:16]
+    prefix_length = MAX_FILENAME_STEM_LENGTH - len(safe_uid) - 1
+    return f"{stem[:max(1, prefix_length)]}-{safe_uid}"
+
+
+def filename_stem(title: str, uid: str | None = None) -> str:
     ascii_title = (
         unicodedata.normalize("NFKD", title.replace("Đ", "D").replace("đ", "d"))
         .encode("ascii", "ignore")
@@ -300,6 +310,9 @@ def filename_stem(title: str) -> str:
     stem = NON_FILENAME_RE.sub("", ascii_title)
     if not stem:
         raise CrawlError(f"Không thể tạo tên file từ {title!r}")
+    if len(stem) > MAX_FILENAME_STEM_LENGTH:
+        suffix = uid or hashlib.sha256(title.encode("utf-8")).hexdigest()[:16]
+        stem = stem_with_uid(stem, suffix)
     return stem
 
 
@@ -856,9 +869,9 @@ def main() -> int:
     for index, url in enumerate(urls, start=1):
         try:
             poem = parse_poem(client.get_text(url), url)
-            stem = filename_stem(poem.title_vi)
+            stem = filename_stem(poem.title_vi, poem.uid)
             if stem in used_stems:
-                stem = f"{stem}-{poem.uid}"
+                stem = stem_with_uid(stem, poem.uid)
             used_stems.add(stem)
             write_poem(poem, args.output_dir, stem, args.overwrite)
             written += 1

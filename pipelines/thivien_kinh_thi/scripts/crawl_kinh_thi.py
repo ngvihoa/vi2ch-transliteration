@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import io
 import json
 import os
@@ -39,6 +40,7 @@ DEFAULT_REPORT = PIPELINE_ROOT / "outputs" / "crawl_report.json"
 POEM_LINK_RE = re.compile(r"/poem-([A-Za-z0-9_-]+)$")
 GROUP_LINK_RE = re.compile(r"/group-[A-Za-z0-9_-]+$")
 NON_FILENAME_RE = re.compile(r"[^a-z0-9]+")
+MAX_FILENAME_STEM_LENGTH = 180
 
 
 class CrawlError(RuntimeError):
@@ -183,7 +185,15 @@ def parse_poem(html: str, url: str) -> Poem:
     )
 
 
-def filename_stem(title: str) -> str:
+def stem_with_uid(stem: str, uid: str) -> str:
+    safe_uid = re.sub(r"[^A-Za-z0-9_-]+", "", uid)[:48]
+    if not safe_uid:
+        safe_uid = hashlib.sha256(uid.encode("utf-8")).hexdigest()[:16]
+    prefix_length = MAX_FILENAME_STEM_LENGTH - len(safe_uid) - 1
+    return f"{stem[:max(1, prefix_length)]}-{safe_uid}"
+
+
+def filename_stem(title: str, uid: str | None = None) -> str:
     ascii_title = (
         unicodedata.normalize("NFKD", title.replace("Đ", "D").replace("đ", "d"))
         .encode("ascii", "ignore")
@@ -193,6 +203,9 @@ def filename_stem(title: str) -> str:
     stem = NON_FILENAME_RE.sub("", ascii_title)
     if not stem:
         raise CrawlError(f"Không thể tạo tên file từ tiêu đề {title!r}")
+    if len(stem) > MAX_FILENAME_STEM_LENGTH:
+        suffix = uid or hashlib.sha256(title.encode("utf-8")).hexdigest()[:16]
+        stem = stem_with_uid(stem, suffix)
     return stem
 
 
@@ -297,9 +310,9 @@ def main() -> int:
             skipped.append({"url": url, "error": str(error)})
             print(f"[{index}/{len(urls)}] BỎ QUA: {error}", flush=True)
             continue
-        stem = filename_stem(poem.title_vi)
+        stem = filename_stem(poem.title_vi, poem.uid)
         if stem in used_stems:
-            stem = f"{stem}-{poem.uid}"
+            stem = stem_with_uid(stem, poem.uid)
         used_stems.add(stem)
         path = write_poem(poem, args.output_dir, stem, args.overwrite)
         written.append(path)
