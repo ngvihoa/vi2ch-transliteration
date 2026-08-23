@@ -21,6 +21,7 @@ SEARCH_URL = "https://www.thivien.net/search-poem.php?PoemType=3&ViewType=2"
 DEFAULT_URL_CHECKPOINT = PIPELINE_ROOT / "outputs" / "poem_urls.json"
 DEFAULT_PROGRESS = PIPELINE_ROOT / "outputs" / "csv_crawl_progress.json"
 DEFAULT_REPORT = PIPELINE_ROOT / "outputs" / "crawl_report.json"
+DEFAULT_COOKIE_FILE = PIPELINE_ROOT / "outputs" / "http_cookies.txt"
 DEFAULT_OUTPUT_DIR = (
     PROJECT_ROOT
     / "raw-collections"
@@ -114,6 +115,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--progress", type=Path, default=DEFAULT_PROGRESS)
     parser.add_argument("--report", type=Path, default=DEFAULT_REPORT)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
+    parser.add_argument("--cookie-file", type=Path, default=DEFAULT_COOKIE_FILE)
     parser.add_argument(
         "--limit",
         type=int,
@@ -127,6 +129,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--pause-max", type=float, default=600.0)
     parser.add_argument("--timeout", type=float, default=30.0)
     parser.add_argument("--retries", type=int, default=3)
+    parser.add_argument(
+        "--user-agent",
+        default=None,
+        help="User-Agent cần dùng; mặc định dùng giá trị của crawler dùng chung.",
+    )
     parser.add_argument(
         "--retry-skipped",
         action="store_true",
@@ -174,8 +181,16 @@ def main() -> int:
         args.pause_max,
         args.timeout,
         args.retries,
+        args.user_agent or crawler.USER_AGENT,
+        args.cookie_file,
     )
+    print(f"[kiểm tra robots] {crawler.ROBOTS_URL}", flush=True)
     crawler.assert_allowed(client)
+    print(
+        f"[checkpoint] Sẽ xử lý {len(urls)} URL; "
+        f"cookie jar: {args.cookie_file}",
+        flush=True,
+    )
 
     for index, url in enumerate(urls, start=1):
         previous = items.get(url)
@@ -190,6 +205,7 @@ def main() -> int:
                 continue
 
         # Lỗi mạng/CAPTCHA phải dừng hẳn; progress của các bài trước đã được lưu.
+        print(f"[{index}/{len(urls)}] ĐANG TẢI: {url}", flush=True)
         html = client.get_text(url)
         try:
             poem = crawler.parse_poem(html, url)

@@ -2,3 +2,4 @@ __pycache__/
 *.py[cod]
 /tools/vPhon/
 /tools/pinyin-python/
+/pipelines/thivien_ngu_ngon_tu_tuyet/outputs/http_cookies.txt

@@ -14,10 +14,11 @@ import tempfile
 import time
 import unicodedata
 from dataclasses import dataclass
+from http.cookiejar import LWPCookieJar
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import parse_qs, urlencode, urljoin, urlparse
-from urllib.request import Request, urlopen
+from urllib.request import HTTPCookieProcessor, Request, build_opener
 from urllib.robotparser import RobotFileParser
 
 from bs4 import BeautifulSoup, Tag
@@ -63,6 +64,24 @@ class AccessChallengeError(CrawlError):
     pass
 
 
+def is_access_challenge(html: str) -> bool:
+    """Distinguish the blocking page from reCAPTCHA embedded in comments."""
+    if "Xác nhận không phải máy truy cập tự động" in html:
+        return True
+    if 'class="g-recaptcha"' not in html:
+        return False
+
+    # Trang thơ bình thường có reCAPTCHA trong form bình luận. Chỉ xem
+    # g-recaptcha là chặn truy cập khi response không còn nội dung trang thật.
+    normal_page_markers = (
+        'class="poem-content',
+        "list-item-header",
+        'name="PoemType"',
+        'search-author.php',
+    )
+    return not any(marker in html for marker in normal_page_markers)
+
+
 @dataclass(frozen=True)
 class Poem:
     uid: str
@@ -82,6 +101,8 @@ class HttpClient:
         pause_max: float,
         timeout: float,
         retries: int,
+        user_agent: str = USER_AGENT,
+        cookie_file: Path | None = None,
     ) -> None:
         self.delay = delay
         self.jitter = jitter
@@ -90,8 +111,23 @@ class HttpClient:
         self.pause_max = pause_max
         self.timeout = timeout
         self.retries = retries
+        self.user_agent = user_agent
+        self.cookie_file = cookie_file
+        self.cookies = LWPCookieJar(str(cookie_file) if cookie_file else None)
+        if cookie_file is not None and cookie_file.exists():
+            try:
+                self.cookies.load(ignore_discard=True, ignore_expires=True)
+            except (OSError, ValueError) as error:
+                raise CrawlError(f"Cookie jar không hợp lệ ({cookie_file}): {error}") from error
+        self._opener = build_opener(HTTPCookieProcessor(self.cookies))
         self._last_request_at: float | None = None
         self._request_count = 0
+
+    def _save_cookies(self) -> None:
+        if self.cookie_file is None:
+            return
+        self.cookie_file.parent.mkdir(parents=True, exist_ok=True)
+        self.cookies.save(ignore_discard=True, ignore_expires=True)
 
     def _wait_before_request(self) -> None:
         if self.pause_every and self._request_count > 0:
@@ -114,7 +150,7 @@ class HttpClient:
         request = Request(
             url,
             headers={
-                "User-Agent": USER_AGENT,
+                "User-Agent": self.user_agent,
                 "Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8",
                 "Accept-Language": "vi,en;q=0.7",
             },
@@ -125,13 +161,11 @@ class HttpClient:
                 self._wait_before_request()
                 self._last_request_at = time.monotonic()
                 self._request_count += 1
-                with urlopen(request, timeout=self.timeout) as response:
+                with self._opener.open(request, timeout=self.timeout) as response:
                     charset = response.headers.get_content_charset() or "utf-8"
                     html = response.read().decode(charset, errors="strict")
-                    if (
-                        "Xác nhận không phải máy truy cập tự động" in html
-                        or 'class="g-recaptcha"' in html
-                    ):
+                    self._save_cookies()
+                    if is_access_challenge(html):
                         raise AccessChallengeError(
                             "Thi Viện đang yêu cầu xác minh CAPTCHA; "
                             "checkpoint vẫn được giữ nguyên"
