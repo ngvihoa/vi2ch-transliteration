@@ -8,6 +8,7 @@ import csv
 import io
 import json
 import os
+import random
 import re
 import tempfile
 import time
@@ -27,7 +28,7 @@ SEARCH_URL = f"{BASE_URL}/search-poem.php?PoemType=2&ViewType=2"
 GENRE_LABEL = "Phú"
 REPORT_SCHEMA = "thivien-phu-crawl-v1"
 ROBOTS_URL = f"{BASE_URL}/robots.txt"
-USER_AGENT = "vi2ch-dataset-research/1.0 (polite crawler; contact repository owner)"
+USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PIPELINE_ROOT = SCRIPT_DIR.parent
@@ -72,18 +73,44 @@ class Poem:
 
 
 class HttpClient:
-    def __init__(self, delay: float, timeout: float, retries: int) -> None:
+    def __init__(
+        self,
+        delay: float,
+        jitter: float,
+        pause_every: int,
+        pause_min: float,
+        pause_max: float,
+        timeout: float,
+        retries: int,
+    ) -> None:
         self.delay = delay
+        self.jitter = jitter
+        self.pause_every = pause_every
+        self.pause_min = pause_min
+        self.pause_max = pause_max
         self.timeout = timeout
         self.retries = retries
         self._last_request_at: float | None = None
+        self._request_count = 0
 
-    def get_text(self, url: str) -> str:
+    def _wait_before_request(self) -> None:
+        if self.pause_every and self._request_count > 0:
+            if self._request_count % self.pause_every == 0:
+                pause = random.uniform(self.pause_min, self.pause_max)
+                print(
+                    f"[nghỉ định kỳ] Đã gửi {self._request_count} request; "
+                    f"nghỉ {pause / 60:.1f} phút...",
+                    flush=True,
+                )
+                time.sleep(pause)
+
         if self._last_request_at is not None:
-            remaining = self.delay - (time.monotonic() - self._last_request_at)
+            interval = self.delay + random.uniform(0, self.jitter)
+            remaining = interval - (time.monotonic() - self._last_request_at)
             if remaining > 0:
                 time.sleep(remaining)
 
+    def get_text(self, url: str) -> str:
         request = Request(
             url,
             headers={
@@ -95,7 +122,9 @@ class HttpClient:
         last_error: BaseException | None = None
         for attempt in range(self.retries + 1):
             try:
+                self._wait_before_request()
                 self._last_request_at = time.monotonic()
+                self._request_count += 1
                 with urlopen(request, timeout=self.timeout) as response:
                     charset = response.headers.get_content_charset() or "utf-8"
                     html = response.read().decode(charset, errors="strict")
@@ -109,7 +138,8 @@ class HttpClient:
                         )
                     return html
             except AccessChallengeError as error:
-                last_error = error
+                # CAPTCHA là chặn chủ động, retry ngay chỉ làm tình hình xấu hơn.
+                raise error
             except HTTPError as error:
                 last_error = error
                 if error.code not in {429, 500, 502, 503, 504}:
@@ -664,19 +694,68 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Bỏ qua checkpoint URL cũ và đọc lại danh sách từ trang 1.",
     )
-    parser.add_argument("--delay", type=float, default=1.0)
+    parser.add_argument(
+        "--delay",
+        type=float,
+        default=5.0,
+        help="Khoảng cách tối thiểu giữa hai request (mặc định: 5 giây).",
+    )
+    parser.add_argument(
+        "--jitter",
+        type=float,
+        default=3.0,
+        help="Thêm ngẫu nhiên 0..N giây giữa các request (mặc định: 3).",
+    )
+    parser.add_argument(
+        "--pause-every",
+        type=int,
+        default=40,
+        help="Nghỉ dài sau mỗi N request; 0 để tắt (mặc định: 20).",
+    )
+    parser.add_argument(
+        "--pause-min",
+        type=float,
+        default=300.0,
+        help="Thời gian nghỉ dài tối thiểu, tính bằng giây (mặc định: 300).",
+    )
+    parser.add_argument(
+        "--pause-max",
+        type=float,
+        default=600.0,
+        help="Thời gian nghỉ dài tối đa, tính bằng giây (mặc định: 600).",
+    )
     parser.add_argument("--timeout", type=float, default=30.0)
     parser.add_argument("--retries", type=int, default=3)
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
-    if args.limit < 0 or args.delay < 0 or args.timeout <= 0 or args.retries < 0:
-        parser.error("Tham số limit/delay/retries phải >= 0 và timeout phải > 0")
+    if (
+        args.limit < 0
+        or args.delay < 0
+        or args.jitter < 0
+        or args.pause_every < 0
+        or args.pause_min < 0
+        or args.pause_max < args.pause_min
+        or args.timeout <= 0
+        or args.retries < 0
+    ):
+        parser.error(
+            "limit/delay/jitter/pause/retries phải hợp lệ, timeout phải > 0 "
+            "và pause-max phải >= pause-min"
+        )
     return args
 
 
 def main() -> int:
     args = parse_args()
-    client = HttpClient(args.delay, args.timeout, args.retries)
+    client = HttpClient(
+        args.delay,
+        args.jitter,
+        args.pause_every,
+        args.pause_min,
+        args.pause_max,
+        args.timeout,
+        args.retries,
+    )
     assert_allowed(client)
     urls = collect_urls(
         client,
