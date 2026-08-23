@@ -1,9 +1,36 @@
 {
   "schema_version": "thivien-ngu-ngon-tu-tuyet-crawl-v1",
   "source": "https://www.thivien.net/search-poem.php?PoemType=3&ViewType=2",
-  "discovered_poems": 100,
-  "written_csv_files": 100,
-  "sentence_pairs": 404,
-  "skipped_poems": 0,
-  "skipped": []
+  "url_checkpoint": "/kaggle/working/vi2ch-transliteration/pipelines/thivien_ngu_ngon_tu_tuyet/outputs/poem_urls.json",
+  "discovered_poems": 1030,
+  "written_csv_files": 1025,
+  "sentence_pairs": 4137,
+  "skipped_poems": 5,
+  "skipped": [
+    {
+      "status": "skipped",
+      "url": "https://www.thivien.net/L%C3%AA-Thi%E1%BA%BFu-D%C4%A9nh/C%E1%BB%95-%C3%BD/poem-iGWsgpAP09EysIIJ-qTFiQ",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/L%C3%AA-Thi%E1%BA%BFu-D%C4%A9nh/C%E1%BB%95-%C3%BD/poem-iGWsgpAP09EysIIJ-qTFiQ"
+    },
+    {
+      "status": "skipped",
+      "url": "https://www.thivien.net/%C4%90inh-Nho-Ho%C3%A0n/%C4%90%E1%BB%81-T%E1%BB%89-Can-mi%E1%BA%BFu/poem-ysah0l3pgeYf3UZtqJbNlw",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/%C4%90inh-Nho-Ho%C3%A0n/%C4%90%E1%BB%81-T%E1%BB%89-Can-mi%E1%BA%BFu/poem-ysah0l3pgeYf3UZtqJbNlw"
+    },
+    {
+      "status": "skipped",
+      "url": "https://www.thivien.net/L%C3%AA-Thi%E1%BA%BFu-D%C4%A9nh/L%E1%BB%85-%C4%91%E1%BB%85-s%C6%A1n-t%E1%BB%B1/poem-ErBbq6wRZj6Bm-eNMo7X7A",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/L%C3%AA-Thi%E1%BA%BFu-D%C4%A9nh/L%E1%BB%85-%C4%91%E1%BB%85-s%C6%A1n-t%E1%BB%B1/poem-ErBbq6wRZj6Bm-eNMo7X7A"
+    },
+    {
+      "status": "skipped",
+      "url": "https://www.thivien.net/Phan-B%E1%BB%99i-Ch%C3%A2u/Du-%C4%90%E1%BA%A1i-Hu%E1%BB%87-s%C6%A1n-c%E1%BA%A3m-chi%E1%BA%BFm/poem-t0amPxOUyz_ucyRJ7CmIvg",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Phan-B%E1%BB%99i-Ch%C3%A2u/Du-%C4%90%E1%BA%A1i-Hu%E1%BB%87-s%C6%A1n-c%E1%BA%A3m-chi%E1%BA%BFm/poem-t0amPxOUyz_ucyRJ7CmIvg"
+    },
+    {
+      "status": "skipped",
+      "url": "https://www.thivien.net/Nguy%E1%BB%85n-H%E1%BB%AFu-C%C6%B0%C6%A1ng/Kim-S%C6%A1n-ng%E1%BB%A5-v%C4%83n-l%C3%A2u-nh%C3%A2n-h%E1%BB%AFu-kinh-ng%E1%BB%AF-c%E1%BA%A3m-t%C3%A1c/poem-or8xRqLtTcphVcH2Dhbj4g",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Nguy%E1%BB%85n-H%E1%BB%AFu-C%C6%B0%C6%A1ng/Kim-S%C6%A1n-ng%E1%BB%A5-v%C4%83n-l%C3%A2u-nh%C3%A2n-h%E1%BB%AFu-kinh-ng%E1%BB%AF-c%E1%BA%A3m-t%C3%A1c/poem-or8xRqLtTcphVcH2Dhbj4g"
+    }
+  ]
 }
