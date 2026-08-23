@@ -16,6 +16,7 @@ PROJECT_ROOT = PIPELINE_ROOT.parent.parent
 DEFAULT_INPUT_DIR = PROJECT_ROOT / "raw-collections" / "poetry-collecions" / "phu"
 DEFAULT_OUTPUT = PIPELINE_ROOT / "outputs" / "phu.csv"
 EXPECTED_HEADER = ["vi", "ch"]
+MERGE_LABEL = "Phú"
 
 
 class MergeError(RuntimeError):
@@ -74,7 +75,9 @@ def merge_csv_files(input_paths: list[Path], output: Path) -> tuple[int, int]:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Gom CSV từng bài Phú thành một CSV vi/ch.")
+    parser = argparse.ArgumentParser(
+        description=f"Gom CSV từng bài {MERGE_LABEL} thành một CSV vi/ch."
+    )
     parser.add_argument("--input-dir", type=Path, default=DEFAULT_INPUT_DIR)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     return parser.parse_args()

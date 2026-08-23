@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Merge per-poem Ngũ ngôn tứ tuyệt CSV files into one atomic output."""
+# Chạy từ root vi2ch-model:
+# python3 pipelines/thivien_tu_ngon/scripts/merge_tu_ngon_csvs.py
+"""Merge per-poem Tứ ngôn CSV files into one atomic output."""
 
 from __future__ import annotations
 
@@ -28,14 +30,11 @@ def load_merger():
 
 def main() -> int:
     merger = load_merger()
-    merger.MERGE_LABEL = "Ngũ ngôn tứ tuyệt"
+    merger.MERGE_LABEL = "Tứ ngôn"
     merger.DEFAULT_INPUT_DIR = (
-        PROJECT_ROOT
-        / "raw-collections"
-        / "poetry-collecions"
-        / "ngu-ngon-tu-tuyet"
+        PROJECT_ROOT / "raw-collections" / "poetry-collecions" / "tu-ngon"
     )
-    merger.DEFAULT_OUTPUT = PIPELINE_ROOT / "outputs" / "ngu-ngon-tu-tuyet.csv"
+    merger.DEFAULT_OUTPUT = PIPELINE_ROOT / "outputs" / "tu-ngon.csv"
     return merger.main()
 
 
