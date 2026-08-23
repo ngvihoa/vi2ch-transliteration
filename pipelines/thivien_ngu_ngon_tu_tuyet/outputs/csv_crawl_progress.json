@@ -1,7 +1,7 @@
 {
   "schema_version": "thivien-checkpoint-url-crawl-v1",
   "source": "https://www.thivien.net/search-poem.php?PoemType=3&ViewType=2",
-  "processed_urls": 520,
+  "processed_urls": 510,
   "items": {
     "https://www.thivien.net/Jingak-Hyesim/B%E1%BA%A1ch-V%C3%A2n-%C4%91%C3%A0i-th%C6%B0%E1%BB%A3ng-%E1%BB%A9c-ti%C3%AAn-s%C6%B0/poem-PsHmpMveAHz0-43BJnxgrQ": {
       "status": "existing",
@@ -3056,56 +3056,6 @@
       "status": "skipped",
       "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/%C4%90%C3%B4ng-giao-h%C3%A0nh-v%E1%BB%8Dng/poem-2iHJn3sJ8u66FuHTFTNoQg",
       "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/%C4%90%C3%B4ng-giao-h%C3%A0nh-v%E1%BB%8Dng/poem-2iHJn3sJ8u66FuHTFTNoQg"
-    },
-    "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Giang-%C4%91%C3%ACnh-d%E1%BA%A1-nguy%E1%BB%87t-t%E1%BB%91ng-bi%E1%BB%87t-k%E1%BB%B3-1/poem-jFW_sccBj5HVAWe6gaQ6gw": {
-      "status": "skipped",
-      "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Giang-%C4%91%C3%ACnh-d%E1%BA%A1-nguy%E1%BB%87t-t%E1%BB%91ng-bi%E1%BB%87t-k%E1%BB%B3-1/poem-jFW_sccBj5HVAWe6gaQ6gw",
-      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Giang-%C4%91%C3%ACnh-d%E1%BA%A1-nguy%E1%BB%87t-t%E1%BB%91ng-bi%E1%BB%87t-k%E1%BB%B3-1/poem-jFW_sccBj5HVAWe6gaQ6gw"
-    },
-    "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Giang-%C4%91%C3%ACnh-d%E1%BA%A1-nguy%E1%BB%87t-t%E1%BB%91ng-bi%E1%BB%87t-k%E1%BB%B3-2/poem-uWOsKqnomagy-dK4o1s66w": {
-      "status": "skipped",
-      "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Giang-%C4%91%C3%ACnh-d%E1%BA%A1-nguy%E1%BB%87t-t%E1%BB%91ng-bi%E1%BB%87t-k%E1%BB%B3-2/poem-uWOsKqnomagy-dK4o1s66w",
-      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Giang-%C4%91%C3%ACnh-d%E1%BA%A1-nguy%E1%BB%87t-t%E1%BB%91ng-bi%E1%BB%87t-k%E1%BB%B3-2/poem-uWOsKqnomagy-dK4o1s66w"
-    },
-    "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Ky-xu%C3%A2n/poem-BvyboET3LrTFNHpeMs64Kg": {
-      "status": "skipped",
-      "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Ky-xu%C3%A2n/poem-BvyboET3LrTFNHpeMs64Kg",
-      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Ky-xu%C3%A2n/poem-BvyboET3LrTFNHpeMs64Kg"
-    },
-    "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/L%C3%A2m-%C4%91%C6%B0%E1%BB%9Dng-ho%C3%A0i-h%E1%BB%AFu/poem-VIv14Q6le0cLyk6oIQdc1w": {
-      "status": "skipped",
-      "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/L%C3%A2m-%C4%91%C6%B0%E1%BB%9Dng-ho%C3%A0i-h%E1%BB%AFu/poem-VIv14Q6le0cLyk6oIQdc1w",
-      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/L%C3%A2m-%C4%91%C6%B0%E1%BB%9Dng-ho%C3%A0i-h%E1%BB%AFu/poem-VIv14Q6le0cLyk6oIQdc1w"
-    },
-    "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Ph%E1%BB%95-An-Ki%E1%BA%BFn-%C3%82m-%C4%91%E1%BB%81-b%C3%ADch/poem-RWSXuRD3bLFaXuu2FPjrDw": {
-      "status": "skipped",
-      "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Ph%E1%BB%95-An-Ki%E1%BA%BFn-%C3%82m-%C4%91%E1%BB%81-b%C3%ADch/poem-RWSXuRD3bLFaXuu2FPjrDw",
-      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Ph%E1%BB%95-An-Ki%E1%BA%BFn-%C3%82m-%C4%91%E1%BB%81-b%C3%ADch/poem-RWSXuRD3bLFaXuu2FPjrDw"
-    },
-    "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/T%E1%BA%A3o-xu%C3%A2n-d%C3%A3-v%E1%BB%8Dng/poem-bf0wpzVkM58ka2Ur5DbQsA": {
-      "status": "skipped",
-      "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/T%E1%BA%A3o-xu%C3%A2n-d%C3%A3-v%E1%BB%8Dng/poem-bf0wpzVkM58ka2Ur5DbQsA",
-      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/T%E1%BA%A3o-xu%C3%A2n-d%C3%A3-v%E1%BB%8Dng/poem-bf0wpzVkM58ka2Ur5DbQsA"
-    },
-    "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/T%E1%BA%B7ng-L%C3%BD-th%E1%BA%ADp-t%E1%BB%A9-k%E1%BB%B3-1/poem-0P_OG9Hb0Pd7pvai8r1mvw": {
-      "status": "skipped",
-      "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/T%E1%BA%B7ng-L%C3%BD-th%E1%BA%ADp-t%E1%BB%A9-k%E1%BB%B3-1/poem-0P_OG9Hb0Pd7pvai8r1mvw",
-      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/T%E1%BA%B7ng-L%C3%BD-th%E1%BA%ADp-t%E1%BB%A9-k%E1%BB%B3-1/poem-0P_OG9Hb0Pd7pvai8r1mvw"
-    },
-    "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Thu%E1%BB%B7-B%C3%ACnh-v%C3%A3n-t%E1%BB%A9c/poem-vhtmtkW7x1aOs-TePfj7Cw": {
-      "status": "skipped",
-      "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Thu%E1%BB%B7-B%C3%ACnh-v%C3%A3n-t%E1%BB%A9c/poem-vhtmtkW7x1aOs-TePfj7Cw",
-      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Thu%E1%BB%B7-B%C3%ACnh-v%C3%A3n-t%E1%BB%A9c/poem-vhtmtkW7x1aOs-TePfj7Cw"
-    },
-    "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/T%C6%B0-quy/poem-cxUDK-MefDjM6qcyIN-07g": {
-      "status": "skipped",
-      "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/T%C6%B0-quy/poem-cxUDK-MefDjM6qcyIN-07g",
-      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/T%C6%B0-quy/poem-cxUDK-MefDjM6qcyIN-07g"
-    },
-    "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Xu%C3%A2n-vi%C3%AAn/poem-_NkvLept-O7eJSkn3bLZkA": {
-      "status": "skipped",
-      "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Xu%C3%A2n-vi%C3%AAn/poem-_NkvLept-O7eJSkn3bLZkA",
-      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Xu%C3%A2n-vi%C3%AAn/poem-_NkvLept-O7eJSkn3bLZkA"
     }
   }
 }
