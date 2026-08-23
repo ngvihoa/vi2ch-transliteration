@@ -1,0 +1,18 @@
+{
+  "schema_version": "thivien-tu-ngon-crawl-v1",
+  "source": "https://www.thivien.net/search-poem.php?PoemType=10&ViewType=2",
+  "discovered_poems": 61,
+  "written_csv_files": 13,
+  "sentence_pairs": 259,
+  "skipped_poems": 2,
+  "skipped": [
+    {
+      "url": "https://www.thivien.net/Tr%C6%B0%C6%A1ng-%C4%90%C4%83ng-Qu%E1%BA%BF/H%E1%BB%AFu-t%E1%BB%ADu/poem-x9C9skZQmZqLy6GXFDHVhg",
+      "error": "Output đã tồn tại (C:\\Users\\Kang\\Desktop\\CK_NLP\\vi2ch-transliteration\\raw-collections\\poetry-collecions\\tu-ngon\\huutuu.csv); dùng --overwrite để thay thế"
+    },
+    {
+      "url": "https://www.thivien.net/Phan-Tr%C6%B0%E1%BB%9Dng-Nguy%C3%AAn/Th%E1%BB%8B-%C4%91%E1%BA%A1o/poem-SdJec1gufHrPkeNptPW8Qg",
+      "error": "Output đã tồn tại (C:\\Users\\Kang\\Desktop\\CK_NLP\\vi2ch-transliteration\\raw-collections\\poetry-collecions\\tu-ngon\\thidao.csv); dùng --overwrite để thay thế"
+    }
+  ]
+}

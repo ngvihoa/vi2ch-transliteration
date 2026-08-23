@@ -279,6 +279,16 @@ def main() -> int:
         item for item in selected_items if item.get("status") in {"written", "existing"}
     ]
     skipped = [item for item in selected_items if item.get("status") == "skipped"]
+    tracked_outputs = {
+        str(item["output"])
+        for item in successful
+        if isinstance(item.get("output"), str)
+    }
+    additional_csv_files = sorted(
+        path.name
+        for path in args.output_dir.glob("*.csv")
+        if path.name not in tracked_outputs
+    )
     report = {
         "schema_version": REPORT_SCHEMA,
         "source": SEARCH_URL,
@@ -288,6 +298,8 @@ def main() -> int:
         "sentence_pairs": sum(
             int(item.get("sentence_pairs", 0)) for item in successful
         ),
+        "additional_csv_files_count": len(additional_csv_files),
+        "additional_csv_files": additional_csv_files,
         "skipped_poems": len(skipped),
         "skipped": skipped,
     }
