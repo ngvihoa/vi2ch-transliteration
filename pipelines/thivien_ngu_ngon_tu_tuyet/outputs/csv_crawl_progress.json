@@ -3029,24 +3029,28 @@
       "sentence_pairs": 4
     },
     "https://www.thivien.net/Vu-Qu%C3%BD-T%E1%BB%AD/V%E1%BB%8Bnh-H%E1%BA%A1ng-V%C5%A9/poem-fkd4EjMFYZqHCynwCkcFyA": {
-      "status": "skipped",
-      "url": "https://www.thivien.net/Vu-Qu%C3%BD-T%E1%BB%AD/V%E1%BB%8Bnh-H%E1%BA%A1ng-V%C5%A9/poem-fkd4EjMFYZqHCynwCkcFyA",
-      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Vu-Qu%C3%BD-T%E1%BB%AD/V%E1%BB%8Bnh-H%E1%BA%A1ng-V%C5%A9/poem-fkd4EjMFYZqHCynwCkcFyA"
+      "status": "written",
+      "output": "vinhhangvu.csv",
+      "title_vi": "Vịnh Hạng Vũ",
+      "sentence_pairs": 4
     },
     "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Bi%E1%BB%87t-nh%C3%A2n-k%E1%BB%B3-2/poem-3GZTXvom22k1qgl3RrqcXQ": {
-      "status": "skipped",
-      "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Bi%E1%BB%87t-nh%C3%A2n-k%E1%BB%B3-2/poem-3GZTXvom22k1qgl3RrqcXQ",
-      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/Bi%E1%BB%87t-nh%C3%A2n-k%E1%BB%B3-2/poem-3GZTXvom22k1qgl3RrqcXQ"
+      "status": "written",
+      "output": "bietnhanky2.csv",
+      "title_vi": "Biệt nhân kỳ 2",
+      "sentence_pairs": 4
     },
     "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/C%E1%BB%ADu-nh%E1%BA%ADt/poem-APitEiWVNOOJMnbUSTlfhA": {
-      "status": "skipped",
-      "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/C%E1%BB%ADu-nh%E1%BA%ADt/poem-APitEiWVNOOJMnbUSTlfhA",
-      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/C%E1%BB%ADu-nh%E1%BA%ADt/poem-APitEiWVNOOJMnbUSTlfhA"
+      "status": "written",
+      "output": "cuunhat.csv",
+      "title_vi": "Cửu nhật",
+      "sentence_pairs": 4
     },
     "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/%C4%90%C4%83ng-th%C3%A0nh-xu%C3%A2n-v%E1%BB%8Dng/poem-SA8Ye65eXSR16AHuCJHkTA": {
-      "status": "skipped",
-      "url": "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/%C4%90%C4%83ng-th%C3%A0nh-xu%C3%A2n-v%E1%BB%8Dng/poem-SA8Ye65eXSR16AHuCJHkTA",
-      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/%C4%90%C4%83ng-th%C3%A0nh-xu%C3%A2n-v%E1%BB%8Dng/poem-SA8Ye65eXSR16AHuCJHkTA"
+      "status": "written",
+      "output": "dangthanhxuanvong.csv",
+      "title_vi": "Đăng thành xuân vọng",
+      "sentence_pairs": 4
     },
     "https://www.thivien.net/V%C6%B0%C6%A1ng-B%E1%BB%99t/%C4%90%C3%B4ng-giao-h%C3%A0nh-v%E1%BB%8Dng/poem-2iHJn3sJ8u66FuHTFTNoQg": {
       "status": "skipped",
