@@ -1,0 +1,15 @@
+{
+  "schema_version": "thivien-duong-luat-bien-the-crawl-v1",
+  "source": "https://www.thivien.net/search-poem.php?PoemType=23&ViewType=2",
+  "discovered_poems": 10,
+  "written_csv_files": 9,
+  "sentence_pairs": 58,
+  "skipped_poems": 1,
+  "skipped": [
+    {
+      "status": "skipped",
+      "url": "https://www.thivien.net/%C4%90inh-Nho-Ho%C3%A0n/T%E1%BA%B7ng-Ng%C3%B4-Ch%C3%A2u-t%C3%BA-t%C3%A0i-M%C3%A3-%C3%81i-V%C3%A2n/poem-lYGalms2SnXsF3yb9ahKMw",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/%C4%90inh-Nho-Ho%C3%A0n/T%E1%BA%B7ng-Ng%C3%B4-Ch%C3%A2u-t%C3%BA-t%C3%A0i-M%C3%A3-%C3%81i-V%C3%A2n/poem-lYGalms2SnXsF3yb9ahKMw"
+    }
+  ]
+}

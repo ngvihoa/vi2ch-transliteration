@@ -31,6 +31,7 @@ def main() -> int:
     crawler.SEARCH_URL = "https://www.thivien.net/search-poem.php?PoemType=23&ViewType=2"
     crawler.GENRE_LABEL = "Đường luật biến thể"
     crawler.REPORT_SCHEMA = "thivien-duong-luat-bien-the-crawl-v1"
+    crawler.DEFAULT_COUNTRY_IDS = ("2", "3")
     crawler.DEFAULT_OUTPUT_DIR = (
         PROJECT_ROOT / "raw-collections" / "poetry-collecions" / "duong-luat-bien-the"
     )

@@ -1,0 +1,32 @@
+{
+  "schema_version": "thivien-partition-checkpoint-v4",
+  "source": "https://www.thivien.net/search-poem.php?PoemType=23&ViewType=2",
+  "strategy": "country-age-v1",
+  "expected_total": 10,
+  "country_ids": [
+    "2",
+    "3"
+  ],
+  "age_partition_counts": {},
+  "discovered_urls": 10,
+  "completed_partitions": [
+    "country=2",
+    "country=3",
+    "country=45"
+  ],
+  "partition_stats": {},
+  "unresolved_partitions": [],
+  "complete": true,
+  "urls": [
+    "https://www.thivien.net/Nguy%E1%BB%85n-Phong/%C3%81i-s%C6%A1n/poem-A8RS53C3_adJtXCvkXOc3g",
+    "https://www.thivien.net/Ph%E1%BA%A1m-T%C3%B4ng-M%E1%BA%A1i/Nh%C3%A0n-c%C6%B0-%C4%91%E1%BB%81-thu%E1%BB%B7-m%E1%BA%B7c-tr%C6%B0%E1%BB%9Bng-t%E1%BB%AD-ti%E1%BB%83u-c%E1%BA%A3nh/poem-sR70Sm3jR1DwoM0mc1KNKQ",
+    "https://www.thivien.net/%C4%90inh-Nho-Ho%C3%A0n/T%E1%BA%B7ng-Ng%C3%B4-Ch%C3%A2u-t%C3%BA-t%C3%A0i-M%C3%A3-%C3%81i-V%C3%A2n/poem-lYGalms2SnXsF3yb9ahKMw",
+    "https://www.thivien.net/M%E1%BA%A1c-K%C3%BD/T%E1%BB%91ng-s%E1%BB%A9-ng%C3%A2m/poem-0cFKiaRDECwhIL3WLmamxw",
+    "https://www.thivien.net/Tr%E1%BA%A7n-Li%E1%BB%87t/%C4%90%E1%BB%81-%C4%91%C4%83ng/poem-yGNh_NVfG5eATAOnEUMQyw",
+    "https://www.thivien.net/D%C6%B0-Ho%C3%A0i/Kim-L%C4%83ng-t%E1%BA%A1p-c%E1%BA%A3m/poem-TjsjzUUHp0l84UYd1kvs4A",
+    "https://www.thivien.net/T%C3%B4-Th%E1%BB%A9c/S%C6%A1-ph%C3%A1t-Gia-Ch%C3%A2u/poem-WIB6j91qNmtqLiibM2ZvGA",
+    "https://www.thivien.net/T%C3%B4-Th%E1%BB%A9c/T%E1%BA%A9y-nhi-h%C3%AD-t%C3%A1c/poem-nL6_x1zW2Zk6HfCVG-gYMg",
+    "https://www.thivien.net/Tri%E1%BB%81u-Thuy%E1%BA%BFt-Chi/Thu/poem-kMDNf7wdEPfiChZwlzWbSQ",
+    "https://www.thivien.net/Ph%E1%BB%95-Am-%E1%BA%A8n-T%C3%BAc-thi%E1%BB%81n-s%C6%B0/T%E1%BB%A5ng-c%E1%BB%95-k%E1%BB%B3-04/poem-rs-tRpPalAiS3etoXvmUVQ"
+  ]
+}
