@@ -716,7 +716,7 @@ kaggle-scripts/viet-han-bert.ipynb
 Mỗi CSV từng bài và CSV đã merge có đúng hai cột:
 
 ```csv
-vi,ch
+vi,cn
 Phiên phiên bạch cưu,翩翩白鳩
 ```
 
@@ -761,7 +761,7 @@ python3 pipelines/thivien_tu_ngon/scripts/merge_tu_ngon_csvs.py
 
 Script merge kiểm tra header và dữ liệu rỗng trước khi tạo CSV thể loại. Với
 pipeline chưa có script merge riêng, cần gom các CSV từng bài thành một CSV
-`vi,ch` cho thể loại đó trước khi thực hiện bước chia tập.
+`vi,cn` cho thể loại đó trước khi thực hiện bước chia tập.
 
 ### 14.2 Chuẩn bị input để chia tập
 
@@ -849,9 +849,9 @@ Upload ba file split vào Kaggle Dataset. Notebook
 ```
 
 Nếu Kaggle mount dataset ở đường dẫn khác, chỉ cần sửa `INPUT_DIR` trong
-notebook. Notebook đọc schema `vi,ch`, sau đó đổi tên `ch` thành `cn` trong bộ
-nhớ để tương thích với code model hiện tại. Vocabulary chỉ được xây từ
-`poem.train.csv`, tránh rò rỉ dữ liệu từ test hoặc validation.
+notebook. Cả notebook và code model đều dùng trực tiếp schema `vi,cn`.
+Vocabulary chỉ được xây từ `poem.train.csv`, tránh rò rỉ dữ liệu từ test hoặc
+validation.
 
 ### 14.5 Kiểm tra pipeline chia tập
 

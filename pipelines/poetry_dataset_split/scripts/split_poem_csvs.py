@@ -24,7 +24,8 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 PIPELINE_ROOT = SCRIPT_DIR.parent
 DEFAULT_INPUT_DIR = PIPELINE_ROOT / "input"
 DEFAULT_OUTPUT_DIR = PIPELINE_ROOT / "outputs"
-FIELDNAMES = ("vi", "ch")
+FIELDNAMES = ("vi", "cn")
+LEGACY_FIELDNAMES = ("vi", "ch")
 CLEAN_NAME = "clean"
 SPLIT_NAMES = ("train", "test", "val")
 
@@ -69,21 +70,25 @@ def allocate_split_sizes(row_count: int, ratios: Sequence[float]) -> tuple[int, 
 def read_poem_csv(path: Path) -> list[dict[str, str]]:
     with path.open("r", encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
-        if reader.fieldnames != list(FIELDNAMES):
+        if reader.fieldnames not in (list(FIELDNAMES), list(LEGACY_FIELDNAMES)):
             raise ValueError(
                 f"{path}: expected CSV header {','.join(FIELDNAMES)!r}, "
                 f"found {reader.fieldnames!r}"
             )
 
         rows = []
+        target_field = "cn" if reader.fieldnames == list(FIELDNAMES) else "ch"
         for line_number, row in enumerate(reader, start=2):
             if None in row:
                 raise ValueError(f"{path}:{line_number}: row has more than two columns")
-            cleaned = {field: (row[field] or "").strip() for field in FIELDNAMES}
+            cleaned = {
+                "vi": (row["vi"] or "").strip(),
+                "cn": (row[target_field] or "").strip(),
+            }
             if not any(cleaned.values()):
                 continue
             if not all(cleaned.values()):
-                raise ValueError(f"{path}:{line_number}: both vi and ch must be non-empty")
+                raise ValueError(f"{path}:{line_number}: both vi and cn must be non-empty")
             rows.append(cleaned)
     return rows
 

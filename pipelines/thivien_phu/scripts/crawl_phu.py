@@ -94,7 +94,7 @@ class Poem:
     url: str
     title_vi: str
     lines_vi: list[str]
-    lines_ch: list[str]
+    lines_cn: list[str]
 
 
 class HttpClient:
@@ -281,19 +281,19 @@ def parse_poem(html: str, url: str) -> Poem:
         raise CrawlError(f"Không tìm thấy phiên âm Hán-Việt: {url}")
 
     title_lines = normalized_lines(vi_heading)
-    lines_ch = normalized_lines(han_body)
+    lines_cn = normalized_lines(han_body)
     lines_vi = normalized_lines(vi_body)
     if len(title_lines) != 1:
         raise CrawlError(f"Tiêu đề không hợp lệ: {url}")
-    if not lines_ch or len(lines_ch) != len(lines_vi):
+    if not lines_cn or len(lines_cn) != len(lines_vi):
         raise CrawlError(
-            f"Lệch dòng tại {url}: chữ Hán={len(lines_ch)}, Hán-Việt={len(lines_vi)}"
+            f"Lệch dòng tại {url}: chữ Hán={len(lines_cn)}, Hán-Việt={len(lines_vi)}"
         )
 
     match = POEM_LINK_RE.search(urlparse(url).path)
     if match is None:
         raise CrawlError(f"URL không có UID: {url}")
-    return Poem(match.group(1), url, title_lines[0], lines_vi, lines_ch)
+    return Poem(match.group(1), url, title_lines[0], lines_vi, lines_cn)
 
 
 def stem_with_uid(stem: str, uid: str) -> str:
@@ -341,8 +341,8 @@ def write_poem(poem: Poem, output_dir: Path, stem: str, overwrite: bool) -> Path
         raise CrawlError(f"Output đã tồn tại ({output}); dùng --overwrite để thay thế")
     buffer = io.StringIO(newline="")
     writer = csv.writer(buffer, lineterminator="\n")
-    writer.writerow(["vi", "ch"])
-    writer.writerows(zip(poem.lines_vi, poem.lines_ch, strict=True))
+    writer.writerow(["vi", "cn"])
+    writer.writerows(zip(poem.lines_vi, poem.lines_cn, strict=True))
     atomic_write(output, buffer.getvalue())
     return output
 

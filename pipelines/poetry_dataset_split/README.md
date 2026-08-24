@@ -15,12 +15,15 @@ sau đó gộp thành các dataset:
 trống trong repository. Mỗi file phải có đúng hai cột như dữ liệu đã crawl:
 
 ```csv
-vi,ch
+vi,cn
 Phiên phiên bạch cưu,翩翩白鳩
 ```
 
 Tên file được dùng để phân biệt thể loại khi chia dữ liệu, nhưng không được
 thêm vào output. Các dòng trống hoàn toàn sẽ bị bỏ qua.
+
+Các raw CSV cũ có header `vi,ch` vẫn được đọc để hỗ trợ chuyển đổi, nhưng mọi
+file output mới luôn dùng header chuẩn của dự án là `vi,cn`.
 
 `poem.clean.csv` giữ thứ tự tên file input và thứ tự dòng trong mỗi file sau
 khi khoảng trắng đầu/cuối được loại bỏ. Ba file split được shuffle bằng seed.

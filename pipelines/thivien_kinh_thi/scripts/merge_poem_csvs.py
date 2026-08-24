@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Merge per-poem vi/ch CSV files into one CSV using an atomic write."""
+"""Merge per-poem Vietnamese/Chinese CSV files into one vi/cn CSV."""
 
 from __future__ import annotations
 
@@ -15,7 +15,8 @@ PIPELINE_ROOT = SCRIPT_DIR.parent
 PROJECT_ROOT = PIPELINE_ROOT.parent.parent
 DEFAULT_INPUT_DIR = PROJECT_ROOT / "raw-collections" / "poetry-collecions"
 DEFAULT_OUTPUT = PIPELINE_ROOT / "outputs" / "kinhthi.csv"
-EXPECTED_HEADER = ["vi", "ch"]
+EXPECTED_HEADER = ["vi", "cn"]
+LEGACY_HEADER = ["vi", "ch"]
 
 
 class MergeError(RuntimeError):
@@ -59,7 +60,7 @@ def merge_csv_files(input_paths: list[Path], output: Path) -> tuple[int, int]:
                 with input_path.open("r", encoding="utf-8", newline="") as source:
                     reader = csv.reader(source)
                     header = next(reader, None)
-                    if header != EXPECTED_HEADER:
+                    if header not in (EXPECTED_HEADER, LEGACY_HEADER):
                         raise MergeError(
                             f"Header không hợp lệ trong {input_path}: "
                             f"cần {EXPECTED_HEADER}, nhận {header}"
@@ -71,10 +72,10 @@ def merge_csv_files(input_paths: list[Path], output: Path) -> tuple[int, int]:
                                 f"{input_path}:{line_number} cần đúng 2 cột, "
                                 f"nhận {len(row)}"
                             )
-                        vi, ch = row
-                        if not vi.strip() or not ch.strip():
+                        vi, cn = row
+                        if not vi.strip() or not cn.strip():
                             raise MergeError(
-                                f"{input_path}:{line_number} có cột vi/ch rỗng"
+                                f"{input_path}:{line_number} có cột vi/cn rỗng"
                             )
                         writer.writerow(row)
                         row_count += 1
@@ -95,7 +96,7 @@ def merge_csv_files(input_paths: list[Path], output: Path) -> tuple[int, int]:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Gom các CSV từng bài Kinh Thi thành một CSV vi/ch duy nhất."
+        description="Gom các CSV từng bài Kinh Thi thành một CSV vi/cn duy nhất."
     )
     parser.add_argument("--input-dir", type=Path, default=DEFAULT_INPUT_DIR)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)

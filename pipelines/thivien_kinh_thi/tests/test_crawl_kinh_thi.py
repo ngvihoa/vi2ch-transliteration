@@ -59,9 +59,9 @@ class CrawlKinhThiTest(unittest.TestCase):
         url = "https://www.thivien.net/Khong-Tu/An-ky-loi-1/poem-test_UID-1"
         poem = MODULE.parse_poem(POEM_HTML, url)
         self.assertEqual(poem.title_vi, "Ẩn kỳ lôi 1")
-        self.assertEqual(poem.title_ch, "殷其雷 1")
+        self.assertEqual(poem.title_cn, "殷其雷 1")
         self.assertEqual(poem.lines_vi, ["Ẩn kỳ lôi,", "Tại nam sơn chi dương."])
-        self.assertEqual(poem.lines_ch, ["殷其雷，", "在南山之陽。"])
+        self.assertEqual(poem.lines_cn, ["殷其雷，", "在南山之陽。"])
         self.assertNotIn("Tiếng sấm", poem.lines_vi)
 
     def test_filename_and_parallel_csv_output(self) -> None:
@@ -69,9 +69,9 @@ class CrawlKinhThiTest(unittest.TestCase):
             uid="test",
             url="https://example.test/poem-test",
             title_vi="Ẩn kỳ lôi 1",
-            title_ch="殷其雷 1",
+            title_cn="殷其雷 1",
             lines_vi=["Ẩn kỳ lôi,"],
-            lines_ch=["殷其雷，"],
+            lines_cn=["殷其雷，"],
         )
         self.assertEqual(MODULE.filename_stem(poem.title_vi), "ankyloi1")
         with tempfile.TemporaryDirectory() as directory:
@@ -79,7 +79,7 @@ class CrawlKinhThiTest(unittest.TestCase):
             with output_path.open(encoding="utf-8", newline="") as handle:
                 rows = list(csv.DictReader(handle))
             self.assertEqual(output_path.name, "ankyloi1.csv")
-            self.assertEqual(rows, [{"vi": "Ẩn kỳ lôi,", "ch": "殷其雷，"}])
+            self.assertEqual(rows, [{"vi": "Ẩn kỳ lôi,", "cn": "殷其雷，"}])
 
     def test_long_filename_is_truncated_with_uid(self) -> None:
         stem = MODULE.filename_stem("Bạch vân " * 100, "test_UID-123")
@@ -90,9 +90,9 @@ class CrawlKinhThiTest(unittest.TestCase):
             uid="test_UID-123",
             url="https://example.test/poem-test_UID-123",
             title_vi="Bạch vân " * 100,
-            title_ch="白雲",
+            title_cn="白雲",
             lines_vi=["Bạch vân"],
-            lines_ch=["白雲"],
+            lines_cn=["白雲"],
         )
         with tempfile.TemporaryDirectory() as directory:
             output_path = MODULE.write_poem(poem, Path(directory), stem, False)

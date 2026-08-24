@@ -9,7 +9,7 @@ Mỗi bài tạo một file CSV riêng trong `raw-collections/poetry-collecions/
 ankyloi1.csv
 ```
 
-CSV có đúng hai cột `vi,ch`. Mỗi record là một câu phiên âm Hán-Việt và câu
+CSV có đúng hai cột `vi,cn`. Mỗi record là một câu phiên âm Hán-Việt và câu
 chữ Hán tương ứng. Tiêu đề, phần dịch nghĩa và chú thích không được đưa vào
 CSV. Chữ Hán được giữ theo dạng xuất hiện trong nguyên tác trên Thi Viện.
 

@@ -14,10 +14,10 @@ SPEC.loader.exec_module(MODULE)
 
 def write_csv(path: Path, prefix: str, count: int) -> None:
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=("vi", "ch"))
+        writer = csv.DictWriter(handle, fieldnames=("vi", "cn"))
         writer.writeheader()
         for index in range(count):
-            writer.writerow({"vi": f"{prefix}-vi-{index}", "ch": f"{prefix}-ch-{index}"})
+            writer.writerow({"vi": f"{prefix}-vi-{index}", "cn": f"{prefix}-cn-{index}"})
 
 
 class SplitPoemCsvsTests(unittest.TestCase):
@@ -55,18 +55,18 @@ class SplitPoemCsvsTests(unittest.TestCase):
             self.assertEqual("b-vi-19", combined["clean"][-1]["vi"])
 
             all_pairs = {
-                (row["vi"], row["ch"])
+                (row["vi"], row["cn"])
                 for name in MODULE.SPLIT_NAMES
                 for row in combined[name]
             }
             self.assertEqual(30, len(all_pairs))
             self.assertEqual(
-                {(row["vi"], row["ch"]) for row in combined["clean"]},
+                {(row["vi"], row["cn"]) for row in combined["clean"]},
                 all_pairs,
             )
 
     def test_same_seed_is_reproducible(self):
-        rows = [{"vi": str(index), "ch": str(index)} for index in range(12)]
+        rows = [{"vi": str(index), "cn": str(index)} for index in range(12)]
         first = MODULE.split_rows(rows, (0.8, 0.1, 0.1), seed=7)
         second = MODULE.split_rows(rows, (0.8, 0.1, 0.1), seed=7)
         self.assertEqual(first, second)
@@ -77,6 +77,15 @@ class SplitPoemCsvsTests(unittest.TestCase):
             path.write_text("source,target\na,b\n", encoding="utf-8")
             with self.assertRaisesRegex(ValueError, "expected CSV header"):
                 MODULE.read_poem_csv(path)
+
+    def test_converts_legacy_ch_header_to_cn(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "legacy.csv"
+            path.write_text("vi,ch\nĐộc,獨\n", encoding="utf-8")
+            self.assertEqual(
+                MODULE.read_poem_csv(path),
+                [{"vi": "Độc", "cn": "獨"}],
+            )
 
 
 if __name__ == "__main__":

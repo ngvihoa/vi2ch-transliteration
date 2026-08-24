@@ -15,7 +15,8 @@ PIPELINE_ROOT = SCRIPT_DIR.parent
 PROJECT_ROOT = PIPELINE_ROOT.parent.parent
 DEFAULT_INPUT_DIR = PROJECT_ROOT / "raw-collections" / "poetry-collecions" / "phu"
 DEFAULT_OUTPUT = PIPELINE_ROOT / "outputs" / "phu.csv"
-EXPECTED_HEADER = ["vi", "ch"]
+EXPECTED_HEADER = ["vi", "cn"]
+LEGACY_HEADER = ["vi", "ch"]
 MERGE_LABEL = "Phú"
 
 
@@ -51,7 +52,7 @@ def merge_csv_files(input_paths: list[Path], output: Path) -> tuple[int, int]:
                 with input_path.open(encoding="utf-8", newline="") as source:
                     reader = csv.reader(source)
                     header = next(reader, None)
-                    if header != EXPECTED_HEADER:
+                    if header not in (EXPECTED_HEADER, LEGACY_HEADER):
                         raise MergeError(f"Header không hợp lệ trong {input_path}: {header}")
                     for line_number, row in enumerate(reader, start=2):
                         if len(row) != 2:
@@ -76,7 +77,7 @@ def merge_csv_files(input_paths: list[Path], output: Path) -> tuple[int, int]:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description=f"Gom CSV từng bài {MERGE_LABEL} thành một CSV vi/ch."
+        description=f"Gom CSV từng bài {MERGE_LABEL} thành một CSV vi/cn."
     )
     parser.add_argument("--input-dir", type=Path, default=DEFAULT_INPUT_DIR)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
