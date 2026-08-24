@@ -1,8 +1,10 @@
 # Poetry dataset split pipeline
 
-Pipeline nhận nhiều file CSV thơ (mỗi file tương ứng một thể loại), chia riêng
-từng thể loại thành `train`/`test`/`val`, sau đó gộp thành ba dataset:
+Pipeline nhận nhiều file CSV thơ (mỗi file tương ứng một thể loại), tạo một
+file tổng đã kiểm tra, chia riêng từng thể loại thành `train`/`test`/`val`,
+sau đó gộp thành các dataset:
 
+- `outputs/poem.clean.csv`: toàn bộ dữ liệu hợp lệ trước khi chia.
 - `outputs/poem.train.csv`
 - `outputs/poem.test.csv`
 - `outputs/poem.val.csv`
@@ -19,6 +21,9 @@ Phiên phiên bạch cưu,翩翩白鳩
 
 Tên file được dùng để phân biệt thể loại khi chia dữ liệu, nhưng không được
 thêm vào output. Các dòng trống hoàn toàn sẽ bị bỏ qua.
+
+`poem.clean.csv` giữ thứ tự tên file input và thứ tự dòng trong mỗi file sau
+khi khoảng trắng đầu/cuối được loại bỏ. Ba file split được shuffle bằng seed.
 
 ## Chạy pipeline
 

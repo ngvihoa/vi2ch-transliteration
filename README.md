@@ -706,7 +706,7 @@ pipelines/poetry_dataset_split/input/
     ↓
 chia riêng từng thể loại theo train/test/val
     ↓
-poem.train.csv + poem.test.csv + poem.val.csv
+poem.clean.csv + poem.train.csv + poem.test.csv + poem.val.csv
     ↓
 kaggle-scripts/viet-han-bert.ipynb
 ```
@@ -813,10 +813,15 @@ Quy tắc chia:
 Output được ghi tại:
 
 ```text
+pipelines/poetry_dataset_split/outputs/poem.clean.csv
 pipelines/poetry_dataset_split/outputs/poem.train.csv
 pipelines/poetry_dataset_split/outputs/poem.test.csv
 pipelines/poetry_dataset_split/outputs/poem.val.csv
 ```
+
+`poem.clean.csv` chứa toàn bộ dòng hợp lệ đã gom từ các input, trước khi chia
+tập. File này thuận tiện để kiểm tra tổng dữ liệu; quá trình train vẫn sử dụng
+ba file split để tránh rò rỉ giữa train, test và validation.
 
 Có thể đổi tỷ lệ và seed:
 
@@ -834,7 +839,7 @@ chi tiết tại `pipelines/poetry_dataset_split/README.md`.
 
 ### 14.4 Dùng dataset trên Kaggle
 
-Upload ba file output vào Kaggle Dataset. Notebook
+Upload ba file split vào Kaggle Dataset. Notebook
 `kaggle-scripts/viet-han-bert.ipynb` mặc định tìm các file:
 
 ```text

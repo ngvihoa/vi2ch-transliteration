@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+# Chạy từ root vi2ch-model:
+# python3 pipelines/poetry_dataset_split/scripts/split_poem_csvs.py
+#
+# Tùy chỉnh tỷ lệ và seed:
+# python3 pipelines/poetry_dataset_split/scripts/split_poem_csvs.py \
+#   --train-ratio 0.8 --test-ratio 0.1 --val-ratio 0.1 --seed 42
 """Split every poem genre independently, then merge the resulting splits."""
 
 from __future__ import annotations
@@ -19,6 +25,7 @@ PIPELINE_ROOT = SCRIPT_DIR.parent
 DEFAULT_INPUT_DIR = PIPELINE_ROOT / "input"
 DEFAULT_OUTPUT_DIR = PIPELINE_ROOT / "outputs"
 FIELDNAMES = ("vi", "ch")
+CLEAN_NAME = "clean"
 SPLIT_NAMES = ("train", "test", "val")
 
 
@@ -105,11 +112,12 @@ def build_dataset(
     input_paths: Iterable[Path], ratios: Sequence[float], seed: int
 ) -> tuple[dict[str, list[dict[str, str]]], dict[str, dict[str, int]]]:
     validate_ratios(ratios)
-    combined = {name: [] for name in SPLIT_NAMES}
+    combined = {CLEAN_NAME: [], **{name: [] for name in SPLIT_NAMES}}
     counts: dict[str, dict[str, int]] = {}
 
     for path in sorted(input_paths, key=lambda item: item.name):
         rows = read_poem_csv(path)
+        combined[CLEAN_NAME].extend(rows)
         try:
             split = split_rows(rows, ratios, genre_seed(seed, path.name))
         except ValueError as error:
@@ -166,7 +174,7 @@ def main() -> int:
     except ValueError as error:
         raise SystemExit(f"Error: {error}") from error
 
-    for name in SPLIT_NAMES:
+    for name in (CLEAN_NAME, *SPLIT_NAMES):
         atomic_write_csv(args.output_dir / f"poem.{name}.csv", combined[name])
 
     for filename, split_counts in counts.items():
@@ -176,7 +184,9 @@ def main() -> int:
         )
     print(
         "Combined: "
-        + ", ".join(f"{name}={len(combined[name])}" for name in SPLIT_NAMES)
+        + ", ".join(
+            f"{name}={len(combined[name])}" for name in (CLEAN_NAME, *SPLIT_NAMES)
+        )
     )
     return 0
 

@@ -49,7 +49,10 @@ class SplitPoemCsvsTests(unittest.TestCase):
 
             self.assertEqual({"train": 8, "test": 1, "val": 1}, counts["genre-a.csv"])
             self.assertEqual({"train": 16, "test": 2, "val": 2}, counts["genre-b.csv"])
+            self.assertEqual(30, len(combined["clean"]))
             self.assertEqual([24, 3, 3], [len(combined[name]) for name in MODULE.SPLIT_NAMES])
+            self.assertEqual("a-vi-0", combined["clean"][0]["vi"])
+            self.assertEqual("b-vi-19", combined["clean"][-1]["vi"])
 
             all_pairs = {
                 (row["vi"], row["ch"])
@@ -57,6 +60,10 @@ class SplitPoemCsvsTests(unittest.TestCase):
                 for row in combined[name]
             }
             self.assertEqual(30, len(all_pairs))
+            self.assertEqual(
+                {(row["vi"], row["ch"]) for row in combined["clean"]},
+                all_pairs,
+            )
 
     def test_same_seed_is_reproducible(self):
         rows = [{"vi": str(index), "ch": str(index)} for index in range(12)]
