@@ -18,6 +18,7 @@ SHARED_CRAWLER = (
 )
 
 SEARCH_URL = "https://www.thivien.net/search-poem.php?PoemType=3&ViewType=2"
+GENRE_LABEL = "Ngũ ngôn tứ tuyệt"
 DEFAULT_URL_CHECKPOINT = PIPELINE_ROOT / "outputs" / "poem_urls.json"
 DEFAULT_PROGRESS = PIPELINE_ROOT / "outputs" / "csv_crawl_progress.json"
 DEFAULT_REPORT = PIPELINE_ROOT / "outputs" / "crawl_report.json"
@@ -42,7 +43,7 @@ def load_shared_crawler():
     sys.modules[spec.name] = module
     spec.loader.exec_module(module)
     module.SEARCH_URL = SEARCH_URL
-    module.GENRE_LABEL = "Đường luật - ngũ ngôn tứ tuyệt"
+    module.GENRE_LABEL = GENRE_LABEL
     return module
 
 
@@ -53,7 +54,7 @@ def load_checkpoint_urls(path: Path) -> list[str]:
         raise SystemExit(f"Không đọc được checkpoint URL ({path}): {error}") from error
 
     if not isinstance(checkpoint, dict) or checkpoint.get("source") != SEARCH_URL:
-        raise SystemExit(f"Checkpoint không thuộc thể ngũ ngôn tứ tuyệt: {path}")
+        raise SystemExit(f"Checkpoint không thuộc thể {GENRE_LABEL}: {path}")
     raw_urls = checkpoint.get("urls")
     if not isinstance(raw_urls, list) or not all(
         isinstance(url, str) for url in raw_urls
@@ -107,7 +108,7 @@ def output_from_item(output_dir: Path, item: dict[str, object]) -> Path | None:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Tạo CSV từ các URL ngũ ngôn tứ tuyệt đã có trong poem_urls.json; "
+            f"Tạo CSV từ các URL {GENRE_LABEL} đã có trong poem_urls.json; "
             "không khám phá lại URL."
         )
     )

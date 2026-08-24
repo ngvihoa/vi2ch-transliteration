@@ -1,0 +1,25 @@
+{
+  "schema_version": "thivien-checkpoint-url-crawl-v1",
+  "source": "https://www.thivien.net/search-poem.php?PoemType=8&ViewType=2",
+  "processed_urls": 3,
+  "items": {
+    "https://www.thivien.net/L%C6%B0u-T%E1%BA%BF-Qu%C3%A2n/Bi-s%E1%BA%A7u-ca/poem-hgiZdefrE5EaN6pNs6uI1g": {
+      "status": "written",
+      "output": "bisauca.csv",
+      "title_vi": "Bi sầu ca",
+      "sentence_pairs": 6
+    },
+    "https://www.thivien.net/T%C6%B0-M%C3%A3-T%C6%B0%C6%A1ng-Nh%C6%B0/C%E1%BA%A7m-ca-k%E1%BB%B3-1/poem-zuM8EVmyazH-Et0Vl_289g": {
+      "status": "written",
+      "output": "camcaky1.csv",
+      "title_vi": "Cầm ca kỳ 1",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/T%C6%B0-M%C3%A3-T%C6%B0%C6%A1ng-Nh%C6%B0/C%E1%BA%A7m-ca-k%E1%BB%B3-2/poem-WTVYnlL05iMRC_p02Bym0A": {
+      "status": "written",
+      "output": "camcaky2.csv",
+      "title_vi": "Cầm ca kỳ 2",
+      "sentence_pairs": 6
+    }
+  }
+}
