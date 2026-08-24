@@ -31,6 +31,24 @@ def main() -> int:
     crawler.SEARCH_URL = "https://www.thivien.net/search-poem.php?PoemType=8&ViewType=2"
     crawler.GENRE_LABEL = "Thất ngôn cổ phong"
     crawler.REPORT_SCHEMA = "thivien-that-ngon-co-phong-crawl-v1"
+    crawler.DEFAULT_COUNTRY_IDS = ("3", "2")
+    crawler.DEFAULT_AGE_PARTITION_COUNTS = {
+        "3": {
+            "5": 5,
+            "6": 8,
+            "7": 11,
+            "8": 183,
+            "9": 77,
+            "10": 15,
+            "12": 0,
+            "13": 71,
+            "14": 37,
+            "15": 87,
+            "16": 43,
+            "17": 1,
+            "18": 1,
+        }
+    }
     crawler.DEFAULT_OUTPUT_DIR = (
         PROJECT_ROOT / "raw-collections" / "poetry-collecions" / "that-ngon-co-phong"
     )
