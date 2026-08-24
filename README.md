@@ -686,3 +686,171 @@ VietHanBERT-v1
 ```
 
 Mục tiêu của phiên bản hiện tại là xây dựng một **baseline Việt → Hán hoàn chỉnh**, xác minh pipeline tokenization → encoder → decoder → generation trước khi đưa thêm lexical resource hoặc các cơ chế ràng buộc.
+
+---
+
+## 14. Pipeline dữ liệu thơ
+
+Dataset thơ được tạo theo luồng sau:
+
+```text
+Thi Viện
+    ↓
+crawler theo từng thể loại
+    ↓
+CSV từng bài trong raw-collections/poetry-collecions/
+    ↓
+merge thành một CSV cho mỗi thể loại
+    ↓
+pipelines/poetry_dataset_split/input/
+    ↓
+chia riêng từng thể loại theo train/test/val
+    ↓
+poem.train.csv + poem.test.csv + poem.val.csv
+    ↓
+kaggle-scripts/viet-han-bert.ipynb
+```
+
+### 14.1 Định dạng dữ liệu crawl
+
+Mỗi CSV từng bài và CSV đã merge có đúng hai cột:
+
+```csv
+vi,ch
+Phiên phiên bạch cưu,翩翩白鳩
+```
+
+- `vi`: câu phiên âm Hán-Việt.
+- `ch`: câu chữ Hán tương ứng.
+- Mỗi record phải có đủ cả hai trường.
+- Tiêu đề, bản dịch nghĩa, bản dịch thơ và chú thích không được dùng làm cặp
+  huấn luyện.
+
+Các crawler hiện có:
+
+| Thể loại | Crawler | Script merge và output theo thể loại |
+| --- | --- | --- |
+| Kinh Thi | `pipelines/thivien_kinh_thi/scripts/crawl_kinh_thi.py` | `merge_poem_csvs.py` → `outputs/kinhthi.csv` |
+| Câu đối | `pipelines/thivien_cau_doi/scripts/crawl_cau_doi.py` | `merge_cau_doi_csvs.py` → `outputs/cau-doi.csv` |
+| Ngũ ngôn tứ tuyệt | `pipelines/thivien_ngu_ngon_tu_tuyet/scripts/crawl_ngu_ngon_tu_tuyet.py` | `merge_ngu_ngon_tu_tuyet_csvs.py` → `outputs/ngu-ngon-tu-tuyet.csv` |
+| Phú | `pipelines/thivien_phu/scripts/crawl_phu.py` | `merge_phu_csvs.py` → `outputs/phu.csv` |
+| Tứ ngôn | `pipelines/thivien_tu_ngon/scripts/crawl_tu_ngon.py` | `merge_tu_ngon_csvs.py` → `outputs/tu-ngon.csv` |
+| Thất ngôn cổ phong | `pipelines/thivien_that_ngon_co_phong/scripts/crawl_that_ngon_co_phong.py` | Chưa có script merge riêng |
+| Đường luật biến thể | `pipelines/thivien_duong_luat_bien_the/scripts/crawl_duong_luat_bien_the.py` | Chưa có script merge riêng |
+
+Chạy các lệnh từ thư mục gốc `vi2ch-model`. Nên crawl thử một số lượng nhỏ
+trước:
+
+```bash
+python3 pipelines/thivien_kinh_thi/scripts/crawl_kinh_thi.py \
+  --limit 5 --overwrite
+```
+
+Sau khi kiểm tra CSV mẫu, dùng `--limit 0` để crawl toàn bộ. Với các crawler
+có checkpoint, giữ lại các file progress, URL checkpoint và report trong thư
+mục `outputs/` để có thể tiếp tục lần chạy trước. Không giảm thời gian nghỉ
+giữa request quá thấp; crawler có cơ chế chờ dài khi Thi Viện trả CAPTCHA.
+
+Sau khi crawl xong, chạy script merge tương ứng. Ví dụ:
+
+```bash
+python3 pipelines/thivien_kinh_thi/scripts/merge_poem_csvs.py
+python3 pipelines/thivien_ngu_ngon_tu_tuyet/scripts/merge_ngu_ngon_tu_tuyet_csvs.py
+python3 pipelines/thivien_tu_ngon/scripts/merge_tu_ngon_csvs.py
+```
+
+Script merge kiểm tra header và dữ liệu rỗng trước khi tạo CSV thể loại. Với
+pipeline chưa có script merge riêng, cần gom các CSV từng bài thành một CSV
+`vi,ch` cho thể loại đó trước khi thực hiện bước chia tập.
+
+### 14.2 Chuẩn bị input để chia tập
+
+Đặt mỗi CSV đã merge vào
+`pipelines/poetry_dataset_split/input/`. Mỗi file phải đại diện cho đúng một
+thể loại, ví dụ:
+
+```text
+pipelines/poetry_dataset_split/input/
+├── cau-doi.csv
+├── kinhthi.csv
+├── ngu-ngon-tu-tuyet.csv
+├── phu.csv
+└── tu-ngon.csv
+```
+
+Không gộp tất cả thể loại thành một file trước bước này. Pipeline dùng ranh
+giới file để chia riêng từng thể loại, nhờ đó train, test và validation đều
+giữ được dữ liệu từ từng nhóm thơ.
+
+### 14.3 Chia train/test/validation
+
+Chạy:
+
+```bash
+python3 pipelines/poetry_dataset_split/scripts/split_poem_csvs.py
+```
+
+Cấu hình mặc định:
+
+```text
+train = 80%
+test  = 10%
+val   = 10%
+seed  = 42
+```
+
+Quy tắc chia:
+
+- Mỗi thể loại được shuffle và chia độc lập trước khi gộp.
+- Mỗi input cần ít nhất 3 dòng để cả ba tập đều có dữ liệu của thể loại đó.
+- Số dòng được làm tròn nhưng tổng số dòng luôn được bảo toàn.
+- Cùng input, tỷ lệ và seed luôn tạo cùng kết quả.
+- Seed của từng file phụ thuộc tên file; thêm thể loại mới không làm thay đổi
+  cách chia các file đã có.
+- Sau khi gộp, từng output được shuffle lại để tránh các block thể loại nằm
+  liền nhau.
+
+Output được ghi tại:
+
+```text
+pipelines/poetry_dataset_split/outputs/poem.train.csv
+pipelines/poetry_dataset_split/outputs/poem.test.csv
+pipelines/poetry_dataset_split/outputs/poem.val.csv
+```
+
+Có thể đổi tỷ lệ và seed:
+
+```bash
+python3 pipelines/poetry_dataset_split/scripts/split_poem_csvs.py \
+  --train-ratio 0.7 \
+  --test-ratio 0.2 \
+  --val-ratio 0.1 \
+  --seed 123
+```
+
+Ba tỷ lệ phải lớn hơn `0` và có tổng bằng `1.0`. Có thể dùng
+`--input-dir`/`--output-dir` nếu dữ liệu nằm ở vị trí khác. Xem thêm tài liệu
+chi tiết tại `pipelines/poetry_dataset_split/README.md`.
+
+### 14.4 Dùng dataset trên Kaggle
+
+Upload ba file output vào Kaggle Dataset. Notebook
+`kaggle-scripts/viet-han-bert.ipynb` mặc định tìm các file:
+
+```text
+/kaggle/input/datasets/tiennhat/dataset/poem.train.csv
+/kaggle/input/datasets/tiennhat/dataset/poem.val.csv
+/kaggle/input/datasets/tiennhat/dataset/poem.test.csv
+```
+
+Nếu Kaggle mount dataset ở đường dẫn khác, chỉ cần sửa `INPUT_DIR` trong
+notebook. Notebook đọc schema `vi,ch`, sau đó đổi tên `ch` thành `cn` trong bộ
+nhớ để tương thích với code model hiện tại. Vocabulary chỉ được xây từ
+`poem.train.csv`, tránh rò rỉ dữ liệu từ test hoặc validation.
+
+### 14.5 Kiểm tra pipeline chia tập
+
+```bash
+python3 -B -m unittest discover \
+  -s pipelines/poetry_dataset_split/tests -v
+```
