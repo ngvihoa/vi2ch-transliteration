@@ -1,7 +1,7 @@
 {
   "schema_version": "thivien-checkpoint-url-crawl-v1",
   "source": "https://www.thivien.net/search-poem.php?PoemType=8&ViewType=2",
-  "processed_urls": 319,
+  "processed_urls": 478,
   "items": {
     "https://www.thivien.net/L%C6%B0u-T%E1%BA%BF-Qu%C3%A2n/Bi-s%E1%BA%A7u-ca/poem-hgiZdefrE5EaN6pNs6uI1g": {
       "status": "written",
@@ -1915,6 +1915,952 @@
       "output": "dangtienca.csv",
       "title_vi": "Đằng tiên ca",
       "sentence_pairs": 45
+    },
+    "https://www.thivien.net/Cao-B%C3%A1-Qu%C3%A1t/%C4%90%E1%BB%81-Ph%E1%BB%A5ng-T%C3%A1-s%E1%BB%A9-qu%C3%A2n-ho%E1%BA%A1-l%C3%BD-%C4%91%E1%BB%93/poem--01JYjOfxH4JRCDDIdBeIQ": {
+      "status": "written",
+      "output": "dephungtasuquanhoalydo.csv",
+      "title_vi": "Đề Phụng Tá sứ quân hoạ lý đồ",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/Cao-B%C3%A1-Qu%C3%A1t/%C4%90%E1%BB%81-s%C3%A1t-vi%E1%BB%87n-B%C3%B9i-c%C3%B4ng-Y%C3%AAn-%C4%90%C3%A0i-anh-ng%E1%BB%AF-kh%C3%BAc-h%E1%BA%ADu/poem-hPVX19ILysgCjuuOW9aRbw": {
+      "status": "written",
+      "output": "desatvienbuicongyendaianhngukhuchau.csv",
+      "title_vi": "Đề sát viện Bùi công “Yên Đài anh ngữ” khúc hậu",
+      "sentence_pairs": 31
+    },
+    "https://www.thivien.net/Tr%E1%BA%A7n-B%C3%ADch-San/%C4%90inh-M%C3%A3o-th%C3%AD-b%C3%BAt/poem-vjTr1u2bTD-XJ3Y3KRchGw": {
+      "status": "written",
+      "output": "dinhmaothibut.csv",
+      "title_vi": "Đinh Mão thí bút",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-H%C3%A0nh/%C4%90inh-S%E1%BB%ADu-kh%C3%A1ch-trung-trung-thu-%C4%91%E1%BB%91i-nguy%E1%BB%87t-t%E1%BA%B7ng-n%E1%BB%99i/poem-41_t0oo0113d89DKan6Wuw": {
+      "status": "written",
+      "output": "dinhsuukhachtrungtrungthudoinguyettangnoi.csv",
+      "title_vi": "Đinh Sửu khách trung trung thu đối nguyệt tặng nội",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/Ph%E1%BA%A1m-Hy-L%C6%B0%E1%BB%A3ng/%C4%90%E1%BB%99-Ch%C6%B0%C6%A1ng-h%C3%A0-c%E1%BA%A3m-t%C3%A1c/poem-VACLkhLGv-JZZKB0lttjSg": {
+      "status": "skipped",
+      "url": "https://www.thivien.net/Ph%E1%BA%A1m-Hy-L%C6%B0%E1%BB%A3ng/%C4%90%E1%BB%99-Ch%C6%B0%C6%A1ng-h%C3%A0-c%E1%BA%A3m-t%C3%A1c/poem-VACLkhLGv-JZZKB0lttjSg",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Ph%E1%BA%A1m-Hy-L%C6%B0%E1%BB%A3ng/%C4%90%E1%BB%99-Ch%C6%B0%C6%A1ng-h%C3%A0-c%E1%BA%A3m-t%C3%A1c/poem-VACLkhLGv-JZZKB0lttjSg"
+    },
+    "https://www.thivien.net/Tr%E1%BA%A7n-%C4%90%C3%ACnh-T%C3%BAc/%C4%90%C3%B4ng-d%E1%BA%A1-b%E1%BA%A5t-m%E1%BB%8B-ng%E1%BA%ABu-th%C3%A0nh/poem-4A9ED2n3AKGa7rAzHvlH1Q": {
+      "status": "written",
+      "output": "dongdabatmingauthanh.csv",
+      "title_vi": "Đông dạ bất mị ngẫu thành",
+      "sentence_pairs": 44
+    },
+    "https://www.thivien.net/Cao-B%C3%A1-Qu%C3%A1t/%C4%90%C3%B4ng-T%C3%A1c-Tu%E1%BA%A7n-Ph%E1%BB%A7-t%E1%BB%8Bch-th%C6%B0%E1%BB%A3ng-%E1%BA%A9m/poem-Pxe1XzsnaCwb_PNfPCiYNg": {
+      "status": "written",
+      "output": "dongtactuanphutichthuongam.csv",
+      "title_vi": "Đông Tác Tuần Phủ tịch thượng ẩm",
+      "sentence_pairs": 10
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-Du/%C4%90%E1%BB%93ng-T%C6%B0%E1%BB%9Bc-%C4%91%C3%A0i/poem-jwyw3adOdDmY2BAu7dgOZQ": {
+      "status": "written",
+      "output": "dongtuocdai.csv",
+      "title_vi": "Đồng Tước đài",
+      "sentence_pairs": 26
+    },
+    "https://www.thivien.net/V%C5%A9-Ph%E1%BA%A1m-Kh%E1%BA%A3i/Gia-th%C3%A2n-song-th%E1%BB%8D-b%C3%A1i-kh%C3%A1nh/poem-f9JHvurgh7cOpFJt-dmhlg": {
+      "status": "written",
+      "output": "giathansongthobaikhanh.csv",
+      "title_vi": "Gia thân song thọ bái khánh",
+      "sentence_pairs": 32
+    },
+    "https://www.thivien.net/Cao-B%C3%A1-Qu%C3%A1t/Hi%E1%BB%83u-bi%E1%BB%87t-ph%E1%BB%A5c-ho%E1%BA%A1-Ph%C6%B0%C6%A1ng-%C4%90%C3%ACnh-th%E1%BB%A9-v%E1%BA%ADn/poem-bwzmBD_F2wj_YJULoL7KqA": {
+      "status": "written",
+      "output": "hieubietphuchoaphuongdinhthuvan.csv",
+      "title_vi": "Hiểu biệt phục hoạ Phương Đình thứ vận",
+      "sentence_pairs": 18
+    },
+    "https://www.thivien.net/Tr%E1%BA%A7n-%C4%90%C3%ACnh-T%C3%BAc/Ho%E1%BA%A1-H%C6%B0%C6%A1ng-S%C6%A1n-M%E1%BB%99ng-S%C6%A1n-%C4%91%C3%ACnh-t%C6%B0%C6%A1ng-lan-ch%E1%BA%BF-sinh-v%C3%A3n-t%E1%BB%AB-nguy%C3%AAn-v%E1%BA%ADn/poem-sxn8C2ATwfk0moNepNgjqQ": {
+      "status": "written",
+      "output": "hoahuongsonmongsondinhtuonglanchesinhvantunguyenvan.csv",
+      "title_vi": "Hoạ Hương Sơn Mộng Sơn đình tương lan chế sinh vãn từ nguyên vận",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/Cao-B%C3%A1-Qu%C3%A1t/Ho%C3%A0nh-S%C6%A1n-v%E1%BB%8Dng-h%E1%BA%A3i-ca/poem-xpIDmLYJAQoNOtf_50V3lg": {
+      "status": "written",
+      "output": "hoanhsonvonghaica.csv",
+      "title_vi": "Hoành Sơn vọng hải ca",
+      "sentence_pairs": 9
+    },
+    "https://www.thivien.net/%C4%90o%C3%A0n-Huy%C3%AAn/H%E1%BB%8Dc-c%E1%BA%A7m-ca/poem-k1rFs9QmXWVthSV5kc14qQ": {
+      "status": "skipped",
+      "url": "https://www.thivien.net/%C4%90o%C3%A0n-Huy%C3%AAn/H%E1%BB%8Dc-c%E1%BA%A7m-ca/poem-k1rFs9QmXWVthSV5kc14qQ",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/%C4%90o%C3%A0n-Huy%C3%AAn/H%E1%BB%8Dc-c%E1%BA%A7m-ca/poem-k1rFs9QmXWVthSV5kc14qQ"
+    },
+    "https://www.thivien.net/Tr%E1%BA%A7n-B%C3%ADch-San/H%E1%BB%8Dc-%C4%91%C6%B0%E1%BB%9Dng-d%E1%BB%AF-H%C6%B0%C6%A1ng-Phong-ti%E1%BB%83u-%E1%BA%A9m-d%E1%BA%A1-quy-k%C3%BD-t%C3%A1c/poem-f0z8PdcvUDNNFNjtrboTng": {
+      "status": "written",
+      "output": "hocduongduhuongphongtieuamdaquykytac.csv",
+      "title_vi": "Học đường dữ Hương Phong tiểu ẩm dạ quy ký tác",
+      "sentence_pairs": 18
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-Du/Kinh-Kha-c%E1%BB%91-l%C3%BD/poem-iLN2oBpGC4jB3jO2aM9Qnw": {
+      "status": "written",
+      "output": "kinhkhacoly.csv",
+      "title_vi": "Kinh Kha cố lý",
+      "sentence_pairs": 28
+    },
+    "https://www.thivien.net/%C4%90o%C3%A0n-Huy%C3%AAn/K%C3%BD-%C4%91%C6%B0%E1%BB%9Dng-huynh-Ni%E1%BB%87m-gia-%C4%91%E1%BB%87-O%C3%A1nh/poem-Ie8kjmvY9oOnl6VVG9KGUA": {
+      "status": "written",
+      "output": "kyduonghuynhniemgiadeoanh.csv",
+      "title_vi": "Ký đường huynh Niệm gia đệ Oánh",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/Tr%E1%BA%A7n-%C4%90%C3%ACnh-T%C3%BAc/L%C3%A2m-h%C3%A0-t%E1%BB%B1-bi%E1%BB%87t/poem-AF5MqeqHPryp-J2NLYB4EQ": {
+      "status": "written",
+      "output": "lamhatubiet.csv",
+      "title_vi": "Lâm hà tự biệt",
+      "sentence_pairs": 20
+    },
+    "https://www.thivien.net/Phan-Huy-Th%E1%BB%B1c/L%C6%B0%C6%A1ng-H%C6%B0%C6%A1ng-d%E1%BA%A1-h%C3%A0nh/poem-4MzajPRHF0NSnzFSPBZaHw": {
+      "status": "written",
+      "output": "luonghuongdahanh.csv",
+      "title_vi": "Lương Hương dạ hành",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-V%C4%83n-Giao/L%C3%BD-Ho%C3%A0-quan-h%E1%BA%A3i/poem-p50efQgahlWlQiLlRbiL6A": {
+      "status": "written",
+      "output": "lyhoaquanhai.csv",
+      "title_vi": "Lý Hoà quan hải",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/Tr%E1%BA%A7n-Thi%E1%BB%87n-Ch%C3%A1nh/Man-H%E1%BA%A1-chi%E1%BA%BFn-tr%C6%B0%E1%BB%9Dng/poem-6OFr7LB7f4VOe20y1CZ0fw": {
+      "status": "skipped",
+      "url": "https://www.thivien.net/Tr%E1%BA%A7n-Thi%E1%BB%87n-Ch%C3%A1nh/Man-H%E1%BA%A1-chi%E1%BA%BFn-tr%C6%B0%E1%BB%9Dng/poem-6OFr7LB7f4VOe20y1CZ0fw",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Tr%E1%BA%A7n-Thi%E1%BB%87n-Ch%C3%A1nh/Man-H%E1%BA%A1-chi%E1%BA%BFn-tr%C6%B0%E1%BB%9Dng/poem-6OFr7LB7f4VOe20y1CZ0fw"
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-V%C4%83n-Giao/Ngo%E1%BA%A1-b%E1%BB%87nh/poem-ij-gvMF7TmlHFSotWElWsQ": {
+      "status": "written",
+      "output": "ngoabenh.csv",
+      "title_vi": "Ngoạ bệnh",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-Du/Ph%E1%BA%A3n-chi%C3%AAu-h%E1%BB%93n/poem-e9ahXuxrGyDkU5kL3GOwjQ": {
+      "status": "written",
+      "output": "phanchieuhon.csv",
+      "title_vi": "Phản chiêu hồn",
+      "sentence_pairs": 20
+    },
+    "https://www.thivien.net/T%C6%B0%C6%A1ng-An-qu%E1%BA%ADn-v%C6%B0%C6%A1ng/Phi%E1%BA%BFm-chu-h%C3%BD-t%C3%A1c-tr%C6%B0%E1%BB%9Dng-lu%E1%BA%ADt/poem-MNLgOaS1NHIOJfKpf7YR8A": {
+      "status": "written",
+      "output": "phiemchuhytactruongluat.csv",
+      "title_vi": "Phiếm chu hý tác trường luật",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/Phan-Huy-Th%E1%BB%B1c/Ph%E1%BB%A5ng-ch%E1%BB%89-h%E1%BB%93i-qu%E1%BB%91c-h%E1%BB%B7-ph%C3%BA-thu%E1%BA%ADt-ho%C3%A0i-c%E1%BB%95-phong-nh%E1%BB%8B-th%E1%BA%ADp-v%E1%BA%ADn/poem-r3T21pcRqFnK42dMnWo1ng": {
+      "status": "written",
+      "output": "phungchihoiquochyphuthuathoaicophongnhithapvan.csv",
+      "title_vi": "Phụng chỉ hồi quốc hỷ phú thuật hoài cổ phong nhị thập vận",
+      "sentence_pairs": 38
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-Du/Th%C3%A1i-B%C3%ACnh-th%C3%A0nh-h%E1%BA%A1-v%C4%83n-xuy-%C4%91%E1%BB%8Bch/poem-P3_lyhyJZlihMSZWHrHVuA": {
+      "status": "written",
+      "output": "thaibinhthanhhavanxuydich.csv",
+      "title_vi": "Thái Bình thành hạ văn xuy địch",
+      "sentence_pairs": 6
+    },
+    "https://www.thivien.net/Tr%E1%BA%A7n-Huy-Li%E1%BB%85n/Th%C3%A1t-S%C6%A1n-C%E1%BB%91-Ch%E1%BB%A7-mi%E1%BA%BFu/poem--fNwnQGBLSTaiXGQnzBzOQ": {
+      "status": "written",
+      "output": "thatsoncochumieu.csv",
+      "title_vi": "Thát Sơn Cố Chủ miếu",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/H%E1%BB%93-Xu%C3%A2n-H%C6%B0%C6%A1ng/Thu-phong-ca/poem-XbWat75UvIe6mRRyvC8nvg": {
+      "status": "written",
+      "output": "thuphongca.csv",
+      "title_vi": "Thu phong ca",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-T%C6%B0-Gi%E1%BA%A3n/T%E1%BB%91ng-Nguy%E1%BB%85n-Hy-Ph%E1%BA%A7n-quy-B%C3%ACnh-Thu%E1%BA%ADn/poem-WEaQ-DpH2wRPRMDEDfhe2w": {
+      "status": "skipped",
+      "url": "https://www.thivien.net/Nguy%E1%BB%85n-T%C6%B0-Gi%E1%BA%A3n/T%E1%BB%91ng-Nguy%E1%BB%85n-Hy-Ph%E1%BA%A7n-quy-B%C3%ACnh-Thu%E1%BA%ADn/poem-WEaQ-DpH2wRPRMDEDfhe2w",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Nguy%E1%BB%85n-T%C6%B0-Gi%E1%BA%A3n/T%E1%BB%91ng-Nguy%E1%BB%85n-Hy-Ph%E1%BA%A7n-quy-B%C3%ACnh-Thu%E1%BA%ADn/poem-WEaQ-DpH2wRPRMDEDfhe2w"
+    },
+    "https://www.thivien.net/Ph%E1%BA%A1m-Hy-L%C6%B0%E1%BB%A3ng/Tru%E1%BB%B5-d%C6%B0-h%C3%BD-ca/poem-Q9f7gshBcxPypWa_4L6hkQ": {
+      "status": "skipped",
+      "url": "https://www.thivien.net/Ph%E1%BA%A1m-Hy-L%C6%B0%E1%BB%A3ng/Tru%E1%BB%B5-d%C6%B0-h%C3%BD-ca/poem-Q9f7gshBcxPypWa_4L6hkQ",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Ph%E1%BA%A1m-Hy-L%C6%B0%E1%BB%A3ng/Tru%E1%BB%B5-d%C6%B0-h%C3%BD-ca/poem-Q9f7gshBcxPypWa_4L6hkQ"
+    },
+    "https://www.thivien.net/Ng%C3%B4-Th%C3%AC-%C4%90i%E1%BB%83n/Tu%C3%BD-ng%C3%A2m-k%E1%BB%B3-1/poem-iHdzSbWeRelmvL6xgnUArQ": {
+      "status": "written",
+      "output": "tuyngamky1.csv",
+      "title_vi": "Tuý ngâm kỳ 1",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/Ng%C3%B4-Th%C3%AC-%C4%90i%E1%BB%83n/Tu%C3%BD-ng%C3%A2m-k%E1%BB%B3-2/poem-V6Y6QafqmG5B3Wrvz6p4PA": {
+      "status": "written",
+      "output": "tuyngamky2.csv",
+      "title_vi": "Tuý ngâm kỳ 2",
+      "sentence_pairs": 32
+    },
+    "https://www.thivien.net/T%C3%B4n-Th%E1%BA%A5t-Thuy%E1%BA%BFt/V%C3%A3n-Nguy%E1%BB%85n-Cao/poem-CuYZy4M-fRyiPXprsUbMag": {
+      "status": "skipped",
+      "url": "https://www.thivien.net/T%C3%B4n-Th%E1%BA%A5t-Thuy%E1%BA%BFt/V%C3%A3n-Nguy%E1%BB%85n-Cao/poem-CuYZy4M-fRyiPXprsUbMag",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/T%C3%B4n-Th%E1%BA%A5t-Thuy%E1%BA%BFt/V%C3%A3n-Nguy%E1%BB%85n-Cao/poem-CuYZy4M-fRyiPXprsUbMag"
+    },
+    "https://www.thivien.net/Tr%E1%BA%A7n-%C4%90%C3%ACnh-T%C3%BAc/V%E1%BB%8Bnh-Ph%C3%BA-L%E1%BB%99c-b%C3%A1t-c%E1%BA%A3nh-k%E1%BB%B3-5-Thu%E1%BA%ADn-Tr%E1%BB%B1c-quan-%C4%91%C3%AA/poem-B1Cy2eYxtMMPae9r9t4OZw": {
+      "status": "written",
+      "output": "vinhphulocbatcanhky5thuantrucquande.csv",
+      "title_vi": "Vịnh Phú Lộc bát cảnh kỳ 5 - Thuận Trực quan đê",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/Tr%E1%BA%A7n-%C4%90%C3%ACnh-T%C3%BAc/V%E1%BB%8Bnh-Ph%C3%BA-L%E1%BB%99c-b%C3%A1t-c%E1%BA%A3nh-k%E1%BB%B3-8-Ph%C6%B0%E1%BB%9Bc-T%C6%B0%E1%BB%A3ng/poem-nuoVEL2tHPr0a0uAnmnghg": {
+      "status": "written",
+      "output": "vinhphulocbatcanhky8phuoctuong.csv",
+      "title_vi": "Vịnh Phú Lộc bát cảnh kỳ 8 - Phước Tượng",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/Cao-B%C3%A1-Qu%C3%A1t/V%C5%A9-h%E1%BA%ADu-t%E1%BA%A9u-b%C3%BAt-k%C3%BD-vi%C3%AAn-c%C6%B0-nh%E1%BB%8B-h%E1%BB%AFu/poem-nm2nsriYy3mqP2PNlQIxWA": {
+      "status": "written",
+      "output": "vuhautaubutkyviencunhihuu.csv",
+      "title_vi": "Vũ hậu tẩu bút ký viên cư nhị hữu",
+      "sentence_pairs": 6
+    },
+    "https://www.thivien.net/Ph%E1%BA%A1m-Ph%C3%BA-Th%E1%BB%A9/Xu%C3%A2n-nh%E1%BA%ADt-th%C6%B0-gi%E1%BA%A3n-li%C3%AAu-t%C3%A1/poem-_t5htIM9ZPLCHgZPNlgduw": {
+      "status": "written",
+      "output": "xuannhatthugianlieuta.csv",
+      "title_vi": "Xuân nhật thư giản liêu tá",
+      "sentence_pairs": 4
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-H%E1%BB%AFu-C%C6%B0%C6%A1ng/B%C3%ACnh-thu%E1%BB%B7-ti%C3%AAn/poem-s1CYjstJzSb0BHKpSUVY7A": {
+      "status": "skipped",
+      "url": "https://www.thivien.net/Nguy%E1%BB%85n-H%E1%BB%AFu-C%C6%B0%C6%A1ng/B%C3%ACnh-thu%E1%BB%B7-ti%C3%AAn/poem-s1CYjstJzSb0BHKpSUVY7A",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Nguy%E1%BB%85n-H%E1%BB%AFu-C%C6%B0%C6%A1ng/B%C3%ACnh-thu%E1%BB%B7-ti%C3%AAn/poem-s1CYjstJzSb0BHKpSUVY7A"
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-Khuy%E1%BA%BFn/C%C3%B4-ng%C6%B0/poem-MrfirDXFeFOcbKdwqa2htQ": {
+      "status": "written",
+      "output": "congu.csv",
+      "title_vi": "Cô ngư",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-Can-M%E1%BB%99ng/%C4%90%C3%A0-N%E1%BA%B5ng-%C4%91%E1%BA%A1o-trung-k%C3%BD-kinh-trung-tri-k%E1%BB%B7/poem-ABQsIQPWyb5J_2a3p8rlAg": {
+      "status": "written",
+      "output": "danangdaotrungkykinhtrungtriky.csv",
+      "title_vi": "Đà Nẵng đạo trung ký kinh trung tri kỷ",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-Khuy%E1%BA%BFn/H%E1%BA%A1-Th%C6%B0%E1%BB%A3ng-th%C3%B4n-bi%E1%BB%83u-th%E1%BA%A5t-th%E1%BA%ADp-th%E1%BB%8D/poem-6WLUD_H7C_DuV5Pq8OE7gQ": {
+      "status": "skipped",
+      "url": "https://www.thivien.net/Nguy%E1%BB%85n-Khuy%E1%BA%BFn/H%E1%BA%A1-Th%C6%B0%E1%BB%A3ng-th%C3%B4n-bi%E1%BB%83u-th%E1%BA%A5t-th%E1%BA%ADp-th%E1%BB%8D/poem-6WLUD_H7C_DuV5Pq8OE7gQ",
+      "error": "Không tìm thấy phần nguyên tác/phiên âm: https://www.thivien.net/Nguy%E1%BB%85n-Khuy%E1%BA%BFn/H%E1%BA%A1-Th%C6%B0%E1%BB%A3ng-th%C3%B4n-bi%E1%BB%83u-th%E1%BA%A5t-th%E1%BA%ADp-th%E1%BB%8D/poem-6WLUD_H7C_DuV5Pq8OE7gQ"
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-Khuy%E1%BA%BFn/K%C3%BD-ph%E1%BB%8Fng-D%C6%B0%C6%A1ng-th%C6%B0%E1%BB%A3ng-th%C6%B0/poem-ANpehqyDHTQzD3gcBygMYQ": {
+      "status": "written",
+      "output": "kyphongduongthuongthu.csv",
+      "title_vi": "Ký phỏng Dương thượng thư",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-Khuy%E1%BA%BFn/L%C3%A3o-s%C6%A1n/poem-VM6ytXijttp7Fqhe-71Zng": {
+      "status": "written",
+      "output": "laoson.csv",
+      "title_vi": "Lão sơn",
+      "sentence_pairs": 20
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-Khuy%E1%BA%BFn/Ly-ph%E1%BB%A5-h%C3%A0nh/poem-MQg_h3rNUCCLiLTevTfYlA": {
+      "status": "written",
+      "output": "lyphuhanh.csv",
+      "title_vi": "Ly phụ hành",
+      "sentence_pairs": 17
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-Khuy%E1%BA%BFn/Qu%C3%A1-qu%E1%BA%ADn-c%C3%B4ng-Nguy%E1%BB%85n-H%E1%BB%AFu-%C4%90%E1%BB%99-sinh-t%E1%BB%AB-h%E1%BB%AFu-c%E1%BA%A3m/poem-hft8HKrFGhXFrw3aI908Nw": {
+      "status": "written",
+      "output": "quaquancongnguyenhuudosinhtuhuucam.csv",
+      "title_vi": "Quá quận công Nguyễn Hữu Độ sinh từ hữu cảm",
+      "sentence_pairs": 10
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-C%E1%BA%A9n/Tr%C3%B9ng-%C4%91%E1%BB%81-Truy%E1%BB%81n-%C4%90%C4%83ng-s%C6%A1n/poem-PZr-tmAgIG3rkxISbMdl_g": {
+      "status": "written",
+      "output": "trungdetruyendangson.csv",
+      "title_vi": "Trùng đề Truyền Đăng sơn",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-Khuy%E1%BA%BFn/%C6%AFu-ph%E1%BB%A5-t%E1%BB%AB/poem-PvbwjwSwFfD9sWt4S3abRA": {
+      "status": "written",
+      "output": "uuphutu.csv",
+      "title_vi": "Ưu phụ từ",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/Nguy%E1%BB%85n-Khuy%E1%BA%BFn/V%C5%A9-phu-%C4%91%C3%B4i/poem-Qc80Uhzv026oTUhgUPuPxg": {
+      "status": "written",
+      "output": "vuphudoi.csv",
+      "title_vi": "Vũ phu đôi",
+      "sentence_pairs": 14
+    },
+    "https://www.thivien.net/H%E1%BB%93-Ch%C3%AD-Minh/C%E1%BB%A9u-Trung-Qu%E1%BB%91c-th%E1%BB%8B-c%E1%BB%A9u-t%E1%BB%B1-k%E1%BB%B7/poem-kTM2pI2BIiTSatxb_6V0Ng": {
+      "status": "written",
+      "output": "cuutrungquocthicuutuky.csv",
+      "title_vi": "Cứu Trung Quốc thị cứu tự kỷ",
+      "sentence_pairs": 20
+    },
+    "https://www.thivien.net/%C4%90inh-T%C3%BA-Anh/Tr%E1%BA%A7n-ai-d%E1%BB%AF-tinh-th%E1%BA%A7n/poem-UR8zFlvVmfiBJNPm4NRgZQ": {
+      "status": "written",
+      "output": "tranaidutinhthan.csv",
+      "title_vi": "Trần ai dữ tinh thần",
+      "sentence_pairs": 4
+    },
+    "https://www.thivien.net/%C3%81i-T%C3%A2n-Gi%C3%A1c-La-Ho%E1%BA%B1ng-L%E1%BB%8Bch/Cung-chi%C3%AAm-Kh%E1%BA%A3i-V%E1%BA%ADn-s%C6%A1n-t%C3%A1c-ca/poem-0v8a-sECBQEsigO1H1mK6Q": {
+      "status": "written",
+      "output": "cungchiemkhaivansontacca.csv",
+      "title_vi": "Cung chiêm Khải Vận sơn tác ca",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/%C3%81i-T%C3%A2n-Gi%C3%A1c-La-Ho%E1%BA%B1ng-L%E1%BB%8Bch/T%E1%BB%A9-Th%E1%BA%A9m-%C4%90%E1%BB%A9c-Ti%E1%BB%81m/poem-8jAxpZ7sLfJ22hdtNJiJ4Q": {
+      "status": "written",
+      "output": "tuthamductiem.csv",
+      "title_vi": "Tứ Thẩm Đức Tiềm",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/Bi%E1%BB%87n-Vinh/Xu%C3%A2n-du-%C4%91%E1%BB%93/poem-qH6rn0jHIxGzKVbzbRlRJA": {
+      "status": "written",
+      "output": "xuandudo.csv",
+      "title_vi": "Xuân du đồ",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/B%E1%BB%91i-Qu%E1%BB%B3nh/Th%E1%BB%A9-v%E1%BA%ADn-Thi%E1%BA%BFt-Nhai-ti%C3%AAn-sinh-tu%C3%BD-ca/poem-zJHP1Nu_WXThiVc4VkIRqg": {
+      "status": "written",
+      "output": "thuvanthietnhaitiensinhtuyca.csv",
+      "title_vi": "Thứ vận Thiết Nhai tiên sinh tuý ca",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/Cao-B%C3%ADnh/Ph%C3%BA-%C4%91%E1%BA%AFc-Ng%C3%B4-H%C3%A0ng-%C4%91%E1%BB%99-t%E1%BB%91ng-Tri%E1%BB%87u-thi%E1%BA%BFu-ph%E1%BB%A7-chi-kinh/poem-SscaTmm1IYDTUTz-lahpKQ": {
+      "status": "written",
+      "output": "phudacngohangdotongtrieuthieuphuchikinh.csv",
+      "title_vi": "Phú đắc Ngô Hàng độ tống Triệu thiếu phủ chi kinh",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/Cao-Kh%E1%BA%A3i/M%E1%BA%A1i-hoa-t%E1%BB%AB/poem-GnuwLe1JCutulDc-O2G05Q": {
+      "status": "written",
+      "output": "maihoatu.csv",
+      "title_vi": "Mại hoa từ",
+      "sentence_pairs": 10
+    },
+    "https://www.thivien.net/Cao-Kh%E1%BA%A3i/Th%C3%A1i-tr%C3%A0-t%E1%BB%AB/poem-aOgWgIdQbh-9U-RAX7NEtg": {
+      "status": "written",
+      "output": "thaitratu.csv",
+      "title_vi": "Thái trà từ",
+      "sentence_pairs": 10
+    },
+    "https://www.thivien.net/Cao-Kh%E1%BA%A3i/%E1%BB%A8c-vi%E1%BB%85n-kh%C3%BAc/poem-DAG4bACDqb5JXb-RHaQYvw": {
+      "status": "written",
+      "output": "ucvienkhuc.csv",
+      "title_vi": "Ức viễn khúc",
+      "sentence_pairs": 14
+    },
+    "https://www.thivien.net/Cao-Th%C3%ADch/H%C3%A0m-%C4%90an-thi%E1%BA%BFu-ni%C3%AAn-h%C3%A0nh/poem-HabSCg4p6HxWZnM0AhxlQQ": {
+      "status": "written",
+      "output": "hamdanthieunienhanh.csv",
+      "title_vi": "Hàm Đan thiếu niên hành",
+      "sentence_pairs": 14
+    },
+    "https://www.thivien.net/Cao-Th%C3%ADch/Nh%C3%A2n-nh%E1%BA%ADt-k%C3%BD-%C4%90%E1%BB%97-nh%E1%BB%8B-th%E1%BA%ADp-di/poem-IfPRQjukpqheC7_da7pGUQ": {
+      "status": "written",
+      "output": "nhannhatkydonhithapdi.csv",
+      "title_vi": "Nhân nhật ký Đỗ nhị thập di",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/Cao-Th%C3%ADch/Y%C3%AAn-ca-h%C3%A0nh/poem-OfaWWw-KGC1o9UcQz3Jy1g": {
+      "status": "written",
+      "output": "yencahanh.csv",
+      "title_vi": "Yên ca hành",
+      "sentence_pairs": 28
+    },
+    "https://www.thivien.net/C%E1%BB%91-Vi%C3%AAm-V%C5%A9/Y%C3%AAn-trung-t%E1%BA%B7ng-Ti%E1%BB%81n-bi%C3%AAn-tu-B%E1%BB%89nh-%C4%90%E1%BA%AFng/poem-f-5zhuyursln9RUd1sxJRA": {
+      "status": "written",
+      "output": "yentrungtangtienbientubinhdang.csv",
+      "title_vi": "Yên trung tặng Tiền biên tu Bỉnh Đắng",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/Di%C3%AAu-N%C3%A3i/Ho%C3%A0ng-H%C3%A0-kh%C3%BAc/poem-gYokr6y0qHZ7KA6q1dxEWw": {
+      "status": "written",
+      "output": "hoanghakhuc.csv",
+      "title_vi": "Hoàng Hà khúc",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/Di%C3%AAu-Xu%C3%A2n/Ph%E1%BB%A5ng-huy%E1%BB%87n-%C4%91%C3%B4ng-li%E1%BB%85u-t%E1%BB%AB/poem-2RGxSDs6UwNQfLuwpGe2fg": {
+      "status": "written",
+      "output": "phunghuyendonglieutu.csv",
+      "title_vi": "Phụng huyện đông liễu từ",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/D%C6%B0%C6%A1ng-Th%E1%BA%ADn/Uy%E1%BB%83n-chuy%E1%BB%83n-ca/poem-Pa4QTIR4hftfyjMW83pTqQ": {
+      "status": "written",
+      "output": "uyenchuyenca.csv",
+      "title_vi": "Uyển chuyển ca",
+      "sentence_pairs": 6
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Ai-giang-%C4%91%E1%BA%A7u/poem-UC91PIpcFalgwS4PbK2Lpg": {
+      "status": "written",
+      "output": "aigiangdau.csv",
+      "title_vi": "Ai giang đầu",
+      "sentence_pairs": 20
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Ai-v%C6%B0%C6%A1ng-t%C3%B4n/poem-LP68Aop4_S5Jf74CeC8Mjg": {
+      "status": "written",
+      "output": "aivuongton.csv",
+      "title_vi": "Ai vương tôn",
+      "sentence_pairs": 28
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/B%E1%BA%A1ch-ph%C3%B9-h%C3%A0nh/poem-Aq38C1tEYEGjrTy1JOwn_A": {
+      "status": "written",
+      "output": "bachphuhanh.csv",
+      "title_vi": "Bạch phù hành",
+      "sentence_pairs": 9
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/B%E1%BA%A1ch-ty-h%C3%A0nh/poem-5UU29W7NKal1yHnTyl5mkg": {
+      "status": "written",
+      "output": "bachtyhanh.csv",
+      "title_vi": "Bạch ty hành",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/B%C3%A1ch-%C6%B0u-t%E1%BA%ADp-h%C3%A0nh/poem-bMSP5YOXWyK1jTzTI9MKNQ": {
+      "status": "written",
+      "output": "bachuutaphanh.csv",
+      "title_vi": "Bách ưu tập hành",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/B%E1%BB%87nh-h%E1%BA%ADu-ng%E1%BB%99-V%C6%B0%C6%A1ng-K%E1%BB%B3-%E1%BA%A9m-t%E1%BA%B7ng-ca/poem-w0qCQlDrnhdtszEaxXpCYQ": {
+      "status": "written",
+      "output": "benhhaungovuongkyamtangca.csv",
+      "title_vi": "Bệnh hậu ngộ Vương Kỳ ẩm tặng ca",
+      "sentence_pairs": 28
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Bi-Thanh-B%E1%BA%A3n/poem-7wu4PrmaDd9EvB6ALgax_g": {
+      "status": "written",
+      "output": "bithanhban.csv",
+      "title_vi": "Bi Thanh Bản",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Bi-Tr%E1%BA%A7n-%C4%90%C3%A0o/poem--abLwbhK7CuzmdoZ83_cZw": {
+      "status": "written",
+      "output": "bitrandao.csv",
+      "title_vi": "Bi Trần Đào",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Bi%E1%BB%87t-L%C3%BD-b%C3%AD-th%C6%B0-Thu%E1%BB%B7-H%C6%B0ng-t%E1%BB%B1-s%E1%BB%9F-c%C6%B0/poem-SmUkxhrA_6uWgrNG94zufg": {
+      "status": "written",
+      "output": "bietlybithuthuyhungtusocu.csv",
+      "title_vi": "Biệt Lý bí thư Thuỷ Hưng tự sở cư",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/B%E1%BB%93i-V%C6%B0%C6%A1ng-th%E1%BB%8B-ng%E1%BB%B1-%C4%91%E1%BB%93ng-%C4%91%C4%83ng-%C4%90%C3%B4ng-s%C6%A1n-t%E1%BB%91i-cao-%C4%91%E1%BB%89nh-y%E1%BA%BFn-Di%C3%AAu-Th%C3%B4ng-Tuy%E1%BB%81n-v%C3%A3n-hu%E1%BB%81-t%E1%BB%ADu-phi%E1%BA%BFm-giang/poem-zeOhhMM1duWEshoMtUybtQ": {
+      "status": "written",
+      "output": "boivuongthingudongdangdongsontoicaodinhyendieuthongtuyenvanhuetuuphiemgiang.csv",
+      "title_vi": "Bồi Vương thị ngự đồng đăng Đông sơn tối cao đỉnh, yến Diêu Thông Tuyền, vãn huề tửu phiếm giang",
+      "sentence_pairs": 20
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/B%E1%BB%A9c-tr%E1%BA%AFc-h%C3%A0nh-t%E1%BA%B7ng-T%E1%BA%A5t-Di%E1%BB%87u-B%E1%BB%A9c-tr%E1%BA%AFc-h%C3%A0nh-t%E1%BA%B7ng-T%E1%BA%A5t-T%E1%BB%A9-Di%E1%BB%87u/poem-01dT0RNuqXdGUrVPscORFA": {
+      "status": "written",
+      "output": "buctrachanhtangtatdieubuctrachanhtangtattudieu.csv",
+      "title_vi": "Bức trắc hành tặng Tất Diệu [Bức trắc hành tặng Tất Tứ Diệu]",
+      "sentence_pairs": 26
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/C%C3%A0n-Nguy%C3%AAn-trung-ng%E1%BB%A5-c%C6%B0-%C4%90%E1%BB%93ng-C%E1%BB%91c-huy%E1%BB%87n-t%C3%A1c-ca-k%E1%BB%B3-3/poem-qecomtss7dI2LkVBXtSEZw": {
+      "status": "written",
+      "output": "cannguyentrungngucudongcochuyentaccaky3.csv",
+      "title_vi": "Càn Nguyên trung ngụ cư Đồng Cốc huyện tác ca kỳ 3",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Cao-%C4%91%C3%B4-h%E1%BB%99-th%C3%B4ng-m%C3%A3-h%C3%A0nh/poem-OzTm91ET0xJDnR1Xi0TeAg": {
+      "status": "written",
+      "output": "caodohothongmahanh.csv",
+      "title_vi": "Cao đô hộ thông mã hành",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/C%E1%BA%A9m-th%E1%BB%A5-h%C3%A0nh/poem-U9ZNi9BzMmjWZ4V23lrQDA": {
+      "status": "written",
+      "output": "camthuhanh.csv",
+      "title_vi": "Cẩm thụ hành",
+      "sentence_pairs": 20
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/C%E1%BA%ADn-v%C4%83n/poem-2m10rV2yUDDRynuRUgAEWA": {
+      "status": "written",
+      "output": "canvan.csv",
+      "title_vi": "Cận văn",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Chi%E1%BA%BFt-h%E1%BA%A1m-h%C3%A0nh/poem-uZpCzv79Cufau2MzBNMJgA": {
+      "status": "written",
+      "output": "chiethamhanh.csv",
+      "title_vi": "Chiết hạm hành",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Chu-ph%E1%BB%A5ng-h%C3%A0nh/poem-ncflj_afqryTFi6W6-MWNA": {
+      "status": "written",
+      "output": "chuphunghanh.csv",
+      "title_vi": "Chu phụng hành",
+      "sentence_pairs": 9
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/C%E1%BB%95-b%C3%A1ch-h%C3%A0nh/poem-_Rd3Exuz3Fn9VBE_R4m_tQ": {
+      "status": "written",
+      "output": "cobachhanh.csv",
+      "title_vi": "Cổ bách hành",
+      "sentence_pairs": 24
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Cu%E1%BB%93ng-ca-h%C3%A0nh-t%E1%BA%B7ng-t%E1%BB%A9-huynh/poem-xeNJc0jL-p2EnGzrVXbyxQ": {
+      "status": "written",
+      "output": "cuongcahanhtangtuhuynh.csv",
+      "title_vi": "Cuồng ca hành tặng tứ huynh",
+      "sentence_pairs": 24
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/C%E1%BB%ADu-v%C5%A9-k%E1%BB%B3-V%C6%B0%C6%A1ng-t%C6%B0%E1%BB%9Bng-qu%C3%A2n-b%E1%BA%A5t-ch%C3%AD/poem-O0yUQ5SxwKoB3k65UN1KKQ": {
+      "status": "written",
+      "output": "cuuvukyvuongtuongquanbatchi.csv",
+      "title_vi": "Cửu vũ kỳ Vương tướng quân bất chí",
+      "sentence_pairs": 24
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/D%E1%BA%A1-quy/poem-rCpLS4pHYsVrJjKIhfTnOg": {
+      "status": "written",
+      "output": "daquy.csv",
+      "title_vi": "Dạ quy",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/D%E1%BA%A1-v%C4%83n-t%E1%BA%A5t-l%E1%BA%ADt/poem-zYUZXVVWxYr5gPJ-ccPlSA": {
+      "status": "written",
+      "output": "davantatlat.csv",
+      "title_vi": "Dạ văn tất lật",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/D%E1%BA%ABn-thu%E1%BB%B7/poem-EkhyL1KObmi2kqcUkhyA_A": {
+      "status": "written",
+      "output": "danthuy.csv",
+      "title_vi": "Dẫn thuỷ",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/%C4%90%E1%BA%A1i-Gi%C3%A1c-cao-t%C4%83ng-lan-nh%C3%A3/poem-aDggrRsgeJ_QDposoWIghw": {
+      "status": "written",
+      "output": "daigiaccaotanglannha.csv",
+      "title_vi": "Đại Giác cao tăng lan nhã",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/%C4%90%E1%BA%A1i-m%E1%BA%A1ch-h%C3%A0nh/poem--OhuoGvsJJ9QvEdEjpjiZQ": {
+      "status": "written",
+      "output": "daimachhanh.csv",
+      "title_vi": "Đại mạch hành",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/%C4%90an-thanh-d%E1%BA%ABn-t%E1%BA%B7ng-T%C3%A0o-B%C3%A1-t%C6%B0%E1%BB%9Bng-qu%C3%A2n/poem-mfqm_VhJ77tWU6LlkjJg1A": {
+      "status": "written",
+      "output": "danthanhdantangtaobatuongquan.csv",
+      "title_vi": "Đan thanh dẫn, tặng Tào Bá tướng quân",
+      "sentence_pairs": 40
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/%C4%90%E1%BA%A7u-gi%E1%BA%A3n-H%C3%A0m-Hoa-l%C6%B0%E1%BB%A1ng-huy%E1%BB%87n-ch%C6%B0-t%E1%BB%AD/poem-RRGcYAjKVUB6c9Uvx3iqxQ": {
+      "status": "written",
+      "output": "daugianhamhoaluonghuyenchutu.csv",
+      "title_vi": "Đầu giản Hàm, Hoa lưỡng huyện chư tử",
+      "sentence_pairs": 14
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/%C4%90%E1%BB%81-b%C3%ADch-ho%E1%BA%A1-m%C3%A3-ca/poem-Vk-GWvuEt_zdiIzRd3HPuQ": {
+      "status": "written",
+      "output": "debichhoamaca.csv",
+      "title_vi": "Đề bích hoạ mã ca",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/%C4%90%E1%BB%81-b%C3%ADch-th%C6%B0%E1%BB%A3ng-Vi-Y%E1%BB%83n-ho%E1%BA%A1-m%C3%A3-ca/poem-XK9s_ZZfMW-Bes-eg5ooxw": {
+      "status": "written",
+      "output": "debichthuongviyenhoamaca.csv",
+      "title_vi": "Đề bích thượng Vi Yển hoạ mã ca",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/%C4%90%E1%BB%81-L%C3%BD-t%C3%B4n-s%C6%B0-T%C3%B9ng-th%E1%BB%A5-ch%C6%B0%E1%BB%9Bng-t%E1%BB%AD-ca/poem-7999L4vGMY1gMzSwdEyVdA": {
+      "status": "written",
+      "output": "delytonsutungthuchuongtuca.csv",
+      "title_vi": "Đề Lý tôn sư “Tùng thụ chướng tử” ca",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/%C4%90%E1%BB%81-Tr%E1%BB%8Bnh-th%E1%BA%ADp-b%C3%A1t-tr%C6%B0%E1%BB%9Bc-t%C3%A1c-tr%C6%B0%E1%BB%A3ng-c%E1%BB%91-c%C6%B0/poem-Obr_sN9mH44gFx0YWwwyNw": {
+      "status": "written",
+      "output": "detrinhthapbattruoctactruongcocu.csv",
+      "title_vi": "Đề Trịnh thập bát trước tác trượng cố cư",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/%C4%90o%E1%BA%A3n-ca-h%C3%A0nh-t%E1%BB%91ng-K%E1%BB%B3-l%E1%BB%A5c-s%E1%BB%B1-quy-H%E1%BB%A3p-Ch%C3%A2u-nh%C3%A2n-k%C3%BD-T%C3%B4-s%E1%BB%A9-qu%C3%A2n/poem-_bv9CSm_0ZXZW-MW4AWewg": {
+      "status": "written",
+      "output": "doancahanhtongkylucsuquyhopchaunhankytosuquan.csv",
+      "title_vi": "Đoản ca hành tống Kỳ lục sự quy Hợp Châu, nhân ký Tô sứ quân",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/%C4%90%E1%BB%93-b%E1%BB%99-quy-h%C3%A0nh/poem-typQZv3PPfPLLk8H4q7u8A": {
+      "status": "written",
+      "output": "doboquyhanh.csv",
+      "title_vi": "Đồ bộ quy hành",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/%C4%90%E1%BB%97-quy%C3%AAn-h%C3%A0nh-C%E1%BB%95-th%C3%AC-%C4%90%E1%BB%97-V%C5%A9-x%C6%B0ng-V%E1%BB%8Dng-%C4%90%E1%BA%BF/poem-SoOymBlJwwJCZ3jMzlanNg": {
+      "status": "written",
+      "output": "doquyenhanhcothidovuxungvongde.csv",
+      "title_vi": "Đỗ quyên hành (Cổ thì Đỗ Vũ xưng Vọng Đế)",
+      "sentence_pairs": 21
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/%C4%90%E1%BB%97-quy%C3%AAn-h%C3%A0nh-Qu%C3%A2n-b%E1%BA%A5t-ki%E1%BA%BFn-t%C3%ADch-nh%E1%BA%ADt-Th%E1%BB%A5c-thi%C3%AAn-t%E1%BB%AD/poem-cCFANGZ6jAN8uCFyQjkWDA": {
+      "status": "written",
+      "output": "doquyenhanhquanbatkientichnhatthucthientu.csv",
+      "title_vi": "Đỗ quyên hành (Quân bất kiến tích nhật Thục thiên tử)",
+      "sentence_pairs": 17
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/%C4%90%C3%B4ng-m%E1%BA%A1t-d%C4%A9-s%E1%BB%B1-chi-%C4%91%C3%B4ng-%C4%91%C3%B4-H%E1%BB%93-Th%C3%A0nh-%C4%91%C3%B4ng-ng%E1%BB%99-M%E1%BA%A1nh-V%C3%A2n-Khanh-ph%E1%BB%A5c-quy-L%C6%B0u-H%E1%BA%A1o-tr%E1%BA%A1ch-t%C3%BAc-y%E1%BA%BFn-%E1%BA%A9m-t%C3%A1n/poem-rv9EJcr71JHZgPe06LZUgw": {
+      "status": "written",
+      "output": "dongmatdisuchidongdohothanhdongngomanhvankhanhphucquyluuhaotrachtucyenamtannhanvituyca.csv",
+      "title_vi": "Đông mạt dĩ sự chi đông đô Hồ Thành đông ngộ Mạnh Vân Khanh, phục quy Lưu Hạo trạch túc yến, ẩm tán nhân vi tuý ca",
+      "sentence_pairs": 18
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/%C4%90%C3%B4ng-th%C3%BA-h%C3%A0nh/poem-rrO8juQcjpxoXE6lgUdzaQ": {
+      "status": "written",
+      "output": "dongthuhanh.csv",
+      "title_vi": "Đông thú hành",
+      "sentence_pairs": 27
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/H%E1%BA%A3i-t%C3%B4ng-h%C3%A0nh/poem-CIsZMRNrGNLAfW2vN5t_4A": {
+      "status": "written",
+      "output": "haitonghanh.csv",
+      "title_vi": "Hải tông hành",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/Anh-V%C5%A9-ch%C3%A2u/poem-PE7aG4bpaNaOL1KBzgLqOA": {
+      "status": "written",
+      "output": "anhvuchau.csv",
+      "title_vi": "Anh Vũ châu",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/K%C3%BD-H%C3%A0n-gi%C3%A1n-ngh%E1%BB%8B/poem-E81-BC9z9waiZiYocuSvww": {
+      "status": "written",
+      "output": "kyhangiannghi.csv",
+      "title_vi": "Ký Hàn gián nghị",
+      "sentence_pairs": 22
+    },
+    "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/H%C3%A0nh-l%E1%BB%99-nan-k%E1%BB%B3-2/poem-cEtFYbkmI1o3u3iBnSrHGQ": {
+      "status": "written",
+      "output": "hanhlonanky2.csv",
+      "title_vi": "Hành lộ nan kỳ 2",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/H%C3%A0nh-l%E1%BB%99-nan-k%E1%BB%B3-3/poem-5gNBLkPFb3yViyYfwhcsUg": {
+      "status": "written",
+      "output": "hanhlonanky3.csv",
+      "title_vi": "Hành lộ nan kỳ 3",
+      "sentence_pairs": 17
+    },
+    "https://www.thivien.net/M%E1%BA%A1nh-H%E1%BA%A1o-Nhi%C3%AAn/D%E1%BA%A1-quy-L%E1%BB%99c-M%C3%B4n-s%C6%A1n-ca/poem-de5MFJ8hCngOIu37oRHsrg": {
+      "status": "written",
+      "output": "daquylocmonsonca.csv",
+      "title_vi": "Dạ quy Lộc Môn sơn ca",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Vi-Ph%C3%BAng-l%E1%BB%A5c-s%E1%BB%B1-tr%E1%BA%A1ch-quan-T%C3%A0o-t%C6%B0%E1%BB%9Bng-qu%C3%A2n-ho%E1%BA%A1-m%C3%A3-%C4%91%E1%BB%93/poem-4yoEq5GRUdDDRggLQ7AyqA": {
+      "status": "written",
+      "output": "viphunglucsutrachquantaotuongquanhoamado.csv",
+      "title_vi": "Vi Phúng lục sự trạch quan Tào tướng quân hoạ mã đồ",
+      "sentence_pairs": 35
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Thu-v%C5%A9-th%C3%A1n-k%E1%BB%B3-1/poem-FcWzM9R187Ql7EMOYNDoaA": {
+      "status": "written",
+      "output": "thuvuthanky1.csv",
+      "title_vi": "Thu vũ thán kỳ 1",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Thu-v%C5%A9-th%C3%A1n-k%E1%BB%B3-2/poem-JnyQXHn0ytwf4ZaxOvX9Xg": {
+      "status": "written",
+      "output": "thuvuthanky2.csv",
+      "title_vi": "Thu vũ thán kỳ 2",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Thu-v%C5%A9-th%C3%A1n-k%E1%BB%B3-3/poem-3u8ExmGHYgml3O9cGseIHg": {
+      "status": "written",
+      "output": "thuvuthanky3.csv",
+      "title_vi": "Thu vũ thán kỳ 3",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Ph%E1%BB%A5-t%C3%A2n-h%C3%A0nh/poem-1-ewUEdMXYGTpOMxwIc6Ig": {
+      "status": "written",
+      "output": "phutanhanh.csv",
+      "title_vi": "Phụ tân hành",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Quan-C%C3%B4ng-T%C3%B4n-%C4%91%E1%BA%A1i-n%C6%B0%C6%A1ng-%C4%91%E1%BB%87-t%E1%BB%AD-v%C5%A9-Ki%E1%BA%BFm-kh%C3%AD-h%C3%A0nh/poem-ddT-OJPkzoyuwu50zjhVLQ": {
+      "status": "written",
+      "output": "quancongtondainuongdetuvukiemkhihanh.csv",
+      "title_vi": "Quan Công Tôn đại nương đệ tử vũ “Kiếm khí” hành",
+      "sentence_pairs": 26
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/T%E1%BA%A9y-binh-m%C3%A3/poem-FUAf_FEoWRmR--1bm7spSA": {
+      "status": "written",
+      "output": "taybinhma.csv",
+      "title_vi": "Tẩy binh mã",
+      "sentence_pairs": 48
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/T%E1%BB%91ng-Kh%E1%BB%95ng-S%C3%A0o-Ph%E1%BB%A7-t%E1%BA%A1-b%E1%BB%87nh-quy-du-Giang-%C4%90%C3%B4ng-ki%C3%AAm-tr%C3%ACnh-L%C3%BD-B%E1%BA%A1ch/poem-_OE0Dgzs2ma81weT_jxapg": {
+      "status": "written",
+      "output": "tongkhongsaophutabenhquydugiangdongkiemtrinhlybach.csv",
+      "title_vi": "Tống Khổng Sào Phủ tạ bệnh quy du Giang Đông, kiêm trình Lý Bạch",
+      "sentence_pairs": 18
+    },
+    "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/%C3%94-d%E1%BA%A1-%C4%91%E1%BB%81/poem-O82vYjarRAQfjsS_J_cIvQ": {
+      "status": "written",
+      "output": "odade-O82vYjarRAQfjsS_J_cIvQ.csv",
+      "title_vi": "Ô dạ đề",
+      "sentence_pairs": 6
+    },
+    "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/%C3%94-th%C3%AA-kh%C3%BAc/poem-K7Y8BGaymd_0bZQCaZbdUQ": {
+      "status": "written",
+      "output": "othekhuc.csv",
+      "title_vi": "Ô thê khúc",
+      "sentence_pairs": 7
+    },
+    "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/Kim-L%C4%83ng-t%E1%BB%ADu-t%E1%BB%A9-l%C6%B0u-bi%E1%BB%87t/poem-cj2CvUSo5D4VjMMKVgsd_A": {
+      "status": "written",
+      "output": "kimlangtuutuluubiet.csv",
+      "title_vi": "Kim Lăng tửu tứ lưu biệt",
+      "sentence_pairs": 6
+    },
+    "https://www.thivien.net/V%C6%B0%C6%A1ng-Duy/%C4%90%C3%A0o-Nguy%C3%AAn-h%C3%A0nh/poem-hKnlT065602cE5xw0UFbWA": {
+      "status": "written",
+      "output": "daonguyenhanh-hKnlT065602cE5xw0UFbWA.csv",
+      "title_vi": "Đào Nguyên hành",
+      "sentence_pairs": 32
+    },
+    "https://www.thivien.net/L%C3%BD-K%E1%BB%B3/C%E1%BA%A7m-ca/poem-NBgy6WvCKzqSGFjro58qSQ": {
+      "status": "written",
+      "output": "camca.csv",
+      "title_vi": "Cầm ca",
+      "sentence_pairs": 10
+    },
+    "https://www.thivien.net/L%C3%BD-K%E1%BB%B3/C%E1%BB%95-t%C3%B2ng-qu%C3%A2n-h%C3%A0nh/poem-hoAp7ZAfAQrdqgNLzw2aJA": {
+      "status": "written",
+      "output": "cotongquanhanh.csv",
+      "title_vi": "Cổ tòng quân hành",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/S%E1%BA%A7m-Tham/B%E1%BA%A1ch-tuy%E1%BA%BFt-ca-t%E1%BB%91ng-V%C5%A9-ph%C3%A1n-quan-quy-kinh/poem-6cYWLQesK-1k0z0R4lQAWw": {
+      "status": "written",
+      "output": "bachtuyetcatongvuphanquanquykinh.csv",
+      "title_vi": "Bạch tuyết ca tống Vũ phán quan quy kinh",
+      "sentence_pairs": 18
+    },
+    "https://www.thivien.net/V%C6%B0%C6%A1ng-Duy/Ch%C6%B0%E1%BB%9Bc-t%E1%BB%ADu-d%E1%BB%AF-B%C3%B9i-%C4%90%E1%BB%8Bch/poem-Fy1Ix2oP3ZjwDhfYYvH6VA": {
+      "status": "written",
+      "output": "chuoctuudubuidich.csv",
+      "title_vi": "Chước tửu dữ Bùi Địch",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/Th%C3%B4i-Hi%E1%BB%87u/V%E1%BB%8B-Th%C3%A0nh-thi%E1%BA%BFu-ni%C3%AAn-h%C3%A0nh/poem-fcKWtH-JN268WB_zKyvfdg": {
+      "status": "written",
+      "output": "vithanhthieunienhanh.csv",
+      "title_vi": "Vị Thành thiếu niên hành",
+      "sentence_pairs": 30
+    },
+    "https://www.thivien.net/L%C6%B0u-Tr%C6%B0%E1%BB%9Dng-Khanh/%C4%90%C4%83ng-Ng%C3%B4-c%E1%BB%95-th%C3%A0nh-ca/poem-JexeqHgsKjxZro60Tnbz6A": {
+      "status": "written",
+      "output": "dangngocothanhca.csv",
+      "title_vi": "Đăng Ngô cổ thành ca",
+      "sentence_pairs": 22
+    },
+    "https://www.thivien.net/V%C6%B0%C6%A1ng-Duy/L%E1%BA%A1c-D%C6%B0%C6%A1ng-n%E1%BB%AF-nhi-h%C3%A0nh/poem-BnmF1CW-HG-Nvl6cafIm6w": {
+      "status": "written",
+      "output": "lacduongnunhihanh.csv",
+      "title_vi": "Lạc Dương nữ nhi hành",
+      "sentence_pairs": 20
+    },
+    "https://www.thivien.net/S%E1%BA%A7m-Tham/T%E1%BA%A9u-M%C3%A3-xuy%C3%AAn-h%C3%A0nh-ph%E1%BB%A5ng-t%E1%BB%91ng-Phong-%C4%91%E1%BA%A1i-phu-t%C3%A2y-chinh/poem-7hqLA0Ho--ieNKoIH-qXmA": {
+      "status": "written",
+      "output": "taumaxuyenhanhphungtongphongdaiphutaychinh.csv",
+      "title_vi": "Tẩu Mã xuyên hành, phụng tống Phong đại phu tây chinh",
+      "sentence_pairs": 18
+    },
+    "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/Nga-My-s%C6%A1n-nguy%E1%BB%87t-ca-t%E1%BB%91ng-Th%E1%BB%A5c-t%C4%83ng-Y%E1%BA%BFn-nh%E1%BA%ADp-trung-kinh/poem-y3-ra3kbF1ELGWMZQJEJkw": {
+      "status": "written",
+      "output": "ngamysonnguyetcatongthuctangyennhaptrungkinh.csv",
+      "title_vi": "Nga My sơn nguyệt ca tống Thục tăng Yến nhập trung kinh",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/V%C6%B0%C6%A1ng-Duy/Y%C3%AAn-Chi-h%C3%A0nh/poem-3E00fLMXNpzWXZkyeUTVMQ": {
+      "status": "written",
+      "output": "yenchihanh.csv",
+      "title_vi": "Yên Chi hành",
+      "sentence_pairs": 24
+    },
+    "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/Lao-Lao-%C4%91%C3%ACnh-ca/poem-qbre7PmdCsO0icYqeAer9A": {
+      "status": "written",
+      "output": "laolaodinhca.csv",
+      "title_vi": "Lao Lao đình ca",
+      "sentence_pairs": 10
+    },
+    "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/%C4%90%E1%BB%93ng-V%C6%B0%C6%A1ng-X%C6%B0%C6%A1ng-Linh-t%E1%BB%91ng-t%E1%BB%99c-%C4%91%E1%BB%87-T%C6%B0%C6%A1ng-quy-Qu%E1%BA%BF-D%C6%B0%C6%A1ng-%C4%90%E1%BB%93ng-V%C6%B0%C6%A1ng-X%C6%B0%C6%A1ng-Linh-Th%C3%B4i-Qu%E1%BB%91c-Ph%E1%BB%A5-t%E1%BB%91ng-L%C3%BD/poem-wQ653ddDppAyOcPMsu4UdQ": {
+      "status": "written",
+      "output": "dongvuongxuonglinhtongtocdetuongquyqueduongdongvuongxuonglinhthoiquocphutonglychuquysamchauky2.csv",
+      "title_vi": "Đồng Vương Xương Linh tống tộc đệ Tương quy Quế Dương (Đồng Vương Xương Linh, Thôi Quốc Phụ tống Lý Chu quy Sâm Châu) kỳ 2",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/X%C3%ADch-B%C3%ADch-ca-t%E1%BB%91ng-bi%E1%BB%87t/poem-9PW1smI2nDo1AUgLwB_hew": {
+      "status": "written",
+      "output": "xichbichcatongbiet.csv",
+      "title_vi": "Xích Bích ca tống biệt",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/Giang-th%C6%B0%E1%BB%A3ng-ng%C3%A2m/poem-syJGIb4Xrox_42dILvmnSQ": {
+      "status": "written",
+      "output": "giangthuongngam.csv",
+      "title_vi": "Giang thượng ngâm",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/%C4%90%E1%BA%A3o-y-thi%C3%AAn/poem-56WdtHcprQZ6iNaC9OE6OA": {
+      "status": "written",
+      "output": "daoythien.csv",
+      "title_vi": "Đảo y thiên",
+      "sentence_pairs": 26
+    },
+    "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/T%C6%B0-bi%C3%AAn/poem-DuUwIijswr2px1sDRVLFTg": {
+      "status": "written",
+      "output": "tubien.csv",
+      "title_vi": "Tư biên",
+      "sentence_pairs": 6
+    },
+    "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/%C4%90%E1%BB%91i-tuy%E1%BA%BFt-tu%C3%BD-h%E1%BA%ADu-t%E1%BA%B7ng-V%C6%B0%C6%A1ng-L%E1%BB%8Bch-D%C6%B0%C6%A1ng/poem-yzWJ5JDnfofJxBvbOBHNcg": {
+      "status": "written",
+      "output": "doituyettuyhautangvuonglichduong.csv",
+      "title_vi": "Đối tuyết tuý hậu tặng Vương Lịch Dương",
+      "sentence_pairs": 14
+    },
+    "https://www.thivien.net/Tr%C6%B0%C6%A1ng-V%E1%BB%8B/H%E1%BB%93-th%C6%B0%E1%BB%A3ng-%C4%91%E1%BB%91i-t%E1%BB%ADu-h%C3%A0nh/poem-o9moHedisBt3uFWCgW4CNg": {
+      "status": "written",
+      "output": "hothuongdoituuhanh.csv",
+      "title_vi": "Hồ thượng đối tửu hành",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/B%E1%BA%A3-t%E1%BB%ADu-v%E1%BA%A5n-nguy%E1%BB%87t/poem-T3EWTWIb7wC6CzraIxv7Pw": {
+      "status": "written",
+      "output": "batuuvannguyet.csv",
+      "title_vi": "Bả tửu vấn nguyệt",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/T%C6%B0-M%C3%A3-Th%E1%BB%ABa-Trinh/%C4%90%C3%A1p-T%E1%BB%91ng-Chi-V%E1%BA%A5n/poem-ktB77dJe3tTRJiVsLhIreQ": {
+      "status": "written",
+      "output": "daptongchivan.csv",
+      "title_vi": "Đáp Tống Chi Vấn",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/S%E1%BA%A7m-Tham/Lu%C3%A2n-%C4%90%C3%A0i-ca-ph%E1%BB%A5ng-t%E1%BB%91ng-Phong-%C4%91%E1%BA%A1i-phu-xu%E1%BA%A5t-s%C6%B0-t%C3%A2y-chinh/poem-Vqiig3_iRV4ja8PsQ8BSZA": {
+      "status": "written",
+      "output": "luandaicaphungtongphongdaiphuxuatsutaychinh.csv",
+      "title_vi": "Luân Đài ca phụng tống Phong đại phu xuất sư tây chinh",
+      "sentence_pairs": 18
+    },
+    "https://www.thivien.net/L%C3%BD-K%E1%BB%B3/Th%C3%ADnh-An-V%E1%BA%A1n-Thi%E1%BB%87n-xuy-t%E1%BA%A5t-l%E1%BA%ADt-ca/poem-x02F6dWN97-RdG1izkgwAg": {
+      "status": "written",
+      "output": "thinhanvanthienxuytatlatca.csv",
+      "title_vi": "Thính An Vạn Thiện xuy tất lật ca",
+      "sentence_pairs": 18
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%99c-C%C3%B4-C%E1%BA%ADp/Ho%E1%BA%A1-t%E1%BA%B7ng-vi%E1%BB%85n/poem-crqGknMPkQSOHcuHNOXwlg": {
+      "status": "written",
+      "output": "hoatangvien.csv",
+      "title_vi": "Hoạ tặng viễn",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/V%C6%B0%C6%A1ng-Duy/L%C3%A3o-t%C6%B0%E1%BB%9Bng-h%C3%A0nh/poem-q9t4hdGxFPoZsjF0pTYb4w": {
+      "status": "written",
+      "output": "laotuonghanh-q9t4hdGxFPoZsjF0pTYb4w.csv",
+      "title_vi": "Lão tướng hành",
+      "sentence_pairs": 30
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/T%E1%BB%91i-n%C4%83ng-h%C3%A0nh/poem-H5s_djxQcWKh3qzW5QeJBA": {
+      "status": "written",
+      "output": "toinanghanh.csv",
+      "title_vi": "Tối năng hành",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/M%E1%BA%A1c-t%C6%B0%C6%A1ng-nghi-h%C3%A0nh/poem-8PForxfR8TfWULc6cqqAAw": {
+      "status": "written",
+      "output": "mactuongnghihanh.csv",
+      "title_vi": "Mạc tương nghi hành",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/T%C3%ADch-bi%E1%BB%87t-h%C3%A0nh-t%E1%BB%91ng-L%C6%B0u-b%E1%BB%99c-x%E1%BA%A1-ph%C3%A1n-quan/poem-dW12UVYh-vPxg4IlKpEmEA": {
+      "status": "written",
+      "output": "tichbiethanhtongluubocxaphanquan.csv",
+      "title_vi": "Tích biệt hành, tống Lưu bộc xạ phán quan",
+      "sentence_pairs": 32
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Th%C3%ADch-mu%E1%BB%99n/poem-v87xCkkTnTZ7HBIiLG2kfg": {
+      "status": "written",
+      "output": "thichmuon.csv",
+      "title_vi": "Thích muộn",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Kh%E1%BB%A9-thu-h%C3%A0nh/poem-I0wyqiOID_bjkc6MU_CbFA": {
+      "status": "written",
+      "output": "khuthuhanh.csv",
+      "title_vi": "Khứ thu hành",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Quang-L%E1%BB%99c-b%E1%BA%A3n-h%C3%A0nh/poem-WbsCU8f2peCbNGsiZKTyUg": {
+      "status": "written",
+      "output": "quanglocbanhanh.csv",
+      "title_vi": "Quang Lộc bản hành",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Thanh-minh-k%E1%BB%B3-1/poem-0kr2izQIA-0PizLWkfQxRQ": {
+      "status": "written",
+      "output": "thanhminhky1.csv",
+      "title_vi": "Thanh minh kỳ 1",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Thanh-minh-k%E1%BB%B3-2/poem-fjKjkzj5vxTeCtmDBEnStQ": {
+      "status": "written",
+      "output": "thanhminhky2.csv",
+      "title_vi": "Thanh minh kỳ 2",
+      "sentence_pairs": 12
+    },
+    "https://www.thivien.net/L%C3%BD-K%E1%BB%B3/T%E1%BB%91ng-Tr%E1%BA%A7n-Ch%C6%B0%C6%A1ng-Ph%E1%BB%A7/poem--k_4mpeEDk_Q04XEO8OhHA": {
+      "status": "written",
+      "output": "tongtranchuongphu.csv",
+      "title_vi": "Tống Trần Chương Phủ",
+      "sentence_pairs": 18
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Th%C3%A1n-%C4%91%C3%ACnh-ti%E1%BB%81n-cam-c%C3%BAc-hoa/poem-R2L4Kx7Gu8zfMS7CPUAHkA": {
+      "status": "written",
+      "output": "thandinhtiencamcuchoa.csv",
+      "title_vi": "Thán đình tiền cam cúc hoa",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Thi%C3%AAn-D%E1%BB%A5c-phi%C3%AAu-k%E1%BB%B5-ca/poem-4H7cidyLDPJCsh696qWFuQ": {
+      "status": "written",
+      "output": "thienducphieukyca.csv",
+      "title_vi": "Thiên Dục phiêu kỵ ca",
+      "sentence_pairs": 20
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Nam-th%E1%BB%A5-v%E1%BB%8B-phong-v%C5%A9-s%E1%BB%9F-b%E1%BA%A1t-th%C3%A1n/poem-OS6gn6PhW5AXWk3Y-eCoag": {
+      "status": "written",
+      "output": "namthuviphongvusobatthan.csv",
+      "title_vi": "Nam thụ vị phong vũ sở bạt thán",
+      "sentence_pairs": 16
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Kh%E1%BB%95-chi%E1%BA%BFn-h%C3%A0nh/poem-4QWvx1UQ3vJBR9Wt7lFHzw": {
+      "status": "written",
+      "output": "khochienhanh.csv",
+      "title_vi": "Khổ chiến hành",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Thi%C3%AAn-bi%C3%AAn-h%C3%A0nh/poem-S2rgqcq3YbbboObrQwBdbg": {
+      "status": "written",
+      "output": "thienbienhanh.csv",
+      "title_vi": "Thiên biên hành",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Ph%C6%B0%E1%BB%A3c-k%C3%AA-h%C3%A0nh/poem-pBp3b509dL1pd_-iImGZWA": {
+      "status": "written",
+      "output": "phuockehanh.csv",
+      "title_vi": "Phược kê hành",
+      "sentence_pairs": 8
+    },
+    "https://www.thivien.net/Nguy%C3%AAn-K%E1%BA%BFt/Th%E1%BA%A1ch-Ng%C6%B0-h%E1%BB%93-th%C6%B0%E1%BB%A3ng-tu%C3%BD-ca/poem-hlieV_khN9Ykmo689fx-0Q": {
+      "status": "written",
+      "output": "thachnguhothuongtuyca.csv",
+      "title_vi": "Thạch Ngư hồ thượng tuý ca",
+      "sentence_pairs": 8
     }
   }
 }
