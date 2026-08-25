@@ -728,14 +728,14 @@ Phiên phiên bạch cưu,翩翩白鳩
 
 Các crawler hiện có:
 
-| Thể loại | Crawler | Script merge và output theo thể loại |
-| --- | --- | --- |
-| Kinh Thi | `pipelines/thivien_kinh_thi/scripts/crawl_kinh_thi.py` | `merge_poem_csvs.py` → `outputs/kinhthi.csv` |
-| Câu đối | `pipelines/thivien_cau_doi/scripts/crawl_cau_doi.py` | `merge_cau_doi_csvs.py` → `outputs/cau-doi.csv` |
-| Ngũ ngôn tứ tuyệt | `pipelines/thivien_ngu_ngon_tu_tuyet/scripts/crawl_ngu_ngon_tu_tuyet.py` | `merge_ngu_ngon_tu_tuyet_csvs.py` → `outputs/ngu-ngon-tu-tuyet.csv` |
-| Phú | `pipelines/thivien_phu/scripts/crawl_phu.py` | `merge_phu_csvs.py` → `outputs/phu.csv` |
-| Tứ ngôn | `pipelines/thivien_tu_ngon/scripts/crawl_tu_ngon.py` | `merge_tu_ngon_csvs.py` → `outputs/tu-ngon.csv` |
-| Thất ngôn cổ phong | `pipelines/thivien_that_ngon_co_phong/scripts/crawl_that_ngon_co_phong.py` | `merge_that_ngon_co_phong_csvs.py` → `outputs/that-ngon-co-phong.csv` |
+| Thể loại            | Crawler                                                                      | Script merge và output theo thể loại                                    |
+| ------------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Kinh Thi            | `pipelines/thivien_kinh_thi/scripts/crawl_kinh_thi.py`                       | `merge_poem_csvs.py` → `outputs/kinhthi.csv`                            |
+| Câu đối             | `pipelines/thivien_cau_doi/scripts/crawl_cau_doi.py`                         | `merge_cau_doi_csvs.py` → `outputs/cau-doi.csv`                         |
+| Ngũ ngôn tứ tuyệt   | `pipelines/thivien_ngu_ngon_tu_tuyet/scripts/crawl_ngu_ngon_tu_tuyet.py`     | `merge_ngu_ngon_tu_tuyet_csvs.py` → `outputs/ngu-ngon-tu-tuyet.csv`     |
+| Phú                 | `pipelines/thivien_phu/scripts/crawl_phu.py`                                 | `merge_phu_csvs.py` → `outputs/phu.csv`                                 |
+| Tứ ngôn             | `pipelines/thivien_tu_ngon/scripts/crawl_tu_ngon.py`                         | `merge_tu_ngon_csvs.py` → `outputs/tu-ngon.csv`                         |
+| Thất ngôn cổ phong  | `pipelines/thivien_that_ngon_co_phong/scripts/crawl_that_ngon_co_phong.py`   | `merge_that_ngon_co_phong_csvs.py` → `outputs/that-ngon-co-phong.csv`   |
 | Đường luật biến thể | `pipelines/thivien_duong_luat_bien_the/scripts/crawl_duong_luat_bien_the.py` | `merge_duong_luat_bien_the_csvs.py` → `outputs/duong-luat-bien-the.csv` |
 
 Chạy các lệnh từ thư mục gốc `vi2ch-model`. Nên crawl thử một số lượng nhỏ
@@ -843,9 +843,9 @@ Upload ba file split vào Kaggle Dataset. Notebook
 `kaggle-scripts/viet-han-bert.ipynb` mặc định tìm các file:
 
 ```text
-/kaggle/input/datasets/tiennhat/dataset/poem.train.csv
-/kaggle/input/datasets/tiennhat/dataset/poem.val.csv
-/kaggle/input/datasets/tiennhat/dataset/poem.test.csv
+/kaggle/input/datasets/hoanguyen/dataset/poem.train.csv
+/kaggle/input/datasets/hoanguyen/dataset/poem.val.csv
+/kaggle/input/datasets/hoanguyen/dataset/poem.test.csv
 ```
 
 Nếu Kaggle mount dataset ở đường dẫn khác, chỉ cần sửa `INPUT_DIR` trong
