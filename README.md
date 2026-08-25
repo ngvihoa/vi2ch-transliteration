@@ -737,6 +737,7 @@ Các crawler hiện có:
 | Tứ ngôn             | `pipelines/thivien_tu_ngon/scripts/crawl_tu_ngon.py`                         | `merge_tu_ngon_csvs.py` → `outputs/tu-ngon.csv`                         |
 | Thất ngôn cổ phong  | `pipelines/thivien_that_ngon_co_phong/scripts/crawl_that_ngon_co_phong.py`   | `merge_that_ngon_co_phong_csvs.py` → `outputs/that-ngon-co-phong.csv`   |
 | Đường luật biến thể | `pipelines/thivien_duong_luat_bien_the/scripts/crawl_duong_luat_bien_the.py` | `merge_duong_luat_bien_the_csvs.py` → `outputs/duong-luat-bien-the.csv` |
+| Thất ngôn bát cú (shallow test) | `pipelines/thivien_that_ngon_bat_cu/scripts/crawl_that_ngon_bat_cu.py` | `merge_that_ngon_bat_cu_csvs.py` → `outputs/that-ngon-bat-cu.csv` |
 
 Chạy các lệnh từ thư mục gốc `vi2ch-model`. Nên crawl thử một số lượng nhỏ
 trước:

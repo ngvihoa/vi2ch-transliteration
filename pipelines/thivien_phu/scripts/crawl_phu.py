@@ -41,6 +41,7 @@ DEFAULT_REPORT = PIPELINE_ROOT / "outputs" / "crawl_report.json"
 DEFAULT_URL_CHECKPOINT = PIPELINE_ROOT / "outputs" / "poem_urls.json"
 DEFAULT_COUNTRY_IDS: tuple[str, ...] | None = None
 DEFAULT_AGE_PARTITION_COUNTS: dict[str, dict[str, int]] = {}
+DEFAULT_SHALLOW_AGE_PARTITION_COUNTS: dict[str, dict[str, int]] = {}
 
 POEM_LINK_RE = re.compile(r"/poem-([A-Za-z0-9_-]+)$")
 AUTHOR_LINK_RE = re.compile(r"/author-([A-Za-z0-9_-]+)$")
@@ -612,6 +613,125 @@ def collect_bidirectional_window(
     return urls
 
 
+def collect_shallow_age_windows(
+    client: HttpClient,
+    checkpoint_path: Path,
+    refresh_checkpoint: bool,
+    configured_counts: dict[str, dict[str, int]],
+    country_ids_override: list[str] | None = None,
+) -> list[str]:
+    """Collect selected country/age partitions without drilling into authors."""
+    normalized_counts = {
+        str(country): {str(age): int(count) for age, count in ages.items()}
+        for country, ages in configured_counts.items()
+    }
+    requested_countries = (
+        list(normalized_counts) if country_ids_override is None else country_ids_override
+    )
+    unknown = [country for country in requested_countries if country not in normalized_counts]
+    if unknown:
+        raise CrawlError(
+            f"Shallow pipeline không cấu hình country ID: {unknown}; "
+            f"chỉ cho phép {list(normalized_counts)}"
+        )
+    selected_counts = {
+        country: normalized_counts[country] for country in requested_countries
+    }
+    partition_keys = {
+        f"country={country}&age={age}"
+        for country, ages in selected_counts.items()
+        for age in ages
+    }
+
+    checkpoint = None if refresh_checkpoint else load_url_checkpoint(checkpoint_path)
+    if checkpoint is not None and (
+        checkpoint.get("strategy") != "shallow-country-age-date-windows-v1"
+        or checkpoint.get("age_partition_counts") != selected_counts
+    ):
+        print("[checkpoint] Chiến lược shallow đã đổi; tạo lại danh sách URL.", flush=True)
+        checkpoint = None
+    if checkpoint is not None and checkpoint.get("complete") is True:
+        urls = list(checkpoint["urls"])
+        print(f"[danh sách] Dùng checkpoint shallow hoàn chỉnh: {len(urls)} URL", flush=True)
+        return urls
+
+    urls = list(checkpoint.get("urls", [])) if checkpoint else []
+    completed = set(checkpoint.get("completed_partitions", [])) if checkpoint else set()
+    partition_stats = dict(checkpoint.get("partition_stats", {})) if checkpoint else {}
+    configured_results = sum(
+        count for ages in selected_counts.values() for count in ages.values()
+    )
+    window_capacity = sum(
+        min(count, 200) for ages in selected_counts.values() for count in ages.values()
+    )
+
+    def persist(complete: bool = False) -> None:
+        save_url_checkpoint(checkpoint_path, {
+            "strategy": "shallow-country-age-date-windows-v1",
+            "expected_total": configured_results,
+            "target_window_capacity": window_capacity,
+            "country_ids": requested_countries,
+            "age_partition_counts": selected_counts,
+            "discovered_urls": len(urls),
+            "completed_partitions": sorted(completed),
+            "partition_stats": partition_stats,
+            "unresolved_partitions": [],
+            "complete": complete,
+            "urls": urls,
+        })
+
+    for country, ages in selected_counts.items():
+        for age, configured_count in ages.items():
+            key = f"country={country}&age={age}"
+            if key in completed:
+                continue
+            base_url = partition_url(country, age)
+            if configured_count <= 100:
+                print(f"[shallow {key}] lấy toàn bộ partition nhỏ...", flush=True)
+                first_html = client.get_text(base_url)
+                found = collect_small_partition(client, first_html, base_url, key)
+                strategy = "all-pages"
+            else:
+                print(
+                    f"[shallow {key}] {configured_count} bài; "
+                    "lấy cửa sổ Date asc/desc...",
+                    flush=True,
+                )
+                found = []
+                for order in ("asc", "desc"):
+                    window_url = f"{base_url}&Sort=Date"
+                    if order == "desc":
+                        window_url += "&SortOrder=desc"
+                    window = collect_capped_window(
+                        client, window_url, f"{key}&date-{order}"
+                    )
+                    known = set(found)
+                    found.extend(url for url in window if url not in known)
+                strategy = "date-asc-desc-windows"
+
+            known_urls = set(urls)
+            urls.extend(url for url in found if url not in known_urls)
+            partition_stats[key] = {
+                "configured_results": configured_count,
+                "strategy": strategy,
+                "collected_urls": len(found),
+                "new_unique_urls": len(urls) - len(known_urls),
+            }
+            completed.add(key)
+            persist()
+            print(
+                f"[shallow {key}] thu được {len(found)} URL; tổng unique={len(urls)}",
+                flush=True,
+            )
+
+    complete = partition_keys.issubset(completed)
+    persist(complete=complete)
+    if not complete:
+        missing = sorted(partition_keys - completed)
+        raise CrawlError(f"Shallow discovery chưa hoàn tất: {missing}")
+    return urls
+
+
 def collect_urls(
     client: HttpClient,
     limit: int,
@@ -619,6 +739,27 @@ def collect_urls(
     refresh_checkpoint: bool,
     country_ids_override: list[str] | None = None,
 ) -> list[str]:
+    if DEFAULT_SHALLOW_AGE_PARTITION_COUNTS:
+        urls = collect_shallow_age_windows(
+            client,
+            checkpoint_path,
+            refresh_checkpoint,
+            DEFAULT_SHALLOW_AGE_PARTITION_COUNTS,
+            country_ids_override,
+        )
+        selected = list(urls)
+        if limit:
+            # A stable shuffled prefix samples across all configured age windows
+            # and remains nested when the user later increases --limit.
+            random.Random(42).shuffle(selected)
+            selected = selected[:limit]
+            print(
+                f"[danh sách] Chọn mẫu cố định {len(selected)}/{len(urls)} "
+                "URL shallow để crawl.",
+                flush=True,
+            )
+        return selected
+
     # Các lần test có limit nhỏ chỉ cần trang đầu và không thay đổi checkpoint
     # của lần crawl toàn bộ.
     if limit:
