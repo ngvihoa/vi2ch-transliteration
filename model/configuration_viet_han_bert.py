@@ -16,7 +16,7 @@ class VietHanBertConfig(BertConfig):
 
     def __init__(
         self,
-        han_vocab_size: int,
+        han_vocab_size: int = None,
         decoder_layers: int = 4,
         decoder_heads: int = 8,
         decoder_ffn_dim: int = 2048,
