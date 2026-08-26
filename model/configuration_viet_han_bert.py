@@ -7,6 +7,12 @@ class VietHanBertConfig(BertConfig):
     """Configuration shared by the BERT encoder and Transformer decoder."""
 
     model_type = "viet_han_bert"
+    
+    # Thêm auto_map để HF biết dùng file nào khi load
+    auto_map = {
+        "AutoConfig": "configuration_viet_han_bert.VietHanBertConfig",
+        "AutoModel": "modeling_viet_han_bert.VietHanBertModel",
+    }
 
     def __init__(
         self,
