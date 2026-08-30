@@ -1,0 +1,2497 @@
+vi,cn_ref,cn_pred,exact_match,edit_distance,substitutions,deletions,insertions,news_fscore
+"Vị kiến quân tử,",未見君子，,謂見君子，,False,1,1,0,0,0.8
+Mộng hồi phục vật diệc nan tỉnh.,夢回復物亦難醒。,夢回復物亦難省。,False,1,1,0,0,0.875
+Phân phân nhất sắc hà do biệt.,紛紛一色何由別。,紛紛一色何由別。,True,0,0,0,0,1.0
+"Đào hoa kiều khiếp bất thắng phong,",桃花嬌怯不勝風，,桃花橋篋不勝風，,False,2,2,0,0,0.75
+"Hà Dương chi hội,",河陽之會，,何陽之會，,False,1,1,0,0,0.8
+"Mục túc liên vân mã đề kiện,",苜蓿連云馬蹄健，,牧足連雲馬啼健，,False,4,4,0,0,0.5
+Tam sự tựu tự.,三事就緒。,三事就自。,False,1,1,0,0,0.8
+"Vô quý mạc như tuần lễ độ,",無愧莫如循禮度，,無貴莫如巡禮度，,False,2,2,0,0,0.75
+"Lý truỵ trâm di lạc vị hưu,",履墜簪遺樂未休，,李墜簪夷落未休，,False,3,3,0,0,0.625
+"Nữ tử hữu hành,",女子有行，,女子有行，,True,0,0,0,0,1.0
+Dĩ ngã ngự cùng.,以我御窮。,以我御窮。,True,0,0,0,0,1.0
+Kỳ thực thất hề.,其實七兮。,其實失兮。,False,1,1,0,0,0.8
+"Khuê môn bán yểm sàng bán không,",閨門半掩床半空，,閨門半掩床半空，,True,0,0,0,0,1.0
+Phụ vô phức côn thả trước nhu.,婦無複褌且著襦。,婦無馥鵾且著柔。,False,3,3,0,0,0.625
+"Thiệu đình thượng hạ,",紹庭上下，,召庭上下，,False,1,1,0,0,0.8
+Cước hạ cao đề tước hàn ngọc.,腳下高蹄削寒玉。,腳下高啼雀寒玉。,False,2,2,0,0,0.75
+Thánh đức bắc phục Nam Thiền Vu.,聖德北服南單于。,聖德北復南單于。,False,1,1,0,0,0.875
+"Xuân du phương thảo địa,",春遊芳草地，,春遊方草地，,False,1,1,0,0,0.8333333333333334
+Thì Chu chi mệnh.,時周之命。,時周之命。,True,0,0,0,0,1.0
+"Đan sa vị dị tảo bạch phát,",丹砂未易掃白髮，,丹沙未易早白髮，,False,2,2,0,0,0.75
+Thụ liên tăng ốc nhạn liên đinh.,樹連僧屋雁連汀。,樹連僧屋雁連丁。,False,1,1,0,0,0.875
+"Thả lạc sinh tiền nhất bôi tửu,",且樂生前一杯酒，,且落生前一杯酒，,False,1,1,0,0,0.875
+"Bạch la trượng nhị huyền cao lương,",白羅丈二懸高梁，,白羅丈二弦高良，,False,2,2,0,0,0.75
+Ban trúc đối Tương Nguyên.,斑竹對湘沅。,班竹對湘元。,False,2,2,0,0,0.6666666666666666
+Tạo hoá dữ nhàn vô thiểu trác.,造化與閒無少斲。,造化與閑無少啄。,False,2,2,0,0,0.75
+Cộng khán lạc nguyệt kim bồn khuynh.,共看落月金盆傾。,共看落月金盆傾。,True,0,0,0,0,1.0
+Diệp khứ từ phong thuỷ tự ba.,葉去辭風水自波。,葉去辭風水自波。,True,0,0,0,0,1.0
+"Mạch mạch cát luỹ,",莫莫葛藟，,麥麥吉累，,False,4,4,0,0,0.2
+"Dục tri hoạ phúc,",欲知禍福，,欲知畫福，,False,1,1,0,0,0.8
+"Cố giao đãn hữu khâu doanh tồn,",故交但有丘塋存，,故教但有丘盈存，,False,2,2,0,0,0.75
+Viễn do thần cáo.,遠猶辰告。,遠由神告。,False,2,2,0,0,0.6
+Viên ư thiên thượng luân.,圓於天上輪。,爰於千上論。,False,3,3,0,0,0.5
+"Tây ức cố nhân bất khả kiến,",西憶故人不可見，,西憶故人不可見，,True,0,0,0,0,1.0
+"Nhân sinh giao khế vô lão thiếu,",人生交契無老少，,人生交契無老少，,True,0,0,0,0,1.0
+Nhất phiến thần tâm minh thánh tri.,一片臣心明聖知。,一片神心明聖知。,False,1,1,0,0,0.875
+Chung phong thả mai.,終風且霾，,終風且埋。,False,2,2,0,0,0.6
+"Mạc như Hàn lạc,",莫如韓樂。,莫如韓樂，,False,1,1,0,0,0.8
+"Tưởng kỳ: tống đồ Ly Sơn, dạ kinh trạch bạn. Kiến cự xà chi đương đạo, trí tiền hành chi kinh phản. Hách vương uy chi chấn nộ, phấn tráng chí chi tinh hãn, bạt chi dĩ trảm, hoạch nhiên nhi đoạn. Tố linh ư thị hồ tiềm khấp, Viêm tộ ư thị hồ hách xiển. Mang Đãng chi thuỵ khí khởi, Chỉ Đạo chi ngọc tỉ hiến. Tru Cai Hạ chi âm ô, lục Hoài Âm chi nghịch bạn, khả vị vật chi thần nhi kiếm chi thiện dã.",想其：送徒驪山，夜經澤畔。見巨蛇之當道，致前行之驚返。赫王威之震怒，奮壯志之精悍，拔之以斬，劃然而斷。素靈於是乎潛泣，炎祚於是乎赫闡。芒碭之瑞氣起，軹道之玉璽獻。誅垓下之喑嗚，戮淮陰之逆叛，可謂物之神而劍之善也。,想其：送徒離山，夜經澤伴。見巨蛇之當道，致前行之經反。,False,83,4,79,0,0.3458646616541353
+"Mục lược vi miện, tinh thái tương thụ.",目略微眄，精彩相授。,牧略為冕，星態相樹。,False,6,6,0,0,0.4
+Tây Giang thi tửu diên.,西江詩酒筵。,西江詩酒筵。,True,0,0,0,0,1.0
+Bất lưu thúc bồ.,不流束蒲。,不流束蒲。,True,0,0,0,0,1.0
+"Hoa tế bùi hồi song giáp điệp,",花際裴回雙蛺蝶，,花細裴回雙峽疊，,False,3,3,0,0,0.625
+"Bồng bồng vực bốc,",芃芃棫樸，,蓬蓬域卜，,False,4,4,0,0,0.2
+Minh nguyệt mãn tiền xuyên.,明月滿前川。,明月滿前川。,True,0,0,0,0,1.0
+Bạc hoãn ngã y.,薄澣我衣。,薄緩我衣。,False,1,1,0,0,0.8
+Hạ cố thành quách tiêu ngã ưu.,下顧城郭銷我憂。,下顧成郭消我憂。,False,2,2,0,0,0.75
+"Bách đổ giai hưng,",百堵皆興，,百睹皆興，,False,1,1,0,0,0.8
+"Cần Chính chi cơ, thực địa tu tiễn.",勤政之基，實地須踐。,勤政之機，實地須剪。,False,2,2,0,0,0.8
+Hoa chi tảo dĩ khai,花枝早已開。,花之早以開，,False,3,3,0,0,0.5
+"Quân khan nhất diệp chu,",君看一葉舟，,君看一葉舟，,True,0,0,0,0,1.0
+Thanh hàn ngự câu thượng.,清寒禦溝上。,青寒御溝上。,False,2,2,0,0,0.6666666666666666
+Đán thung mộ thung vô thì hưu.,旦舂暮舂無時休。,但從暮從無時休。,False,3,3,0,0,0.625
+Cảnh cảnh bất mỵ.,耿耿不寐，,景景不寐。,False,3,3,0,0,0.4
+Thứ kiến tố quan hề!,庶見素冠兮，,庶見素關兮，,False,1,1,0,0,0.8333333333333334
+Hu ta nữ hề!,于嗟女兮，,于嗟女兮，,True,0,0,0,0,1.0
+"Cố ư đãi hiền chi xa, thường cấp cấp dĩ hư tả.",故於待賢之車，常汲汲已虛左。,故於待賢之車，常急急以虛左。,False,3,3,0,0,0.7857142857142857
+"U tù cảnh thử can trùng tí, tặc dư tuỳ thiên.",幽囚境鼠肝蟲臂，賊予隨天。,幽囚景此干重臂，賊餘隨千。,False,6,6,0,0,0.5384615384615384
+"Tần Hoàng không thử ế hoàng kim,",秦皇空此瘞黄金，,秦皇空此翳黃金，,False,2,2,0,0,0.75
+"Đới kim thuý chi thủ sức,",戴金翠之首飾，,帶今翠之首飾，,False,2,2,0,0,0.7142857142857143
+Tương khan ý dĩ túc.,相看意已足。,相看意已足。,True,0,0,0,0,1.0
+"Hà duyên giao cảnh vi uyên ương,",何緣交頸為鴛鴦，,何緣交景為鴛鴦，,False,1,1,0,0,0.875
+Bất giải trì chiếu thân.,不解持照身。,不解持照身。,True,0,0,0,0,1.0
+"Thị bắc khiên dư mỗi liên duệ,",市北肩輿每聯袂，,是北牽餘每連袂，,False,4,4,0,0,0.5
+Hạng vô phục mỗ.,巷無服馬。,巷無復馬。,False,1,1,0,0,0.8
+Ca thanh chấn lâm việt.,歌聲振林樾。,歌聲震林越。,False,2,2,0,0,0.6666666666666666
+"Thu thiên hí xúc phương tài bãi,",秋千戲蹴方才罷，,秋天戲促方才罷，,False,2,2,0,0,0.75
+"Thuỷ biên dương liễu khúc trần ty,",水邊楊柳麴塵絲，,水邊楊柳曲塵絲，,False,1,1,0,0,0.875
+"Đại mệnh cận chỉ,",大命近止，,大命近止，,True,0,0,0,0,1.0
+"Nhất đán bất năng hữu, thâu lai kỳ gian.",一旦不能有、輸來其間。,一旦不能有，輸來其間。,False,1,1,0,0,0.9090909090909091
+"Cô trung khả bạch, tố nhất trường chi liệt liệt oanh oanh;",孤忠可白，做一場之烈烈轟轟；,孤中可白，素一長之列裂鶯鶯；,False,7,7,0,0,0.5
+"Trần Thương thạch cổ hựu dĩ ngoa,",陳倉石鼓又已訛，,塵商石鼓又已訛，,False,2,2,0,0,0.75
+"Trì thân bất cẩn hề,",持身不謹兮，,池身不謹兮，,False,1,1,0,0,0.8333333333333334
+"Tỉ nhĩ di nhĩ tính,",俾爾彌爾性，,俾爾遺耳性，,False,2,2,0,0,0.6666666666666666
+Nhân gia ngưu tửu nhật yêm ứ.,人家牛酒日厭飫。,人家牛酒日厭飫。,True,0,0,0,0,1.0
+Hiếu khách kiến đương thì.,好客見當時。,好客見當時。,True,0,0,0,0,1.0
+"Mã giả long dã, phù khai địa chi vô cương; diệp giả mậu dã, triệu bản chi chi bách thế.",馬者龍也，符開地之無疆；葉者茂也，兆本支之百世。,馬者龍也，浮開地之無疆；葉者茂也，召本之百百世。,False,4,4,0,0,0.875
+Quy thì hoàn lộng Nga My nguyệt.,歸時還弄峨眉月。,歸時還弄峨眉月。,True,0,0,0,0,1.0
+Hàn đường toạ kiến thu.,寒塘坐見秋。,寒堂坐見秋。,False,1,1,0,0,0.8333333333333334
+Độc hướng dao song toạ sầu tuyệt.,獨向瑤窗坐愁絕。,獨向遙窗坐愁絕。,False,1,1,0,0,0.875
+Bắc Đẩu thác lạc Trường Canh minh.,北斗錯落長庚明。,北斗錯落長更明。,False,1,1,0,0,0.875
+Cao lãng trực phiên không.,高浪直翻空。,高浪直翻空。,True,0,0,0,0,1.0
+"Ngọc tiêu xuy lai vũ phi phi,",玉蕭吹來雨霏霏，,玉蕭吹來雨飛飛，,False,2,2,0,0,0.75
+Tập khảm nhi hanh.,習坎而亨。,集坎而亨。,False,1,1,0,0,0.8
+"Yến yến vu phi,",燕燕于飛，,燕燕于飛，,True,0,0,0,0,1.0
+"Kim Cốc viên trung liễu,",金谷園中柳，,今谷園中柳，,False,1,1,0,0,0.8333333333333334
+Tề tử ngao tường.,齊子翱翔。,齊子敖翔。,False,1,1,0,0,0.8
+"Khứ đông táng tiên khảo kim đông táng tiên sinh cách tuế na kham trường dục đoạn,",去冬喪先考今冬塟先生隔歲那堪腸欲斷，,去東喪先考金東喪先生隔歲那堪長欲斷，,False,5,5,0,0,0.7222222222222222
+Bạch phát mãn đầu quân nại hà?,白髮滿頭君奈何？,白髮滿頭君奈何？,True,0,0,0,0,1.0
+"Đức vọng huân danh vi thời giai phạm,",德望勳名爲時楷範，,德望勳名為時佳犯，,False,3,3,0,0,0.6666666666666666
+Dĩ yên ti?,已焉哉！,以焉絲？,False,3,3,0,0,0.25
+"Liên tử bất khả đắc,","蓮子不可得,",連子不可得，,False,2,2,0,0,0.6666666666666666
+Nhược xuất kỳ trung;,若出其中；,若出其中；,True,0,0,0,0,1.0
+"Cố hương ly hạ cúc,",故鄉籬下菊，,故鄉離下菊，,False,1,1,0,0,0.8333333333333334
+"Kim ngã bất lạc,",今我不樂，,今我不樂，,True,0,0,0,0,1.0
+"Trung Ba bất tằng tiêu tức hảo,",中巴不曾消息好，,中巴不曾消息好，,True,0,0,0,0,1.0
+"Xuân thuỷ đồ đãng dạng,",春水徒蕩漾，,春水圖蕩漾，,False,1,1,0,0,0.8333333333333334
+Phục đạo chư sơn đắc ngân úng.,復道諸山得銀瓮。,伏道諸山得銀甕。,False,2,2,0,0,0.75
+"Huyền Phố, Thương Châu mãng không khoát,",懸圃滄洲莽空闊，,玄浦商州莽空闊，,False,4,4,0,0,0.5
+"Bách lưỡng bàng bàng,",百兩彭彭，,百兩傍傍，,False,2,2,0,0,0.6
+Tượng bì tác giáp khoả thân hậu.,象皮作甲裹身厚。,象皮作甲裹身後。,False,1,1,0,0,0.875
+"Bỉ ký chi tử,",彼其之子，,彼其之子，,True,0,0,0,0,1.0
+"Thị tắc ngã hoàng chi thịnh đức,",是則我皇之盛德，,是則我皇之盛德，,True,0,0,0,0,1.0
+Trọc hà chung bất ô thanh tế.,濁河終不汙清濟。,濁河終不烏聲細。,False,3,3,0,0,0.625
+"Ngã sinh chi hậu,",我生之後，,我生之後，,True,0,0,0,0,1.0
+"Giản hề, giản hề!",簡兮、簡兮，,澗兮，澗兮，,False,3,3,0,0,0.5
+Ô chiêu vu thiên!,於昭于天。,於昭于天。,True,0,0,0,0,1.0
+Hoa nguyệt sử nhân mê.,花月使人迷。,花月使人迷。,True,0,0,0,0,1.0
+Kỳ trọng như thạch.,其重如石。,其重如石。,True,0,0,0,0,1.0
+Khai hoa thập trượng ngẫu như thuyền.,開花十丈藕如船。,開花十丈偶如船。,False,1,1,0,0,0.875
+"Hàn nhập quan du sương mãn thiên,",寒入關榆霜滿天，,寒入關遊霜滿天，,False,1,1,0,0,0.875
+Nhi vô vịnh thán.,而無詠嘆。,而無詠嘆。,True,0,0,0,0,1.0
+"Vị quân cánh tấu Thục quốc huyền,",為君更奏蜀國弦，,為君更奏蜀國弦，,True,0,0,0,0,1.0
+Đồ khan xuân thảo phương.,徒看春草芳。,徒看春草方。,False,1,1,0,0,0.8333333333333334
+Thiên tử phi thường tứ nhan sắc.,天子非常賜顏色。,天子飛裳四顏色。,False,3,3,0,0,0.625
+Phủ dĩ tư chi.,斧以斯之。,俯以斯之。,False,1,1,0,0,0.8
+Trù trướng lệnh nhân biệt.,惆悵令人別。,惆悵令人別。,True,0,0,0,0,1.0
+"Sầu tâm bất tự quy hồng ảnh,",愁心不似歸鴻影，,愁心不自歸紅影，,False,2,2,0,0,0.75
+Hồ mã nhất hà kiêu.,胡馬一何驕。,胡馬一河驕。,False,1,1,0,0,0.8333333333333334
+Tướng quân dạ dẫn cung.,將軍夜引弓。,將軍夜引宮。,False,1,1,0,0,0.8333333333333334
+"Giá sắc duy bảo,",稼穡維寶，,駕色維保，,False,3,3,0,0,0.4
+Đệ điệt hà thương lệ như vũ.,弟侄何傷淚如雨。,弟瓞何蒼淚如雨。,False,2,2,0,0,0.75
+"Khuê liêu yểu minh, bất kiến kỳ để, hư văn tùng thanh.",窐寥窈冥，不見其底，虛聞松聲。,閨聊窈明，不見其底，虛聞松聲。,False,3,3,0,0,0.8
+Chúng chính ư thị hồ chí thư nhi khí khoát; quần tà ư thị hồ đảm lạc nhi mao hàn.,眾正於是乎志舒而氣豁；群邪於是乎膽落而毛寒。,眾正於是乎至書而氣闊；群斜於是乎膽落而毛寒。,False,4,4,0,0,0.8181818181818182
+"Biến sách Lục Châu vi nội đệ,",遍索綠珠圍內第，,變索綠州為內弟，,False,4,4,0,0,0.5
+Bất khả chuyển dã.,不可轉也。,不可轉也。,True,0,0,0,0,1.0
+Lao tâm đao đao.,勞心忉忉。,勞心刀刀。,False,2,2,0,0,0.6
+"Thử trung nhất phân thủ,",此中一分手，,此中一分守，,False,1,1,0,0,0.8333333333333334
+Trì đê ngẫu phùng tăng.,池低偶逢僧。,池低偶逢增。,False,1,1,0,0,0.8333333333333334
+"Minh tri khiển thiếp hà sở quy,",明知遣妾何所歸，,明知遣妾何所歸，,True,0,0,0,0,1.0
+"Duy thử Vương Quý,",維此王季，,維此王貴，,False,1,1,0,0,0.8
+"Dư sở súc tô,",予所蓄租、,予所縮蘇，,False,3,3,0,0,0.4
+"Lạm thảo kết đồng tâm,",嚂草結同心，,處草結同心，,False,1,1,0,0,0.8333333333333334
+"Dã tri tạo vật hữu thâm ý,",也知造物有深意，,野知造物有深意，,False,1,1,0,0,0.875
+"Lộc lô cược động tức thiên lý,",鹿盧屩動即千里，,鹿爐枕動息千里，,False,3,3,0,0,0.625
+"Tang chi lạc hĩ,",桑之落矣，,桑之樂矣，,False,1,1,0,0,0.8
+"Vương Doãn định kế tru nghịch đảng,",王允定計誅逆黨，,王允定計誅逆黨，,True,0,0,0,0,1.0
+"Hữu mỹ nhất nhân,",有美一人，,有美一人，,True,0,0,0,0,1.0
+Duy thâm cố thông.,惟深故通。,維深故通。,False,1,1,0,0,0.8
+Cập đệ tất tranh tiên.,及第必爭先。,及弟必爭先。,False,1,1,0,0,0.8333333333333334
+Phong đao sương kiếm nghiêm tương bức.,風刀霜劍嚴相逼，,風刀霜劍嚴相逼。,False,1,1,0,0,0.875
+Viên cầu nhu tang.,爰求柔桑。,爰求柔桑。,True,0,0,0,0,1.0
+Hương tuệ thuỳ đầu thu đăng trường.,香穗垂頭秋登場。,鄉慧誰頭秋登長。,False,4,4,0,0,0.5
+Cư nhân vị cải Tần y phục.,居人未改秦衣服。,居人未改秦衣復。,False,1,1,0,0,0.875
+Vật ngâm xử thế như đại mộng.,勿吟處世如大夢。,勿吟處世如大夢。,True,0,0,0,0,1.0
+"Hủ nho thô lệ chi bách niên,",腐儒麤糲支百年，,朽儒粗淚之百年，,False,4,4,0,0,0.5
+"Hà tà Sâm đảo khí du hạo,",河斜參倒氣遊浩，,何斜參倒氣遊浩，,False,1,1,0,0,0.875
+"Bổng tiền thì tán sĩ tử tận,",俸錢時散士子盡，,菶前時散士子盡，,False,2,2,0,0,0.75
+Xuất vi trữ hoàng định thị phi.,出為儲皇定是非。,出為貯黃定是飛。,False,3,3,0,0,0.625
+"Vô đoan nhất thủ hoàng thi tại,",無端一首黄詩在，,無端一首黃詩在，,False,1,1,0,0,0.875
+Lê sừ tại thủ giai binh khí.,犁鋤在手皆兵器。,黎鋤在首皆兵氣。,False,3,3,0,0,0.625
+"Triêu lai lâm kính đài,",朝來臨鏡臺，,朝來林徑臺，,False,2,2,0,0,0.6666666666666666
+Thường tướng ca vũ tá nhân khan.,常將歌舞借人看。,常將歌舞借人看。,True,0,0,0,0,1.0
+"Đăng cao hồi thủ pha lũng cách,",登高回首坡壟隔，,登高回首坡隴隔，,False,1,1,0,0,0.875
+"Văn đạo quân vương tẩu ngọc thông,",聞道君王走玉驄，,聞道君王走玉通，,False,1,1,0,0,0.875
+Kim thừa khoản đoạn chư hầu môn.,今乘款段諸侯門。,金乘款斷諸侯門。,False,2,2,0,0,0.75
+"Quá hiện vị lai Phật,",過現未來佛，,過現未來佛，,True,0,0,0,0,1.0
+"Vị tiệp tiên tử, thiên ý vị hà?",未捷先死天意謂何。,謂捷先子，天意謂何？,False,4,3,0,1,0.631578947368421
+"Vạn trùng tu đáo hải,",萬重須到海，,萬重須到海，,True,0,0,0,0,1.0
+"Đằng tương lỗi lạc tam vạn thất,",騰驤磊落三萬匹，,藤將磊落三萬失，,False,3,3,0,0,0.625
+Thành đầu cổ giốc âm hoà bình.,城頭鼓角音和平。,城頭鼓角陰和平。,False,1,1,0,0,0.875
+"Bát nguyệt lương phong thiên khí tinh,",八月涼風天氣晶，,八月良風天氣星，,False,2,2,0,0,0.75
+Uý thử giản thư.,畏此簡書。,畏此澗書。,False,1,1,0,0,0.8
+Ngũ nguyệt minh điêu.,五月鳴蜩。,五月明雕。,False,2,2,0,0,0.6
+"Lưỡng ngạn viên thanh hưu thái khổ,",兩岸猿聲休太苦，,兩岸爰聲休太苦，,False,1,1,0,0,0.875
+Dạ tĩnh xuân sơn không.,夜靜春山空。,夜靜春山空。,True,0,0,0,0,1.0
+"Ngã tằng lịch quá vạn trùng sơn,",我曾歷過萬重山，,我曾歷過萬重山，,True,0,0,0,0,1.0
+"Kính nhĩ uy nghi,",敬爾威儀，,敬爾威儀，,True,0,0,0,0,1.0
+"Nhi tại tang chi hoắc thục, thượng bá vịnh ư “Mân thiên”.",而在桑之藿蠋，尚播詠於豳篇。,兒在桑之藿熟，上伯詠於「岷天於。,False,8,6,0,2,0.5333333333333333
+Tằng chiếu ly cung dữ lộ đài.,曾照離宮與露台。,曾照離宮與路臺。,False,2,2,0,0,0.75
+"Ngọc bàn khoái lô quang nhất sắc,",玉盤膾鱸光一色，,玉盤快爐光一色，,False,2,2,0,0,0.75
+"Năng sự bất thụ tương xúc bách,",能事不受相促迫，,能事不樹相促百，,False,2,2,0,0,0.75
+"Khởi tri dị vật đồng tinh khí,",豈知異物同精氣，,豈知易物同星氣，,False,2,2,0,0,0.75
+"Nguyệt lạc tử quy yết,",月落子規歇，,月落子歸歇，,False,1,1,0,0,0.8333333333333334
+Viễn tống vu nam.,遠送于南。,遠送于南。,True,0,0,0,0,1.0
+"Gia trú thuỷ đông tây,",家住水東西，,家住水東西，,True,0,0,0,0,1.0
+Đông phương tự xuất.,東方自出。,東方自出。,True,0,0,0,0,1.0
+"Hàm tu quy khứ hương phòng trung,",含羞歸去香房中，,咸須歸去香房中，,False,2,2,0,0,0.75
+Nhữ cánh tiểu niên năng chuế văn.,汝更小年能綴文。,女更小年能贅聞。,False,3,3,0,0,0.625
+"Bá Lâm trĩ kinh,",伯林雉經，,伯林雉經，,True,0,0,0,0,1.0
+Y ta danh hề!,猗嗟名兮！,伊嗟名兮。,False,2,2,0,0,0.6
+Diệc duật ký mạo.,亦聿既耄。,亦遹既貌。,False,2,2,0,0,0.6
+"Duy nguyện đương ca đối tửu thì,",唯願當歌對酒時，,惟願當歌對酒時，,False,1,1,0,0,0.875
+Dã toán cổ kim vô bỉ luân.,也算古今無比倫。,野井古今無彼輪。,False,4,4,0,0,0.5
+"Tòng quân thuý phát lô hoa sắc,",從軍翠髮蘆花色，,從軍翠發爐花色，,False,2,2,0,0,0.75
+Sát Hồ bất dị thảo dữ hao.,殺胡不異草與蒿。,殺胡不易草與蒿。,False,1,1,0,0,0.875
+"Cận chu giả xích,",近硃者赤，,近舟者尺，,False,2,2,0,0,0.6
+Hà dĩ thức chi?,何以識之？,何以識之？,True,0,0,0,0,1.0
+Đãn tuý tửu gia lâu.,但醉酒家樓。,但醉酒家樓。,True,0,0,0,0,1.0
+Hà dĩ hoài chi?,何以懷之？,何以懷之？,True,0,0,0,0,1.0
+Dĩ giao lệ sái song sa thấp.,已教淚洒窗紗濕。,以教淚灑雙沙濕。,False,4,4,0,0,0.5
+"Nghiêu hưng Đường hầu, Thuấn khởi trắc vi.",堯興唐侯，舜起側微。,堯興唐侯，舜起側為。,False,1,1,0,0,0.9
+Cửu Linh nãi:,九齡乃：,九靈乃：,False,1,1,0,0,0.75
+Hành khách bất tri danh.,行客不知名。,行客不知名。,True,0,0,0,0,1.0
+Cách Trường Môn nhi bất kiến.,隔長門而不見。,隔長門而不見。,True,0,0,0,0,1.0
+"Đả hổ nhi,",打虎兒，,打虎而，,False,1,1,0,0,0.75
+"Tinh ly vũ tán bất chung triêu,",星離雨散不終朝，,星離雨散不終朝，,True,0,0,0,0,1.0
+"Đối môn khước thị Trung Sơn trú,",對門卻是中山住，,對門卻是中山住，,True,0,0,0,0,1.0
+"Nhĩ trường hồi thuỵ chất,",耳長迴瑞質，,爾長回睡質，,False,3,3,0,0,0.5
+Bằng không kích khứ trước hổ ức.,憑空擊去著虎臆。,憑空擊去著虎憶。,False,1,1,0,0,0.875
+"Tứ dữ miếu tộ,",賜與廟胙，,四與廟祚，,False,2,2,0,0,0.6
+"Thôn manh chung tuế bất nhập thành,",村甿終歲不入城，,村萌終歲不入成，,False,2,2,0,0,0.75
+Cô tửu dữ hà nhân?,沽酒與何人？,孤酒與何人？,False,1,1,0,0,0.8333333333333334
+"Duy đề tại lương,",維鵜在梁，,維啼在良，,False,2,2,0,0,0.6
+Ấp khách viên môn ý tự như.,揖客轅門意自如。,邑客猿門意自如。,False,2,2,0,0,0.75
+"Dư vũ tiều tiều,",予羽譙譙、,予雨樵樵，,False,4,4,0,0,0.2
+"Hoài Nam thu vũ dạ,",淮南秋雨夜，,淮南秋雨夜，,True,0,0,0,0,1.0
+Khởi độc thiểu hoàng dương.,豈獨少黃羊。,豈獨少黃揚。,False,1,1,0,0,0.8333333333333334
+Hu ta hồ!,于嗟乎，,于嗟乎！,False,1,1,0,0,0.75
+Biệt nhật khổ đa.,別日苦多。,別日苦多。,True,0,0,0,0,1.0
+"Quan tây lão tướng bất thăng sầu,",關西老將不勝愁，,關西老將不升愁，,False,1,1,0,0,0.875
+Tha sinh hoặc vị vong gia quốc;,他生或未忘家國；,他生或未亡家國；,False,1,1,0,0,0.875
+"Uý thế đồ hề, tối khuynh hiểm,",畏世途兮最傾險，,畏世圖兮最傾險，,False,1,1,0,0,0.875
+"Thiển xứ cập phì, thâm cập cổ.",淺處及腓深及股。,淺處及肥深及鼓。,False,2,2,0,0,0.75
+"Ngang tàng khiết khuất tự vi thụ,",昂藏潔屈自為樹，,欲藏潔屈自為樹，,False,1,1,0,0,0.875
+"Ký khán hàn tà hựu khán phong,",既看寒邪又看風，,既看寒斜又看風，,False,1,1,0,0,0.875
+Nhi tử hà luyến hồ tư san?,而子何戀乎斯山。,兒子何戀乎斯山？,False,2,2,0,0,0.75
+"Vân Khê dạ phùng âm hổ phục,",雲溪夜逢瘖虎伏，,雲溪夜逢陰虎復，,False,2,2,0,0,0.75
+Tứ nguyệt ngũ nguyệt thiên hào hô.,四月五月偏號呼。,四月五月天豪呼。,False,2,2,0,0,0.75
+Thiên cao sơn ngoại bích.,天高山外碧。,天高山外碧。,True,0,0,0,0,1.0
+"Bất dụng phong tiền “Chiết dương liễu”,",不用風前折楊柳，,不用風前折折柳，,False,1,1,0,0,0.875
+"Quân tử dao dao,",君子陶陶，,君子遙遙，,False,2,2,0,0,0.6
+Kim tuế nhân gia phạn bất túc.,今歲人家飯不足。,今歲人家飯不足。,True,0,0,0,0,1.0
+Bất tu lãm kính diệc tự tiểu.,不須覽鏡亦自小。,不須覽徑亦自小。,False,1,1,0,0,0.875
+Tiện vi độc vãng khách.,便為獨往客。,便為獨往客。,True,0,0,0,0,1.0
+"Dư ba đáo hải bất cập bôn,",餘波到海不及奔，,予波到海不及奔，,False,1,1,0,0,0.875
+"Mẫn miễn cầu chi,",黽勉求之。,閔免求之，,False,3,3,0,0,0.4
+"Sơn kê tu lục thuỷ,",山雞羞淥水，,山雞須綠水，,False,2,2,0,0,0.6666666666666666
+Cựu nhật hồng kỳ nhan sắc điêu.,舊日紅旗顔色凋。,舊日紅旗顏色雕。,False,2,2,0,0,0.75
+"Hồ Châu khê thuỷ xuyên thành quách,",湖州溪水穿城郭，,胡州溪水川成郭，,False,3,3,0,0,0.625
+Kỳ diệp tương tương.,其葉牂牂。,其葉相相。,False,2,2,0,0,0.6
+"Dã mạc tế quỳnh diên,",野幕蔽瓊筵，,野莫細瓊筵，,False,2,2,0,0,0.6666666666666666
+"Thất trung cánh hữu đệ tam nữ,",室中更有第三女，,失中更有弟三女，,False,2,2,0,0,0.75
+"Bắc phương Tĩnh nhân trường cửu thốn,",北方竫人長九寸，,北方靜人長九寸，,False,1,1,0,0,0.875
+"Hồi tinh trú tất giáng linh trường,",回旌駐蹕降靈場，,回星晝必降靈長，,False,4,4,0,0,0.5
+"Phiên phiên phi điểu,",翩翩飛鳥，,翻翻飛鳥，,False,2,2,0,0,0.6
+Tuân hu thả lạc.,洵訏且樂。」,遵吁且樂。,False,3,2,1,0,0.5454545454545454
+"Lạc chỉ quân tử,",樂隻君子，,落止君子，,False,2,2,0,0,0.6
+Ngọc liễn kim xa bất phục hoàn.,玉輦金車不復還。,玉輦金車不復還。,True,0,0,0,0,1.0
+"Bất khả tường dã,",不可詳也。,不可翔也，,False,2,2,0,0,0.6
+Dược vật sở lão ngư thương thị.,藥物楚老漁商市。,藥物所老魚蒼是。,False,4,4,0,0,0.5
+Na quản đào phiêu dữ lý phi.,哪管桃飄與李飛，,那管桃飄與里飛。,False,3,3,0,0,0.625
+Xích báo hoàng ki.,赤豹黃羈。,赤報黃羈。,False,1,1,0,0,0.8
+"Hữu hồ tuy tuy,",有狐綏綏，,有乎雖雖，,False,3,3,0,0,0.4
+Đương tứ phương chi kinh dinh.,當四方之經營。,當思方之經營。,False,1,1,0,0,0.8571428571428571
+"Tuy phục trầm mai vô sở dụng,",雖復沉埋無所用，,雖復沉埋無所用，,True,0,0,0,0,1.0
+"Đầu cân yểm diện uý nhân thức,",頭巾掩面畏人識，,頭巾掩面畏人識，,True,0,0,0,0,1.0
+"Chế khổn thập dư niên, sự đồng thế dị;",制阃十餘年事同勢異；,制閫十餘年，事同世易；,False,4,3,0,1,0.6666666666666666
+Kỷ xứ hoan ngu kỷ đoạn trường.,幾處歡娛幾斷腸。,幾處歡娛幾斷腸。,True,0,0,0,0,1.0
+Bồng Lai cung trung nhật nguyệt trường.,蓬萊宮中日月長。,蓬萊宮中日月長。,True,0,0,0,0,1.0
+Thuỳ dương không tự tống hành nhân.,垂楊空自送行人。,誰陽空自送行人。,False,2,2,0,0,0.75
+Duy diệp nễ nễ.,維葉泥泥。,維葉泥泥。,True,0,0,0,0,1.0
+"Chính tâm tu thân,",正心修身，,正心修身，,True,0,0,0,0,1.0
+"Đắc (?) khước vy Hàm Đan khuynh,",得◆卻為邯鄲傾，,得之？,False,7,2,5,0,0.18181818181818182
+"Danh công dịch tư huy thái bút,",名公繹思揮彩筆，,名公驛思輝太筆，,False,3,3,0,0,0.625
+"Ngô quan chi Càn,",吾觀之乾，,吾觀之乾，,True,0,0,0,0,1.0
+Tâm trung tuý thì thắng tỉnh thì.,心中醉時勝醒時。,心中醉時勝省時。,False,1,1,0,0,0.875
+Tín nan khả tín.,信難可信。,信難可信。,True,0,0,0,0,1.0
+Thọ hà sở chỉ?,壽何所止？,壽何所止？,True,0,0,0,0,1.0
+Chiêu đắc thượng nam chi.,招得上南枝。,昭得上南枝。,False,1,1,0,0,0.8333333333333334
+"Nhật mộ Trường Giang lý,",日暮長江裏，,日暮長江里，,False,1,1,0,0,0.8333333333333334
+"Sĩ chi thủ tiết,",士之守節，,士之守節，,True,0,0,0,0,1.0
+"Ngọc lang khứ niên từ gia thì,",玉郎去年辭家時，,玉郎去年辭家時，,True,0,0,0,0,1.0
+"Mạnh Tân chi hội ưng dương nhược Lã,",孟津之會鷹揚箬呂，,孟津之會應若若，,False,4,3,1,0,0.5882352941176471
+Huống hồ thốn công dữ bạc danh.,況乎寸功與薄名。,況乎寸公與薄名。,False,1,1,0,0,0.875
+"Xã tắc lưỡng hồi lao thạch mã,",社稷兩回勞石馬，,社則兩回勞石馬，,False,1,1,0,0,0.875
+Hãn kỳ thúc hĩ,暵其修矣。,汗其束矣,False,3,2,1,0,0.4444444444444444
+"Ngô văn thiên tử chi mã tẩu thiên lý,",吾聞天子之馬走千里，,吾聞千子之馬走天里，,False,2,2,0,0,0.8
+Nhất lạp kim đan.,一粒金丹。,一粒金丹。,True,0,0,0,0,1.0
+"Minh bạch đãn tuần thiên lý, thư hoàng hề quản nhân ngôn.",明白但循天理，雌黄奚管人言。,明白但巡千里，書黃兮管人言。,False,6,6,0,0,0.5714285714285714
+Oan oan tương báo.,冤冤相報。,剜冤相報。,False,1,1,0,0,0.8
+"Phụng hư ngôn nhi vọng thành hề, kỳ Thành Nam chi ly cung.",奉虛言而望誠兮，期城南之離宮。,鳳虛言而望成兮，其城南之離宮。,False,3,3,0,0,0.8
+Thạch nham thê tức ly phiền duyên.,石巖棲息離煩緣。,石岩棲息離煩緣。,False,1,1,0,0,0.875
+Bất đạo cố nhân vô tố thư.,不道故人無素書。,不道故人無素書。,True,0,0,0,0,1.0
+Ứng môn thương thương.,應門將將。,應門蒼蒼。,False,2,2,0,0,0.6
+Nhãn tình đồng tử thần.,眼晴童子神。,眼情同子神。,False,2,2,0,0,0.6666666666666666
+"Thuyền đầu mãi ngư tửu tân thục,",船頭買魚酒新熟，,船頭買魚酒新熟，,True,0,0,0,0,1.0
+Diệc bất nhữ tùng.,亦不女從。,亦不汝松。,False,2,2,0,0,0.6
+"Xuy tiêu lăng cực phố,",吹簫淩極浦，,吹蕭陵極浦，,False,2,2,0,0,0.6666666666666666
+"Diệc hữu huynh đệ,",亦有兄弟，,亦有兄弟，,True,0,0,0,0,1.0
+Bạch lãng như sơn ký hào tráng.,白浪如山寄豪壯。,白浪如山寄豪壯。,True,0,0,0,0,1.0
+"Thành quách dao tương vọng,",城郭遙相望，,城郭遙相望，,True,0,0,0,0,1.0
+"Cư giả bất xuất hành giả chỉ,",居者不出行者止，,居者不出行者止，,True,0,0,0,0,1.0
+Tây khán minh nguyệt ức Nga My,西看明月憶峨眉。,西看明月憶峨眉，,False,1,1,0,0,0.875
+"Tín thiên tạm chi thiết hiểm,",信天塹之設險，,信天暫之切險，,False,2,2,0,0,0.7142857142857143
+"Nhung tuy tiểu tử,",戎雖小子，,戎雖小子，,True,0,0,0,0,1.0
+"Tự ngọc lai đầu ngục,",似玉來投獄，,自玉來頭獄，,False,2,2,0,0,0.6666666666666666
+"Thông Tuyền bách lý cận Tử Châu,",通泉百里近梓州，,通泉百里近子州，,False,1,1,0,0,0.875
+"Cổ chiến hiếp tức, an cảm vọng chí.",股戰脅息，安敢妄摯。,古戰脅息，安敢望至。,False,3,3,0,0,0.7
+"Tang loạn ký bình,",喪亂既平，,桑亂既平，,False,1,1,0,0,0.8
+"Phong niên đa thử đa đồ,",豐年多黍多稌，,風年多此多圖，,False,3,3,0,0,0.5714285714285714
+"Ái chi tắc thị, mưu tắc phi.",愛之則是謀則非。,愛之則是謀則飛。,False,1,1,0,0,0.875
+"Thị nhĩ bất tang,",視爾不臧，,是爾不桑，,False,2,2,0,0,0.6
+Vãng lai xạ lạp Tây sơn đầu.,往來射獵西山頭。,往來射粒西山頭。,False,1,1,0,0,0.875
+Chiếu chi hôn giả khả sử minh; ma chi ngu giả khả sử triết.,照之昏者可使明；磨之愚者可使哲。,照之昏者可使鳴；磨之愚者可使哲。,False,1,1,0,0,0.9375
+"Nhật nguyệt quang thiên đức,",日月光天德，,日月光天德，,True,0,0,0,0,1.0
+Tứ mẫu nghiệp nghiệp.,四牡業業。,四牡業業。,True,0,0,0,0,1.0
+Thiểu đương thiên dư tuế.,少當千餘歲。,少當千餘歲。,True,0,0,0,0,1.0
+Tài đắc phiến nhàn ngã hứng thích.,纔得片閒我興適。,才得片閒我興適。,False,1,1,0,0,0.875
+"Diệc ký cấu chỉ,",亦既覯止、,亦既覯止，,False,1,1,0,0,0.8
+"Ngọc sơn tiền khước bất phục lai,",玉山前卻不復來，,玉山前卻不復來，,True,0,0,0,0,1.0
+"Khải phong vĩnh chí,",凱風永至，,豈風永至，,False,1,1,0,0,0.8
+Hữu miêu hữu hổ.,有貓有虎。,有苗有虎。,False,1,1,0,0,0.8
+"Hốt kiến hàn mai thụ,",忽見寒梅樹，,忽見寒埋樹，,False,1,1,0,0,0.8333333333333334
+Tiên niên thệ nguyện kim hà tại?,先年誓愿今何在？,先年逝願今何在？,False,2,2,0,0,0.75
+Bất hợp bách lễ.,不洽百禮。,不合百禮。,False,1,1,0,0,0.8
+Trí chi giang can cao đột ngột.,置之江干高突兀。,致之江干高突兀。,False,1,1,0,0,0.875
+Kỳ biền y kỳ.,其弁伊騏。,其弁伊期。,False,1,1,0,0,0.8
+Tổng lĩnh tì hưu trấn trung thổ.,總領貔貅鎮中土。,總嶺琵休鎮中土。,False,3,3,0,0,0.625
+Lai thời yết đế Minh Quang cung.,來時謁帝明光宮。,來時歇帝明光宮。,False,1,1,0,0,0.875
+Yếm yếm lậu do vĩnh.,厭厭漏猶永。,厭厭漏由永。,False,1,1,0,0,0.8333333333333334
+"Thuỳ gia niên thiếu bất giải sầu,",誰家年少不解愁，,誰家年少不解愁，,True,0,0,0,0,1.0
+"Thị tri: dĩ đức quan nhạc, duy hiền giả nhiên hậu năng chi; ngoại nhạc cầu đức, bỉ tục lưu yên năng thức thử! Liệu Quí Tử chi tâm, hận bất thân kiến ư đương niên; nhi Quí Tử chi thán, ích thâm hữu vọng ư lai thế.",是知：以德觀樂，唯賢者然後能之；外樂求德，彼俗流安能識此。料季子之心，恨不親見於當年；而季子之嘆，益深有望於來世。,是知：以德之樂，惟賢者然後能之；外樂求德，彼俗流煙能識此；,False,31,3,28,0,0.6046511627906976
+"Dữ quân tương tư tại nhị bát,",與君相思在二八，,與君相思在二八，,True,0,0,0,0,1.0
+Ngã tư cổ nhân.,我思古人，,我思古人。,False,1,1,0,0,0.8
+"Bất hướng Đông Sơn cửu,",不向東山久，,不向東山九，,False,1,1,0,0,0.8333333333333334
+Thiếp thân như triệt di tiệm viễn.,妾身如轍遺漸遠。,妾身如徹夷漸遠。,False,2,2,0,0,0.75
+"Trường đoạn đương niên quốc sĩ ân,",腸斷當年國士恩，,長斷當年國士恩，,False,1,1,0,0,0.875
+"Thái Bạch dĩ vãng Lão Pha tử,",太白已往老坡死，,太白已往老坡死，,True,0,0,0,0,1.0
+Thân sử môn hộ đa tinh khể.,身使門戶多旌棨。,身使門戶多星稽。,False,2,2,0,0,0.75
+Hồng đào lục liễu thuỳ thiềm hướng.,紅桃綠柳垂簷向。,紅濤綠柳垂檐向。,False,2,2,0,0,0.75
+Thanh sử công danh tại hà xứ?,青史功名在何處。,青使公名在何處？,False,3,3,0,0,0.625
+"Tịnh tảo hoàng kim giai,",淨掃黃金階，,并掃黃金皆，,False,2,2,0,0,0.6666666666666666
+"Minh nhật tiêu điều tận tuý tỉnh,",明日蕭條盡醉醒，,明日蕭條盡醉省，,False,1,1,0,0,0.875
+"Năng trì kiếm hướng nhân,",能持劍向人，,能持劍向人，,True,0,0,0,0,1.0
+Vạn ngôn bất trị nhất bôi thuỷ.,萬言不值一杯水。,萬言不治一杯水。,False,1,1,0,0,0.875
+Quan pháp như lự.,官法如鑢。,關法如慮。,False,2,2,0,0,0.6
+"Kim chung đại dong tại đông tự,",金鐘大鏞在東序，,今終大枕在東自，,False,4,4,0,0,0.5
+Gia tân thức yến dĩ khán.,嘉賓式燕以衎.,家新識燕以看。,False,5,5,0,0,0.2857142857142857
+Mộ vi đao thương quỷ.,暮為刀槍鬼。,暮為刀蒼鬼。,False,1,1,0,0,0.8333333333333334
+Hồ bất thuyền tỉ?,胡不遄死？,胡不船子？,False,2,2,0,0,0.6
+"Vân song vụ các sự hoảng hốt,",雲窗霧閣事慌惚，,雲窗霧閣事恍忽，,False,2,2,0,0,0.75
+"San hô quải kính lạn sinh quang,",珊瑚掛鏡爛生光，,珊瑚掛徑爛生光，,False,1,1,0,0,0.875
+"Quốc ân gia trạch vị thiểu thường,",國恩家澤未少償，,國恩家澤未少裳，,False,1,1,0,0,0.875
+"Phụng hoàng vu phi,",鳳皇于飛，,鳳凰于飛，,False,1,1,0,0,0.8
+"Đông nam địa hãm yêu khí hắc,",東南地陷妖氣黑，,東南地陷腰氣黑，,False,1,1,0,0,0.875
+Chỉ đáng phiêu lưu tại dị hương.,只當漂流在異鄉。,只當飄流在易香。,False,3,3,0,0,0.625
+Thiết toả hoành giang vị vi cố.,鐵鎖橫江未為固。,鐵鎖橫江未為顧。,False,1,1,0,0,0.875
+"Chu Tây Bá Xương,",周西伯昌，,舟西伯昌，,False,1,1,0,0,0.8
+"Tế vũ quá giang đầu,",細雨過江頭，,細雨過江頭，,True,0,0,0,0,1.0
+Hồ năng hữu định?,胡能有定？,胡能有定？,True,0,0,0,0,1.0
+Thế thượng vị hữu như công bần.,世上未有如公貧。,世上未有如公貧。,True,0,0,0,0,1.0
+"Sơn gia bất giải chủng hoà thử,",山家不解種禾黍，,山家不解種和此，,False,2,2,0,0,0.75
+"Ái nhật ân quang mông tá thải,",愛日恩光蒙借貸，,愛日恩光蒙借貸，,True,0,0,0,0,1.0
+Thế lộ thiểu tri âm.,世路少知音。,世路少知音。,True,0,0,0,0,1.0
+"Kiều kiều thác tân,",翹翹錯薪、,嬌橋錯新，,False,4,4,0,0,0.2
+"Thiên lý môn môn bất tận văn,",千里門門不盡聞，,千里門門不盡聞，,True,0,0,0,0,1.0
+Trúc thượng lệ ngân đa.,竹上淚痕多。,竹上淚痕多。,True,0,0,0,0,1.0
+"Siêu hề tây chinh,",超兮西征，,超兮西征，,True,0,0,0,0,1.0
+Ý khí tự sinh xuân.,意氣自生春。,意氣自生春。,True,0,0,0,0,1.0
+"Gia trú Mạnh Tân hà,",家住孟津河，,家住孟新何，,False,2,2,0,0,0.6666666666666666
+Ngũ Dương giang liên Tương phố trúc.,五羊江連湘浦竹。,五陽江連湘浦竹。,False,1,1,0,0,0.875
+Thiên hà dĩ thích?,天何以刺？,天何以適？,False,1,1,0,0,0.8
+"Tích ngã vãng hỹ,",昔我往矣，,積我往矣，,False,1,1,0,0,0.8
+"Nhất đàm nhất tiếu thất nhan sắc,",一談一笑失顏色，,一潭一笑失顏色，,False,1,1,0,0,0.875
+"Sài môn ủng thụ hướng thiên chu,",柴門擁樹向千株，,柴門擁樹向天舟，,False,2,2,0,0,0.75
+"Nhân phan minh nguyệt bất khả đắc,",人攀明月不可得，,人攀明月不可得，,True,0,0,0,0,1.0
+"Ta! Cơ triệt chi đông thiên hề, vương cương đồi nhi phất thực.",嗟！姬轍之東遷兮，王綱頹而弗植。,嗟！飢徹之東天兮，王疆頹而拂食。,False,6,6,0,0,0.625
+"Vu dĩ thái phiền,",于以采蘩、,于以采煩，,False,2,2,0,0,0.6
+"Khả liên cửu mã tranh thần tuấn,",可憐九馬爭神駿，,可憐九馬爭神俊，,False,1,1,0,0,0.875
+Tu du ổng hợp nhưng hỗn đồng.,須臾蓊合仍混同。,須臾虎合仍渾同。,False,2,2,0,0,0.75
+Vô do đắc kiến xuân.,無由得見春。,無由得見春。,True,0,0,0,0,1.0
+Cầu dân chi mạc.,求民之莫。,求民之莫。,True,0,0,0,0,1.0
+"Nguyện tụng thánh hoàng như thiên phúc,",愿頌聖皇如天福，,願誦聖皇如天福，,False,2,2,0,0,0.75
+"Thái loan tử phụng kỳ hoa uyển,",彩鸞紫鳳琪花苑，,太鸞死鳳期花苑，,False,3,3,0,0,0.625
+Thệ nghịch tặc nan dữ câu sinh.,誓逆賊難與俱生。,誓逆賊難與俱生。,True,0,0,0,0,1.0
+Hoa khai hoa lạc thì.,花開花落時。,花開花落時。,True,0,0,0,0,1.0
+Nhi hậu trách nhân.,而後責人。,而後窄人。,False,1,1,0,0,0.8
+"Thái linh, thái linh,",采苓采苓，,太靈采采，,False,3,3,0,0,0.6
+"Nhung y quải bích thành trần thổ,",戎衣掛壁成塵土，,戎衣掛碧成塵土，,False,1,1,0,0,0.875
+"Hạo hạo hồ bình sa vô ngân, quýnh bất kiến nhân. Hà thuỷ oanh đới, quần sơn củ phân. Ảm hề thảm tuỵ, phong bi nhật huân. Bồng đoạn thảo khô, lẫm nhược sương thần. Điểu phi bất há, thú đĩnh vong quần. Đình trưởng cáo dư viết: “Thử cổ chiến trường dã. Thường phúc tam quân, vãng vãng quỷ khốc, thiên âm tắc văn.” Thương tâm tai! Tần dư? Hán dư? Tương cận đại dư?",浩浩乎平沙無垠，敻不見人。河水縈帶，羣山糾紛。黯兮慘悴，風悲日曛。蓬斷草枯，凜若霜晨。鳥飛不下，獸鋌亡羣。亭長告余曰：「此古戰場也。嘗覆三軍，往往鬼哭，天陰則聞。」傷心哉！秦歟？漢歟？將近代歟？,浩浩乎平沙無痕，迥不見人。河水鶯帶，群山川分。,False,80,6,74,0,0.2833333333333333
+"Nhất cố nhi giá tăng bách bội, thân chỉ nhi như trước tiên tiên.",一顧而價增百倍，親指而如著先鞭。,一顧而嫁增百佩，身只而如著先先。,False,5,5,0,0,0.6875
+"Dạ ngoạ tằng văn hải đào thanh,",夜臥曾聞海濤聲，,夜臥曾聞海濤聲，,True,0,0,0,0,1.0
+Tứ toà tân khách sắc bất động.,四座賓客色不動。,四枕新客色不動。,False,2,2,0,0,0.75
+"Cách đê xuy diệp ưng đồng dương,",隔堤吹葉應同佯，,隔低吹葉應同陽，,False,2,2,0,0,0.75
+"Bất như thử thảm ôn thả nhu,",不如此毯溫且柔，,不如此慘溫且柔，,False,1,1,0,0,0.875
+Mãn lâu minh nguyệt lê hoa bạch.,滿樓明月梨花白。,滿樓明月梨花白。,True,0,0,0,0,1.0
+Chủng thụ tứ thì sầu.,種樹四時愁。,種樹四時愁。,True,0,0,0,0,1.0
+"Tuy cường nhược thì hữu bất đồng,",雖強弱時有不同,雖強若時有不同，,False,2,1,0,1,0.8
+"Tiên cách kỳ nhàn,",先格祈閒，,先隔其閑，,False,3,3,0,0,0.4
+Hà thuỷ miễn miễn.,河水浼浼。,何水免免。,False,3,3,0,0,0.4
+"Bạch đầu bất thị chiết yêu cụ,",白頭不是折腰具，,白頭不是折腰具，,True,0,0,0,0,1.0
+"Cố nhân bất khả kiến,",故人不可見，,故人不可見，,True,0,0,0,0,1.0
+Thứ dân tiểu tử.,庶民小子。,庶民小子。,True,0,0,0,0,1.0
+Nhân thượng hồ do hành.,人尚乎由行。,人上乎由行。,False,1,1,0,0,0.8333333333333334
+Hồ bất bại bại?,胡不旆旆？,胡不敗敗？,False,2,2,0,0,0.6
+Đan quế tại nhất luân.,丹桂在一輪。,丹桂在一輪。,True,0,0,0,0,1.0
+"Đà tác kình thôn bất phục tri,",鼉作鯨吞不復知，,沱作鯨村不復知，,False,2,2,0,0,0.75
+"Phiếm bỉ bách chu,",泛彼柏舟，,泛彼百舟，,False,1,1,0,0,0.8
+Tằng hữu kinh thiên động địa văn.,曾有惊天動地文。,曾有經天動地聞。,False,2,2,0,0,0.75
+"Đinh Lệnh vô quan hoá phi hạc,",丁令無官化飛鶴，,丁令無關化飛鶴，,False,1,1,0,0,0.875
+"Khắc nê vi chi tối dị đắc,",刻泥為之最易得，,克泥為之最易得，,False,1,1,0,0,0.875
+Trục nhật ỷ diên ca uyển chuyển.,逐日綺筵歌宛轉。,逐日倚筵歌苑轉。,False,2,2,0,0,0.75
+Kỳ kỳ mạch mạch hà đẳng trật.,跂跂脈脈何等秩。,其期麥麥何等秩。,False,4,4,0,0,0.5
+"Bạch trú cẩm y,",白晝錦衣，,白晝錦衣，,True,0,0,0,0,1.0
+Ngô văn:,吾聞：,吾聞：,True,0,0,0,0,1.0
+"Thiên niên cổ mạo đa,",千年古貌多，,天年鼓貌多，,False,2,2,0,0,0.6666666666666666
+Phong lực xuy nhân mãnh phi vũ.,風力吹人猛飛舞。,風力吹人猛飛雨。,False,1,1,0,0,0.875
+"Hoang sơn thu nhật ngọ,",荒山秋日午，,荒山秋日午，,True,0,0,0,0,1.0
+Kiến khách trạo ca hồi.,見客棹歌回。,見客棹歌回。,True,0,0,0,0,1.0
+"Chàng đầu hạp não,",撞頭嗑腦。,撞頭闔惱，,False,3,3,0,0,0.4
+Tích hiệp duy trợ giang thần ngược.,積峽惟助江神虐。,昔挾惟助江神虐。,False,2,2,0,0,0.75
+"Phù y tại sa,",鳧鷖在沙，,浮衣在沙，,False,2,2,0,0,0.6
+"Trì thử nguyệt trung chước quế thụ,",持此月中斫桂樹，,池此月中酌桂樹，,False,2,2,0,0,0.75
+"Nghi cao điện dĩ quảng ý hề, dực phóng túng nhi xước khoan.",宜高殿以廣意兮，翼放縱而綽寬。,宜高殿以廣意兮，翼放縱而綽寬。,True,0,0,0,0,1.0
+"Ngã tích học thi vị hữu đắc,",我昔學詩未有得，,我昔學詩未有得，,True,0,0,0,0,1.0
+"Nhất triêu xuân tận hồng nhan lão,",一朝春盡紅顏老，,一朝春盡紅顏老，,True,0,0,0,0,1.0
+Bất trước nha đầu miệt.,不著鴉頭襪。,不著牙頭襪。,False,1,1,0,0,0.8333333333333334
+"Hoa tiền nguyệt hạ đắc cao ca,",花前月下得高歌，,花前月下得高歌，,True,0,0,0,0,1.0
+Hoàn gia thảo lộ hy.,還家草露晞。,還家草路稀。,False,2,2,0,0,0.6666666666666666
+"Khoát càn khôn chi hạp tịch, thông Hy nga chi vãng hoàn.",豁乾坤之闔闢，通羲娥之往還。,豁乾坤之闔夕，通羲峨之往還。,False,2,2,0,0,0.8571428571428571
+Nhị thập giá phu trường viễn du.,二十嫁夫長遠遊。,二十嫁夫長遠遊。,True,0,0,0,0,1.0
+Xuân nhật kiêm mông huyên noãn phù.,春日兼蒙暄暖扶。,春日兼蒙喧暖浮。,False,2,2,0,0,0.75
+Tòng kim thử trúc vưu nan đắc!,從今此竹尤難得！,從今此竹尤難得！,True,0,0,0,0,1.0
+Biên đầu công khanh nhưng độc kiêu.,邊頭公卿仍獨驕。,邊頭公卿仍獨驕。,True,0,0,0,0,1.0
+"Nghê thường vũ y, minh mâu hạo xỉ.",霓裳羽衣，明眸皓齒。,霓裳雨衣，明眸浩齒。,False,2,2,0,0,0.8
+Mẫn bất quy hồ cố hương.,泯不歸乎故鄉。,閔不歸乎故鄉。,False,1,1,0,0,0.8571428571428571
+"Quốc tộ như đằng lạc,",國祚如藤絡，,國祚如騰落，,False,2,2,0,0,0.6666666666666666
+Triêu tịch bài ưu cầu nhất xan.,朝夕排優求一餐。,朝夕排憂求一餐。,False,1,1,0,0,0.875
+Đại phụ năng ca tiểu phụ vũ.,大婦能歌小婦舞。,大婦能歌小婦雨。,False,1,1,0,0,0.875
+Du quắc an an.,攸馘安安。,悠攫安安。,False,2,2,0,0,0.6
+Nãi bồi hồi nhi diên trữ.,乃徘徊而延佇。,乃徘回而筵貯。,False,3,3,0,0,0.5714285714285714
+"Tửu tỉnh chỉ tại hoa tiền toạ,",酒醒只在花前坐，,酒省只在花前坐，,False,1,1,0,0,0.875
+"Nhân nghĩa sinh phẫn phẫn sinh dũng,",因義生憤憤生勇，,人義生憤憤生勇，,False,1,1,0,0,0.875
+Duy hữu niên niên thu nhạn phi.,唯有年年秋雁飛。,惟有年年秋雁飛。,False,1,1,0,0,0.875
+"Đường gia chư tướng đồ Lăng Yên,",唐家諸將圖凌煙，,塘家諸將徒陵燕，,False,4,4,0,0,0.5
+"Thứ cơ túc dạ,",庶幾夙夜，,庶機足夜，,False,2,2,0,0,0.6
+"Loan tường phượng chứ chúng tiên hạ,",鸞翔鳳翥眾仙下，,彎牆鳳翥眾先下，,False,3,3,0,0,0.625
+Thừa long giá hạc lai thanh minh.,乘龍駕鶴來青冥。,乘龍嫁鶴來青明。,False,2,2,0,0,0.75
+Khỉ vô phục mỗ?,豈無服馬？,豈無復馬？,False,1,1,0,0,0.8
+Hồn phách bất tằng lai nhập mộng.,魂魄不曾來入夢。,魂魄不曾來入夢。,True,0,0,0,0,1.0
+Kỳ tắc bất viễn.,其則不遠。,其則不遠。,True,0,0,0,0,1.0
+Nhưng khu nhập khuyên phụ dĩ xu.,仍驅入圈負以趨。,仍驅入關婦已趨。,False,3,3,0,0,0.625
+"Hoang pha đoạn tạm vô đoan nhập,",荒陂斷塹無端入，,荒坡斷暫無端入，,False,2,2,0,0,0.75
+Lạc cực sinh ai.,樂極生哀。,落極生哀。,False,1,1,0,0,0.8
+"Nhàn đình bách hoa phát,",閒庭百花發，,閒庭百花發，,True,0,0,0,0,1.0
+Yên hà lão thử nhân.,煙霞老此人。,煙河老此人。,False,1,1,0,0,0.8333333333333334
+"Tầm độc lạc chi phương viên,",尋獨樂之芳園，,尋獨落之方猿，,False,3,3,0,0,0.5714285714285714
+"Bạch vân sinh kính lý,",白雲生鏡裏，,白雲生徑里，,False,2,2,0,0,0.6666666666666666
+Minh kính bãi hồng trang.,明鏡罷紅妝。,明徑罷紅妝。,False,1,1,0,0,0.8333333333333334
+Lư ngư nhất cân tam bách tiền.,鱸魚一斤三百錢。,廬魚一巾三百前。,False,3,3,0,0,0.625
+"Văn quân đình trúc vịnh,",聞君庭竹詠，,文君庭竹詠，,False,1,1,0,0,0.8333333333333334
+"Kỳ vạn vũ hề ngọc chúc,",其萬宇兮玉燭，,其萬雨兮玉燭，,False,1,1,0,0,0.8571428571428571
+"Súc dược dục trị bệnh,",蓄藥欲治病，,畜躍欲治病，,False,2,2,0,0,0.6666666666666666
+"Duy tử chi cố,",維子之故，,維子之故，,True,0,0,0,0,1.0
+Khước hướng tĩnh trung tiêu.,卻向靜中消。,卻向靜中消。,True,0,0,0,0,1.0
+"Hung thôn Vân Mộng giả sổ bách nhi,",胸吞雲夢者數百而，,匈村雲夢者數百而，,False,2,2,0,0,0.7777777777777778
+"Giáo ngoại khả biệt truyền,",教外可別傳，,教外可別傳，,True,0,0,0,0,1.0
+Tàn ty dục đoạn hoàng phong quy.,殘絲欲斷黃蜂歸。,殘絲欲斷黃風歸。,False,1,1,0,0,0.875
+Xuân thu nhị thì quy chí tôn.,春秋二時歸至尊。,春秋二時歸至孫。,False,1,1,0,0,0.875
+Quân hữu Tất phi hề Quản Thành hầu.,君友漆妃兮管城侯。,君有必飛兮管城侯。,False,3,3,0,0,0.6666666666666666
+"Ác điểu phi phi trác kim ốc,",惡鳥飛飛啄金屋，,惡鳥飛飛啄金屋，,True,0,0,0,0,1.0
+"Bá Di, Thúc Tề,",伯夷叔齊，,伯夷叔叔齊，,False,1,0,0,1,0.9090909090909091
+Cung thanh nhập la mạc.,蛩聲入羅幕。,宮聲入羅莫。,False,2,2,0,0,0.6666666666666666
+"Câu chi nhưng nhưng,",捄之陾陾，,鉤之仍仍，,False,3,3,0,0,0.4
+Bất đồ xã tắc tư quân phụ.,不圖社稷思君父。,不圖社則思君婦。,False,2,2,0,0,0.75
+"Phọc Nhung nhân, phọc Nhung nhân!",縛戎人，縛戎人，,縛戎人，縛戎人！,False,1,1,0,0,0.875
+"Tẩu bút vãng lai doanh quyển trục,",走筆往來盈卷軸，,走筆往來盈捲逐，,False,2,2,0,0,0.75
+Mộc biểu thanh thanh.,木表青青。,木表青青。,True,0,0,0,0,1.0
+"Tuế khứ hồng nhan tận,",歲去紅顏盡，,歲去紅顏盡，,True,0,0,0,0,1.0
+"Tạc dạ thành đầu xuy tất lật,",昨夜城頭吹篳篥，,昨夜城頭吹必栗，,False,2,2,0,0,0.75
+Xung quan nhất nộ vị hồng nhan.,衝冠一怒為紅顏。,沖觀一怒未紅顏。,False,3,3,0,0,0.625
+Kim chi thuý kỳ quang hữu vô.,金支翠旗光有無。,今之翠期光有無。,False,3,3,0,0,0.625
+Diên Thọ di nhàn bách thọ tiên.,延壽頤閒百壽仙。,延壽遺閒百壽先。,False,2,2,0,0,0.75
+Tỉnh thử Từ thổ.,省此徐土。,井此徐土。,False,1,1,0,0,0.8
+Phục khủng sơ tòng loạn ly thuyết.,復恐初從亂離說。,伏恐初從亂離說。,False,1,1,0,0,0.875
+Hải tông nhất chu cao nhập vân.,海棕一株高入雲。,海宗一舟高入雲。,False,2,2,0,0,0.75
+"Viên cách viên thành,",爰格爰誠，,爰隔爰成，,False,2,2,0,0,0.6
+Phi lai phi khứ lạc thuỳ gia?,飛來飛去落誰家？,非來非去落誰家？,False,2,2,0,0,0.75
+"Thuý hoa nhật noãn nùng xuân sắc,",翠花日煖濃春色，,翠花日暖儂春色，,False,2,2,0,0,0.75
+"Nại hà Ấu Ngọc gia hữu mẫu,",奈何幼玉家有母，,奈何幼玉家有母，,True,0,0,0,0,1.0
+Quân thanh dĩ chi đại chấn.,軍聲以之大振。,君聲以之大震。,False,2,2,0,0,0.7142857142857143
+Khả lân lưu tố ngưng dao tịch.,可憐流素凝瑤席。,可憐流素凝遙夕。,False,2,2,0,0,0.75
+Nhân vi quý.,人為貴。,人為貴。,True,0,0,0,0,1.0
+Hà năng phục hổ uy.,何能伏虎威。,何能復虎威。,False,1,1,0,0,0.8333333333333334
+"Tạc nhật đông lâu tuý,",昨日東樓醉，,昨日東樓醉，,True,0,0,0,0,1.0
+"Tuyền xu vô đình vận,",璿樞無停運，,泉趨無庭運，,False,3,3,0,0,0.5
+"Nguyện phùng nhan sắc quan tái viễn,",願逢顏色關塞遠，,願逢顏色關塞遠，,True,0,0,0,0,1.0
+Xung đoạn quá giang vân.,沖斷過江雲。,沖斷過江雲。,True,0,0,0,0,1.0
+"Ngư lang cử tăng đắc song lý,",漁郎舉罾得雙鯉，,漁郎舉僧得窗里，,False,3,3,0,0,0.625
+Nữ xuất cung phi.,女出宮妃。,女出弓飛。,False,2,2,0,0,0.6
+"Chiến trường oan hồn mỗi dạ khốc,",戰場冤魂每夜哭，,戰場冤魂每夜哭，,True,0,0,0,0,1.0
+"Tự cổ mỹ sự đa ma cách,",自古美事多磨隔，,自古美事多磨隔，,True,0,0,0,0,1.0
+"Vi Trọng Ni sở xưng,",為仲尼所稱，,微仲尼所稱，,False,1,1,0,0,0.8333333333333334
+"Hồ trần nhất khởi loạn thiên hạ,",胡塵一起亂天下，,胡塵一起亂千下，,False,1,1,0,0,0.875
+Vũ Lăng đào hoa tiếu sát nhân.,武陵桃花笑殺人。,雨陵桃花笑殺人。,False,1,1,0,0,0.875
+Thời duy Khương Nguyên.,時維姜嫄。,時維羌元。,False,2,2,0,0,0.6
+"Cô đắc Bì đồng hảo xuân tửu,",沽得郫筒好春酒，,孤得皮同好春酒，,False,3,3,0,0,0.625
+Phiếm phiếm kỳ thệ.,泛泛其逝。,泛泛其逝。,True,0,0,0,0,1.0
+Điều điều độc phiếm tiên.,迢迢獨泛仙。,條條獨泛先。,False,3,3,0,0,0.5
+"Tào Tháo chuyên quyền cư tướng phủ,",曹操專權居相府，,曹枕專權居相府，,False,1,1,0,0,0.875
+"Khứ niên Bạch Đế tuyết tại sơn,",去年白帝雪在山，,去年白帝雪在山，,True,0,0,0,0,1.0
+"Lưu Tô trướng quyển sơ an kính,",流蘇帳卷初安鏡，,流蘇帳捲初安徑，,False,2,2,0,0,0.75
+Du hồn yểu yểu tương an chi.,遊魂杳杳將安之。,遊魂窈窈相安枝。,False,4,4,0,0,0.5
+"Trung thiên yết nhật nguyệt,",中天揭日月，,中天歇日月，,False,1,1,0,0,0.8333333333333334
+"Bàng công ẩn thì tận thất khứ,",龐公隱時盡室去，,傍公隱時盡失去，,False,2,2,0,0,0.75
+"Lão lai để việt tinh thần kiện,",老來底越精神健，,老來底越星神健，,False,1,1,0,0,0.875
+"Cổ thì táng loạn giai khả tri,",古時喪亂皆可知，,古時喪亂皆可知，,True,0,0,0,0,1.0
+Hựu tác trần sa vạn lý hành.,又作塵沙萬里行。,又作塵沙萬里行。,True,0,0,0,0,1.0
+Lợi thị hà sầu viễn hành dịch.,利市何愁遠行役。,利是何愁遠行驛。,False,2,2,0,0,0.75
+"Tiểu ngư thoát lậu bất khả ký,",小魚脫漏不可記，,小魚脫漏不可既，,False,1,1,0,0,0.875
+Ngôn quy đông phiên.,言歸東藩。,言歸東翻。,False,1,1,0,0,0.8
+"Địa cận Hàm Tần khí tục hào,",地近函秦氣俗豪，,地近咸秦氣俗號，,False,2,2,0,0,0.75
+Duy dư tư kỵ.,維予胥忌。,維予斯騎。,False,2,2,0,0,0.6
+Nhị nguyệt xuân thâm hảo phóng thuyền.,二月春深好放船。,二月春深好放船。,True,0,0,0,0,1.0
+Lịch khảm lý truân.,歷坎履屯。,歷坎里屯。,False,1,1,0,0,0.8
+"Quan quan thư cưu,",關關雎鳩、,關觀書鳩，,False,3,3,0,0,0.4
+"Thời mẫu khổng thược,",辰牡孔碩。,時母孔一，,False,4,4,0,0,0.2
+"Khước giao nghiêm khiển thiếp,",卻教嚴譴妾，,卻教嚴遣妾，,False,1,1,0,0,0.8333333333333334
+"Tự thệ vị hành, trung nhược tương thủ.",似逝未行，中若相首。,自逝未行，中若相首。,False,1,1,0,0,0.9
+"Lạc Dương cung điện thiêu phần tận,",洛陽宮殿燒焚盡，,洛陽宮殿燒焚盡，,True,0,0,0,0,1.0
+Ngã kim oán nhữ như hải thâm.,我今怨汝如海深。,我今怨女如海深,False,2,1,1,0,0.8
+"Nam hữu Long tưu, bắc Hổ khê.",南有龍湫北虎溪。,南有龍諏北虎溪溪。,False,2,1,0,1,0.8235294117647058
+"Hoàng đô niên thiếu thị Liễu quân,",皇都年少是柳君，,黃都年少是柳君，,False,1,1,0,0,0.875
+Tuế vãn hà dĩ kiềm ngô đột.,歲晚何以黔吾突。,歲晚何以鉗吾突。,False,1,1,0,0,0.875
+Bất cố liêm sỉ.,不顧廉恥。,不顧簾恥。,False,1,1,0,0,0.8
+"Gian dân thừa khích tác đại đạo,",奸民乘隙作大盜，,艱民乘隙作大道，,False,2,2,0,0,0.75
+"Nga mi mã thượng truyền hô tiến,",蛾眉馬上傳呼進，,峨眉馬上傳呼進，,False,1,1,0,0,0.875
+Nghiệp học Thi Hương đa dưỡng kê.,業學屍鄉多養雞。,業學詩香多養雞。,False,2,2,0,0,0.75
+"Hồng trang chiếu thuỷ nhân kiến hảo,",紅妝照水人見好，,紅妝照水人見好，,True,0,0,0,0,1.0
+Duệ vụ tiêu chi khinh cư.,曳霧綃之輕裾。,曳霧蕭之輕居。,False,2,2,0,0,0.7142857142857143
+Nhất triêu tận một Lũng Tây địa.,一朝盡沒隴西地。,一朝盡沒隴西地。,True,0,0,0,0,1.0
+Nhu nhiễm đại bút hà lâm ly.,濡染大筆何淋灕。,柔染大筆何林離。,False,3,3,0,0,0.625
+"Thiết nghiệp thiết cự,",設業設虡，,鐵業鐵巨，,False,3,3,0,0,0.4
+"Kỷ độ ký thư Bạch Diêm bắc,",幾度寄書白鹽北，,幾度既書白檐北，,False,2,2,0,0,0.75
+Tây đồ Thạch Bảo thủ tử bào.,西屠石堡取紫袍。,西圖石寶首死袍。,False,4,4,0,0,0.5
+Độc bằng lang kiên toạ thanh nguyệt.,獨憑郎肩坐清月。,獨憑郎堅坐聲月。,False,2,2,0,0,0.75
+Cô đăng cấp quản phục phong thoan.,孤燈急管復風湍。,孤燈急管復風湍。,True,0,0,0,0,1.0
+Vi mộc đáng tác tùng.,為木當作松。,微木當作松。,False,1,1,0,0,0.8333333333333334
+Phong hoa cách thuỷ lai.,風花隔水來。,風花隔水來。,True,0,0,0,0,1.0
+"Lượng dã bất tài,",亮也不才，,諒也不才，,False,1,1,0,0,0.8
+"Ô thước nam phi,",烏鵲南飛，,於鵲南飛，,False,1,1,0,0,0.8
+"Nhai nê sấn tường can,",街泥趁檣竿，,街泥趁牆干，,False,2,2,0,0,0.6666666666666666
+"Phương thốn trung duy thận vu tòng, chức phận nội hạt năng vô quý.",方寸中惟愼于從，職分內曷能無愧。,方寸中惟慎于從，織分內曷能無貴。,False,3,3,0,0,0.8125
+"Tự nhiên thanh đáo cốt,",自然淸到骨，,自然青到骨，,False,1,1,0,0,0.8333333333333334
+"Thiên địa điều dao tự trường cửu,",天地迢遙自長久，,天地調遙自長久，,False,1,1,0,0,0.875
+"Nhất nhật bất kiến,",一日不見，,一日不見，,True,0,0,0,0,1.0
+"Mộ niên thả hỉ kinh hành cận,",暮年且喜經行近，,暮年且喜經行近，,True,0,0,0,0,1.0
+Chư tướng giác vinh hoa.,諸將角榮華。,諸將覺榮華。,False,1,1,0,0,0.8333333333333334
+"Thị nhâm thị phụ,",是任是負，,是任是婦，,False,1,1,0,0,0.8
+Quan san mãn biệt sầu.,關山滿別愁。,關山滿別愁。,True,0,0,0,0,1.0
+Xí dư vọng chi.,跂予望之。,企予望之。,False,1,1,0,0,0.8
+Triệu thị liên thành bích,趙氏連城璧，,趙是連成碧,False,4,3,1,0,0.36363636363636365
+Phong đố hồng hoa khước đảo xuy.,風妒紅花卻倒吹。,風妒紅花卻倒吹。,True,0,0,0,0,1.0
+"Nô tài hà hạnh, đổ tư hưu mỹ.",駑材何幸，睹斯休美。,奴才何幸，睹斯休美。,False,2,2,0,0,0.8
+"Bàn Đào dị chủng yếm khung cùng,",盤桃異種厭芎藭，,盤陶易種厭穹窮，,False,4,4,0,0,0.5
+"Tường hữu từ,",墻有茨，,墻有辭，,False,1,1,0,0,0.75
+"Khê thâm, hoa đảo khai.",溪深花倒開。,溪深花倒開開。,False,1,0,0,1,0.9230769230769231
+"Xuân thôi nông công động thiên mạch,",春催農工動阡陌，,春催農公動千陌，,False,2,2,0,0,0.75
+Bố tác Thạch Môn tuyền.,布作石門泉。,布作石門泉。,True,0,0,0,0,1.0
+Trường sử đổ hà tư đế đức.,長使覩河思帝德。,長使睹河思帝德。,False,1,1,0,0,0.875
+"Ỷ giang nam thụ thảo đường tiền,",倚江楠樹草堂前，,倚江南樹草堂前，,False,1,1,0,0,0.875
+Sơn công khải sự thành hà dụng?,山公啟事成何用？,山公啟事成何用？,True,0,0,0,0,1.0
+"Tinh tinh giả nga,",菁菁者莪，,星星者峨，,False,3,3,0,0,0.4
+Hữu Ngọc Long dữ Kim Phụng.,有玉龍與金鳳。,有玉龍與金鳳。,True,0,0,0,0,1.0
+"Bất như bình nguyên thái đoản tân,",不如平原採短薪，,不如平原太短新，,False,2,2,0,0,0.75
+Hà xứ xuân phong vô biệt ly.,何處春風無別離。,何處春風無別離。,True,0,0,0,0,1.0
+Thuỷ Xa Lĩnh tối kỳ.,水車嶺最奇。,水車嶺最期。,False,1,1,0,0,0.8333333333333334
+Liễu kiến như như đoạn khổ tầm.,了見如如斷苦尋。,柳見如如斷苦尋。,False,1,1,0,0,0.875
+Ly gia dĩ nhị niên.,離家已二年。,離家已二年。,True,0,0,0,0,1.0
+Thân thanh thập nhị hồi tu lang.,呻聲十二迴修廊。,身聲十二回須郎。,False,4,4,0,0,0.5
+Khởi hướng nhân gian trụ.,豈向人間住。,豈向人間柱。,False,1,1,0,0,0.8333333333333334
+"Túng nhiên thiên thọ xỉ Kiều Bành,",縱然天壽齒喬彭，,縱然千壽齒嬌彭，,False,2,2,0,0,0.75
+Kiến nguyệt an năng khổ tầm chỉ.,見月安能苦尋指。,見月安能苦尋止。,False,1,1,0,0,0.875
+Tự công lịnh chi.,自公令之。,自公令之。,True,0,0,0,0,1.0
+Vương thân mệnh chi:,王親命之：,王身命之：,False,1,1,0,0,0.8
+Ô hô kiện bộ vô do sính.,嗚呼健步無由騁。,嗚呼健步無由騁。,True,0,0,0,0,1.0
+Bình địa lục trầm.,平地陸沉。,平地綠沉。,False,1,1,0,0,0.8
+Cư xử thất thường.,居處失常。,居處失裳。,False,1,1,0,0,0.8
+Táo quân triều thiên dục ngôn sự.,灶君朝天欲言事。,空君朝天欲言事。,False,1,1,0,0,0.875
+Lục sư cập chi.,六師及之。,綠師及之。,False,1,1,0,0,0.8
+Thuý nhuy vân sao tương đãng ma.,翠蕤雲旓相蕩摩。,翠緌雲抄相蕩磨。,False,3,3,0,0,0.625
+"Tá uy nhuy nhi thành trĩ hề,",借葳蕤而成畤兮，,借威緌而成雉兮，,False,3,3,0,0,0.625
+Đả cổ mộc nhân!,打鼓木人。,打鼓木人！,False,1,1,0,0,0.8
+"Như sơn chi bao,",如山之苞，,如山之苞，,True,0,0,0,0,1.0
+Quân bất kiến:,君不見：,君不見：,True,0,0,0,0,1.0
+"Tư hoàng đa hỗ,",思皇多祜，,思皇多互，,False,1,1,0,0,0.8
+Dịch dịch kỳ đạt.,驛驛其達。,易驛其達。,False,1,1,0,0,0.8
+Thượng mỵ vô thông.,尚寐無聰！,上寐無通。,False,3,3,0,0,0.4
+"Nhũ yên nhập sào duẩn thành trúc,",乳燕入巢筍成竹，,乳煙入巢筍成竹，,False,1,1,0,0,0.875
+"Tuy dĩ đa phúc,",綏以多福，,雖以多福，,False,1,1,0,0,0.8
+Phiêu nhiên nhãn để hồn mang mang.,飄然眼底魂茫茫。,飄然眼底魂茫茫。,True,0,0,0,0,1.0
+"Thiên nhai giai xứ khả đồng du,",千崖佳處可同游，,天涯皆處可同遊，,False,4,4,0,0,0.5
+"Hối nhĩ chuân chuân,",誨爾諄諄，,悔爾錞錞，,False,3,3,0,0,0.4
+Thiết thính cầm thanh bích song lý.,竊聽琴聲碧窗裏。,鐵聽琴聲碧窗里。,False,2,2,0,0,0.75
+"Thiên cổ vạn đại nhân,",千古萬代人，,千古萬大人，,False,1,1,0,0,0.8333333333333334
+"Trướng nhiên quy ngoạ tâm mạc thức,",悵然歸臥心莫識，,悵然歸臥心莫識，,True,0,0,0,0,1.0
+"Hoài Nam tư lẫm cửu hồng hủ,",淮南私廩久紅腐，,淮南思凜九紅朽，,False,4,4,0,0,0.5
+Nhạn lạc trục minh huyền.,雁落逐鳴弦。,雁落逐明弦。,False,1,1,0,0,0.8333333333333334
+Luân giao ẩm tiễn lệ song lưu.,輪交飲餞淚双流。,輪教飲剪淚雙流。,False,3,3,0,0,0.625
+"Tịch tịch hệ chu song há lệ,",寂寂繫舟雙下淚，,寂寂繫舟雙下淚，,True,0,0,0,0,1.0
+"Phúc chỉ tiền Vọng Doanh hậu, thiên thu hương hoả huân cao.",福址前，望瀛後，千秋香火勲高。,福指前望瀛後，天秋香火勳高。,False,4,3,1,0,0.7586206896551724
+Thuỳ thức lâu đài đế tử duyên.,誰識樓臺帝子緣。,誰識樓臺帝子緣。,True,0,0,0,0,1.0
+Ước chỉ thác hành.,約軧錯衡，,回止錯行。,False,4,4,0,0,0.2
+"Tại quang tại trần,",在光在塵，,在光在塵，,True,0,0,0,0,1.0
+"Tức xưng đế dữ Trung Quốc mâu,",即稱帝與中國侔，,即稱帝與中國矛，,False,1,1,0,0,0.875
+"Thiên niên xuân âm hạc quy tông,",千年春蔭鶴龜嵕，,天年春陰鶴歸宗，,False,4,4,0,0,0.5
+Dược mã thướng hà kiều.,躍馬上河橋。,藥馬上河橋。,False,1,1,0,0,0.8333333333333334
+"Ngọc Quan chinh thú cửu,",玉關征戍久，,玉關征戍九，,False,1,1,0,0,0.8333333333333334
+Phi nhập tiên lang mộng hồn lý.,飛入仙郎夢魂裏。,非入先郎夢魂里。,False,3,3,0,0,0.625
+Nãi toản thuật kỳ hưng phế; dụ quyết giám chi thậm minh.,乃纂述其興廢；喻厥鑑之甚明。,乃纘述其興廢；喻決鑑之甚鳴。,False,3,3,0,0,0.7857142857142857
+"Xuất tự Thang cốc,",出自湯谷，,出自湯穀，,False,1,1,0,0,0.8
+Thanh thương nhất phiến thị La Phù.,青蒼一片是羅浮。,青蒼一片是羅浮。,True,0,0,0,0,1.0
+Nhân sinh kỷ hà:,人生幾何：,人生幾何：,True,0,0,0,0,1.0
+Đăng lâu dĩ bán huân.,登樓已半曛。,登樓已半勳。,False,1,1,0,0,0.8333333333333334
+"Dịch dịch Lương Sơn,",奕奕梁山，,易驛良山，,False,3,3,0,0,0.4
+Hà thần bất phúc?,何神不富？,何神不福？,False,1,1,0,0,0.8
+Sĩ ngã ư trư hồ nhi.,俟我於著乎而，,士我於豬乎而。,False,3,3,0,0,0.5714285714285714
+Thị dụng đại gián.,是用大諫。,是用大諫。,True,0,0,0,0,1.0
+Nhữ bá hà do phát như tất.,汝伯何由發如漆。,女伯何由發如必。,False,2,2,0,0,0.75
+"Hương thổ bất đồng,",鄉土不同，,鄉土不同，,True,0,0,0,0,1.0
+"Na tri chuyển nhãn phù sinh mộng,",那知轉眼浮生夢，,那知轉眼浮生夢，,True,0,0,0,0,1.0
+Hoan hội toạ ưng đồng.,歡會坐應同。,歡會坐應同。,True,0,0,0,0,1.0
+Vô thuỷ ảnh hoàn không.,無水影還空。,無水影還空。,True,0,0,0,0,1.0
+"Dị thú như phi tinh tú lạc,",異獸如飛星宿落，,異戍如飛星繡落，,False,2,2,0,0,0.75
+Khách mộng nam du độ Tương thuỷ.,客夢南遊渡湘水。,客夢南遊渡湘水。,True,0,0,0,0,1.0
+"Vũ thư tạc dạ đáo Tây kinh,",羽書昨夜到西京，,雨書昨夜到西經，,False,2,2,0,0,0.75
+Vô nãi hảo sự di Tây Thục.,無乃好事移西蜀。,無乃好事夷西蜀。,False,1,1,0,0,0.875
+"Trường địch thuỳ năng loạn sầu tứ,",長笛誰能亂愁思，,長笛誰能亂愁思，,True,0,0,0,0,1.0
+"Tiểu nhân tự kiêu,",小人自驕，,小人自驕，,True,0,0,0,0,1.0
+"Ám tưởng Hàm Dương hoả đức suy,",暗想咸陽火德衰，,暗想咸陽火德衰，,True,0,0,0,0,1.0
+Thần ngôn binh sự nan dao độ.,臣言兵事難遙度。,神言兵事難遙渡。,False,2,2,0,0,0.75
+"Phương chi chu chi,",方之舟之。,方之舟之，,False,1,1,0,0,0.8
+Hưu ngữ gian nan thượng hàm chiến.,休語艱難尚酣戰。,休語間難上含戰。,False,3,3,0,0,0.625
+Thập cổ kỳ tải sổ lạc đà.,十鼓祇載數駱駝。,十鼓其載數落鼉。,False,3,3,0,0,0.625
+Trật trật đức ưng.,秩秩德音。,國秩德應。,False,2,2,0,0,0.6
+Thích liên tâm chi vị khổ.,釋蓮心之味苦。,適憐心之未苦。,False,3,3,0,0,0.5714285714285714
+"Hàm tình dục tố khốc thanh trường,",含情欲訴哭聲長，,咸情欲素哭聲長，,False,2,2,0,0,0.75
+Đạo thâu bôn tẩu.,盜偷奔走。,道偷奔走。,False,1,1,0,0,0.8
+"Tu lưỡng quốc chi hoà hảo,",修兩國之和好，,修兩國之和好，,True,0,0,0,0,1.0
+"Trưởng lại huy quan, hiền sĩ thất chí.",長吏隳官，賢士失志。,長吏輝關，賢士失至。,False,3,3,0,0,0.7
+"Liệp tiêu chu sắc lạc,",鬣焦朱色落，,獵消舟色落，,False,3,3,0,0,0.5
+Khoáng đãng bất dung thằng mặc thúc.,曠蕩不容繩墨束。,曠蕩不容繩墨束。,True,0,0,0,0,1.0
+Dục khứ vị đáo tư tiên hồi.,欲去未到思先回。,欲去未到思先回。,True,0,0,0,0,1.0
+Thuỳ thế niệm sinh hoàn.,垂涕念生還。,誰世念生還。,False,2,2,0,0,0.6666666666666666
+"Thành Thang chi tai tự Hào,",成湯之哉自毫，,城湯之哉自豪，,False,2,2,0,0,0.7142857142857143
+Thập lục sinh nhi tự A Hầu.,十六生兒字阿侯。,十六生兒自阿侯。,False,1,1,0,0,0.875
+Bất khả vuống ti.,不可泳思。,不可泳思。,True,0,0,0,0,1.0
+Thả thỉnh long thuyền đầu.,且請攏船頭。,且請龍船頭。,False,1,1,0,0,0.8333333333333334
+"Tam xích đồng tử ngũ xích dặc,",三尺童子五尺杙，,三尺同死五尺弋，,False,3,3,0,0,0.625
+Cụ chuế tốt hoang.,具贅卒荒；,具贅卒荒。,False,1,1,0,0,0.8
+"Nhân gian thiên hoa vạn thảo tận vinh diễm,",人間千花萬草盡榮豔，,人間千花萬草盡榮艷，,False,1,1,0,0,0.9
+Vị ngã độ lường quật cữu khoa.,為我度量掘臼科。,謂我度量窟舅科。,False,3,3,0,0,0.625
+"Ma sa trực như kiến minh hãnh,",摩挲直如見溟涬，,磨沙直如見明回，,False,4,4,0,0,0.5
+"Bất phương đạo Mạch vọng nhi đăng tiên hề,",不妨導脈望而登仙兮，,不方道麥望而登先兮，,False,4,4,0,0,0.6
+Vĩnh ngôn bảo chi.,永言保之。,永言保之。,True,0,0,0,0,1.0
+"Nhân điềm vật hy, chính giản hình thanh.",人恬物熙，政簡刑清。,人甜物稀，正澗形聲。,False,6,6,0,0,0.4
+Bất quý đương triều.,不愧當朝。,不貴當朝。,False,1,1,0,0,0.8
+Thiên địa tương chung thuỷ.,天地相終始。,天地相終水。,False,1,1,0,0,0.8333333333333334
+"Nhật khứ tây sơn tập trường dạ,",日去西山襲長夜，,日去西山集長夜，,False,1,1,0,0,0.875
+"Nữ Oa hữu thể,",女媧有體，,女媧有體，,True,0,0,0,0,1.0
+Hồn chiêu bất lai đáo Liêu Dương.,魂招不來到遼陽。,魂昭不來到遼陽。,False,1,1,0,0,0.875
+"Bảo bang vong khử ác,",保邦忘去惡，,寶邦忘虛惡，,False,2,2,0,0,0.6666666666666666
+"Thị thuỳ hoạ sử xảo vi thử,",是誰畫史巧為此，,是誰畫使巧為此，,False,1,1,0,0,0.875
+"Tự hiềm ý cẩm thái hàn khất,",似嫌衣錦太寒乞，,自嫌意錦太寒乞，,False,2,2,0,0,0.75
+"Ức tích bắc tầm tiểu hữu động,",憶昔北尋小有洞，,憶昔北尋小有動，,False,1,1,0,0,0.875
+Hoá vi Hô Đà thuỷ trung nê.,化為滹沱水中泥。,化為呼沱水中泥。,False,1,1,0,0,0.875
+"Cứ an cố phán xuất viên môn,",據鞍顧盼出轅門，,踞安故判出園門，,False,5,5,0,0,0.375
+Bá nghiệp đồ vương tại thiên phủ.,霸業圖王在天府。,伯業圖王在天府。,False,1,1,0,0,0.875
+Lai từ khứ giản nhiêu ân tình.,來詞去簡饒恩情。,來辭去澗饒恩情。,False,2,2,0,0,0.75
+"Vương thư, ly hoàng, chính minh, Sở cưu.",王雎鸝黃，正冥楚鳩。,王書，離黃，正鳴，楚鳩。,False,5,3,0,2,0.6363636363636364
+"Tiện điền thượng hề quần âu,",羡田上兮群鷗，,便田上兮群鷗，,False,1,1,0,0,0.8571428571428571
+"Chung tự hữu ích,",終自有益，,終自有益，,True,0,0,0,0,1.0
+Nhu gia duy tắc.,柔嘉維則。,柔家維則。,False,1,1,0,0,0.8
+"Không trì dạ bị thiếp uyên ương,",空持夜被貼鴛鴦，,空持夜被妾鴛鴦，,False,1,1,0,0,0.875
+Nhạc chấp tiên nhị đồng trì khu.,樂執鞭弭同馳驅。,樂執先二同持驅。,False,3,3,0,0,0.625
+Thượng đế bất lâm;,上帝不臨；,上帝不林；,False,1,1,0,0,0.8
+Lạc hoa doanh ngã y.,落花盈我衣。,落花盈我衣。,True,0,0,0,0,1.0
+"Hoặc hý thanh lưu,",或戲清流，,或戲青流，,False,1,1,0,0,0.8
+"Ngã tích tây du đăng Ngũ Lão,",我昔西游登五老，,我昔西遊登五老，,False,1,1,0,0,0.875
+"Phụng Tường thiên quan thả bão phạn,",鳳翔千官且飽飯，,鳳墻千關且飽飯，,False,2,2,0,0,0.75
+Từ phương ký lai.,徐方既來。,徐方既來。,True,0,0,0,0,1.0
+A na kỳ hoa.,猗儺其華。,阿那其華。,False,2,2,0,0,0.6
+Thoán đoạt tương tranh dân lực quỹ.,篡奪相爭民力匱。,竄奪相爭民力軌。,False,2,2,0,0,0.75
+Thao thao bất quy.,慆慆不歸。,滔滔不歸。,False,2,2,0,0,0.6
+Khả mãi thiên lý xuân.,可買千里春。,可買千里春。,True,0,0,0,0,1.0
+Vương viết hoàn quy.,王曰還歸。,王曰還歸。,True,0,0,0,0,1.0
+"Trân trọng thiên nhai lão huynh đệ,",珍重天涯老兄弟，,珍重千涯老兄弟，,False,1,1,0,0,0.875
+Hồ nhân cộng thính diệc tư ta.,胡人共聽亦咨嗟。,胡人共聽亦思嗟。,False,1,1,0,0,0.875
+"Lê viên tử đệ,",梨園子弟，,黎爰子弟，,False,2,2,0,0,0.6
+Thuỳ quan ngọc nhan.,誰觀玉顏。,誰關玉顏。,False,1,1,0,0,0.8
+Nguyệt minh Chinh Lỗ đình.,月明征虜亭。,月明征虜庭。,False,1,1,0,0,0.8333333333333334
+Tư tu cải biến như thương cẩu.,斯須改變如蒼狗。,思須改變如蒼狗。,False,1,1,0,0,0.875
+"Hựu thướng thanh sơn khứ,",又上青山去，,又上青山去，,True,0,0,0,0,1.0
+Ngã gia vô điền ưu nhập thất.,我家無田憂入室。,我家無田憂入失。,False,1,1,0,0,0.875
+Nam nhạc thị chỉ.,南嶽是止。,南樂是止。,False,1,1,0,0,0.8
+Huống phục kim nhật dao tương kiến.,況復今日遙相見。,況復今日遙相見。,True,0,0,0,0,1.0
+"Thái bình vô dĩ báo,",太平無以報，,太平無已報，,False,1,1,0,0,0.8333333333333334
+Thử tắc trùng lực.,黍稷重穋，,此則重力。,False,4,4,0,0,0.2
+Tái trí kỳ vĩ.,載疐其尾。,載致其尾。,False,1,1,0,0,0.8
+"Phụ tân quy vị vãn,",負薪歸未晚，,婦新歸未晚，,False,2,2,0,0,0.6666666666666666
+"Chỉ thu tráng kiện thăng thiết giáp,",只收壯健勝鐵甲，,只秋壯健升切峽，,False,4,4,0,0,0.5
+Tự vị vi thần năng kiệt lực.,自謂為臣能竭力。,自謂為臣能傑力。,False,1,1,0,0,0.875
+Tứ hải phong vân hội hữu kỳ.,四海風雲會有期。,四海風雲會有期。,True,0,0,0,0,1.0
+"Thiên chân bất đáo duyên phấn bút,",天真不到鉛粉筆，,天真不到緣粉筆，,False,1,1,0,0,0.875
+Thu lai bạch phát tân.,秋來白髮新。,秋來白髮新。,True,0,0,0,0,1.0
+"Ký kiến quân tử,",既見君子，,既見君子，,True,0,0,0,0,1.0
+"Yến nhĩ tân hôn,",宴爾新昏，,燕爾新昏，,False,1,1,0,0,0.8
+"Triệt Thân Bá thổ cương,",徹申伯土疆，,徹申伯土岡，,False,1,1,0,0,0.8333333333333334
+Duy dư nghĩa liệt ư nhân gian;,惟餘義烈於人間；,惟予義裂於人間；,False,2,2,0,0,0.75
+Trung thần dĩ vinh.,忠臣以榮。,中臣以榮。,False,1,1,0,0,0.8
+"Nam Dương Cam Cốc gia gia cúc,",南陽甘谷家家菊，,南陽甘谷家家菊，,True,0,0,0,0,1.0
+"Ngẫu bị chủ nhân lưu,",偶被主人留，,偶被主人流，,False,1,1,0,0,0.8333333333333334
+"Nhàn đình vãn tuyết phi,",閒庭晚雪飛，,閒庭晚雪飛，,True,0,0,0,0,1.0
+"Trác bỉ hạo thiên,",倬彼昊天，,卓彼浩天，,False,2,2,0,0,0.6
+Đương lô lý sắt căng tiêm thủ.,當壚理瑟矜纖手。,當爐里瑟矜纖首。,False,3,3,0,0,0.625
+"Phàm Chu chi sĩ,",凡周之士，,凡周之士，,True,0,0,0,0,1.0
+Biên đậu hữu tiễn.,籩豆有踐。,邊豆有剪。,False,2,2,0,0,0.6
+"Linh sơn đa tú sắc,",靈山多秀色，,靈山多繡色，,False,1,1,0,0,0.8333333333333334
+"Bất niệm tích giả,",不念昔者，,不念惜者，,False,1,1,0,0,0.8
+"Uy nghi ức ức,",威儀抑抑，,威儀憶憶，,False,2,2,0,0,0.6
+Thất quý tam công hà túc sổ?,七貴三公何足數？,七貴三公何足數？,True,0,0,0,0,1.0
+"Kim nhật tất viên du,",今日漆園遊，,今日必園遊，,False,1,1,0,0,0.8333333333333334
+Hoá vi bạch phù tự lão ông.,化為白鳧似老翁。,化為白浮自老翁。,False,2,2,0,0,0.75
+Hà tất mịch nhàn sầu.,何必覓閑愁。,何必覓閑愁。,True,0,0,0,0,1.0
+"Bất hoàng khải cư,",不遑啟居，,不皇啟居，,False,1,1,0,0,0.8
+"Cử đầu hốt khan bất tự hoạ,",舉頭忽看不似畫，,舉頭忽看不自畫，,False,1,1,0,0,0.875
+Thao thiên ba lãng kinh sát nhân.,滔天波浪驚剎人。,滔天波浪經殺人。,False,2,2,0,0,0.75
+Thán Cô Tô hề tụ my lộc.,歎姑蘇兮聚麋鹿。,嘆孤蘇兮袖眉鹿。,False,4,4,0,0,0.5
+"Bỉ ký chi tử,",彼其之子，,彼其之子，,True,0,0,0,0,1.0
+"Môn kính phủ thanh khê,",門徑俯清溪，,門徑府聲溪，,False,2,2,0,0,0.6666666666666666
+"Cư bất tri sở vi hề, hành bất tri sở chi,",居不知所為兮行不知所之，,居不知所為兮，行不知所之，,False,1,0,0,1,0.96
+Hán Đông thái thú lai tương nghênh.,漢東太守來相迎。,漢東太守來相迎。,True,0,0,0,0,1.0
+Hư thất cao song nhàn bạch trú.,虛室高窗閑白晝。,虛室高窗閒白住。,False,2,2,0,0,0.75
+"Hà biên thủ tăng mao tác ốc,",河邊守罾茅作屋，,何邊取僧毛作屋，,False,4,4,0,0,0.5
+"Nam sơn hữu đài,",南山有臺，,南山有臺，,True,0,0,0,0,1.0
+"Ám lý vãn hồi xuân thế giới,",暗裏挽回春世界，,暗里晚回春世界，,False,2,2,0,0,0.75
+Bất như nhất kinh.,不如一經。,不如一經。,True,0,0,0,0,1.0
+Mai hoa lạc tận Giang Nam xuân.,梅花落盡江南春。,梅花落盡江南春。,True,0,0,0,0,1.0
+Hàm bôi thả hiệu Đào Bành Trạch.,銜杯且效陶彭澤。,咸杯且效桃彭澤。,False,2,2,0,0,0.75
+Bình sinh ngã tự tri.,平生我自知。,平生我自知。,True,0,0,0,0,1.0
+Quang sinh phần tử.,光生枌梓。,光生焚子。,False,2,2,0,0,0.6
+Chỉ xích Bồng Lai thương hải cách.,咫尺蓬萊滄海隔。,只尺蓬萊蒼海隔。,False,2,2,0,0,0.75
+Vị hoặc bất vong.,未或不亡。,謂或不忘。,False,2,2,0,0,0.6
+Vấn ngã thiếu niên kim bạch phát.,問我少年今白髮。,問我少年今白發。,False,1,1,0,0,0.875
+"Nhị thập thất nhân cộng hồi thủ,",二十七人共回首，,二十失人共回首，,False,1,1,0,0,0.875
+"Khắc minh khắc loại,",克明克類，,克明克類，,True,0,0,0,0,1.0
+"Phong lâm dĩ sầu mộ,",楓林已愁暮，,風林已愁暮，,False,1,1,0,0,0.8333333333333334
+"Tại ngã thuyết hề,",在我闥兮，,在我說兮，,False,1,1,0,0,0.8
+Uyên ương giao cảnh.,鴛鴦交頸。,淵央交景。,False,3,3,0,0,0.4
+"Bệnh trung hốt toạ, toạ hốt khỉ,",病中忽坐坐忽起，,病中忽坐坐忽起，,True,0,0,0,0,1.0
+Xích địa thiên lý hoàng trần phi.,赤地千里黃塵飛。,赤地千里黃塵飛。,True,0,0,0,0,1.0
+Như chi hà vật ti.,如之何勿思？,如之何物絲。,False,3,3,0,0,0.5
+"Oán nhập chu huyền nguy cánh đoạn,",怨入朱弦危更斷，,怨入舟弦危更斷，,False,1,1,0,0,0.875
+Cuồng phong thái phóng điên.,狂風太放顛。,狂風太放顛。,True,0,0,0,0,1.0
+Kim đài địa tịch.,金臺地闢。,今臺地夕。,False,2,2,0,0,0.6
+"Điểu kinh tán nhi phi,",鳥驚散而飛，,鳥驚散而飛，,True,0,0,0,0,1.0
+"Công tử tam thiên khách,",公子三千客，,公子三千客，,True,0,0,0,0,1.0
+"Thiên bảo định nhĩ,",天保定爾，,天保定爾，,True,0,0,0,0,1.0
+"Hữu phỉ quân tử,",有匪君子，,有匪君子，,True,0,0,0,0,1.0
+"Tuý kiều vô khí lực,",醉嬌無氣力，,醉橋無氣力，,False,1,1,0,0,0.8333333333333334
+Hiền ư mãnh cẩu chi khẩu.,賢於猛狗之口。,賢於猛狗之口。,True,0,0,0,0,1.0
+Di hoạ tử tôn.,遺禍子孫。,夷畫子孫。,False,2,2,0,0,0.6
+"Tần nhân bất hạ tự ai, nhi hậu nhân ai chi,",秦人不暇自哀、而後人哀之、,秦人不下自哀，而後人哀之，,False,3,3,0,0,0.7692307692307693
+Hách hách Ung Vương đô tiết chế.,赫赫雍王都節制。,赫赫雍王都節制。,True,0,0,0,0,1.0
+Loạn tháp phồn hoa hướng tình hạo.,亂插繁花向晴昊。,亂插繁花向情浩。,False,2,2,0,0,0.75
+"Tích tẩu Sở Việt mại Yên Tần,",昔走楚越邁燕秦，,昔走楚越賣燕秦，,False,1,1,0,0,0.875
+"Xích tăng khinh bạc già nhập hoài,",赤憎輕薄遮入懷，,赤僧輕薄遮入懷，,False,1,1,0,0,0.875
+Phong xuy cố diệp tề.,風吹故葉齊。,風吹故葉齊。,True,0,0,0,0,1.0
+"Ê nhân văn chi vị tuyên hề, ẩn thái phác chi thuần chất.",繄人文之未宣兮，隱太璞之醇質。,枕人聞之未宣兮，隱太扑之純質。,False,4,4,0,0,0.7333333333333333
+Điền gia yên hoả vi mang thấp.,田家煙火微茫濕。,田家煙火為茫濕。,False,1,1,0,0,0.875
+Vạn phúc du đồng.,萬福攸同。,萬福遊同。,False,1,1,0,0,0.8
+"Khâu trung hữu ma,",丘中有麻，,丘中有麻，,True,0,0,0,0,1.0
+Tự miễn hồng đào tứ điêu sái.,自免洪濤恣凋瘵。,自免紅濤四雕灑。,False,4,4,0,0,0.5
+Trưởng niên thôn thanh phục dao thủ.,長年吞聲復搖手。,長年村聲復遙首。,False,3,3,0,0,0.625
+"Chiêm mệnh hoàng hoàng uý giản thư,",占命煌煌畏簡書，,瞻命黃黃畏澗書，,False,4,4,0,0,0.5
+"Hữu bật hữu bật,",有駜有駜，,有駜有駜，,True,0,0,0,0,1.0
+"Vi quan tu tác tướng,",為官須作相，,為觀須作相，,False,1,1,0,0,0.8333333333333334
+Ưu tâm như huân.,憂心如熏。,憂心如勳。,False,1,1,0,0,0.8
+"Hậu nhân bất tất đa bi động,",後人不必多悲慟，,後人不必多悲動，,False,1,1,0,0,0.875
+Thu can hoàn phạ chuyển thuyền trì.,收竿還怕轉船遲。,秋干還怕轉船持。,False,3,3,0,0,0.625
+Đáo gia hoảng như mộng cừ cừ.,到家恍如夢蘧蘧。,到家恍如夢渠渠。,False,2,2,0,0,0.75
+"Ô hô nhị ca hề ca hứng động,",嗚呼二歌兮歌興動，,嗚呼二歌兮歌興動，,True,0,0,0,0,1.0
+"Ý thái do lai hoạ bất thành,",意態由來畫不成，,意采猶來畫不成，,False,2,2,0,0,0.75
+"Vô dĩ thái khang,",無已大康，,無以采康，,False,2,2,0,0,0.6
+"Bất tri tương bạch thủ,",不知將白首，,不知相白首，,False,1,1,0,0,0.8333333333333334
+Mỹ nhân trướng hạ do ca vũ.,美人帳下猶歌舞。,美人帳下猶歌舞。,True,0,0,0,0,1.0
+"Vũ mao xỉ cách hề, ba cập ư lân giới; kim ngân châu ngọc hề, diễn dật ư biên cương.",羽毛齒革兮，波及於鄰界；金銀珠玉兮，衍溢於邊疆。,雨毛齒隔兮，波及於鄰界；金痕珠玉兮，衍逸於邊疆。,False,4,4,0,0,0.8333333333333334
+"Câu Trần thương thương phong Huyền Vũ,",鉤陳蒼蒼風玄武，,鉤陳蒼蒼風玄武，,True,0,0,0,0,1.0
+"Lạc hoa tương dữ hận,",落花相與恨，,落花相與恨，,True,0,0,0,0,1.0
+Thượng bất quý vu ốc lậu.,尚不愧于屋漏。,上不貴于屋漏。,False,2,2,0,0,0.7142857142857143
+Khoản khúc khuyến đề hồ.,款曲勸提壺。,款曲勸啼乎。,False,2,2,0,0,0.6666666666666666
+"Giang thôn dã đường tranh nhập nhãn,",江村野堂爭入眼，,江村野堂爭入眼，,True,0,0,0,0,1.0
+Trịnh vương vọng ý đồng bất dân.,鄭王望意同不泯。,鄭王望意同不民。,False,1,1,0,0,0.875
+Bách vạn giáp binh cửu đồn tụ.,百萬甲兵久屯聚。,百萬甲兵九屯袖。,False,2,2,0,0,0.75
+Cầu tình đắc tình vũ đắc vũ.,求晴得晴雨得雨。,求情得情雨得雨。,False,2,2,0,0,0.75
+"Đào chi kham tích ác,",桃枝堪辟悪，,桃之堪惜惡，,False,3,3,0,0,0.5
+Sử ngã nhất kiến tâm mang nhiên.,使我一見心茫然。,使我一見心茫然。,True,0,0,0,0,1.0
+Bất thông kính chỉ.,不聰敬止。,不通徑止。,False,2,2,0,0,0.6
+Nhất thời phấn đại vô nhân cố.,一時粉黛無人顧。,一時粉大無人顧。,False,1,1,0,0,0.875
+"Mục cực giang thiên viễn,",目極江天遠，,穆極江天遠，,False,1,1,0,0,0.8333333333333334
+Ngũ Liễu độc tri bần.,五柳獨知貧。,五柳獨知貧。,True,0,0,0,0,1.0
+Thượng du khúc phòng.,上遊曲房。,上游曲房。,False,1,1,0,0,0.8
+"Thanh dăng vu phi,",青蠅于飛，,青蠅于飛，,True,0,0,0,0,1.0
+Quan tô vị liễu tư tô bức.,官租未了私租逼。,關蘇未柳思蘇逼。,False,5,5,0,0,0.375
+Tuý ngôn quy.,醉言歸。,醉言歸。,True,0,0,0,0,1.0
+Tùng hàn bất cải dung.,松寒不改容。,松寒不改容。,True,0,0,0,0,1.0
+"Sở khả độc dã,",所可讀也，,楚可獨也，,False,2,2,0,0,0.6
+"Kinh thuỷ Linh Đài,",經始靈臺，,荊水靈臺，,False,2,2,0,0,0.6
+Chưng nhiên trảo trảo.,烝然罩罩。,烝然爪爪。,False,2,2,0,0,0.6
+Ngã vị khổng biếm.,我位孔貶。,我謂孔貶。,False,1,1,0,0,0.8
+"Tương ước ân thâm tương kiến nan,",相約恩深相見難，,相約恩深相見難，,True,0,0,0,0,1.0
+"Hoán khởi song toàn thự,",喚起窗全曙，,喚起雙全曙，,False,1,1,0,0,0.8333333333333334
+Thử nhật cơ hàn xu lộ bàng.,此日饑寒趨路傍。,此日機寒趨路傍。,False,1,1,0,0,0.875
+"Tề tử quy chỉ,",齊子歸止，,齊子歸止，,True,0,0,0,0,1.0
+Hạt nguyệt dư hoàn quy tai?,曷月予還歸哉？,曷月餘還歸哉？,False,1,1,0,0,0.8571428571428571
+"Vĩ vĩ Văn Vương,",亹亹文王，,尾尾文王，,False,2,2,0,0,0.6
+Phùng bỉ bạch trĩ?,逢彼白雉？,逢彼白雉？,True,0,0,0,0,1.0
+"Tái khuông cập cử,",載筐及筥，,載筐及舉，,False,1,1,0,0,0.8
+Nhất gia thập khẩu kim tồn ngũ.,一家十口今存五！,一家十口金存五。,False,2,2,0,0,0.75
+"Khởi ngô nhân hề, bất tịch trân.",豈吾人兮不席珍。,豈吾人兮不夕珍。,False,1,1,0,0,0.875
+Bất vi cương thường hoàn vi kỷ.,不為綱常還為己。,不為岡裳還為幾。,False,3,3,0,0,0.625
+"Chỉ xích uy nhan khúc tứ tuân,",咫尺威顏曲賜詢，,只尺威顏曲四遵，,False,3,3,0,0,0.625
+"Xuân lai biến thị Đào hoa thuỷ,",春來遍是桃花水，,春來變是桃花水，,False,1,1,0,0,0.875
+Trương Trọng hiếu hữu.,張仲孝友。,張仲好有。,False,2,2,0,0,0.6
+"Chiêu tư lai hử,",昭茲来許，,昭思來許，,False,2,2,0,0,0.6
+"Toại Châu thành trung Hán tiết tại,",遂州城中漢節在，,遂州城中漢節在，,True,0,0,0,0,1.0
+"Đồng thị thiên nhai luân lạc nhân,",同是天涯淪落人，,同是千涯論落人，,False,2,2,0,0,0.75
+Hoa nhạc phong tiêm kiến thu chuẩn.,華岳峰尖見秋隼。,花樂風纖見秋隼。,False,4,4,0,0,0.5
+Ngưu dương vật tiễn lý.,牛羊勿踐履。,牛羊物箭裏。,False,3,3,0,0,0.5
+Tiêu tiêu phong tuyết lý,蕭蕭風雪裡，,蕭蕭風雪裏,False,2,1,1,0,0.7272727272727273
+Yêu vi bạch ngọc lãnh.,腰圍白玉冷。,腰為白玉冷。,False,1,1,0,0,0.8333333333333334
+"Bồi hồi trì thượng hề, nhược phi nhược dương.",徘徊池上兮，若飛若揚。,徘徊持上兮，若飛若揚。,False,1,1,0,0,0.9090909090909091
+"Thuỳ gia thiếu phụ sự uyên ky,",誰家少婦事鴛機，,誰家少婦事鴛羈，,False,1,1,0,0,0.875
+Thái hiệt tế toả thăng trung đường.,採擷細瑣昇中堂。,太黠細鎖升中堂。,False,4,4,0,0,0.5
+Cựu đê khước nhận môn tiền thụ.,舊堤卻認門前樹。,舊低卻刃門前樹。,False,2,2,0,0,0.75
+Bất dĩ binh xa.,不以兵車。,不以兵車。,True,0,0,0,0,1.0
+"Bất học ngự câu thượng,",不學御溝上，,不學御溝上，,True,0,0,0,0,1.0
+Duyên niên ích thọ thiên vạn tuế.,延年益壽千萬歲。,緣年益壽千萬歲。,False,1,1,0,0,0.875
+"Văn chương Tào Thực ba lan khoát,",文章曹植波瀾闊，,文章曹實波欄闊，,False,2,2,0,0,0.75
+"Tây Lương kỹ, Tây Lương kỹ,",西涼伎，西涼伎，,西涼妓，西涼妓，,False,2,2,0,0,0.75
+Kỳ chi chiên dã.,其之展也。,其之旃也。,False,1,1,0,0,0.8
+"Huyền nhật nguyệt ư trung thiên, điện phi cơ ư vạn thế.",懸日月於中天，奠丕基於萬世。,玄日月於中千，殿飛機於萬世。,False,5,5,0,0,0.6428571428571429
+Ưu tâm khổng cửu.,憂心孔疚。,憂心孔九。,False,1,1,0,0,0.8
+"Sĩ viết: Ký thư,",士曰：「既且。」,士曰：既書，,False,4,2,2,0,0.5714285714285714
+"Thị chi doanh mục, thục giả khắc thượng.",視之盈目，孰者克尚。,是之盈目，孰者克上。,False,2,2,0,0,0.8
+"Sào ty chức bạch do nỗ lực,",繅絲織帛猶努力，,巢絲織白猶努力，,False,2,2,0,0,0.75
+"Hà xứ vô minh nguyệt,",何處無明月，,何處無明月，,True,0,0,0,0,1.0
+Ô Man lạc chiếu hàm xích bích.,烏蠻落照銜赤壁。,於蠻落照含尺碧。,False,4,4,0,0,0.5
+"Trí Cảnh Tinh chi hiệu tường, thực hợp điệp nhi ứng đồ.",致景星之效祥，實合牒而應圖。,致景星之效牆，實合疊而應圖。,False,2,2,0,0,0.8571428571428571
+"Uy phục chư hầu,",威服諸侯，,威服諸侯，,True,0,0,0,0,1.0
+Cư vô cầu an.,居無求安。,居無求安。,True,0,0,0,0,1.0
+Thiên kiêu thập kỵ độ hà lai.,天驕十騎渡河來。,天驕十騎渡河來。,True,0,0,0,0,1.0
+Hà dĩ tý chi?,何以畀之？,何以臂之？,False,1,1,0,0,0.8
+Đích tri thâu đắc quan gia túc.,的知輸得官家足。,的知偷得關家足。,False,2,2,0,0,0.75
+"Liệu phố tam thu vũ,",蓼浦三秋雨，,料浦三秋雨，,False,1,1,0,0,0.8333333333333334
+Thiên tử hà bất hoán thủ thủ kinh đô.,天子何不喚取守京都。,天子何不喚守首經都。,False,3,3,0,0,0.8
+Trọng Sơn Phủ minh chi.,仲山甫明之。,仲山甫明之。,True,0,0,0,0,1.0
+"Nguyện ngôn tư bá,",愿言思伯，,願言思伯，,False,1,1,0,0,0.8
+"Sóc phương kiện nhi hảo thân thủ,",朔方健兒好身手，,朔方健兒好身首，,False,1,1,0,0,0.875
+"Huề thủ cao đài, lộng ngọc tiêu nhi phụng giáng,",攜手高臺，弄玉蕭而鳳降，,攜手高臺，弄玉消而奉降，,False,2,2,0,0,0.8333333333333334
+"Phi Hương điện quảng thập dư trượng,",披香殿廣十余丈，,飛香殿廣十餘丈，,False,2,2,0,0,0.75
+Bỉ nhân thị tê!,「彼人是哉！,彼人是棲！,False,2,1,1,0,0.7272727272727273
+"Kiếm ảnh hoành tiêu trướng,",劍影橫綃帳，,劍影橫蕭帳，,False,1,1,0,0,0.8333333333333334
+Quỷ vật thủ hộ phiền huy a.,鬼物守護煩撝呵。,鬼物取戶煩輝阿。,False,4,4,0,0,0.5
+Năng vong cựu nhật ân.,能忘舊日恩。,能亡舊日恩。,False,1,1,0,0,0.8333333333333334
+Doãn do hấp hà.,允猶翕河。,允由噏河。,False,2,2,0,0,0.6
+Hương diệp chung kinh túc loan phượng.,香葉終經宿鸞鳳。,鄉葉終經足鸞鳳。,False,2,2,0,0,0.75
+Bộ hành bất kỵ câu.,步行不騎駒。,步行不騎俱。,False,1,1,0,0,0.8333333333333334
+"Thiên Hán lương thu dạ,",天漢涼秋夜，,天漢良秋夜，,False,1,1,0,0,0.8333333333333334
+"Khanh gia cựu tứ công thủ chi,",卿家舊賜公取之，,卿家舊思公手之，,False,2,2,0,0,0.75
+Nguyên khí trực tả nham đầu tồi.,元氣直瀉岩頭摧。,元氣直左岩頭摧。,False,1,1,0,0,0.875
+"Như kim cửu nhật chí,",如今九日至，,如今九日至，,True,0,0,0,0,1.0
+"Độc toạ u hoàng lý,",獨坐幽篁裏，,獨坐幽黃里，,False,2,2,0,0,0.6666666666666666
+"Nãi khoả hầu lương,",迺裹糇糧，,乃裹侯良，,False,3,3,0,0,0.4
+"Quyên kim mộ sĩ, sát tượng hưởng quân.",捐金募士，殺象饗軍。,娟今暮士，殺象響君。,False,5,5,0,0,0.5
+Giang động tương băng vị băng thạch.,江動將崩未崩石。,江動相冰未冰石。,False,3,3,0,0,0.625
+"Kích không minh hề tố lưu quang,",擊空明兮泝流光。,擊空明兮素流光，,False,2,2,0,0,0.75
+Hoa địa tận vô sinh.,華地盡無生。,花地盡無生。,False,1,1,0,0,0.8333333333333334
+"Tổ Long môn ngoại thần truyền bích,",祖龍門外神傳璧，,祖龍門外神傳碧，,False,1,1,0,0,0.875
+"Khuê trung bất thức Vọng Phu san,",閨中不識望夫山，,閨中不識望夫山，,True,0,0,0,0,1.0
+"Mật nhân bất cung,",密人不恭，,密人不宮，,False,1,1,0,0,0.8
+Đào lý mãn sơn tổng thô tục.,桃李滿山總粗俗。,桃李滿山總粗俗。,True,0,0,0,0,1.0
+Thượng đường từ cô song lệ lạc.,上堂辭姑雙淚落。,上堂辭孤雙淚落。,False,1,1,0,0,0.875
+"Vương phấn quyết vũ,",王奮厥武，,王粉厥雨，,False,2,2,0,0,0.6
+Ô thước kinh khiếu tư.,烏鵲驚叫滋。,於鵲經叫思。,False,3,3,0,0,0.5
+Hoạn du ngẫu chí Đàn Khê lộ;,宦遊偶至檀溪路；,宦遊偶至彈溪路；,False,1,1,0,0,0.875
+Nhan như hoa hồng nhãn như tất.,顏如花紅眼如漆。,顏如花紅眼如必。,False,1,1,0,0,0.875
+"Hoàn tu lược báo lão Đồng Thúc,",還須略報老同叔，,還須略報老童叔，,False,1,1,0,0,0.875
+Bất giải thướng thanh thiên.,不解上青天。,不解上聲千。,False,2,2,0,0,0.6666666666666666
+"Cổ sắt chí kim bi đế tử,",鼓瑟至今悲帝子，,古瑟至今悲帝死，,False,2,2,0,0,0.75
+Mạn mạn tuyết thiên xuân.,漫漫雪天春。,漫漫雪天春。,True,0,0,0,0,1.0
+Khuynh hiểm vô như gia ý hảo.,傾險無如加意好。,傾險無如家意好。,False,1,1,0,0,0.875
+"Kinh đào hung dũng hướng hà xứ,",驚濤洶湧向何處，,經濤胸勇向何處，,False,3,3,0,0,0.625
+Đẩu thuỷ hà trực bách ưu khoan.,斗水何直百憂寬。,斗水何直百憂寬。,True,0,0,0,0,1.0
+Sư hà dĩ thượng chi?,師何以尚之？,師何以上之？,False,1,1,0,0,0.8333333333333334
+Thảo mộc hoàng lạc hề nhạn nam quy.,草木黃落兮雁南歸。,草木黃落兮雁南歸。,True,0,0,0,0,1.0
+Đàn trường cung quán tận hao bồng.,壇場宮館盡蒿蓬。,彈長宮館盡蒿蓬。,False,2,2,0,0,0.75
+Bát trụ hà đương?,八柱何當？,八柱何當？,True,0,0,0,0,1.0
+Viết:,曰：,曰：,True,0,0,0,0,1.0
+Bình minh xuy địch đại quân hành.,平明吹笛大軍行。,平明吹笛大君行。,False,1,1,0,0,0.875
+"Thiên địa nhất thân tại,",天地一身在，,天地一身在，,True,0,0,0,0,1.0
+Triều ký xương hĩ.,朝既昌矣。」,朝既昌矣。,False,1,0,1,0,0.9090909090909091
+Dạ dạ tương tư hà thời liễu.,夜夜相思何時瞭。,夜夜相思何時柳。,False,1,1,0,0,0.875
+"Viên trung chủ nhân,",園中主人，,爰中主人，,False,1,1,0,0,0.8
+Vọng thư nguyệt dĩ lâm da?,望舒月以臨耶？,望書月以林耶？,False,2,2,0,0,0.7142857142857143
+"Hoài Tây hữu tặc thảo vị bình,",淮西有賊討未平，,淮西有賊草未平，,False,1,1,0,0,0.875
+Phân mang quốc sự nan thành thú.,紛忙國事難成趣。,分茫國事難成戍。,False,3,3,0,0,0.625
+"Thuỷ thiên nhất sắc,",水天一色，,水天一色，,True,0,0,0,0,1.0
+"Xỉ ác chi đại,",侈惡之大，,永惡之大，,False,1,1,0,0,0.8
+"Quy tâm dữ yên lãng,",歸心與烟浪，,歸心與煙浪，,False,1,1,0,0,0.8333333333333334
+Tòng nhi cụ lục tôn.,從兒具綠尊。,從兒具綠孫。,False,1,1,0,0,0.8333333333333334
+Cao dữ nguyệt vi kỳ,高與月爲期。,高與月為其,False,3,2,1,0,0.5454545454545454
+Thiện sự nghĩa đương vi.,善事義當為。,善事義當為。,True,0,0,0,0,1.0
+"Khương địch kỷ hồi khách mộng ám thương tinh cảnh ngoại,",羌笛紀回客夢暗傷星景外，,羌笛幾回客夢暗傷星景外，,False,1,1,0,0,0.9166666666666666
+Thược hợp bất lưu đãn khang tì.,勺合不留但糠秕。,芍合不流但康琵。,False,4,4,0,0,0.5
+"Sáng nghiệp chi công thành bí bí,",創業之功成閟毖，,枕業之公成轡轡，,False,4,4,0,0,0.5
+"Ngã tồ Đông Sơn,",我徂東山、,我徂東山，,False,1,1,0,0,0.8
+Độc dữ văn lôi cộng khuê tất.,獨與蚊雷共圭蓽。,獨與聞雷共閨必。,False,3,3,0,0,0.625
+Sổ kỵ loan cung cảm trì đột.,數騎彎弓敢馳突。,數騎鸞宮敢持突。,False,3,3,0,0,0.625
+"Như kim mạc trục cầm cao khứ,",如今莫逐琴高去，,如今莫逐琴高去，,True,0,0,0,0,1.0
+Việt la thục cẩm kim túc xích.,越羅蜀錦金粟尺。,越羅熟錦金足尺。,False,2,2,0,0,0.75
+Diên cảnh trực trĩ ly long trường.,延頸直跱螭龍長。,延景直雉離龍長。,False,3,3,0,0,0.625
+Khấp thế liên liên.,泣涕漣漣。,泣世連連。,False,3,3,0,0,0.4
+Đa thọ chuyển tư đa sỉ nhục.,多壽轉思多聇辱。,多壽轉思多恥肉。,False,2,2,0,0,0.75
+Thất mã độc quy trì.,匹馬獨歸遲。,失馬獨歸持。,False,2,2,0,0,0.6666666666666666
+"Vân quan hồi thủ, khởi vô Quản Di Ngô tam tẩu chi tư;",雲關回首，豈無管夷吾三走之思；,雲觀回首，豈無管夷吳三走之思；,False,2,2,0,0,0.8666666666666667
+Hà xứ xuân giang vô nguyệt minh.,何處春江無月明。,何處春江無月明。,True,0,0,0,0,1.0
+Mãi tiếu huy kim mạc tương thất.,買笑揮金莫相失。,買笑輝金莫相失。,False,1,1,0,0,0.875
+Thiên hàn hồng diệp hy.,天寒紅葉稀。,天寒紅葉稀。,True,0,0,0,0,1.0
+Bính thôn bình nhân kỷ gia địa.,並吞平人幾家地。,丙村平人幾家地。,False,2,2,0,0,0.75
+"Nhật cư nguyệt chư,",日居月諸，,日居月諸，,True,0,0,0,0,1.0
+"Chung triêu quyện tú niêm châm chỉ,",終朝倦繡拈針指，,終朝倦繡粘砧止，,False,3,3,0,0,0.625
+"Khải ngã hoàng đồ thuỳ thiên ức hề,",啟我皇圖垂千憶兮，,豈我皇圖誰天憶兮，,False,3,3,0,0,0.6666666666666666
+Bất cảm dĩ cáo nhân.,不敢以告人。,不敢已告人。,False,1,1,0,0,0.8333333333333334
+Điền phu dã tẩu đa tương phùng.,田夫野叟多相逢。,田夫野走多相逢。,False,1,1,0,0,0.875
+"Định ưng xuy tiêu dẫn khứ, tử phủ vô song giả dã.",定應吹蕭引去，紫府無雙者也。,定應吹消引去，死府無窗者也。,False,3,3,0,0,0.7857142857142857
+"Bỉ xu giả tử,",彼姝者子，,彼趨者子，,False,1,1,0,0,0.8
+"Ngọc khí trưng cầu quy để đệ,",玉器征求歸邸第，,玉氣徵求歸底弟，,False,4,4,0,0,0.5
+"Sở giang Vu Giáp băng nhập hoài,",楚江巫峽冰入懷，,楚江巫峽冰入懷，,True,0,0,0,0,1.0
+"Tiêm như kiếm kích, viên như hoàn.",尖如劍戟圓如圜。,纖如劍擊猿如還。,False,4,4,0,0,0.5
+Tuyệt thế yêu tư diệu nan bỉ.,絕世妖姿妙難比。,絕世腰思妙難彼。,False,3,3,0,0,0.625
+Đãn kiến lưu mạt sinh thiên qua.,但見流沫生千渦。,但見流末生千戈。,False,2,2,0,0,0.75
+"Khổng Dung tài sơ bất túc đa,",孔融才疏不足多，,孔容才初不足多，,False,2,2,0,0,0.75
+"Tha nga đại bạch giáp song lỗ,",嵯峨大舶夾雙櫓，,他峨大白峽窗虜，,False,5,5,0,0,0.375
+"Liễm y chỉnh cân tiềm lệ thuỳ,",斂衣整巾潛淚垂。,斂衣整巾潛淚垂，,False,1,1,0,0,0.875
+"Ký trương ngã cung,",既張我弓、,既張我弓，,False,1,1,0,0,0.8
+"Triều đình uy đức dữ thiên tề,",朝廷威德與天齊，,朝廷威德與天齊，,True,0,0,0,0,1.0
+"Mạch đầu liễu sắc ám tam tam,",陌頭柳色暗毿毿，,麥頭柳色暗三三，,False,3,3,0,0,0.625
+Chú bình cao chi quảng diễn.,注平臯之廣衍。,注平高之廣衍。,False,1,1,0,0,0.8571428571428571
+Chiêu hà vô doanh.,昭假無贏。,昭河無盈。,False,2,2,0,0,0.6
+Bồng bồng kỳ hức.,芃芃其麥。,蓬蓬其淢。,False,3,3,0,0,0.4
+Thuý quản phồn huyền cạnh truy trục.,脆管繁弦競追逐。,翠管繁弦競追逐。,False,1,1,0,0,0.875
+Chỉ hữu phù gia Phạm Lãi tri.,只有浮家范蠡知。,只有浮家范軒知。,False,1,1,0,0,0.875
+Phiên giao tiệm tiệm khai.,番交漸漸開。,翻教漸漸開。,False,2,2,0,0,0.6666666666666666
+"Tử hữu tửu thực,",子有酒食，,子有酒實，,False,1,1,0,0,0.8
+"Ngân sàng tà áp ngô đồng tỉnh,",銀床斜壓梧桐井，,銀床斜壓吾同省，,False,3,3,0,0,0.625
+"Tiện thiếp quỳnh quỳnh thủ không phòng,",賤妾煢煢守空房，,便妾瓊瓊首空房，,False,4,4,0,0,0.5
+Khuyển Nhung toả giáp văn đan cực.,犬戎鎖甲聞丹極。,犬戎鎖甲聞丹極。,True,0,0,0,0,1.0
+"Đại Cô san tiền Nữ Nhi loan,",大孤山前女兒灣，,大孤山前女兒鸞，,False,1,1,0,0,0.875
+Dã tri thử hương sắc,也知此香色，,野知此香色，,False,1,1,0,0,0.8333333333333334
+Phương bỉnh kiên hề.,方秉蕳兮。,方秉堅兮。,False,1,1,0,0,0.8
+Phúc lộc du giáng.,福祿攸降。,福祿遊降。,False,1,1,0,0,0.8
+Đạo nhân hữu đạo sơn bất cô.,道人有道山不孤。,道人有道山不孤。,True,0,0,0,0,1.0
+"Nhữ ưng nô lệ Thái Thiếu Hà,",汝應奴隸蔡少霞，,女應奴淚太少河，,False,4,4,0,0,0.5
+Chiến tự Thanh Khương liên bách man.,戰自青羌連百蠻。,戰自青姜連百蠻。,False,1,1,0,0,0.875
+Chủ quỹ tần tảo.,主饋蘋藻。,主揆頻掃。,False,3,3,0,0,0.4
+"Chấn chấn lộ,",振振鷺，,振震路，,False,2,2,0,0,0.5
+"Dục tương khinh kỵ trục,",欲將輕騎逐，,欲將輕騎逐，,True,0,0,0,0,1.0
+"Niên lai bão nữ tâm thậm lân,",年來抱女心甚憐，,年來飽女心甚鄰，,False,2,2,0,0,0.75
+"Hải khô chung kiến để,",海枯終見底，,海枯終見底，,True,0,0,0,0,1.0
+"Yên đắc phụ thư dữ ngã quân,",焉得附書與我軍，,煙得婦書與我君，,False,3,3,0,0,0.625
+"Tế hưu minh chi thịnh thời, phục chiêu trứ hồ kim nhật,",際休明之盛時，復昭著乎今日，,細休明之盛時，復昭著乎金日，,False,2,2,0,0,0.8571428571428571
+"Thụ lộc vô táng,",受祿無喪，,受祿無喪，,True,0,0,0,0,1.0
+Nhất khúc cao ca tán cửu thiên.,一曲高歌散九天。,一曲高歌散九天。,True,0,0,0,0,1.0
+"Thân hậu đôi kim trụ Bắc Đẩu,",身後堆金拄北斗，,身後堆金柱北斗，,False,1,1,0,0,0.875
+Tứ bích quải tăng y.,四壁掛僧衣。,四壁掛僧衣。,True,0,0,0,0,1.0
+"Bát thiên dư lý khách,",八千餘里客，,八千餘里客，,True,0,0,0,0,1.0
+Bất như khước tựu thành trung tử.,不如卻就城中死。,不如卻就成中死。,False,1,1,0,0,0.875
+Lưỡng nhật nhất thất do khổ trì.,兩日一匹猶苦遲。,兩日一失猶苦遲。,False,1,1,0,0,0.875
+Hà do khước xuất Hoành Môn đạo.,何由卻出橫門道。,何由卻出橫門道。,True,0,0,0,0,1.0
+Vân thuỳ chi tư?,云誰之思，,云誰之思？,False,1,1,0,0,0.8
+"Tam cô tế hậu kim niên hảo,",三姑祭後今年好，,三孤細後今年好，,False,2,2,0,0,0.75
+"Ngã lăng ngã a,",我陵我阿，,我陵我阿，,True,0,0,0,0,1.0
+"Lưu thuỷ xương môn ngoại,",流水閶門外，,流水昌門外，,False,1,1,0,0,0.8333333333333334
+Đãng đãng nhi vô thích thích.,蕩蕩而無戚戚。,蕩蕩而無適適。,False,2,2,0,0,0.7142857142857143
+Thả hướng nang trung thí thao dĩnh.,且向囊中試韜穎。,且向囊中試操穎。,False,1,1,0,0,0.875
+"Cổ chi nhân vô dịch,",古之人無斁，,古之人無驛，,False,1,1,0,0,0.8333333333333334
+"Chủ nhân há mã khách tại thuyền,",主人下馬客在船，,主人下馬客在船，,True,0,0,0,0,1.0
+"Tỉ quy, tư phụ, thuỳ kê cao sào.",姊歸思婦，垂雞高巢。,俾歸思思，誰誰雞高巢。,False,4,3,0,1,0.6666666666666666
+Kỳ nhân mỹ thả quyền!,其人美且鬈。,其人美且權。,False,1,1,0,0,0.8333333333333334
+"Đô nhân hồi diện hướng bắc đề,",都人回面向北啼，,都人回面向北啼，,True,0,0,0,0,1.0
+Tại hà chi châu.,在河之洲。,在何之珠。,False,2,2,0,0,0.6
+Cổ thì trần mãn uyên ương nhân.,古時塵滿鴛鴦茵。,古時塵滿鴛鴦人。,False,1,1,0,0,0.875
+"Ngọc viết: Cao hĩ hiển hĩ, lâm vọng viễn hĩ! Quảng hĩ phổ hĩ, vạn vật tổ hĩ! Thượng thuộc ư thiên, hạ kiến ư uyên, trân quái kỳ vĩ, bất khả xưng luận.",玉曰：高矣顯矣，臨望遠矣！廣矣普矣，萬物祖矣！上屬於天，下見於淵，珍怪奇偉，不可稱論。,玉曰：高矣顯矣，臨望遠矣，廣矣，矣，萬物祖矣。上屬於高，下見於曰：,False,16,6,10,0,0.7105263157894737
+Như huynh như đệ.,如兄如弟。,如兄如弟。,True,0,0,0,0,1.0
+"Trú nhĩ vu mao,",晝爾于茅，,晝爾于毛，,False,1,1,0,0,0.8
+"Hoà dịch toại toại,",禾役穟穟，,和驛遂遂，,False,4,4,0,0,0.2
+Trường hoài Giả Phó tỉnh y nhiên.,長懷賈傅井依然。,長懷賈付省衣然。,False,3,3,0,0,0.625
+"Dắng dư hành hề quy sóc phương,",媵予行兮歸朔方，,媵予行兮歸朔方，,True,0,0,0,0,1.0
+Thạch phá thiên kinh đậu thu vũ.,石破天驚逗秋雨。,石破千經豆秋雨。,False,3,3,0,0,0.625
+Thục sơ tác chi?,孰初作之？,孰初作之？,True,0,0,0,0,1.0
+Thất hiếu giả bát.,失孝者八。,失孝者八。,True,0,0,0,0,1.0
+Bất vọng hồi âm đáo trung sở.,不望回音到中所。,不望回陰到中所。,False,1,1,0,0,0.875
+Danh thành Bát trận đồ.,名成八陣圖。,名成八陣圖。,True,0,0,0,0,1.0
+"An đắc tứ hải khang thả phụ,",安得四海康且阜，,安得四海康且婦，,False,1,1,0,0,0.875
+"Vọng trung đình chi ái ái hề, nhược quý thu chi giáng sương.",望中庭之藹藹兮，若季秋之降霜。,望中庭之愛愛兮，若貴秋之降霜。,False,3,3,0,0,0.8
+Song ngoại mai hoa cựu tương thức.,窗外梅花舊相識。,雙外埋花舊相識。,False,2,2,0,0,0.75
+"Thiếp phi vô thanh bất cảm đề,",妾非無聲不敢啼，,妾非無聲不敢啼，,True,0,0,0,0,1.0
+"Ngô hành diệc ngẫu nhiên,",吾行亦偶然，,吾行亦偶然，,True,0,0,0,0,1.0
+"Kết âm ký đắc địa,",結陰既得地，,結陰既得地，,True,0,0,0,0,1.0
+Nhi năng câu thị đạt?,而能拘是達？,而能俱是達？,False,1,1,0,0,0.8333333333333334
+"Hốt nhiên đắc giai thú,",忽然得佳趣，,忽然得皆戍，,False,2,2,0,0,0.6666666666666666
+"Dĩ kiến hàn mai phát,",已見寒梅發，,以見寒埋發，,False,2,2,0,0,0.6666666666666666
+Bộc phu huống tuỵ.,僕夫況瘁。,瀑夫況悴。,False,2,2,0,0,0.6
+"Chấp tấn hoạch xú,",執訊穫醜，,執訊獲醜，,False,1,1,0,0,0.8
+Lưỡng lưỡng minh tiên thượng Vị kiều.,兩兩鳴鞭上渭橋。,兩兩明先上未橋。,False,3,3,0,0,0.625
+Chung tư vũ,螽斯羽、,終思雨,False,4,3,1,0,0.0
+Tương phùng hà tất tằng tương thức.,相逢何必曾相識。,相逢何必曾相識。,True,0,0,0,0,1.0
+Kim tịch đắc toại song uyên ương.,今夕得遂雙鴛鴦。,今夕得遂雙鴛鴦。,True,0,0,0,0,1.0
+"Xuân mộng tuỳ vân tán,",春夢隨雲散，,春夢隨雲散，,True,0,0,0,0,1.0
+"Hải nội hiền hào thanh vân khách,",海內賢豪青雲客，,海內賢豪聲雲客，,False,1,1,0,0,0.875
+"Tảo trừ chúng tự nhân tích tuyệt,",掃除眾寺人跡絕，,早除眾自人惜絕，,False,3,3,0,0,0.625
+"Trúc lô tân bồi vị đắc thường,",竹爐新焙未得嘗，,竹爐新徘未得裳，,False,2,2,0,0,0.75
+"Dân chi mỹ doanh,",民之靡盈，,民之美盈，,False,1,1,0,0,0.8
+"Cố hương phiêu dĩ viễn,",故鄉飄已遠，,故鄉飄已遠，,True,0,0,0,0,1.0
+Bất ý thanh thi cửu linh lạc.,不意清詩久零落。,不意青詩九靈落。,False,3,3,0,0,0.625
+"Mộng nhập gia môn thượng sa chử,",夢入家門上沙渚，,夢入家門上沙渚，,True,0,0,0,0,1.0
+Bạch linh phi há địa tiêu can.,白翎飛下地椒幹。,白靈飛下地消干。,False,3,3,0,0,0.625
+"Trùng môn tệ xuân tịch,",重門敝春夕，,重門弊春夕，,False,1,1,0,0,0.8333333333333334
+"Thương Trọng Tử hề,",將仲子兮，,將仲子兮，,True,0,0,0,0,1.0
+"Tự quân chi xuất hỹ,",自君之出矣，,自君之出矣，,True,0,0,0,0,1.0
+Đổ bác vong thân.,賭博忘身。,睹博亡身。,False,2,2,0,0,0.6
+Ngã hành kỳ dã.,我行其野，,我行其也。,False,2,2,0,0,0.6
+"Tư du đạm bạc hoan hữu dư,",慈遊淡泊歡有餘，,思遊淡薄歡有餘，,False,2,2,0,0,0.75
+"Nhất thanh ngọc địch khởi hà xứ,",一聲玉笛起何處，,一聲玉笛起何處，,True,0,0,0,0,1.0
+"Giá nga phùng thiên phong,",駕鵝逢天風，,駕峨逢天風，,False,1,1,0,0,0.8333333333333334
+Tuý ngôn vũ.,醉言舞。,醉言雨。,False,1,1,0,0,0.75
+Tiêu tiêu tại hộ.,蠨蛸在戶。,蕭蕭在戶。,False,2,2,0,0,0.6
+"Khả tích xuân quang ám lý thôi,",可惜春光暗裏催，,可惜春光暗里催，,False,1,1,0,0,0.875
+Thấp hữu lật.,隰有栗。,隰有栗。,True,0,0,0,0,1.0
+Thân tại viêm hoang tâm nguỵ khuyết.,身在炎荒心魏闕。,身在炎荒心偽闕。,False,1,1,0,0,0.875
+"Bá Xương hào suy,",伯昌號衰，,伯昌豪衰，,False,1,1,0,0,0.8
+Nhất kiếm tằng đương bách vạn sư.,一劍曾當百萬師。,一劍曾當百萬師。,True,0,0,0,0,1.0
+Nguyệt xuất hạo hề!,月出皎兮，,月出浩兮，,False,1,1,0,0,0.8
+Mại dữ hoàn truyền chủng hoa quyết.,賣與還傳種花訣。,賣與還傳種花決。,False,1,1,0,0,0.875
+Động ảnh diểu điệu xung dung gian.,動影裊窕冲溶間。,動影渺調衝容間。,False,4,4,0,0,0.5
+Ưu ngã phụ mẫu.,憂我父母。,憂我婦母。,False,1,1,0,0,0.8
+"Trầm trầm áp lục tẩm nha hoàng,",沈沈鴨緑浸鴉黃，,沉沉壓綠寢牙黃，,False,6,6,0,0,0.25
+Thập cửu thiên nhi vĩnh thệ.,拾九天而永逝。,十九千而永逝。,False,2,2,0,0,0.7142857142857143
+Hàn hôi trùng noãn sinh dương xuân.,寒灰重暖生陽春。,寒灰重暖生陽春。,True,0,0,0,0,1.0
+Diệc duy tư lệ.,亦維斯戾。,亦維斯淚。,False,1,1,0,0,0.8
+Cầu tu hổ my nhưng đại tảng.,虯鬚虎眉仍大顙。,求須虎眉仍大回。,False,3,3,0,0,0.625
+"Đối tửu bất giác minh,",對酒不覺瞑，,對酒不覺明，,False,1,1,0,0,0.8333333333333334
+Sử nhân bất nghi kiến bản căn.,使人不疑見本根。,使人不儀見本根。,False,1,1,0,0,0.875
+"Nhân hiếu lâm thiên hạ,",仁孝臨天下，,人孝林天下，,False,2,2,0,0,0.6666666666666666
+Vô bất nhĩ hoặc thằng.,無不爾或承。,無不爾或繩。,False,1,1,0,0,0.8333333333333334
+"Vãn hà, cô điểu một,",晚霞孤鳥沒，,晚河孤孤沒，,False,2,2,0,0,0.6666666666666666
+"Đốc Công Lưu,",篤公劉，,篤公劉，,True,0,0,0,0,1.0
+"Tráng tai Côn Lôn phương hồ đồ,",壯哉崑崙方壺圖，,壯哉昆侖方乎圖，,False,3,3,0,0,0.625
+"Chỉ hữu phú quý giải lưu nhân,",只有富貴解留人，,只有富貴解流人，,False,1,1,0,0,0.875
+Uy nghi thị lực.,威儀是力。,威儀是力。,True,0,0,0,0,1.0
+Hạnh đắc chu phòng quân tử thân.,幸得周防君子身。,幸得舟房君子身。,False,2,2,0,0,0.75
+"Bôn lưu há tạp thụ,",奔流下雜樹，,奔流下雜樹，,True,0,0,0,0,1.0
+"Thiên kim mãi đắc ca nhất khúc,",千金買得歌一曲，,天今買得歌一曲，,False,2,2,0,0,0.75
+Mạc kiến đương nha cứ án toạ.,莫見當衙据案坐。,莫見當牙據按坐。,False,3,3,0,0,0.625
+Hán thuỷ nhật đông lưu.,漢水日東流。,漢水日東流。,True,0,0,0,0,1.0
+"Tấn nhĩ biên đậu,",儐爾籩豆，,晉爾邊豆，,False,2,2,0,0,0.6
+Quân tử bất thủ.,君子不取。,君子不首。,False,1,1,0,0,0.8
+"Tu nhân dạ thái tang,",羞人夜採桑，,須人夜太桑，,False,2,2,0,0,0.6666666666666666
+Hoà lạc thả trầm.,和樂且湛。,和樂且沉。,False,1,1,0,0,0.8
+Nãi tử chi ác.,乃子之惡。,乃子之惡。,True,0,0,0,0,1.0
+Lưỡng sam như vũ.,兩驂如舞。,兩衫如雨。,False,2,2,0,0,0.6
+"Hạn ký thái thậm,",旱既太甚，,旱既太甚，,True,0,0,0,0,1.0
+Hoặc nhi cầu thiền.,惑而求禪。,或而求禪。,False,1,1,0,0,0.8
+"Tấn Văn diệc bá,",晉文亦霸，,晉文亦伯，,False,1,1,0,0,0.8
+Biên phong xuy giốc thuỷ mang mang.,邊風吹角水茫茫。,邊風吹角水茫茫。,True,0,0,0,0,1.0
+Khiên động tàn ti ngũ sắc cảnh.,牽動殘絲五色綆。,牽動殘絲五色景。,False,1,1,0,0,0.875
+Hoa chi dục động xuân phong hàn.,花枝欲動春風寒。,花枝欲動春風寒。,True,0,0,0,0,1.0
+"Địa mạch chí thử đoạn,",地脈至此斷，,地麥至此斷，,False,1,1,0,0,0.8333333333333334
+"Tương Dương mạc phủ thiên hạ dị,",襄陽幕府天下異，,相陽莫府天下易，,False,3,3,0,0,0.625
+"Trường Tín cung trung thảo,",長信宮中草，,長信宮中草，,True,0,0,0,0,1.0
+"Tuý ngã bách tôn tửu,",醉我百尊酒，,醉我百孫酒，,False,1,1,0,0,0.8333333333333334
+Hoa điểu lộng quy nhân.,花鳥弄歸人。,花鳥弄歸人。,True,0,0,0,0,1.0
+"Vô hạn tương tư khổ,",無限相思苦，,無限相思苦，,True,0,0,0,0,1.0
+"Khu xác hữu hoại bàng bạc tồn,",軀殼有壞磅礡存，,驅確有壞傍薄存，,False,4,4,0,0,0.5
+Tự thiên thân chi.,自天申之。,自天身之。,False,1,1,0,0,0.8
+"Khuê trung thiếu phụ bi chinh thú,",閨中少婦悲征戍，,閨中少婦悲征戍，,True,0,0,0,0,1.0
+Quy ninh phụ mẫu.,歸寧父母。,歸寧婦母。,False,1,1,0,0,0.8
+"Di khước san hô tiên,",遺卻珊瑚鞭，,夷卻山呼先，,False,4,4,0,0,0.3333333333333333
+Ba đào phiên không diểu vô sĩ.,波濤翻空杳無涘。,波濤翻空渺無士。,False,2,2,0,0,0.75
+Môn ngoại tiêu điều khả la tước.,門外蕭條可羅雀。,門外蕭條可羅雀。,True,0,0,0,0,1.0
+Ô hô!,嗚呼！,於乎！,False,2,2,0,0,0.3333333333333333
+"Khả liên vô cô Phàn Ô Kỳ,",可憐無辜樊於期，,可憐無孤鳥於淇，,False,3,3,0,0,0.625
+"Độ kỳ tịch dương,",度其夕陽，,度其夕陽，,True,0,0,0,0,1.0
+Giang trung bạch lãng như ngân ốc.,江中白浪如銀屋。,江中白浪如銀屋。,True,0,0,0,0,1.0
+"Sam kê trúc thố bất tự tích,",杉雞竹兔不自惜，,枕雞竹兔不自惜，,False,1,1,0,0,0.875
+Cập hà kiều nhạc.,及河喬嶽。,及河橋樂。,False,2,2,0,0,0.6
+"Đương kim nhân tài bất phạp sử,",當今人材不乏使，,當今人才不乏使，,False,1,1,0,0,0.875
+Thâm tự trừu đoạn.,深敘綢緞。,深自抽斷。,False,3,3,0,0,0.4
+"Điểm thoán Nghiêu điển Thuấn điển tự,",點竄堯典舜典字，,點竄堯典舜典自，,False,1,1,0,0,0.875
+"Đế gia hiếu nghĩa,",帝嘉好義，,帝家好義，,False,1,1,0,0,0.8
+Phạm nhẫn thương phong.,犯刃傷鋒。,范忍蒼風。,False,4,4,0,0,0.2
+"Nam lâu vị tất Tề nhật quán,",南樓未必齊日觀，,南樓未必齊日館，,False,1,1,0,0,0.875
+Triển chuyển phản trắc.,輾轉反側。,展轉反側。,False,1,1,0,0,0.8
+"Khinh hoàn tế ỷ tương truy phi,",輕紈細綺相追飛。,輕還細倚相追飛，,False,3,3,0,0,0.625
+"Môn tiền bác trác thuỳ khấu môn,",門前剝啄誰叩門，,門前博啄誰寇門，,False,2,2,0,0,0.75
+"Thí quan Hà thuỷ,",試觀河水，,試觀河水，,True,0,0,0,0,1.0
+Không tâm lãn ứng tiếp.,空心懶應接。,空心懶應接。,True,0,0,0,0,1.0
+Quyết phủ chi tử.,蹶父之子。,厥府之子。,False,2,2,0,0,0.6
+"Vô vi cư điện các,",無為居殿閣，,無為居殿各，,False,1,1,0,0,0.8333333333333334
+Đào cân bắc hải siêu Côn Luân.,跳跟北海超昆侖。,桃巾北海弨昆輪。,False,4,4,0,0,0.5
+Âm phong thảm đạm thiên vương kỳ.,陰風慘澹天王旗。,陰風慘淡天王期。,False,2,2,0,0,0.75
+Đồi cương lậu võng kỳ my luân.,頹綱漏網期彌綸。,頹岡漏網期眉論。,False,3,3,0,0,0.625
+"Xuân nhật trì trì,",春日遲遲，,春日遲遲，,True,0,0,0,0,1.0
+Dĩ vĩnh chung dự.,以永終譽。,以永終豫。,False,1,1,0,0,0.8
+"Phương Thúc suất chỉ,",方叔率止，,方叔率止，,True,0,0,0,0,1.0
+Hoả hạ nhật như niên.,火夏日如年。,火下日如年。,False,1,1,0,0,0.8333333333333334
+Chung tri thượng tướng tiên phạt mưu.,終知上將先伐謀。,終知上將先伐謀。,True,0,0,0,0,1.0
+"Tiểu phiến hoạ loan thừa vụ khứ,",小扇畫鸞乘霧去，,小扇畫鸞乘霧去，,True,0,0,0,0,1.0
+"Sinh lai anh hùng ký khu xác,",生來英雄寄軀殼，,生來英雄寄驅確，,False,2,2,0,0,0.75
+Si nhân uý phụ.,癡人畏婦。,痴人畏婦。,False,1,1,0,0,0.8
+Cố viên kim nhược hà.,故園今若何。,故園今若何。,True,0,0,0,0,1.0
+"My tư nhất nhân,",媚茲一人，,眉思一人，,False,2,2,0,0,0.6
+Do lai thiên hạ truyền,由來天下傳。,猶來天下傳。,False,1,1,0,0,0.8333333333333334
+Mạc vi nhi vi thị hoá công.,莫為而為是化工。,莫為而為是化公。,False,1,1,0,0,0.875
+"Hoàn tương uyên lộ vũ,",還將鵷鷺羽，,還將鴛路雨，,False,3,3,0,0,0.5
+Trường đoạn phục tâm hôi.,腸斷復心灰。,長斷復心灰。,False,1,1,0,0,0.8333333333333334
+"Hấp thiên hương hề phức uất, đạm vũ bảo hề dung dữ.",潝天香兮馥鬱，淡羽葆兮容與。,翕天香兮馥鬱，淡雨寶兮容與。,False,3,3,0,0,0.7857142857142857
+"Bạch xã hội giáp thất nhất lão,",白社會甲失一老，,白社會峽失一老，,False,1,1,0,0,0.875
+Diệc phục khu tương hoán thăng đấu.,亦復驅將換升斗。,亦服驅相喚升鬥。,False,4,4,0,0,0.5
+"Tướng quân đàn thượng lãnh vân đê,",將軍壇上冷云低，,將軍彈上冷雲低，,False,2,2,0,0,0.75
+Phục văn đề điểu thanh.,復聞啼鳥聲。,伏聞啼鳥聲。,False,1,1,0,0,0.8333333333333334
+"Vọng tây phương hề mĩ nhân,",望西方兮美人，,望西方兮美人，,True,0,0,0,0,1.0
+Diệc hữu phiêu bạc triêm nễ sa.,亦有飄泊沾泥沙。,亦有飄薄沾泥沙。,False,1,1,0,0,0.875
+"Tinh hán xán lạn,",星漢燦爛，,星漢粲爛，,False,1,1,0,0,0.8
+"Thanh thanh thuỷ trung bồ,",青青水中蒲，,青青水中蒲，,True,0,0,0,0,1.0
+"Cung điện thiều nghiêu tủng,",宮殿岧嶢聳，,宮殿迢嶢聳，,False,1,1,0,0,0.8333333333333334
+"Dĩ nhi thán viết: “Hữu khách vô tửu, hữu tửu vô hào; nguyệt bạch phong thanh, như thử lương dạ hà?” Khách viết: “Kim giả bạc mộ, cử võng đắc ngư, cự khẩu tế lân, trạng như Tùng giang chi lô. Cố an sở đắc tửu hồ?” Quy nhi mưu chư phụ. Phụ viết: “Ngã hữu đấu tửu, tàng chi cửu hĩ, dĩ đãi dư bất thì chi nhu.”",已而歎曰：「有客無酒，有酒無肴；月白風清，如此良夜何？」客曰：「今者薄暮，舉網得魚，巨口細鱗，狀如松江之鱸。顧安所得酒乎？」歸而謀諸婦。婦曰：「我有鬥酒，藏之久矣，以待予不時之需。」,以而嘆曰：如有客無酒，有酒無豪；月白風聲，如此涼夜何。」,False,69,6,63,0,0.3697478991596639
+"Uỷ hạng tỵ môn tuyệt triêu phạn,",委巷比門絕朝飯，,委巷避門絕朝飯，,False,1,1,0,0,0.875
+Tử Du giai hứng phát.,子猷佳興發。,子遊皆興發。,False,2,2,0,0,0.6666666666666666
+"Vân vô tâm dĩ xuất tụ, điểu quyện phi nhi tri hoàn.",雲無心以出岫，鳥倦飛而知還。,雲無心以出袖，鳥倦非而知還。,False,2,2,0,0,0.8571428571428571
+"Đông gia a phụ tử quan lương,",東家阿父死官粮，,東家阿婦子關良，,False,4,4,0,0,0.5
+Chu hoa vị hy.,朱華未希。,舟花未稀。,False,3,3,0,0,0.4
+"Hoành hành Thanh Hải dạ đới đao,",橫行青海夜帶刀。,橫行青海夜帶刀，,False,1,1,0,0,0.875
+Lê hoa nhất chi xuân đới vũ.,梨花一枝春帶雨。,黎花一枝春帶雨。,False,1,1,0,0,0.875
+Ngã độc phi linh nhi mặc vận.,我獨飛靈，而默運。,我獨非靈兒默運。,False,3,2,1,0,0.7058823529411765
+"Vị vấn bành châu mục,",為問彭州牧，,謂問彭珠目，,False,3,3,0,0,0.5
+Ngâm thanh phảng phất sinh công đường.,吟聲彷彿生公堂。,吟聲彷拂生公堂。,False,1,1,0,0,0.875
+Bất khoảng khải xử.,不遑啟處。,不枕啟處。,False,1,1,0,0,0.8
+"Thương Ngô hận bất tận,",蒼梧恨不盡，,蒼吳恨不盡，,False,1,1,0,0,0.8333333333333334
+Trường khu thuẫn nhật tiêu.,長驅盾日消。,長驅枕日消。,False,1,1,0,0,0.8333333333333334
+Kỳ hội như lâm.,其會如林。,其會如林。,True,0,0,0,0,1.0
+Bách vạn chinh phu lệ như vũ.,百萬征夫淚如雨。,百萬征夫淚如雨。,True,0,0,0,0,1.0
+"Mãn triều chu tử quý,",滿朝朱紫貴，,滿朝舟子貴，,False,2,2,0,0,0.6666666666666666
+"Bộ trung đình hề, sương diệp can;",步中庭兮，霜葉乾；,步中庭兮霜葉干；,False,2,1,1,0,0.8235294117647058
+"Chính điện khối dĩ tạo thiên hề, uất tịnh khởi nhi khung sùng.",正殿塊以造天兮，鬱並起而穹崇。,政殿塊以造天兮，鬱並起而穹崇。,False,1,1,0,0,0.9333333333333333
+Đoản cách duy nguyện sào thâm tùng.,短翮唯願巢深叢。,短隔惟願巢深松。,False,3,3,0,0,0.625
+"Hoa Môn ly diện thỉnh tuyết sỉ,",花門剺面請雪恥，,花門離面請雪恥，,False,1,1,0,0,0.875
+"Đầu Đà vân nguyệt đa tăng khí,",頭陀雲月多僧氣，,頭沱雲月多增氣，,False,2,2,0,0,0.75
+"Đại bang duy bình,",大邦維屏，,大邦維平，,False,1,1,0,0,0.8
+Thuỷ thị tân thừa ân trạch thì.,始是新承恩澤時。,水是新乘恩澤時。,False,2,2,0,0,0.75
+Tùng địa chủng hoa sinh.,從地種華生。,松地種花生。,False,2,2,0,0,0.6666666666666666
+Nam phi giác hữu an sào điểu.,南飛覺有安巢鳥。,南飛覺有安巢鳥。,True,0,0,0,0,1.0
+Thích bỉ lạc vực.,適彼樂國。,適彼樂域。,False,1,1,0,0,0.8
+Dạ bán thanh quang phiên ngã thất.,夜半清光翻我室。,夜半青光翻我失。,False,2,2,0,0,0.75
+"Phong tùng nam lai phi vũ hậu,",風從南來非雨候，,風松南來非雨後，,False,2,2,0,0,0.75
+"Điệm phất thác hành,",簟茀錯衡，,簟拂錯行，,False,2,2,0,0,0.6
+"Vô phong tài đáo địa,",無風才到地，,無風才到地，,True,0,0,0,0,1.0
+"Xuân song thự diệt cửu vi hoả,",春窗曙滅九微火，,春窗曙滅九為火，,False,1,1,0,0,0.875
+"Ngã tẫn nhĩ thục liễu,",我燼你熟了，,我盡爾熟柳，,False,3,3,0,0,0.5
+Du tai phong vật ký danh ưu.,悠哉風物記名優。,遊哉風物既名憂。,False,3,3,0,0,0.625
+Độc nhiệm sóc phương vô hạn công.,獨任朔方無限功。,獨任朔方無限公。,False,1,1,0,0,0.875
+"Như ảnh, như hưởng,",如影如響，,如影如響、,False,1,1,0,0,0.8
+"Quân bất kiến mạch thượng tang,",君不見陌上桑，,君不見麥上桑，,False,1,1,0,0,0.8571428571428571
+Phùng bỉ chi nộ.,逢彼之怒。,逢彼之怒。,True,0,0,0,0,1.0
+Miễn phù:,緬夫：,勉浮：,False,2,2,0,0,0.3333333333333333
+"Từ chính phất hoạch,",辭政弗獲，,徐正拂獲，,False,3,3,0,0,0.4
+Luỵ ngã thánh hiền.,累我聖賢。,累我聖賢。,True,0,0,0,0,1.0
+Phát tác diệc tại phong thuỷ trung.,發作亦在風水中。,發作亦在風水中。,True,0,0,0,0,1.0
+Ninh bất ngã căng.,寧不我矜。,寧不我矜。,True,0,0,0,0,1.0
+Hy Hoà thướng thư phiên kiến phược.,羲和上書翻見縛。,羲和上書翻見縛。,True,0,0,0,0,1.0
+“Quan quân nhập thành nhân bất tri.,官軍入城人不知。,關關君入人不知。,False,4,4,0,0,0.625
+Kỳ như lục thuỷ hà.,其如綠水何。,其如綠水何。,True,0,0,0,0,1.0
+"Ký kiến quân tử,",既見君子，,既見君子，,True,0,0,0,0,1.0
+Tam biên thượng vị tri.,三邊尚未知。,三邊上未知。,False,1,1,0,0,0.8333333333333334
+Mao sĩ du nghi.,髦士攸宜。,茅士遊儀。,False,3,3,0,0,0.4
+"Ưu tâm khổng cứu,",憂心孔疚，,憂心孔救，,False,1,1,0,0,0.8
+"Thanh lâu tử mạch xuân phong biến,",青樓紫陌春風徧，,青樓子麥春風變，,False,3,3,0,0,0.625
+"Lã Bình Chương xử đại sự bất hồ đồ, quốc an, gia thái.",呂平章處大事，不糊塗，國安，家泰。,枕平章處大事不乎徒，國安，家太。,False,5,4,1,0,0.7272727272727273
+"Nhữ bào hao vu trung quốc,",女炰烋于中國，,女袍蒿于中國，,False,2,2,0,0,0.7142857142857143
+Dã triêm tân quốc dụng khinh hình.,也沾新國用輕刑。,野沾新國用輕形。,False,2,2,0,0,0.75
+Tiện quân bất quá thất quý môn.,羨君不過七貴門。,便君不過失貴門。,False,2,2,0,0,0.75
+Từ phụ ái nhĩ quá quần nhi.,慈父愛爾過群兒。,徐婦愛耳過群兒。,False,3,3,0,0,0.625
+"Y cố châu trượng lũ điển hình ngô văn chấp vô phục tồn giả,",噫故州杖屨典型吾文執無復存者，,伊顧珠丈屢典形吾聞執無復存者，,False,7,7,0,0,0.5333333333333333
+"Hoàng hoàng huỳnh huỳnh, đoạt nhân mục tinh.",煌煌熒熒，奪人目精。,黃皇熒熒，奪人目星。,False,3,3,0,0,0.7
+"Phỉ thủ huề chi,",匪手攜之，,匪守攜之，,False,1,1,0,0,0.8
+bạch liên thuý trúc y thôi ngôi.,白蓮翠竹依崔嵬。,白憐翠竹衣催嵬。,False,3,3,0,0,0.625
+Thúc hốt vân tán.,倏忽雲散。,叔忽雲散。,False,1,1,0,0,0.8
+"Túc dạ phỉ giải,",夙夜匪解，,夙夜匪解，,True,0,0,0,0,1.0
+Lão đại giá tác thương nhân phụ.,老大嫁作商人婦。,老大駕作蒼人婦。,False,2,2,0,0,0.75
+"Phiêu nhiên ban bạch thân hề thích,",飄然斑白身奚適，,飄然班白身兮適，,False,2,2,0,0,0.75
+Quần điểu chí kim vi bô sồ.,群鳥至今為哺雛。,群鳥至今為逋雛。,False,1,1,0,0,0.875
+"Dưỡng nhi bất giáo,",養而不教，,養而不教，,True,0,0,0,0,1.0
+"Nguyệt Giáp, Cù Đường vân tác đỉnh,",月峽瞿塘雲作頂，,月峽瞿瞿雲作鼎，,False,2,2,0,0,0.75
+"Ngô tri Từ công bách bất ưu,",吾知徐公百不憂，,吾知徐公百不憂，,True,0,0,0,0,1.0
+"Hồng nhật hàm sơn chiêm Dĩ Hỗ, thiên tàm phản bô chi ô.",紅日含山瞻屺岵，偏慚反哺之烏。,紅日含山瞻以互，千慚反逋之烏。,False,4,4,0,0,0.7333333333333333
+"Hưu khoa Hán thất Phiêu Diêu tướng,",休夸漢室嫖姚將，,休科漢室飄姚相，,False,3,3,0,0,0.625
+Chư sinh giảng giải đắc thiết tha.,諸生講解得切磋。,諸生講解得切他。,False,1,1,0,0,0.875
+"Hoàng Ngưu than thượng oán phong lạc,",黃牛灘上怨楓落，,黃牛灘上怨風落，,False,1,1,0,0,0.875
+"Ư thị hữu cảm kỳ ngôn, khởi kính khởi mộ.",於是有感其言，起敬起慕。,於是有敢其言，起徑起暮。,False,3,3,0,0,0.75
+"Tần vương kỵ hổ du bát cực,",秦王騎虎遊八极，,秦王騎虎遊八極，,False,1,1,0,0,0.875
+Minh tiêu hựu xuất đông.,明霄又出東。,明消又出東。,False,1,1,0,0,0.8333333333333334
+"Đãn kiến đệ nhị vô danh công,",但見第二無名公，,但見弟二無名公，,False,1,1,0,0,0.875
+"Lạc nhật há yêm tư,",落日下崦嵫，,落日下厭思，,False,2,2,0,0,0.6666666666666666
+Tương phùng Kịch Mạnh gia.,相逢劇孟家。,相逢劇孟家。,True,0,0,0,0,1.0
+"Thiên địa ngoại hữu vô trung,",天地外有無中，,天地外有無中，,True,0,0,0,0,1.0
+"Ngã Lê cấu tạo hưng trùng nhật,",我黎搆造興重日，,我黎覯造興重日，,False,1,1,0,0,0.875
+"Dương chi thuỷ,",揚之水，,揚之水，,True,0,0,0,0,1.0
+Bất tích quang huy nhượng lưu nguyệt.,不惜光輝讓流月。,不惜光輝讓流月。,True,0,0,0,0,1.0
+Lâm giang lưu hề hậu nhan.,臨江流兮厚顏。,臨江流兮後顏。,False,1,1,0,0,0.8571428571428571
+"Tư quân như nhật nguyệt,",思君如日月，,思君如日月，,True,0,0,0,0,1.0
+"Nhất triều quyết tuyệt,",一朝決絕，,一朝厥絕，,False,1,1,0,0,0.8
+"Bát nguyệt cửu nguyệt lô hoa phi,",八月九月蘆花飛，,八月九月爐花飛，,False,1,1,0,0,0.875
+"Phục thiết tửu dĩ thốc ngao hề, ngao sước giai nhi truy phệ.",復設酒以嗾獒兮，獒躇階而追噬。,復切酒以簇敖兮，敖回皆而追吠。,False,7,7,0,0,0.5333333333333333
+Hoa lưu tái lộ liên truy bình.,驊騮塞路連輜軿。,花流載路連追平。,False,5,5,0,0,0.375
+"Bỉ xu giả tử,",彼姝者子，,彼趨者子，,False,1,1,0,0,0.8
+Mỵ tịch hữu biểu.,寤辟有摽。,處夕有表。,False,3,3,0,0,0.4
+"Đông phong xuy thái cấp,",東風吹太急，,東風吹太急，,True,0,0,0,0,1.0
+"Yên Chi lạc Hán gia,",燕支落漢家，,煙支落漢家，,False,1,1,0,0,0.8333333333333334
+"Duy thử lương nhân,",維此良人，,維此良人，,True,0,0,0,0,1.0
+"Điên chi đảo chi quán quần anh chi thủ,",顛之倒之冠群英之首，,顛之倒之館群英之首，,False,1,1,0,0,0.9
+"Long đầu tả tửu yêu tửu tinh,",龍頭瀉酒邀酒星，,龍頭左酒腰酒星，,False,2,2,0,0,0.75
+"Ngô miên tế nhuyễn quế bố mật,",吳綿細軟桂布密，,吾眠細軟桂布密，,False,2,2,0,0,0.75
+Minh minh cô cao đa liệt phong.,冥冥孤高多烈風。,明明孤高多列風。,False,3,3,0,0,0.625
+"Tương dữ vi trắc giáng tả hữu phong vũ lôi đình,",相與為陟降左右風雨雷霆，,相與為側降有有風雨雷，,False,4,3,1,0,0.6956521739130435
+Tái khát tái cơ.,載渴載饑。,載渴載機。,False,1,1,0,0,0.8
+Quần lĩnh tranh củng phụ.,群嶺爭拱輔。,群嶺爭拱婦。,False,1,1,0,0,0.8333333333333334
+Lương phong xuy bất sầu.,涼風吹不愁。,涼風吹不愁。,True,0,0,0,0,1.0
+"Ân cần vi thức y thượng ngân,",殷勤為拭衣上痕，,殷勤為識衣上痕，,False,1,1,0,0,0.875
+"Khảo bàn tại a,",考槃在阿，,考盤在阿，,False,1,1,0,0,0.8
+Thương mang Sở giang hối.,蒼茫楚江晦。,蒼茫楚江晦。,True,0,0,0,0,1.0
+"Hằng, Tâm, Hà, Hán,",恆心河漢，,恆恆心，河漢漢，,False,3,0,0,3,0.7692307692307693
+Hậu thế nhân nhân giai Thượng Quan,後世人人皆上官，,後世人人皆上關，,False,1,1,0,0,0.875
+"Phù dung khấp lộ, hương lan tiếu.",芙蓉泣露香蘭笑。,浮容泣路香蘭笑。,False,3,3,0,0,0.625
+Ngã gia phá ốc cải tác lâu.”,我家破屋改作樓。』,我家破屋改作樓。,False,1,0,1,0,0.9411764705882353
+"Đương thử chi thì, khởi bất tự Câu Tiễn chi khốn Ngô vương vu Cô Tô đài giả gia?",當此之時，豈不似勾踐之困吳王于姑蘇台者耶？,當此之時，豈不自溝剪之困吳王于孤蘇臺者家？,False,6,6,0,0,0.7142857142857143
+Bản châu tùng sự tri danh cửu.,本州從事知名久。,本珠松事知名九。,False,3,3,0,0,0.625
+"Độc thư cầu lý,",讀書求理，,獨書求里，,False,2,2,0,0,0.6
+Tán phóng ngưu dương thực hoà thử.,散放牛羊食禾黍。,散放牛陽實和此。,False,4,4,0,0,0.5
+Tiêm ngã lương nhân.,殲我良人。,纖我良人。,False,1,1,0,0,0.8
+Chí vu nam hải.,至于南海。,至于南海。,True,0,0,0,0,1.0
+"Lão phụ điền hoang thu vũ lý,",老父田荒秋雨裡，,老婦田荒秋雨里，,False,2,2,0,0,0.75
+Mạc ngã khẳng lao.,莫我肯勞。,莫我肯勞。,True,0,0,0,0,1.0
+Hoa khai bạch tuyết hương.,花開白雪香。,花開白雪香。,True,0,0,0,0,1.0
+"Mỹ nhân quyên quyên cách thu thuỷ,",美人娟娟隔秋水，,美人娟娟隔秋水，,True,0,0,0,0,1.0
+Bãi như giang hải ngưng thanh quang.,罷如江海凝清光。,罷如江海凝青光。,False,1,1,0,0,0.875
+Yên huân lan phá khinh khinh ngữ.,嫣熏蘭破輕輕語。,煙勳蘭破輕輕語。,False,2,2,0,0,0.75
+"Tại Lý xiển phù,",在李闡符，,在李幝浮，,False,2,2,0,0,0.6
+Dân chi phụ mẫu.,民之父母。,民之婦母。,False,1,1,0,0,0.8
+"Xỉ như hồ tê,",齒如瓠犀。,永如乎棲，,False,4,4,0,0,0.2
+Tự ái khanh nhiên duệ trượng thanh.,自愛鏗然曳杖聲。,自愛卿然袂丈聲。,False,3,3,0,0,0.625
+"Xứ xứ hoan thanh táo cổ kỳ,",處處歡聲噪鼓旗，,處處歡聲噪鼓奇，,False,1,1,0,0,0.875
+Hỗn độn tạc phá sơn căn ôi.,混沌鑿破山根隈。,渾遁昨破山根隈。,False,3,3,0,0,0.625
+Tại Vị chi tương.,在渭之將。,在謂之相。,False,2,2,0,0,0.6
+Đáo thử trù trừ bất năng khứ.,到此躊躇不能去。,到此惆除不能去。,False,2,2,0,0,0.75
+Hoa di vọng trọng;,華夷望重；,花夷望重；,False,1,1,0,0,0.8
+Xuân lai nhưỡng kỷ đa.,春來釀幾多。,春來釀幾多。,True,0,0,0,0,1.0
+"Nghi giám vu Ân,",宜鑒于殷，,宜監于殷，,False,1,1,0,0,0.8
+"Điên bái chi yết,",顛沛之揭，,顛拜之歇，,False,2,2,0,0,0.6
+Khứ niên phá lỗ tân sách huân.,去年破虜新策勳。,去年破虜新索勳。,False,1,1,0,0,0.875
+Minh niên nhược cánh chinh biên tái,明年若更征邊塞，,明年若更征邊塞,False,1,0,1,0,0.9333333333333333
+"Tứ diên thiết tịch,",肆筵設席，,四筵切夕，,False,3,3,0,0,0.4
+Yếu sử lưỡng tình thương.,要使兩情傷。,要使兩情傷。,True,0,0,0,0,1.0
+"Khước bả ngư can tầm tiểu kính,",卻把漁竿尋小徑，,卻把魚干尋小徑，,False,2,2,0,0,0.75
+"Chi sở bất đương chi hề, ngô cước trì,",之所不當之兮吾腳遲，,之所不當之兮，吾腳持，,False,2,1,0,1,0.8571428571428571
+Kỷ phiên dục tín nhưng nan bằng.,幾番欲信仍難憑。,幾翻欲信仍難憑。,False,1,1,0,0,0.875
+"Kích cổ kỳ thang,",擊鼓其鏜，,擊鼓其湯，,False,1,1,0,0,0.8
+Từng Há Nâm.,從夏南。,處下南。,False,2,2,0,0,0.5
+Tự nhật nguyệt nhi mị hưu.,似日月而靡休。,自日月而寐休。,False,2,2,0,0,0.7142857142857143
+"Dịch lộ tam thiên hề thảo thụ vi,",驛路三千兮草樹微，,易路三千兮草樹為，,False,2,2,0,0,0.7777777777777778
+"Bạn hoán nhĩ du hĩ,",伴奐爾游矣，,伴喚爾遊矣，,False,2,2,0,0,0.6666666666666666
+Bất tri hoạ thư.,不知畫書。,不知畫書。,True,0,0,0,0,1.0
+"Vạn tính yếm can qua,",萬姓厭干戈，,萬性厭干戈，,False,1,1,0,0,0.8333333333333334
+"Cổ lai mỗi trùng hoàng hoa tuyển,",古來每重皇華選，,古來每重黃花選，,False,2,2,0,0,0.75
+Thập vạn hàng binh dạ lưu huyết.,十萬降兵夜流血。,十萬行兵夜流血。,False,1,1,0,0,0.875
+Thanh sơn vi tứ lân.,青山為四鄰。,青山為思鄰。,False,1,1,0,0,0.8333333333333334
+Hung trung lê táo sơ vị tài.,胸中梨棗初未栽。,匈中黎噪初未才。,False,4,4,0,0,0.5
+Viến tống vu dã.,遠送于野，,處送于也。,False,3,3,0,0,0.4
+Thuỳ năng cực chi?,誰能極之？,誰能極之？,True,0,0,0,0,1.0
+"Dương tiên tẩu mã thành nam mạch,",揚鞭走馬城南陌，,楊先走馬成南陌，,False,3,3,0,0,0.625
+Không lệnh mai hương vãng lai tẩu.,空令梅香往來走。,空令埋香往來走。,False,1,1,0,0,0.875
+Thiên tử căng liên bất nhẫn sát,天子矜憐不忍殺，,天子矜連不忍殺，,False,1,1,0,0,0.875
+Tâm chi bi hĩ.,心之悲矣。,心之悲矣。,True,0,0,0,0,1.0
+"Đào ba nhất bộ địa,",桃波一步地，,桃波一步地，,True,0,0,0,0,1.0
+Chỉ hữu nam Cơ cận hương ấp.,只有南箕近鄉邑。,只有南姬近香邑。,False,2,2,0,0,0.75
+"Phản hữu tất,",阪有漆，,反有必，,False,2,2,0,0,0.5
+Năng bất tri hề thị tri.,能不知兮是知。,能不知兮是知。,True,0,0,0,0,1.0
+Bắc hải hà tằng thế lưỡng sồ.,北海何曾貰兩雛。,北海何曾世兩雛。,False,1,1,0,0,0.875
+Thuỳ huấn ngũ mục.,垂訓五目。,誰訓五目。,False,1,1,0,0,0.8
+Mạc phỉ nhĩ cực.,莫匪爾極。,莫匪爾極。,True,0,0,0,0,1.0
+Thiên hàn ấm mã Thái Bạch quật.,天寒飲馬太白窟。,天寒蔭馬太白窟。,False,1,1,0,0,0.875
+"Lộ chuyển trưởng xuyên viễn,",路轉長川遠，,路轉長川遠，,True,0,0,0,0,1.0
+"Độc thắng vũ tiền sắc,",獨勝雨前色，,獨勝雨前色，,True,0,0,0,0,1.0
+"Nhã nhân sử ngã tâm hưng phấn,",雅人使我心興奮，,雅人使我心興粉，,False,1,1,0,0,0.875
+"Nhàn giai ngoa ảnh bạn,",閑階靴影畔，,閒皆訛影伴，,False,4,4,0,0,0.3333333333333333
+Tam Hà túng quan không lý lư.,三河縱觀空里閭。,三河縱關空里廬。,False,2,2,0,0,0.75
+Tuỵ hà hỉ?,萃何喜？,萃何喜？,True,0,0,0,0,1.0
+Nhân giai ố chi.,人皆惡之。,人皆惡之。,True,0,0,0,0,1.0
+"Thiên vương tự thánh minh,",天王自圣明，,天王自聖明，,False,1,1,0,0,0.8333333333333334
+"Chuế yêm tiểu xú di quần hùng,",贅閹小醜夷群雄，,綴厭小醜夷群雄，,False,2,2,0,0,0.75
+"Hoa Ngạc tù tốt hề kỳ hữu, Hưng Khánh cùng sùng hề kỳ thiên.",華萼崷崒兮其右，興慶窮崇兮其偏。,花鄂囚卒兮其有，興慶窮崇兮其天。,False,6,6,0,0,0.625
+Đồn trấn nhi kim nhất bách niên.,屯鎮而今一百年。,荒鎮兒金一百年。,False,3,3,0,0,0.625
+Lạc diệp mãn sơn tầm bất đắc.,落葉滿山尋不得。,落葉滿山尋不得。,True,0,0,0,0,1.0
+"Ngã sinh chi sơ,",我生之初，,我生之初，,True,0,0,0,0,1.0
+"Chỉ tri mộng bão bản lai không,",只知夢飽本來空，,只知夢飽本來空，,True,0,0,0,0,1.0
+Sĩ chi đam hề!,士之耽兮，,士之耽兮，,True,0,0,0,0,1.0
+"Tín thủ niêm thành hoạt lý ngư,",信手拈成活鯉魚，,信首粘成活里魚，,False,3,3,0,0,0.625
+Tây Bá thượng cáo.,西伯上告。,西伯上告。,True,0,0,0,0,1.0
+"Tương tâm thác vật cổ hữu chi,",將心托物古有之，,相心錯物古有枝，,False,3,3,0,0,0.625
+"Kim niên trùng tác Phù Thạch du,",今年重作浮石遊，,今年重作浮石遊，,True,0,0,0,0,1.0
+Bình minh quyển mạc bắc phong hàn.,平明卷幕北風寒。,平明捲莫北風寒。,False,2,2,0,0,0.75
+"Nhãn tiền sở ký tuyển hà vật,",眼前所寄選何物，,眼前所寄選何物，,True,0,0,0,0,1.0
+Bằng hữu bất hữu.,朋友不友。,憑有不有。,False,3,3,0,0,0.4
+"Thám thủ bão yêu khán,",探手抱腰看，,處取飽腰看，,False,3,3,0,0,0.5
+"Nhược phi yến bãi quy lai, Dao Trì bất nhị;",若非宴罷歸來，瑤池不二；,若非燕罷歸來，遙池不二；,False,2,2,0,0,0.8333333333333334
+Tiện quân vô tiền năng bất ưu.,羨君無錢能不懮。,便君無前能不憂。,False,3,3,0,0,0.625
+Lương nguyện nan hài.,良願難諧。,良願難孩。,False,1,1,0,0,0.8
+Cao môn sầu bị bàng nhân đố.,高門愁被旁人妒。,高門愁被傍人妒。,False,1,1,0,0,0.875
+"Cố nữ sư, mệnh thái phó.",顧女師，命太傅。,故女師，命太付。,False,2,2,0,0,0.75
+"Công danh phú quý tu đãi mệnh,",功名富貴須待命，,公名富貴須待命，,False,1,1,0,0,0.875
+Tạc nhật hoa phát kim không chi.,昨日花發今空枝。,昨日花發金空枝。,False,1,1,0,0,0.875
+Học quan cần đãi khởi do thiên.,學關勤怠豈由天。,學觀勤待起由天。,False,3,3,0,0,0.625
+"Hữu lược kỳ tỷ,",有略其耜，,有略其比，,False,1,1,0,0,0.8
+"Thi đáo Tùng, Tuy bất Thịnh Đường.",詩到從綏不盛唐。,詩到松，不盛盛唐。,False,3,2,0,1,0.7058823529411765
+Tràng chung kích cổ phanh phì ngưu.,撞鍾擊鼓烹肥牛。,撞鐘擊鼓烹肥牛。,False,1,1,0,0,0.875
+Giá ngôn hành thứ.,駕言行狩。,駕言行庶。,False,1,1,0,0,0.8
+"Tây Cung, Nam Nội đa thu thảo,",西宮南內多秋草，,西宮南內多秋草，,True,0,0,0,0,1.0
+"Tật phong xuy trần ám Hà huyện,",疾風吹塵暗河縣，,疾風吹塵暗河縣，,True,0,0,0,0,1.0
+Sóc chi kiếm! Không chi thi! Đằng chi thung!,朔之劍！空之詩！藤之樁！,朔之劍！空之詩！藤之從！,False,1,1,0,0,0.9166666666666666
+"Đảo kỵ ninh long chuý kim lạc,",倒騎獰龍捶金絡，,倒騎寧龍捶金落，,False,2,2,0,0,0.75
+Tuý nhập đông hải kỵ trường kình.,醉入東海騎長鯨。,醉入東海騎長鯨。,True,0,0,0,0,1.0
+"Tư tâm độc duyệt, lạc chi vô lượng.",私心獨悅，樂之無量。,思心獨閱，落之無量。,False,3,3,0,0,0.7
+"Thuỳ liên Việt nữ nhan như ngọc,",誰憐越女顏如玉，,誰憐越女顏如玉，,True,0,0,0,0,1.0
+Hồ bất tỵ yên?,胡不比焉？,胡不避焉？,False,1,1,0,0,0.8
+Biệt thời y hữu vạn điều ti.,別時衣有萬條絲。,別時衣有萬條絲。,True,0,0,0,0,1.0
+Lạc thả hữu nghi.,樂且有儀。,落且有儀。,False,1,1,0,0,0.8
+"Tức đồ lan phố,",息徒蘭圃，,即圖蘭浦，,False,3,3,0,0,0.4
+Khí như trường hồng táng ngư phúc.,氣如長虹葬魚腹。,氣如長紅喪魚福。,False,3,3,0,0,0.625
+Ngư gia vô tứ lân.,漁家無四鄰。,漁家無思鄰。,False,1,1,0,0,0.8333333333333334
+Thượng Thái thương ưng hà túc đạo?,上蔡蒼鷹何足道。,上太蒼應何足道？,False,3,3,0,0,0.625
+Tuyên châu thái thú tri bất tri?,宣州太守知不知？,宣州太守知不知？,True,0,0,0,0,1.0
+"Hữu khách túc túc,",有客宿宿，,有客肅肅，,False,2,2,0,0,0.6
+Linh ngã vong xan.,令我忘餐。,靈我忘餐。,False,1,1,0,0,0.8
+"Ngã vị trường Thành bất tu trúc,",我謂長城不須筑，,我謂長城不須竹，,False,1,1,0,0,0.875
+"Dĩ trị loạn vi giám giả, thục mỹ thục ác; dĩ đắc thất vi giám giả thục nghiên thục si.",以治亂為鑑者，孰美孰惡；以得失為鑑者，孰妍孰媸。,以值亂為鑑者，孰美熟惡；以得失為鑑者熟言熟差。,False,7,6,1,0,0.723404255319149
+Chúc quang thiêu vân bán không tử.,燭光燒雲半空紫。,燭光燒雲半空死。,False,1,1,0,0,0.875
+"Bạch mã kim yên khứ vị phản,",白馬金鞍去未返，,白馬金煙去未反，,False,2,2,0,0,0.75
+Chân chân công tỉ.,振振公子。,真真公子。,False,2,2,0,0,0.6
+"Phù trầm thiên cổ sự,",浮沈千古事，,浮沉千古事，,False,1,1,0,0,0.8333333333333334
+Trác nhiên bất ỷ.,卓然不倚。,卓然不倚。,True,0,0,0,0,1.0
+"Lộ địch âm thanh viễn,",露滌音清遠，,路笛陰聲遠，,False,4,4,0,0,0.3333333333333333
+Châu lý tam thiên khứ hà tốc.,珠履三千去何速。,州里三千去何速。,False,2,2,0,0,0.75
+"Tây Thục tam thiên lý,",西蜀三千里，,西蜀三千里，,True,0,0,0,0,1.0
+"Phân phân thế sự vô cùng tẫn,",紛紛世事無窮盡，,紛紛世事無窮燼，,False,1,1,0,0,0.875
+"Bàng nhân đạo ngã chân hội hội,",旁人道我真聵聵，,傍人道我真會會，,False,3,3,0,0,0.625
+"Chỉ kim bẫu bạch thảo,",只今掊白草，,只今處白草，,False,1,1,0,0,0.8333333333333334
+Ngoại hữu Thạch tướng quân.,外有石將軍。,外有石將軍。,True,0,0,0,0,1.0
+"Minh mâu thiện lãi,",明眸善睞，,明眸善枕，,False,1,1,0,0,0.8
+"Đại phong hữu toại,",大風有隧，,大風有遂，,False,1,1,0,0,0.8
+Huynh trưởng lâm tang vị bài thiết.,兄長臨喪為排設。,兄長林桑未排切。,False,4,4,0,0,0.5
+Vi vũ vi lâm đương cập thì.,為雨為霖當及時。,微雨為林當及時。,False,2,2,0,0,0.75
+Ư nhữ tín túc.,於女信宿。,於女信足。,False,1,1,0,0,0.8
+Cô chu thệ hề sầu nhược hà.,孤舟逝兮愁若何。,孤舟逝兮愁若何。,True,0,0,0,0,1.0
+"Bá vũ phức Cổn,",伯禹愎鯀，,伯雨馥袞，,False,3,3,0,0,0.4
+Hoa khai hựu hoa tạ.,花開又花謝。,花開又花謝。,True,0,0,0,0,1.0
+"Bất tri vấn đáp,",不知問答，,不知問答，,True,0,0,0,0,1.0
+Tiên giao tục huyền kỳ tự kiến.,煎膠續弦奇自見。,先教俗弦期自見。,False,4,4,0,0,0.5
+"Không kiến tương tư thụ,",空見相思樹，,空見相思樹，,True,0,0,0,0,1.0
+"Ngôn ngữ ẩm thực,",言語飲食，,言語飲食，,True,0,0,0,0,1.0
+Trung Quốc - Việt Nam như thần xỉ.,中國越南如唇齒。,中國此越如如齒齒。,False,3,2,0,1,0.7058823529411765
+"Tứ mẫu kiều kiều,",四牡蹻蹻，,四牡橋橋，,False,2,2,0,0,0.6
+"Ngã sinh chi sơ,",我生之初，,我生之初，,True,0,0,0,0,1.0
+"Ngưỡng duy tiên đại,",仰惟先代，,仰維先大，,False,2,2,0,0,0.6
+"Hoãn hoãn tiền đình bộ,",緩緩前庭步，,緩緩前庭步，,True,0,0,0,0,1.0
+"Khâm thừa tứ cận phượng thư tuyên,",欽承賜覲鳳書宣，,襟乘四近鳳書宣，,False,4,4,0,0,0.5
+"Chí tôn hàm tiếu thôi tứ kim,",至尊含笑催賜金，,至孫含笑催四金，,False,2,2,0,0,0.75
+"Nhân sinh hữu tình lệ triêm ức,",人生有情淚沾臆，,人生有情淚沾憶，,False,1,1,0,0,0.875
+Nhược tương nhân lệ tỉ đào hoa,若將人淚比桃花，,若將人淚比桃花，,True,0,0,0,0,1.0
+Đăng hàn bất tác hoa.,燈寒不作花。,登寒不作花。,False,1,1,0,0,0.8333333333333334
+"Ngã tống cữu thị,",我送舅氏，,我送舅是，,False,1,1,0,0,0.8
+"Nhữ tào hựu nghi liệt thổ thực,",汝曹又宜列土食，,女曹又儀列土食，,False,2,2,0,0,0.75
+Hương hồn chung bất đáo Liêu Tê.,香魂終不到遼西。,鄉魂終不到遼西。,False,1,1,0,0,0.875
+Trường Khánh nhị niên xuân.,長慶二年春。,長慶二年春。,True,0,0,0,0,1.0
+Ưng khan tất thượng huyền.,應看膝上弦。,應看必上弦。,False,1,1,0,0,0.8333333333333334
+Đức âm khổng giao.,德音孔膠。,德音孔教。,False,1,1,0,0,0.8
+Nại khả thừa minh nguyệt,耐可乘明月，,奈可乘明月，,False,1,1,0,0,0.8333333333333334
+Hiện tại khai xan trì hựu trì;,現在開餐遲又遲。,處在開餐持又遲；,False,3,3,0,0,0.625
+"Cốt nhục bần giả,",骨肉貧者，,骨肉貧者，,True,0,0,0,0,1.0
+"Tứ hải vĩnh thanh, đản bố duy tân chi cáo.",四海永清，誕布維新之誥。,四海永聲，誕布惟新之告。,False,3,3,0,0,0.75
+Lai dữ tiên sinh cộng xuy bính.,來與先生共炊餅。,來與先生共吹迸。,False,2,2,0,0,0.75
+Lực tận quan sơn vị giải vi.,力盡關山未解圍。,力盡關山未解為。,False,1,1,0,0,0.875
+"Dao kiến Tằng Thành ẩn bán luân,",遥見層城隱半輪，,遙見曾城隱半論，,False,3,3,0,0,0.625
+Triều dã yểm hữu nhị tử thành tam nhân.,潮也奄有二子成三人。,朝也掩有二子成三人。,False,2,2,0,0,0.8
+"Hoàng hôn nhân quy hoa bất ngữ,",黃昏人歸花不語，,黃昏人歸花不語，,True,0,0,0,0,1.0
+Hoạ lan quế trụ toan phong cấp.,畫闌桂柱酸風急。,畫蘭桂柱酸風急。,False,1,1,0,0,0.875
+"Đả mạch đả mạch,",打麥打麥，,打麥打麥，,True,0,0,0,0,1.0
+"Nghi dân nghi nhân,",宜民宜人，,宜民疑人，,False,1,1,0,0,0.8
+Quan sai nhật nhật thủ không sàng.,官差日日守空床。,關差日日守空床。,False,1,1,0,0,0.875
+"Toạ khách văn ngôn khởi thán ta,",坐客聞言起嘆嗟，,坐客聞言起嘆嗟，,True,0,0,0,0,1.0
+"Tư Tu dữ Tào,",思須與漕，,思修與曹，,False,2,2,0,0,0.6
+Nhi nữ hi tiếu khiên nhân y.,兒女嬉笑牽人衣。,兒女稀笑牽人衣。,False,1,1,0,0,0.875
+"Ta hu kim tích khởi dị tình,",嗟吁今昔豈異情，,嗟紆金惜起易情，,False,5,5,0,0,0.375
+Mãn địa tàn lô nguyệt thượng thì.,滿地殘蘆月上時。,滿地殘爐月上時。,False,1,1,0,0,0.875
+"Thái thú đắc chi cánh bất nghi,",太守得之更不疑，,太守得之更不疑，,True,0,0,0,0,1.0
+Thân nhi cận chi.,親而近之。,身而近之。,False,1,1,0,0,0.8
+Hồng quang tử khí câu hách nhiên.,紅光紫氣俱赫然。,紅光死氣俱赫然。,False,1,1,0,0,0.875
+"Cam tửu thị âm,",甘酒嗜音，,甘酒是陰，,False,2,2,0,0,0.6
+"Giới dĩ phồn chỉ,",介以繁祉，,介以繁止，,False,1,1,0,0,0.8
+"Tạc giả tương phùng ngọc khuyết hạ,",昨者相逢玉闕下，,昨者相逢玉闕下，,True,0,0,0,0,1.0
+Thượng an sở thi!,尚安所施！,上安所詩！,False,2,2,0,0,0.6
+Kế sự viễn tắc thành công kỳ.,計事遠則成功奇。,繼事遠則成公期。,False,3,3,0,0,0.625
+"Sinh vô sở thành đầu hạo bạch,",生無所成頭皓白，,生無所成頭浩白，,False,1,1,0,0,0.875
+Tái cao cung thỉ.,載櫜弓矢。,載高弓矢。,False,1,1,0,0,0.8
+Tiểu tâm dực dực;,小心翼翼；,小心翼翼；,True,0,0,0,0,1.0
+Cát sĩ dụ chi.,吉士誘之。,葛士喻之。,False,2,2,0,0,0.6
+Toạ thinh đào lại khán bôn xung.,坐聽濤瀨看奔沖。,坐聽桃吏看奔衝。,False,3,3,0,0,0.625
+Dĩ mạc bất tăng.,以莫不增。,以莫不僧。,False,1,1,0,0,0.8
+"Oanh đình đạm bất lưu,",縈渟澹不流，,鶯亭淡不流，,False,3,3,0,0,0.5
+"Sơn hữu phù tô,",山有扶蘇，,山有浮蘇，,False,1,1,0,0,0.8
+"Ỷ nam song dĩ ký ngạo, thẩm dung tất chi dị an.",倚南窗以寄傲，審容膝之易安。,倚南窗以寄傲，眉容必之易安。,False,2,2,0,0,0.8571428571428571
+Khổ tân trường khổ tân.,苦辛長苦辛。,苦辛長苦辛。,True,0,0,0,0,1.0
+Ác nhược hao hổ tử sở giam.,惡若哮虎子所監。,惡若蒿虎子所緘。,False,2,2,0,0,0.75
+"Thiên kim di tử,",千金遺子，,天今遺子，,False,2,2,0,0,0.6
+"Hu ta hồ: Hung trung liễu liễu khâu hác câu,",吁嗟乎胸中了了丘壑俱，,于嗟乎：匈中柳柳丘壑俱，,False,5,4,0,1,0.6086956521739131
+Cáo dư bất năng.,告予不能。,告予不能。,True,0,0,0,0,1.0
+"Ngộ nghi mao đường quá giang lộc,",誤疑茅堂過江麓，,遇疑毛堂過江鹿，,False,3,3,0,0,0.625
+"Nhân ân trạm hề bàng tiếp,",仁恩湛兮旁浹，,人恩湛兮傍接，,False,3,3,0,0,0.5714285714285714
+"Tử tôn thằng thằng,",子孙繩繩，,子孫繩繩，,False,1,1,0,0,0.8
+Đông lân nhất kiến hoàn tu tử.,東鄰一見還羞死。,東鄰一見還須死。,False,1,1,0,0,0.875
+"Chỉ kim niên dĩ nhị thập dư,",只今年已二十餘，,只今年已二十餘，,True,0,0,0,0,1.0
+"Đà nhân cảm đức xưng phiên thần,",佗因感德稱藩臣，,沱人敢德稱翻神，,False,5,5,0,0,0.375
+"Nhị cú tam niên đắc,",二句三年得，,二句三年得，,True,0,0,0,0,1.0
+"Cô Tô đài thượng ô thê thì,",姑蘇台上烏棲時，,孤蘇臺上烏棲時，,False,2,2,0,0,0.75
+"Ký phạt vu Sùng,",既伐于崇，,既伐于崇，,True,0,0,0,0,1.0
+Diệp dương minh hề.,燁揚明兮。,葉楊明兮。,False,2,2,0,0,0.6
+Giải đắc tâm khoan nhãn bất trách.,解得心寬眼不窄。,解得心寬眼不窄。,True,0,0,0,0,1.0
+Hoạn dưỡng do nhân bất đắc hạ.,豢養由人不得暇。,宦養猶人不得下。,False,3,3,0,0,0.625
+"Huỳnh song tân thoát tích,",螢窗新脱跡，,螢窗新脫惜，,False,2,2,0,0,0.6666666666666666
+"Bỉ ký chi tử,",彼其之子，,彼其之子，,True,0,0,0,0,1.0
+"Bạch vân hoàn tự tán,",白雲還自散，,白雲還自散，,True,0,0,0,0,1.0
+"Can nị bạc trùng lập cước quân,",干膩薄重立腳勻，,干爛薄重立腳君，,False,2,2,0,0,0.75
+Nghi nhân vật dụng.,疑人勿用。,宜人勿用。,False,1,1,0,0,0.8
+Đương sơn vô dữ quần.,當山無與群。,當山無與群。,True,0,0,0,0,1.0
+Thính bách điểu chi bi minh.,聽百鳥之悲鳴。,聽百鳥之悲明。,False,1,1,0,0,0.8571428571428571
+"Trường đình dạ dạ mộng bình vi,",長亭夜夜夢屏幃，,長亭夜夜夢平為，,False,2,2,0,0,0.75
+Phỏng ngã ước ngã thử sơn hành.,訪我約我此山行。,訪我約我此山行。,True,0,0,0,0,1.0
+Vũ tắc tuyến hề!,舞則選兮，,雨則線兮。,False,3,3,0,0,0.4
+Thị nữ kim bàn khoái lý ngư.,侍女金盤膾鯉魚。,是女金盤快里魚。,False,3,3,0,0,0.625
+"Luân Đài cửu nguyệt phong dạ hống,",輪台九月風夜吼，,輪臺九月風夜吼，,False,1,1,0,0,0.875
+Tha nhân thị bẩu.,他人是保。,他人是鴇。,False,1,1,0,0,0.8
+Tính mệnh suyễn tức huyền hào ly.,性命喘息懸毫厘。,姓命喘息弦豪離。,False,4,4,0,0,0.5
+Chú đắc bảo kiếm danh Long Tuyền.,鑄得寶劍名龍泉。,注得寶劍名龍泉。,False,1,1,0,0,0.875
+Như thằng đại đạo đông tây xuất.,如繩大道東西出。,如繩大道東西出。,True,0,0,0,0,1.0
+Cố vô thủ hồ kê thê dữ dự chương.,固無取乎雞棲與豫章。,故無首乎雞棲與夜章。,False,3,3,0,0,0.7
+"Châu thần đắc tửu vựng sinh kiểm,",朱唇得酒暈生臉，,州神得酒飲生檢，,False,4,4,0,0,0.5
+Tự cổ tự kim.,自古自今。,自鼓自今。,False,1,1,0,0,0.8
+Ấp dư nhi ngôn viết:,揖余而言曰：,邑予而言曰：,False,2,2,0,0,0.6666666666666666
+Tửu bất nùng hề cam như thuần.,酒不濃兮甘如醇。,酒不濃兮甘如純。,False,1,1,0,0,0.875
+"Đương niên thạch hổ bất sinh phong,",當年石虎不生風，,當年石虎不生風，,True,0,0,0,0,1.0
+"An đắc cánh tự Khai Nguyên trung,",安得更似開元中，,安得更自開元中，,False,1,1,0,0,0.875
+"Hữu nữ hoài xuân,",有女懷春，,有女懷春，,True,0,0,0,0,1.0
+"Nhược đãi công thành phất y khứ,",若待功成拂衣去，,若待公成拂衣去，,False,1,1,0,0,0.875
+Vị dữ minh nguyệt đồng.,謂與明月同。,謂與明月同。,True,0,0,0,0,1.0
+Khanh gia huynh đệ công danh chấn.,卿家兄弟功名震。,卿家兄弟公名震。,False,1,1,0,0,0.875
+Chỉ đãi Giang Nam bạch nhạn phi.,只待江南白雁飛。,只待江南白雁飛。,True,0,0,0,0,1.0
+"Điểu ngữ trúc thanh di cổ độ,",鳥語竹聲移古渡，,鳥語竹聲夷鼓度，,False,3,3,0,0,0.625
+Đoàn quốc phong trần mạn trợ qua.,段國風塵漫助戈。,團國風塵漫助戈。,False,1,1,0,0,0.875
+Tiêm ngã lương nhân.,殲我良人。,纖我良人。,False,1,1,0,0,0.8
+Bảo trang kiến biếm thương kỳ túc.,鮑莊見貶傷其足。,寶妝見點傷奇足。,False,4,4,0,0,0.5
+Dĩ ngao dĩ hy.,以遨以嬉。,以敖以稀。,False,2,2,0,0,0.6
+"Hàm Thông mạt tuế Trung Quốc loạn,",咸通末歲中國亂，,咸通末歲中國亂，,True,0,0,0,0,1.0
+"Tự quân chi xuất hĩ,",自君之出矣，,自君之出矣，,True,0,0,0,0,1.0
+"Phiên cung hậu tống cẩm dữ tiền,",藩宮厚送錦與錢，,翻宮後送錦與前，,False,3,3,0,0,0.625
+Khiển trước bì cừu hệ mao đới.,遣著皮裘繫毛帶。,遣著皮裘繫毛帶。,True,0,0,0,0,1.0
+Phong vũ thê thê,風雨凄凄，,風雨萋萋,False,3,2,1,0,0.4444444444444444
+"Tại Hạp chi dương,",在洽之陽，,在闔之陽，,False,1,1,0,0,0.8
+Tỉ ốc tề dân vô xứ cư.,比屋齊民無處居。,俾屋齊民無處居。,False,1,1,0,0,0.875
+Xuế y như môn.,毳衣如璊。,毳衣如門。,False,1,1,0,0,0.8
+"Tiên đế thị nữ bát thiên nhân,",先帝侍女八千人，,先帝是女八千人，,False,1,1,0,0,0.875
+"Ly mị võng lượng đồ vi nhĩ,",魑魅魍魎徒為耳，,離寐網量徒為耳，,False,4,4,0,0,0.5
+Vô tự lập tịch.,無自立辟。,無自立夕。,False,1,1,0,0,0.8
+Kinh sự tiệm tri phi.,經事漸知非。,荊事漸知非。,False,1,1,0,0,0.8333333333333334
+"Nam mạch chinh nhân khứ bất quy,",南陌征人去不歸，,南麥征人去不歸，,False,1,1,0,0,0.875
+"Cối truyền tả nữu chi văn, thị thuỳ mậu dẫn.",檜傳左紐之文，是誰謬引。,會傳左扭之文，是誰茂引。,False,3,3,0,0,0.75
+Bát nguyệt hoàn vĩ.,八月萑葦。,八月還尾。,False,2,2,0,0,0.6
+Phi tuyết phú đình.,飛雪覆庭。,非雪富庭。,False,2,2,0,0,0.6
+Ngã văn hữu mịnh.,我聞有命，,我聞有枕。,False,2,2,0,0,0.6
+"Phóng quan Bạng cáp chi phù sa,",放觀蚌蛤之浮沙，,放觀傍枕之浮沙，,False,2,2,0,0,0.75
+"Vạn lý ương ương Lô Nhĩ hà,",萬里泱泱瀘珥河，,萬里央央盧爾河，,False,4,4,0,0,0.5
+Hoàn ưng đảo tiếp ly.,還應倒接蘺。,還應倒接離。,False,1,1,0,0,0.8333333333333334
+Hãm xích tử ư hoạ khanh.,陷赤子於禍坑。,餡尺子於畫卿。,False,4,4,0,0,0.42857142857142855
+Phật quốc bất thăng xuân.,佛國不勝春。,佛國不升春。,False,1,1,0,0,0.8333333333333334
+Nhược xuất kỳ lý.,若出其里。,若出其里。,True,0,0,0,0,1.0
+"Sương hải vị điền, Tinh vệ hàm thạch;",霜海未填，精衛含石；,霜海未田，星衛含石；,False,2,2,0,0,0.8
+"Phòng ngư sanh vĩ,",魴魚赬尾、,房魚撐尾，,False,3,3,0,0,0.4
+Nhân tâm tắc hữu.,因心則友。,人心則有。,False,2,2,0,0,0.6
+"Tứ chi phủ việt,",賜之斧鉞，,四之府越，,False,3,3,0,0,0.4
+Hung đồ phi mỵ.,凶徒披靡。,匈圖飛寐。,False,4,4,0,0,0.2
+Nguyệt minh phong tử lạc.,月明楓子落。,月明風子落。,False,1,1,0,0,0.8333333333333334
+Bi phong táp táp xuy y thường.,悲風颯颯吹衣裳。,悲風颯颯吹衣裳。,True,0,0,0,0,1.0
+"Kim chi tịch hề trừ tịch,",今之夕兮除夕，,今之夕兮除夕，,True,0,0,0,0,1.0
+Khả dữ ngộ ngữ.,可與晤語。,可與遇語。,False,1,1,0,0,0.8
+Phong hoả chiếu dạ thi túng hoành.,烽火照夜尸縱橫。,風火照夜詩縱橫。,False,2,2,0,0,0.75
+"Khổng Minh lục xuất Kỳ Sơn tiền,",孔明六出祁山前，,孔明綠出淇山前，,False,2,2,0,0,0.75
+"Lậu nho biên thi bất thu nhập,",陋儒編詩不收入，,漏儒邊詩不秋入，,False,3,3,0,0,0.625
+"Sơn thuỷ chi lạc, ngụ ư mục nhi đắc ư tâm.",山水之樂，寓於目而得於心。,山水之落，寤於目而得於心。,False,2,2,0,0,0.8461538461538461
+Tất cánh:,畢竟：,必更：,False,2,2,0,0,0.3333333333333333
+"Bách niên tầm bật,",百年尋弼，,百年尋駜，,False,1,1,0,0,0.8
+Trường ca đoản vịnh hoàn tương thù.,長歌短詠還相酬。,長歌短詠還相殊。,False,1,1,0,0,0.875
+"Hành phùng huyện lệnh thượng do khả,",行逢縣令尚猶可，,行逢縣令上猶可，,False,1,1,0,0,0.875
+"Chung Nam tàn nguyệt quải thành đầu,",終南殘月掛城頭，,終南殘月掛成頭，,False,1,1,0,0,0.875
+Yếm nguyệt chiếu không sàng.,厭月照空床。,厭月照空床。,True,0,0,0,0,1.0
+"Mạc trắc tại thiên thành tố cục,",莫測在天成素局，,莫側在天成素跼，,False,2,2,0,0,0.75
+"Sinh tiền uổng phí tâm thiên vạn,",生前枉費心千萬，,生前枉費心千萬，,True,0,0,0,0,1.0
+"Cựu xuyên dương diệp chân tự tri,",舊穿楊葉真自知，,舊川楊葉真自知，,False,1,1,0,0,0.875
+Vấn ngã hà vi giả?,問我何為者？,問我何為者？,True,0,0,0,0,1.0
+Liên chu tiệm giác hy.,蓮舟漸覺稀。,連舟漸覺稀。,False,1,1,0,0,0.8333333333333334
+Tương nguỵ hội thê hàng chi vạn quốc; long trì la kiếm bội chi thiên quan.,象魏會梯杭之萬國；龍墀羅劍佩之千官。,相偽會妻行之萬國；龍持羅劍佩之千關。,False,6,6,0,0,0.6666666666666666
+Tứ quốc thuận chi.,四國順之。,四國順之。,True,0,0,0,0,1.0
+"Phương thảo sầu, tây phong khởi.",芳草愁西風起。,方草愁，西風起。,False,2,1,0,1,0.8
+Hà sự Đào Tiềm diệc bạch đầu.,何事陶潛亦白頭。,何事桃潛亦白頭。,False,1,1,0,0,0.875
+"An tri thiên lý ngoại,",安知千里外，,安知千里外，,True,0,0,0,0,1.0
+"Thâm khuê dưỡng dục kiều loan thân,",深閨養育嬌鸞身，,深閨養欲嬌鸞身，,False,1,1,0,0,0.875
+"Dã khoáng thiên thanh vô chiến thanh,",野曠天清無戰聲，,野曠千聲無戰聲，,False,2,2,0,0,0.75
+Mỹ nữ tầm phương tử mạch hành.,美女尋芳紫陌行。,美女尋方子麥行。,False,3,3,0,0,0.625
+Hữu chiêu ngã do phòng.,右招我由房。,有昭我由房。,False,2,2,0,0,0.6666666666666666
+"Cánh văn phiêu lạc tận,",更聞飄落盡，,更聞飄落盡，,True,0,0,0,0,1.0
+Trướng do dự nhi hồ nghi.,悵猶豫而狐疑。,悵由夜而乎儀。,False,4,4,0,0,0.42857142857142855
+Du du viễn khách tình.,悠悠遠客情。,悠悠遠客情。,True,0,0,0,0,1.0
+"Khứ gia tài nhị nguyệt,",去家纔二月，,去家才二月，,False,1,1,0,0,0.8333333333333334
+"Bình cư Lam Điền,",屏居藍田，,平居藍田，,False,1,1,0,0,0.8
+"Di quyết tôn mưu,",詒厥孫謀，,夷厥孫謀，,False,1,1,0,0,0.8
+Khứ tác nhân gian vũ.,去作人間雨。,去作人間雨。,True,0,0,0,0,1.0
+Bỉ quân tử hề!,彼君子兮，,彼君子兮，,True,0,0,0,0,1.0
+"Triêu tư mộ tưởng vô liễu kỳ,",朝思暮想無了期，,朝思暮想無柳期，,False,1,1,0,0,0.875
+"Đông lai vạn lý khách,",東來萬里客，,東來萬里客，,True,0,0,0,0,1.0
+"Ngôn chi tín, hành chi quả, tử, sinh, kinh, cụ, bất nhập hồ hung trung.",言之信，行之果，死，生，驚，懼，不入乎胸中。,言之信，行之寡，子，生，經，具，不入乎胸中。,False,4,4,0,0,0.8181818181818182
+"Cao thâm phi ý tuỳ sở để,",高深非意隨所抵，,高深飛意隨所底，,False,2,2,0,0,0.75
+Hương mao kết vi vũ.,香茅結為宇。,鄉毛結為雨。,False,3,3,0,0,0.5
+"Tuyệt giao a đổ hề thượng thặng tàn thư,",絕交阿堵兮尚剩殘書，,絕教阿睹兮上乘殘書，,False,4,4,0,0,0.6
+"Biểu hữu mai,",標有梅，,表有埋，,False,2,2,0,0,0.5
+"Cổ lai hữu chi,",古來有之，,古來有之，,True,0,0,0,0,1.0
+"Kim Túc đôi tiền tùng bách lý,",金粟堆前松柏裡，,金夙堆前松百里，,False,3,3,0,0,0.625
+Đông viên ngải thu cửu.,東園刈秋韭。,東園刈秋九。,False,1,1,0,0,0.8333333333333334
+"Chấn lân phấn dực, uy uy uyển uyển.",振鱗奮翼，蜲蜲蜿蜿。,振鄰粉翼，威威苑宛。,False,6,6,0,0,0.4
+Yến cập bằng hữu.,燕及朋友。,燕及朋友。,True,0,0,0,0,1.0
+"Quyết manh tại sơ,",厥萌在初，,厥萌在初，,True,0,0,0,0,1.0
+"Viết quy, viết quy,",曰歸曰歸，,曰歸曰歸，,True,0,0,0,0,1.0
+"Tâm khiểm di nhi bất tỉnh cố hề, giao đắc ý nhi tương thân.",心慊移而不省故兮，交得意而相親。,心慊遺而不省顧兮，交得意而相親。,False,2,2,0,0,0.875
+Lạc chung cổ nhi vị ương!,樂終古而未央！,落終古而未央。,False,2,2,0,0,0.7142857142857143
+"Ngọc Tuyền chi nam Lộc Sơn thù,",玉泉之南麓山殊，,玉泉之南鹿山殊，,False,1,1,0,0,0.875
+"Tu trục Trường An xã trung nhi,",羞逐長安社中兒，,須逐長安社中兒，,False,1,1,0,0,0.875
+Hảo tại chiên thành mạc tương ức.,好在氈城莫相憶；,好在旃成莫相憶。,False,3,3,0,0,0.625
+"Đồ nhiên tư ta phủ di tích,",徒然咨嗟撫遺蹟，,徒然思嗟府夷惜，,False,4,4,0,0,0.5
+Tửu lâu tức khởi tao khâu biên.,酒樓即起糟丘邊。,酒樓息起遭丘邊。,False,2,2,0,0,0.75
+"Sĩ viết: Ký thư,",士曰：「既且。」,士曰：既書，,False,4,2,2,0,0.5714285714285714
+"Sa đầu nhất thuỷ cầm,",沙頭一水禽，,沙頭一水琴，,False,1,1,0,0,0.8333333333333334
+Tiệt giang nhất ủng sổ bách lân.,截江一擁數百鱗。,截江一擁數百鄰。,False,1,1,0,0,0.875
+Lăng sương tiết kính.,凌霜節勁。,凌霜節徑。,False,1,1,0,0,0.8
+"Dục khiết hà tằng khiết,",欲潔何曾潔，,欲潔何曾潔，,True,0,0,0,0,1.0
+Quy hướng đào hoa nguyên.,歸向桃花源。,歸向桃花原。,False,1,1,0,0,0.8333333333333334
+Phụ tử tương tụ khốc.,父子相聚哭。,婦子相袖哭。,False,2,2,0,0,0.6666666666666666
+"Y kỳ tại kinh,",依其在京，,伊其在經，,False,2,2,0,0,0.6
+Nguyên khí do hàm thái tố tiền.,元氣猶含太素前。,元氣猶含太素前。,True,0,0,0,0,1.0
+Vong ngã thực đa?,忘我實多。,忘我實多？,False,1,1,0,0,0.8
+Bất kiến thập niên quan tế tế.,不見十年官濟濟。,不見十年關細細。,False,3,3,0,0,0.625
+"Tằng hướng Tiền Đường trụ,",曾向錢塘住，,曾向前塘柱，,False,2,2,0,0,0.6666666666666666
+Nhất triêu phiêu bạc nan tầm mịch.,一朝漂泊難尋覓。,一朝飄薄難尋覓。,False,2,2,0,0,0.75
+Như thử giải cấu hà?,如此邂逅何？,如此解覯何？,False,2,2,0,0,0.6666666666666666
+"Khuất Bình từ phú huyền nhật nguyệt,",屈平詞賦懸日月，,屈平辭富弦日月，,False,3,3,0,0,0.625
+"Ngũ nguyệt tương hô độ Thái Hàng,",五月相呼度太行，,五月相呼渡太行，,False,1,1,0,0,0.875
+Na cánh thanh san khổ đề quyết.,那更青山苦啼鴂。,那更青山苦啼決。,False,1,1,0,0,0.875
+"Bất giải hà do cự võng khai,",不解何由巨網開，,不解何由巨網開，,True,0,0,0,0,1.0
+Thốn điền xích trạch kim thuỳ canh.,寸田尺宅今誰耕。,寸田尺澤金誰耕。,False,2,2,0,0,0.75
+"Dữ quân tương hướng chuyển tương thân,",與君相向轉相親，,與君相向轉相身，,False,1,1,0,0,0.875
+"Ám dữ sơn tăng biệt,",闇與山僧別，,暗與山僧別，,False,1,1,0,0,0.8333333333333334
+Kỳ mệnh duy tân.,其命維新。,其命維薪。,False,1,1,0,0,0.8
+Bạch thủ biển chu bệnh độc tồn.,白首扁舟病獨存。,白首扁舟病獨存。,True,0,0,0,0,1.0
+"Lạp tuyết hài hoa,",笠雪鞋花，,笠雪孩華，,False,2,2,0,0,0.6
+"Sơ hôn xuân nguyệt khúc như cung,",初昏春月曲如弓，,初昏春月曲如宮，,False,1,1,0,0,0.875
+"Chưởng thượng du dương ảnh,",掌上悠揚影，,荒上遊陽影，,False,3,3,0,0,0.5
+Đan sa tác vĩ hoàng kim lân.,丹砂作尾黃金鱗。,丹沙作尾黃金鄰。,False,2,2,0,0,0.75
+"Sát thân chỉ vi thụ nhân tri,",殺身只為受人知，,殺身只為樹人知，,False,1,1,0,0,0.875
+"Nguy bang bất nhập,",危邦不入，,危邦不入，,True,0,0,0,0,1.0
+Lai tư lai nhự.,來咨來茹。,來思來茹。,False,1,1,0,0,0.8
+"Văn đạo Hàm Dương phần thượng thụ,",聞道咸陽墳上樹，,聞道咸陽焚上樹，,False,1,1,0,0,0.875
+"Trù trướng giang nam bắc,",惆悵江南北，,惆悵江南北，,True,0,0,0,0,1.0
+Tuế lũ phong nhương nhân lạp thực.,歲屡豐穰人粒食。,歲屢風瀼人粒實。,False,4,4,0,0,0.5
+"Mộc lan chi duệ sa đường châu,",木蘭之枻沙棠舟，,木蘭之袂沙堂珠，,False,3,3,0,0,0.625
+Yết cổ thủ quân phong vũ tật.,羯鼓手勻風雨疾。,將鼓首君風雨疾。,False,3,3,0,0,0.625
+Thử thì khả hỉ đắc nhân tình.,此時可喜得人情。,此時可喜得人情。,True,0,0,0,0,1.0
+Kỳ cam như tể.,其甘如薺。,其甘如濟。,False,1,1,0,0,0.8
+"Đường thượng tiếu vấn lai hà trì,",堂上笑問來何遲，,塘上笑問來何持，,False,2,2,0,0,0.75
+"Ta dư vị táng,",嗟予未喪，,嗟予未喪，,True,0,0,0,0,1.0
+Ngã chí triêm nhu.,我志沾濡。,我至沾柔。,False,2,2,0,0,0.6
+"Minh nhật cánh hướng bàng nhân ngữ,",明日更向旁人語，,明日更向傍人語，,False,1,1,0,0,0.875
+Trường tại thuỷ trung cư.,長在水中居。,長在水中居。,True,0,0,0,0,1.0
+Vô du ngã viên.,無逾我園，,無遊我園。,False,2,2,0,0,0.6
+Minh nguyệt độc cử,明月獨舉,明月獨舉,True,0,0,0,0,1.0
+Do lai vô tỉ.”,猶來無死。」,猶來無比。」,False,1,1,0,0,0.8333333333333334
+"Thượng thư huân nghiệp siêu thiên cổ,",尚書勳業超千古，,上書勳業弨千古，,False,2,2,0,0,0.75
+Hữu minh thương cang.,有鳴倉庚。,有明蒼缸。,False,3,3,0,0,0.4
+Thao thao bất quy.,慆慆不歸。,滔滔不歸。,False,2,2,0,0,0.6
+Hoành úng túc kham miên.,橫瓮足堪眠。,橫甕足堪眠。,False,1,1,0,0,0.8333333333333334
+Phồn sương phúc cổ thành.,繁霜覆古城。,蕃霜福鼓成。,False,4,4,0,0,0.3333333333333333
+Cổ kim tuy hoạ vô tự giả.,古今雖畫無似者。,古今雖畫無自者。,False,1,1,0,0,0.875
+"Không hầu tái đàn nguyệt dĩ vi,",箜篌再彈月已微，,空侯載彈月已為，,False,4,4,0,0,0.5
+Thiên môn vạn hộ tứ kinh qua.,千門萬戶恣經過。,天門萬戶思經過。,False,2,2,0,0,0.75
+"Quân trúc thiên niên lão bất tử,",筠竹千年老不死，,君竹千年老不死，,False,1,1,0,0,0.875
+"Tử y sứ giả từ phục mệnh,",紫衣使者辭復命，,子衣使者辭復命，,False,1,1,0,0,0.875
+"Tây thi dạ tuý Phù Dung châu,",西施夜醉芙蓉洲，,西詩夜醉浮容珠，,False,4,4,0,0,0.5
+Ta ta lân ảo hà ái ly?,嗟嗟鄰媼何愛嫠？,嗟嗟麟媼何愛離？,False,2,2,0,0,0.75
+Báo chi dĩ lý.,報之以李。,報之以里。,False,1,1,0,0,0.8
+"Hoả sinh vu mộc,",火生于木，,火生于木，,True,0,0,0,0,1.0
+Bệnh tẩu độc tàng thu phát bạch.,病叟獨藏秋發白。,病走獨藏秋發白。,False,1,1,0,0,0.875
+"Ngoại trạch phụ,",外宅婦，,外澤婦，,False,1,1,0,0,0.75
+"Trường Bạch long can tây nam lai,",長白龍干西南來，,長白龍干西南來，,True,0,0,0,0,1.0
+"Ngã hữu chỉ súc,",我有旨蓄，,我有止縮，,False,2,2,0,0,0.6
+"Hạnh thậm chí tai,",幸甚至哉，,幸甚至哉，,True,0,0,0,0,1.0
+"Báo nha vô lại đáo,",報衙無吏到，,報牙無吏到，,False,1,1,0,0,0.8333333333333334
+"Vạn lý trường thành hoại,",萬里長城壞，,萬里長成壞，,False,1,1,0,0,0.8333333333333334
+Đẩu nhĩ lập công danh!,陡爾立功名。,斗爾立公名。,False,2,2,0,0,0.6666666666666666
+Bỉ quân tử hề!,彼君子兮，,彼君子兮，,True,0,0,0,0,1.0
+Bảo ngải nhĩ hậu.,保艾爾後。,寶刈爾後。,False,2,2,0,0,0.6
+Táp đạp thanh ly dược tử lưu.,颯遝青驪躍紫騮。,卅踏青離躍死流。,False,5,5,0,0,0.375
+"Thâm sơn, đại trạch long xà viễn,",深山大澤龍蛇遠，,深山大澤龍蛇遠，,True,0,0,0,0,1.0
+"Ung nhân thụ ngư Giao nhân thủ,",饔人受魚鮫人手，,雍人樹魚交人首，,False,4,4,0,0,0.5
+Diệc học mẫu đơn khai.,亦學牡丹開。,亦學母丹開。,False,1,1,0,0,0.8333333333333334
+Túc túc bảo dực.,肅肅鴇翼，,夙肅保翼。,False,3,3,0,0,0.4
+"Thừa hiểu nam hồ khứ,",乘曉南湖去，,乘曉南乎去，,False,1,1,0,0,0.8333333333333334
+Đại bất cập thủ tiểu xuyết chi.,大不及取小綴之。,大不及首小綴枝。,False,2,2,0,0,0.75
+Đăng hoả tân lương thôi dạ chức.,燈火新涼催夜織。,登火新良催夜織。,False,2,2,0,0,0.75
+"Nhược nhân tri thử pháp,",若人知此法，,若人知此法，,True,0,0,0,0,1.0
+"Như tùng phỉ thạch minh trường tại,",如松匪石盟長在，,如松匪石明長在，,False,1,1,0,0,0.875
+"Bất năng phá hạm nhĩ bất vũ,",不能破檻爾不武，,不能破檻爾不雨，,False,1,1,0,0,0.875
+Truyền tập tử tôn cấp ngũ thế.,傳襲子孫給五世。,傳集子孫急五世。,False,2,2,0,0,0.75
+"Khương địch “Mai hoa dẫn”,",羌笛梅花引，,羌笛梅梅花引，,False,1,0,0,1,0.9230769230769231
+"Sóc phong lạp lạp xuy ngã y,",朔風獵獵吹我衣，,朔風粒粒吹我衣，,False,2,2,0,0,0.75
+"Đông long bạch nhật, tây long vũ.",東龍白日西龍雨。,東龍白日西龍雨。,True,0,0,0,0,1.0
+"Khán hoa du nữ bất tri xú,",看花游女不知醜，,看花遊女不知醜，,False,1,1,0,0,0.875
+Nhị nhân đắc trí quân trắc phủ.,二人得置君側否。,二人得致君側府。,False,2,2,0,0,0.75
+Điệt dụng bi cụ.,迭用悲懼。,愿用悲具。,False,2,2,0,0,0.6
+"Bất hận ngã suy tử quý thì,",不恨我衰子貴時，,不恨我衰子貴時，,True,0,0,0,0,1.0
+Tỉ dực liên khâm hội khẳng trì.,比翼連襟會肯遲。,俾翼連衾會肯持。,False,3,3,0,0,0.625
+Nhược đáo tam thanh na khả văn.,若到三聲那可聞。,若到三聲那可聞。,True,0,0,0,0,1.0
+"Khách hữu xuy động tiêu giả, ỷ ca nhi hoạ chi; kỳ thanh ô ô nhiên, như oán như mộ, như khấp như tố, dư âm diểu diểu bất tuyệt như lũ; vũ u hác chi tiềm giao, khấp cô chu chi ly phụ.",客有吹洞蕭者，倚歌而和之，其聲嗚嗚然，如怨如慕，如泣如訴；餘音裊裊，不絕如縷；舞幽壑之潛蛟，泣孤舟之嫠婦。,客有吹動消者，倚歌而畫之；其聲烏烏然，如怨如暮，如泣如素，予有其所以和之屢，如幽，如兮，如泣，如也，如此如此如如何而為之所不如其如其所如如其所者，而為如其者，如獨時，,False,59,29,0,30,0.38235294117647056
+"Duy bỉ tứ quốc,",維彼四國，,維彼四國，,True,0,0,0,0,1.0
+Lai tựu khách tâm nhiên?,來就客心然。,來就客心然？,False,1,1,0,0,0.8333333333333334
+Sám chấp tử chi khử hề.,摻執子之袪兮。,摻執子之虛兮。,False,1,1,0,0,0.8571428571428571
+Nguy nguy quán bách vương.,巍巍冠百王。,危危館百王。,False,3,3,0,0,0.5
+"Vấn thuỷ thao thao,",汶水滔滔，,問水滔滔，,False,1,1,0,0,0.8
+"Phủ ba ngân nhi cư nhĩ hề,",俯波痕而居耳兮，,俯波銀而居爾兮，,False,2,2,0,0,0.75
+"Hữu tiêu kỳ hinh,",有椒其馨，,有蕭其馨，,False,1,1,0,0,0.8
+Thạch đầu thành hạ vô ba đào.,石頭城下無波濤。,石頭城下無波濤。,True,0,0,0,0,1.0
+Yêm nhiên quy hoá trần căn tuyệt.,奄然歸化塵根絕。,厭然歸化塵根絕。,False,1,1,0,0,0.875
+Tường hại biên dân nghiêm vũ bị.,戕害邊民嚴武備。,墻害邊民嚴雨備。,False,2,2,0,0,0.75
+Song phụng cao phi Hải Nam mạch.,雙鳳高飛海南陌。,雙鳳高飛海南陌。,True,0,0,0,0,1.0
+"Phan long phụ phụng thế mạc đương,",攀龍附鳳勢莫當，,攀龍婦鳳世莫當，,False,2,2,0,0,0.75
+"Ngung ôi đa hữu,",隅隈多有，,顒隈多有，,False,1,1,0,0,0.8
+"Tạc dạ Ngô trung tuyết,",昨夜吳中雪，,昨夜吳中雪，,True,0,0,0,0,1.0
+"Uyên ương ngoã lãnh sương hoa trọng,",鴛鴦瓦冷霜華重，,淵央瓦冷霜花重，,False,3,3,0,0,0.625
+"Yêu cơ kiểm tự hoa hàm lộ,",妖姬臉似花含露，,腰機檢自花含路，,False,5,5,0,0,0.375
+"Dã khoáng thiên đê thụ,",野曠天低樹，,野曠千低樹，,False,1,1,0,0,0.8333333333333334
+"Tiên sinh hung thứ kỷ khâu hác,",先生胸次幾丘壑，,先生胸庶幾丘壑，,False,1,1,0,0,0.875
+Tu kiến tú uyên ương.,羞見繡鴛鴦。,須見繡鴛鴦。,False,1,1,0,0,0.8333333333333334
+Tịch dương cao hạ giá cô thanh.,夕陽高下鷓鴣聲。,夕陽高下嫁孤聲。,False,2,2,0,0,0.75
+"Điên chi điểu chi,",顛之倒之，,顛之鳥之，,False,1,1,0,0,0.8
+Thông cốc hoát hồ hàm ha.,通谷𧯆乎𧮰谺。,通穀枕乎含谺。,False,3,3,0,0,0.5714285714285714
+Nhân nhân cấp tiền mãi tuý bão.,人人給錢買醉飽。,人人急前買醉飽。,False,2,2,0,0,0.75
+"Vô túng quỷ tuỳ,",無縱詭隨，,無縱鬼隨，,False,1,1,0,0,0.8
+Giang hà dục quyết phiên buộn ung.,江河欲決翻坌壅。,江河欲決翻枕雝。,False,2,2,0,0,0.75
+Vạn hộ thiên môn minh nguyệt lý.,萬戶千門明月裏。,萬戶千門明月里。,False,1,1,0,0,0.875
+Kỳ chi địch dã.,其之翟也。,其之笛也。,False,1,1,0,0,0.8
+"Tiên thu hoàng cảnh,",先秋遑警，,先秋黃景，,False,2,2,0,0,0.6
+Dao ức thảo đường tiền.,遙憶草堂前。,遙憶草堂前。,True,0,0,0,0,1.0
+Bạch trú sát nhân toàn gia khứ.,白晝殺人全家去。,白晝殺人全家去。,True,0,0,0,0,1.0
+"Thành bại anh hùng mạc luận, thử cô trung, thử đại nghĩa, thệ dữ chư quân tử thuỷ chung. Châu chi anh, mặc chi linh, độc thư mỗi niệm cương thường trọng. Khả hận giả thuỳ điên đại hạ, nhất mộc nan chi, cung lãnh yên tiêu, thuỳ nhân bất tác thâm sơn oán! Huống đương nhật long phi vân ám, cộng ta nhân sự vô thường, khả liên La Việt giang sơn, bách niên văn hiến phiên binh mã.",成敗英雄莫論，此孤忠，此大義，誓與諸君子始終。硃之英，墨之靈，讀書每念綱常重。可恨者垂顛大廈，一木難支，宮冷煙消，誰人不作深山怨！況當日龍飛雲暗，共嗟人事無常，可憐羅越江山，百年文獻翻兵馬。,城敗英雄莫論，此孤中，此大義，逝與諸君子水終。州之英，墨以為，獨立，不可常，不可以為誰為誰為下，豈如此不可以為，何不人不為之所人不為之所以為如何；,False,65,43,22,0,0.36904761904761907
+"Phỉ dụng vi giáo,",匪用爲教，,匪用為教，,False,1,1,0,0,0.8
+Bất khả quyển dã.,不可卷也。,不可捲也。,False,1,1,0,0,0.8
+"Nhật lạc sa phi chiến cổ hiêu,",日落沙飛戰鼓囂，,日落沙飛戰鼓鴞，,False,1,1,0,0,0.875
+Dư mỹ vong thử.,予美亡此，,予美亡此。,False,1,1,0,0,0.8
+Du sinh nhĩ điền hồ cập dã thử.,偷生爾田狐及野鼠。,遊生爾田乎及也此。,False,4,4,0,0,0.5555555555555556
+"Quái lai trang các bế,",怪來妝閣閉，,怪來妝閣閉，,True,0,0,0,0,1.0
+"Thánh nhân tích đức,",聖人積德，,聖人惜德，,False,1,1,0,0,0.8
+"Tiên sinh tuý tụ vãn xuân hồi,",先生醉袖挽春回，,先生醉袖晚春回，,False,1,1,0,0,0.875
+Ngôn sư thái dược khứ.,言師採藥去。,言師太躍去。,False,2,2,0,0,0.6666666666666666
+Bả tửu đại hô hề quân lâm ngã cư.,把酒大呼兮君臨我居。,把酒大呼兮君林我居。,False,1,1,0,0,0.9
+Miên mạc trường đồ sấn dạ hành.,綿邈長途趁夜行。,綿莫長圖趁夜行。,False,2,2,0,0,0.75
+Tứ phương dĩ vô vũ.,四方以無侮。,四方已無雨。,False,2,2,0,0,0.6666666666666666
+Đương thì đắc ý huống thâm quyến.,當時得意況深眷。,當時得意況深眷。,True,0,0,0,0,1.0
+"Hữu như thố tẩu ưng chuẩn lạc,",有如兔走鷹隼落，,有如兔走應隼樂，,False,2,2,0,0,0.75
+"Ngã khách lệ chỉ,",我客戾止，,我客淚止，,False,1,1,0,0,0.8
+"Trắc bỉ bắc sơn,",陟彼北山，,陟彼北山，,True,0,0,0,0,1.0
+Hựu khuyết ngã cà.,又缺我錡。,又闕我枕。,False,2,2,0,0,0.6
+"Liệt vũ bảo nhi vi tiền đạo hề,",列羽葆而為前導兮，,烈雨寶而為前道兮，,False,4,4,0,0,0.5555555555555556
+"Kỳ hư kỳ từ,",其虛其邪，,其虛其辭，,False,1,1,0,0,0.8
+"Thù mâu thúc sở,",綢繆束楚，,殊矛束楚，,False,2,2,0,0,0.6
+"Sơn hữu trăn,",山有榛，,山有榛，,True,0,0,0,0,1.0
+"Thường ngâm vĩnh thán,",常吟永嘆，,常吟永嘆，,True,0,0,0,0,1.0
+"Bách niên tử thụ trung cầm sắt,",百年死樹中琴瑟，,百年子樹中琴瑟，,False,1,1,0,0,0.875
+"Tư quân như mãn nguyệt,",思君如滿月，,思君如滿月，,True,0,0,0,0,1.0
+Sa khẩu thạch đông mã đề thoát.,沙口石凍馬蹄脫。,沙口石東馬啼脫。,False,2,2,0,0,0.75
+"Xuất tự bắc mân,",出自北門，,出自北緡，,False,1,1,0,0,0.8
+Vương sư chi sở.,王師之所。,王師之所。,True,0,0,0,0,1.0
+"Nhân tư cựu trạch nhi bất vong,",人思舊澤，而不忘，,人思舊澤而不亡，,False,2,1,1,0,0.8235294117647058
+Trí tửu cung trung tiềm kết trận.,置酒宮中潛結陣。,致酒宮中潛結陣。,False,1,1,0,0,0.875
+Chỉ hữu nhất tu tri.,只有一鬚知。,只有一須知。,False,1,1,0,0,0.8333333333333334
+Tử chi phong hề!,子之豐兮，,子之風兮，,False,1,1,0,0,0.8
+Hoa lâm thảo thế vô giao tình.,花林草砌無交情。,花林草世無教情。,False,2,2,0,0,0.75
+"Ngã tâm hư tĩnh,",我心虛靜，,我心虛靜，,True,0,0,0,0,1.0
+Thiên khởi thánh hề địa hưng vương;,天啟聖兮地興王；,天起聖兮地興王；,False,1,1,0,0,0.875
+Giảo nhân lão hề!,佼人懰兮。,佼人老兮。,False,1,1,0,0,0.8
+Mãn giang hoa vũ thấp đông phong.,滿江花雨濕東風。,滿江花雨濕東風。,True,0,0,0,0,1.0
+"Tự thiên tử sở,",自天子所，,自天子所，,True,0,0,0,0,1.0
+Điểu tham thực vong.,鳥貪食亡。,鳥參實亡。,False,2,2,0,0,0.6
+"Đầu giao hưởng sĩ, phụ tử chi binh nhất tâm.",投醪饗士，父子之兵一心。,頭教響士，婦子之兵一心。,False,4,4,0,0,0.6666666666666666
+"Khổng điền bất ninh,",孔填不寧，,孔田不寧，,False,1,1,0,0,0.8
+Xuất môn kiến lão di nhập môn kiến lão mẫu thương tâm bất cấm lệ như lưu.,出門見老姨入門見老母傷心不禁淚如流。,出門見老遺入門見老母傷心不禁淚如流。,False,1,1,0,0,0.9444444444444444
+Tiễn thuỷ tác hoa phi.,剪水作花飛。,剪水作花飛。,True,0,0,0,0,1.0
+"Dương nhân hoá ư vũ nội hề,",揚仁化於宇內兮，,楊人化於雨內兮，,False,3,3,0,0,0.625
+Hữu đệ chi đỗ,有杕之杜，,有杕之杜,False,1,0,1,0,0.8888888888888888
+Tướng quân lâu các hoạ thần tiên.,將軍樓閣畫神仙。,將軍樓閣畫神先。,False,1,1,0,0,0.875
+"Phu dã bất lương,",夫也不良，,夫也不良，,True,0,0,0,0,1.0
+"Thạch Thành cảnh vật loại hoàng tuyền,",石城景物類黃泉，,石城景物類黃泉，,True,0,0,0,0,1.0
+"Khắc xảo công phu nguyên thái tố,",刻巧工夫元太素。,克巧公夫元太素，,False,3,3,0,0,0.625
+Tương dữ huyên hách lưu thuần hy.,相與烜赫流淳熙。,相與喧赫流純稀。,False,3,3,0,0,0.625
+"Hoặc kỵ kỳ lân, ế phụng hoàng.",或騎麒麟翳鳳凰。,或騎其鄰翳鳳黃。,False,3,3,0,0,0.625
+"Tha niên cần mậu nhi tê hương hề,",他年芹茂而樨香兮，,他年勤茂而嘶香兮，,False,2,2,0,0,0.7777777777777778
+Thuỵ giác dã vân phi.,睡覺野雲飛。,睡覺野雲飛。,True,0,0,0,0,1.0
+Đại hống nhất thanh liệt như hổ.,大吼一聲烈如虎。,大吼一聲列如虎。,False,1,1,0,0,0.875
+Thuỷ hiệu An Nam kim nhưng thị.,始號安南今仍是。,水效安南金仍是。,False,3,3,0,0,0.625
+"Duy thử giang chi đại tiệp,",惟此江之大捷，,惟此江之大捷，,True,0,0,0,0,1.0
+Hữu tự khách du.,有似客遊。,有自客遊。,False,1,1,0,0,0.8
+Cô Tô đài hạ khởi hoàng trần.,姑蘇臺下起黃塵。,孤蘇臺下起黃塵。,False,1,1,0,0,0.875
+"Thanh thương phù không trừng tế cảnh,",清商浮空澄霽景，,青蒼浮空澄細景，,False,3,3,0,0,0.625
+Phát đoạn cứ trường ma.,髮斷鋸長麻。,發斷據長磨。,False,3,3,0,0,0.5
+"Hát ngưu phi bạch điểu,",喝牛飛白鳥，,處牛飛白鳥，,False,1,1,0,0,0.8333333333333334
+"Ca vũ ""Bạch đồng đê"".",歌舞白銅鞮。,歌舞白白同低。,False,3,2,0,1,0.6153846153846154
+Ninh tỷ ngã độn?,寧俾我遯！,寧比我遁？,False,3,3,0,0,0.4
+"Yên Triệu đa kỳ sĩ,",燕趙多奇士，,煙趙多期士，,False,2,2,0,0,0.6666666666666666
+Bách tuế khởi chỉ liệu nhất thân?,百歲豈止療一身?,百歲豈止燎一身？,False,2,2,0,0,0.75
+"Chu tiếp phân phân đồng nhất lưu,",舟楫紛紛同一流，,舟接分分同一流，,False,3,3,0,0,0.625
+"Hình tuy trùng chi đặc tiếu, thân thị diệp chi giai vi.",形雖虫之特肖，身是葉之皆為。,形雖重之特笑，身是葉之皆為。,False,2,2,0,0,0.8571428571428571
+"Xuân nhật phi, xuân dã tịch,",春日飛，春野寂，,春日飛，春野夕，,False,1,1,0,0,0.875
+Phi nguyệt hướng nam đoan.,飛月向南端。,非月向南端。,False,1,1,0,0,0.8333333333333334
+"Duy tiền bằng điếu, thực quan nhân sinh ý khí chi bi;",惟前憑吊，寔關人生意氣之悲；,惟前憑釣，實關人生意氣之悲；,False,2,2,0,0,0.8571428571428571
+Thôn thanh trịch trục thế lệ linh.,吞聲躑躅涕淚零。,村聲擲逐世淚靈。,False,5,5,0,0,0.375
+Khởi vi cừu thù.,起為仇讎。,豈為裘殊。,False,3,3,0,0,0.4
+"Cật triêu manh khứ thành trung định,",詰朝甿去城中定，,姞朝萌去成中定，,False,3,3,0,0,0.625
+"Thu thuỷ minh lạc nhật,",秋水明落日，,秋水明落日，,True,0,0,0,0,1.0
+"Nhi bỉnh nghĩa loại,",而秉義類，,而秉義類，,True,0,0,0,0,1.0
+Hữu vi lệ liên.,友為淚漣。,有為淚連。,False,2,2,0,0,0.6
+Nhất vọng Cửu Giang thành.,一望九江城。,一望九江成。,False,1,1,0,0,0.8333333333333334
+"Thanh phong táp địa vô hưu yết,",清風匝地無休歇，,青風颯地無休歇，,False,2,2,0,0,0.75
+"Cảm cự đại bang,",敢距大邦，,感巨大邦，,False,2,2,0,0,0.6
+Thiết hoạch mãn địa tuyên thanh đài.,鐵畫滿地鐫青苔。,鐵獲滿地宣青臺。,False,3,3,0,0,0.625
+Ninh tri hiểu hướng vân gian một.,寧知曉向雲間沒。,寧知曉向雲間沒。,True,0,0,0,0,1.0
+Sơn trung khởi liệu kim vi Tấn.,山中豈料今為晉。,山中起燎金為晉。,False,3,3,0,0,0.625
+Sở Hán hưng vong lưỡng khâu thổ.,楚漢興亡兩丘土。,楚漢興亡兩丘土。,True,0,0,0,0,1.0
+"Bất nhiệm mịch hồng,",不任汩鴻，,不任覓紅，,False,2,2,0,0,0.6
+"Ngôn ngã triêu vãng nhi mộ lai hề, ẩm thực lạc nhi vong nhân.",言我朝往而暮來兮，飲食樂而忘人。,言我朝往而暮來兮，飲食落而亡人。,False,2,2,0,0,0.875
+Sa trướng túc âu kinh.,沙漲宿鷗驚。,沙帳足鷗經。,False,3,3,0,0,0.5
+"Nhân sinh bất hướng hoa tiền tuý,",人生不向花前醉，,人生不向花前醉，,True,0,0,0,0,1.0
+"Ốc tiền thái cổ Huyền Đô đàn,",屋前太古玄都壇，,屋前太古玄都彈，,False,1,1,0,0,0.875
+"Nhất đại công danh thiên hạ hữu,",一代功名天下有，,一大公名天下有，,False,2,2,0,0,0.75
+"Địch lý thuỳ tri tráng sĩ tâm,",笛里誰知壯士心，,狄里誰知壯士心，,False,1,1,0,0,0.875
+Thuỳ chu dư mỹ?,誰侜予美，,誰舟予美？,False,2,2,0,0,0.6
+"Sơn yêu bạch vân xuất y đái,",山腰白雲出衣帶，,山腰白雲出衣帶，,True,0,0,0,0,1.0
+Trừ khước phong ba nại nhược hà!,除卻風波奈若何。,除卻風波奈若何！,False,1,1,0,0,0.875
+Tam giang thạch chuyển điêu hàn thử.,三江石轉凋寒暑。,三江石轉雕寒此。,False,2,2,0,0,0.75
+"Lục thập niên trung sự,",六十年中事，,綠十年中事，,False,1,1,0,0,0.8333333333333334
+Công thi yến ẩm,公尸燕飲，,公尸燕飲,False,1,0,1,0,0.8888888888888888
+"Lục bỉ tiêu tư,",蓼彼蕭斯，,綠彼蕭斯，,False,1,1,0,0,0.8
+Hà dĩ đắc tư ư thiên địa tai?,何以得斯於天地哉？,何以得思於天地哉？,False,1,1,0,0,0.8888888888888888
+Lê đô quan thị Kích.,黎都官是擊。,黎都關是擊。,False,1,1,0,0,0.8333333333333334
+Chỉ hữu tàn bi do vị khuynh.,只有殘碑猶未傾。,只有殘悲猶未傾。,False,1,1,0,0,0.875
+Phong hàn dạ vị miên.,風寒夜未眠。,風寒夜未眠。,True,0,0,0,0,1.0
+"Viên tuyển tì hưu chi sĩ,",爰選貔貅之士，,爰選琵休之士，,False,2,2,0,0,0.7142857142857143
+Hạ chi nhật.,夏之日。,下之日。,False,1,1,0,0,0.75
+"Địa thuỷ hoả phong thức,",地水火風識，,地水火風識，,True,0,0,0,0,1.0
+Hà bất vọng hương phi.,何不望鄉飛。,何不望香非。,False,2,2,0,0,0.6666666666666666
+Tứ diện phù dung khai.,四面芙蓉開。,四面浮容開。,False,2,2,0,0,0.6666666666666666
+Mạt tứ hồ chi điền.,秣駟乎芝田。,末思乎之田。,False,3,3,0,0,0.5
+Nhật xuất hữu diệu.,日出有曜。,日出有妙。,False,1,1,0,0,0.8
+Sa lịch thảm đạm sầu hành nhân.,沙礫慘淡愁行人。,沙歷慘淡愁行人。,False,1,1,0,0,0.875
+Chưng chi phù phù.,烝之浮浮。,烝之浮浮。,True,0,0,0,0,1.0
+Lưu liên dạ vị quy.,留連夜未歸。,流憐夜未歸。,False,2,2,0,0,0.6666666666666666
+"Xuyên trạch hủ hủ,",川澤訏訏，,川澤朽朽，,False,2,2,0,0,0.6
+Dĩ vị dân cầu.,以爲民逑。,以謂民求。,False,2,2,0,0,0.6
+"Quyết lợi duy hà,",厥利維何，,厥利維何，,True,0,0,0,0,1.0
+Hồn tiêu đại mội sàng.,魂銷玳瑁床。,魂蕭大曠床。,False,3,3,0,0,0.5
+"Hà phồn điểu tuỵ cức,",何繁鳥萃棘，,何繁鳥悴棘，,False,1,1,0,0,0.8333333333333334
+Giang đông hành khách tâm du tai!,江東行客心悠哉。,江東行客心遊哉！,False,2,2,0,0,0.75
+"Cố sử dật chi tiền văn hề, thị Đổng Hồ nhi hữu quý.",顧史佚之前聞兮，視董狐而有愧。,故使逸之前文兮，是董胡而有貴。,False,7,7,0,0,0.5333333333333333
+"Nam sơn hữu cầm, kỳ tự viết hy hữu,",南山有禽其字曰希有，,南山有琴，其自曰稀有，,False,4,3,0,1,0.6666666666666666
+"Tán kỵ vị tri vân các xử,",散騎未知雲閣處，,散騎未知雲各處，,False,1,1,0,0,0.875
+"Tôn Kiên, Tôn Sách khởi Giang Tả,",孫堅孫策起江左，,尊堅孫孫起江左，,False,2,2,0,0,0.75
+"Xuất duy hàm thái tiếu tương nghinh,",出帷含態笑相迎。,出惟含太笑相迎，,False,3,3,0,0,0.625
+"Bất vũ quan quả,",不侮矜寡，,不雨關果，,False,3,3,0,0,0.4
+Minh châu thập hộc mãi phinh đình.,明珠十斛買娉婷。,明珠十鵠買竮庭。,False,3,3,0,0,0.625
+Kỳ gian thậm giả Tiêu dữ Ân.,其間甚者蕭與殷。,其間甚者蕭與殷。,True,0,0,0,0,1.0
+"Hán quốc sơn hà tại,",漢國山河在，,漢國山河在，,True,0,0,0,0,1.0
+Dạ dạ nhập duy lai.,夜夜入帷來。,夜夜入惟來。,False,1,1,0,0,0.8333333333333334
+Tự ngã nông phu.,食我農夫。,自我農夫。,False,1,1,0,0,0.8
+"Thiền Vu lãng kinh hỉ,",單于浪驚喜，,單于浪經喜，,False,1,1,0,0,0.8333333333333334
+Hàm bi hướng Bạch Long.,銜悲向白龍。,咸悲向白龍。,False,1,1,0,0,0.8333333333333334
+Bất khả thúc dã.,不可束也。,不可束也。,True,0,0,0,0,1.0
+"Tuy viết phỉ dư,",雖曰匪予，,雖曰匪餘，,False,1,1,0,0,0.8
+Hồng tắc lệ chi.,鴻則離之。,紅則淚之。,False,2,2,0,0,0.6
+"Phương kim thái bình nhật vô sự,",方今太平日無事，,方今太平日無事，,True,0,0,0,0,1.0
+Khởi thức Nam nhân hữu biệt ly!,豈識南人有別離。,豈識南人有別離！,False,1,1,0,0,0.875
+Bắc phong xuy đoạn Thiên sơn thảo.,北風吹斷天山草。,北風吹斷天山草。,True,0,0,0,0,1.0
+"Thiết kỵ hoành khu Hãn Hải trần,",鐵騎橫驅瀚海塵，,鐵騎橫驅汗海塵，,False,1,1,0,0,0.875
+Mật cô đấu tửu hài chung yến.,密沽鬥酒諧終宴。,密孤鬥酒孩終宴。,False,2,2,0,0,0.75
+"Kim ngã bất lạc tư Nhạc Dương,",今我不樂思岳陽，,今我不樂思樂陽，,False,1,1,0,0,0.875
+"Bỉ ký uý tử tham sinh, nhi tu hảo hữu thành;",彼既畏死貪生，而修好有誠；,彼既畏子貪生，而須好有成；,False,3,3,0,0,0.7692307692307693
+Cổ dực dương thanh âm.,鼓翼揚清音。,古翼楊聲陰。,False,4,4,0,0,0.3333333333333333
+U thâm vô thế nhân.,幽深無世人。,幽深無世人。,True,0,0,0,0,1.0
+"Ngô cơ đãng tương nhập thành khứ,",吳姬蕩槳入城去,吾機蕩相入成去，,False,5,4,0,1,0.4
+Tích nhĩ hoa phồn.,惜爾華繁。,積爾花繁。,False,2,2,0,0,0.6
+Duy kiến giang tâm thu nguyệt bạch.,惟見江心秋月白。,惟見江心秋月白。,True,0,0,0,0,1.0
+"Thân Bá hoàn nam,",申伯還南，,身伯還南，,False,1,1,0,0,0.8
+"Kim khuê hoa liễu chất,",金閨花柳質，,金閨花柳質，,True,0,0,0,0,1.0
+Trí giả tất hoài nhân.,智者必懷仁。,致者必懷人。,False,2,2,0,0,0.6666666666666666
+Do hướng nhân tiền khoa quắc thước.,猶向人前誇矍鑠。,猶向人前科攫鵲。,False,3,3,0,0,0.625
+"Tự quân chi xuất hĩ,",自君之出矣，,自君之出矣，,True,0,0,0,0,1.0
+"Thướng thiên há địa giai bất khả,",上天下地皆不可，,上天下地皆不可，,True,0,0,0,0,1.0
+Do ngôn tích cựu niên.,猶言惜舊年。,猶言惜舊年。,True,0,0,0,0,1.0
+Tái bình thuỷ thổ tê bôn mang.,再平水土犀奔茫。,再平水土西奔忙。,False,2,2,0,0,0.75
+Giang thuỷ giang hoa khởi chung cực.,江水江花豈終極。,江水江花起終極。,False,1,1,0,0,0.875
+Tiền đối thuý bích cử.,前對翠壁舉。,前對翠碧舉。,False,1,1,0,0,0.8333333333333334
+"Mạc luận thiếp sầu trường dữ đoản,",莫論妾愁長與短，,莫論妾愁長與短，,True,0,0,0,0,1.0
+"Ngưỡng thị sơn điên, túc hà thiên thiên,",仰視山顛，肅何千千，,仰是山顛，足何天天，,False,4,4,0,0,0.6
+Triều lý quan đa tố bất liễu.,朝裏官多做不了。,朝里關多素不柳。,False,4,4,0,0,0.5
+"Canh tương Chức Nữ chi cơ thạch,",更將織女支機石，,更將織女之機石，,False,1,1,0,0,0.875
+Phỉ thuý khâm hàn thuỳ dữ cộng.,翡翠衾寒誰與共。,匪翠衾寒誰與共。,False,1,1,0,0,0.875
+"Ngô quan chư Khôn,",吾觀諸坤，,吾觀諸坤，,True,0,0,0,0,1.0
+"Hán gia sứ giả noạ thả nhu,",漢家使者懦且柔，,漢家使者緣且柔，,False,1,1,0,0,0.875
+"Cổ nhân kim nhân nhược lưu thuỷ,",古人今人若流水，,古人今人若流水，,True,0,0,0,0,1.0
+"Hổ môn thâm toả thiên kim sắc,",虎門深鎖千金色，,虎門深鎖千金色，,True,0,0,0,0,1.0
+Dư hương sạ nhập y.,餘香乍入衣。,予香乍入衣。,False,1,1,0,0,0.8333333333333334
+"Bằng hữu du nhiếp,",朋友攸攝，,憑有遊懾，,False,4,4,0,0,0.2
+Nhất tiếu liêu túc thư tâm hung.,一笑聊足舒心胷。,一笑寥足書心胸。,False,3,3,0,0,0.625
+Vô dịch diệc bảo.,無射亦保。,無驛亦保。,False,1,1,0,0,0.8
+Cô chu tiểu bạc thì.,孤舟小泊時。,孤舟小薄時。,False,1,1,0,0,0.8333333333333334
+"Trác bỉ Vân Hán,",倬彼雲漢，,卓彼雲漢，,False,1,1,0,0,0.8
+"Hàm Dương cung điện tam nguyệt hồng,",咸陽宮殿三月紅，,咸陽宮殿三月紅，,True,0,0,0,0,1.0
+"Tự quân chi xuất hỹ,",自君之出矣，,自君之出矣，,True,0,0,0,0,1.0
+"Bãi cầm trù trướng nguyệt chiếu tịch,",罷琴惆悵月照席，,罷琴惆悵月照夕，,False,1,1,0,0,0.875
+Văn Vương viết: tư!,文王曰：咨！,文王曰：思！,False,1,1,0,0,0.8333333333333334
+Tín bất khả khứ.,信不可去。,信不可去。,True,0,0,0,0,1.0
+"Ca hề ca hề tam bách tự,",歌兮歌兮三百字，,歌兮歌兮三百自，,False,1,1,0,0,0.875
+"Ký phá ngã phủ,",既破我斧、,既破我府，,False,2,2,0,0,0.6
+La Phù trực dữ Nam minh liên.,羅浮直與南溟連。,羅浮直與南明連。,False,1,1,0,0,0.875
+Bố cốc xứ xứ thôi xuân chủng.,布谷處處催春種。,布穀處處催春種。,False,1,1,0,0,0.875
+"Thanh mâu hạo xỉ thuỳ minh đang,",清眸皓齒垂明璫，,青矛浩齒誰明日，,False,5,5,0,0,0.375
+"Thị tuế thập nguyệt chi vọng, bộ tự Tuyết Đường, tương quy ư Lâm Cao. Nhị khách tòng dư, quá Hoàng Nê chi phản. Sương lộ ký giáng, mộc diệp tận thoát, nhân ảnh tại địa, ngưỡng kiến minh nguyệt. Cố nhi lạc chi, hành ca tương đáp.",是歲十月之望，步自雪堂，將歸於臨皋。二客從予，過黃泥之阪。霜露既降，木葉盡脫，人影在地，仰見明月。顧而樂之，行歌相答。,是歲十月之望，步自雪唐，相歸於臨高。二客從餘，過黃泥之返。,False,35,5,30,0,0.5454545454545454
+"Hữu điền chủng cốc kim lưu huyết,",有田種穀今流血。,有田種穀金流血，,False,2,2,0,0,0.75
+"Vị nhược cẩm nang thu diễm cốt,",未若錦囊收艷骨，,未若錦囊秋艷骨，,False,1,1,0,0,0.875
+"Chỉ tương sinh sự ký giang hồ,",只將生事寄江湖，,只將生事寄江湖，,True,0,0,0,0,1.0
+"Hữu thố viên viên,",有兔爰爰，,有兔爰爰，,True,0,0,0,0,1.0
+"Ký chi âm nhữ,",既之陰女，,既之陰女，,True,0,0,0,0,1.0
+Hoạ phát tất khắc.,禍發必克。,畫發必克。,False,1,1,0,0,0.8
+Mỗi thực tứ cửu.,每食四簋，,每食四九。,False,2,2,0,0,0.6
+"Thanh thiên tây quải Hoàng Hà thuỷ,",青天西掛黃河水，,青天西掛黃河水，,True,0,0,0,0,1.0
+Diệp diệp tài hoa cái thế hùng.,燁燁才華蓋世雄。,葉葉才花蓋世雄。,False,3,3,0,0,0.625
+"Tu thân quả dục,",修身寡欲，,修身果欲，,False,1,1,0,0,0.8
+"Khán thủ phù dung hoa,",看取芙蓉花，,看取浮容花，,False,2,2,0,0,0.6666666666666666
+"Chiêm ngưỡng hạo thiên,",瞻仰昊天，,瞻仰浩天，,False,1,1,0,0,0.8
+Thừa thặng hoàng.,乘乘黃。,乘乘黃。,True,0,0,0,0,1.0
+"Thai châu địa khoát hải minh minh,",台州地闊海冥冥，,台珠地闊海明明，,False,3,3,0,0,0.625
+"Hí niêm ngốc bút tảo hoa lưu,",戲拈禿筆掃驊騮，,戲拈禿筆掃花流，,False,2,2,0,0,0.75
+"Di thuyền Tiên Chủ miếu,",移船先主廟，,夷船先主廟，,False,1,1,0,0,0.8333333333333334
+"Sạ thính Ô châu cổ động, dũng dược khu đoàn hổ chi quần dương.",乍聽烏州鼓動，踴躍驅摶虎之羣羊。,處聽嗚珠古動，勇躍驅團虎之群陽。,False,8,8,0,0,0.5
+"Chiêu dân khai khẩn đắc lương điền,",招民開墾得良田，,昭民開緊得良田，,False,2,2,0,0,0.75
+"Vệ hầu chi thê,",衛侯之妻，,衛侯之棲，,False,1,1,0,0,0.8
+"Thụ căn tích thạch trường thanh đài,",樹根積石長青苔，,樹根惜石長青臺，,False,2,2,0,0,0.75
+"Thời thời xuất hướng thành tây khúc,",時時出向城西曲，,時時出向成西曲，,False,1,1,0,0,0.875
+"Tri không, không giác hữu,",知空空覺有，,知空空空覺，,False,2,2,0,0,0.8333333333333334
+Khinh phàm đái vũ nhập giang lưu.,輕帆帶雨入江流。,輕帆帶雨入江流。,True,0,0,0,0,1.0
+"Quy thì nhật thượng tảo,",歸時日尚早，,歸時日上掃，,False,2,2,0,0,0.6666666666666666
+"U u du lộc,",呦呦遊鹿，,幽幽遊鹿，,False,2,2,0,0,0.6
+Phi nhân thái hoạ lai.,非因采畫來。,非人太畫來。,False,2,2,0,0,0.6666666666666666
+Diệc tự cổ lai truyền.,亦自古來傳。,亦自古來傳。,True,0,0,0,0,1.0
+Nhật tĩnh tứ phương.,日靖四方。,日靜四方。,False,1,1,0,0,0.8
+Thiện nhân tái thi.,善人載尸。,善人載詩。,False,1,1,0,0,0.8
+"Sơn đông huyền hoả kính,",山東懸火鏡，,山東弦火徑，,False,2,2,0,0,0.6666666666666666
+"Phòng hữu thước sào,",防有鵲巢，,房有鵲巢、,False,2,2,0,0,0.6
+Trừng trừng nhất kính minh.,澄澄一鏡明。,澄澄一徑明。,False,1,1,0,0,0.8333333333333334
+Thư quí sấu ngạnh phương thông thần.,書貴瘦硬方通神。,舒貴瘦硬方通神。,False,1,1,0,0,0.875
+Hàn hoàng kích ngữ.,寒簧擊敔。,寒皇擊語。,False,2,2,0,0,0.6
+"Hôn thư tả định thiêu thương khung,",婚書寫定燒蒼穹，,昏書左定燒蒼穹，,False,2,2,0,0,0.75
+Nãi tả nãi hữu.,乃左乃右，,乃左乃有。,False,2,2,0,0,0.6
+Hạ lý khấp Thương Ngô.,下里泣蒼梧。,下里泣商吳。,False,2,2,0,0,0.6666666666666666
+"Ô thê tri cố đạo,",烏栖知故道，,於妻知故道，,False,2,2,0,0,0.6666666666666666
+"Từ chi tập hĩ,",辭之輯矣，,徐之集矣，,False,2,2,0,0,0.6
+"Hồng đào hàm yêu,",紅桃含夭，,紅濤含腰，,False,2,2,0,0,0.6
+Hựu bất kiến:,又不見：,又不見：,True,0,0,0,0,1.0
+"Tất Tư chi tòng,",漆沮之從、,必思之從，,False,3,3,0,0,0.4
+Chung thị lũ hồi đầu.,終是屢回頭。,終是屢回頭。,True,0,0,0,0,1.0
+Tứ mẫu dịch dịch.,四牡奕奕。,四牡驛驛。,False,2,2,0,0,0.6
+Ỷ lệ nan vương.,綺麗難忘。,倚淚難王。,False,3,3,0,0,0.4
+Qui Hán bị kiếp vi Phồn lỗ.,歸漢被劫爲蕃虜。,荒漢被劫為蕃虜。,False,2,2,0,0,0.75
+Trú mã nghệ đương lô.,駐馬詣當壚。,晝馬藝當爐。,False,3,3,0,0,0.5
+"Khê đầu tống lang thượng lan chu,",溪頭送郎上蘭舟，,溪頭送郎上欄舟，,False,1,1,0,0,0.875
+"Tạ An đoàn phiến thượng,",謝安團扇上，,謝安團片上，,False,1,1,0,0,0.8333333333333334
+"Nại hà thủ chi tận truy thù, dụng chi như nê sa!",奈何取之盡錙銖、用之如泥沙！,奈何取之盡追殊，用之如泥沙！,False,3,3,0,0,0.7857142857142857
+Nha tường ty lãm các thiên nha.,牙檣絲纜各天涯。,牙牆絲覽各千牙。,False,4,4,0,0,0.5
+Lẫm lẫm hồ nhược lâm uyên chi khủng truỵ; lãnh lãnh hồ nhược khải ốc chi dĩ thuỳ.,凜凜乎若臨淵之恐墜；冷冷乎若啟沃之已垂。,凜凜乎若林鴛之恐墜；冷冷乎若啟屋之以誰。,False,5,5,0,0,0.75
+Thả vi nhất bùi hồi.,且為一裴回。,且為一裴回。,True,0,0,0,0,1.0
+Đề huề Ngọc Long vi quân tử.,提攜玉龍為君死。,提攜玉龍為君子。,False,1,1,0,0,0.875
+Thử duy dữ trạch.,此維與宅。,此維與澤。,False,1,1,0,0,0.8
+Ngôn đề kỳ nhĩ.,言提其耳。,言啼其耳。,False,1,1,0,0,0.8
+"Tích độn hoang dã, kim lai động thiên.",昔遯荒野，今來洞天。,昔遁荒也，今來動千。,False,4,4,0,0,0.6
+"Dạ yêu đàm để ảnh,",夜邀潭底影，,夜腰潭底影，,False,1,1,0,0,0.8333333333333334
+Hoa phòng dạ đảo hồng thủ cung.,花房夜搗紅守宮。,花房夜倒紅首宮。,False,2,2,0,0,0.75
+"Tá vấn thừa ân giả,",借問承恩者，,借問乘恩者，,False,1,1,0,0,0.8333333333333334
+"Huyện lệnh thâm tiêu bồ bặc quy,",縣令深宵匍匐歸，,縣令深蕭蒲服歸，,False,3,3,0,0,0.625
+"Tuấn huệ ngã Văn Vương,",駿惠我文王，,俊惠我文王，,False,1,1,0,0,0.8333333333333334
+Do hữu phong điệp tương tuỳ phi.,猶有蜂蝶相隨飛。,猶有風疊相隨飛。,False,2,2,0,0,0.75
+Đổng Long cánh thị hà kê cẩu!,董龍更是何雞狗！,董龍更是何雞狗！,True,0,0,0,0,1.0
+Thanh ba thù miểu mạn.,清波殊淼漫。,青波殊渺漫。,False,2,2,0,0,0.6666666666666666
+"Danh tiếp thiên đình trường cảnh sắc,",名接天庭長景色，,名接天庭長景色，,True,0,0,0,0,1.0
+Nhi hữu kỳ nhị.,而有其二。,而有其二。,True,0,0,0,0,1.0
+Uyên ương phi quá tà dương ngoại.,鴛鴦飛過斜陽外。,淵央飛過斜陽外。,False,2,2,0,0,0.75
+"Giả gia tiểu nhi niên thập tam,",賈家小兒年十三，,賈家小兒年十三，,True,0,0,0,0,1.0
+Lão nhãn khán thanh xuân.,老眼看青春。,老眼看聲春。,False,1,1,0,0,0.8333333333333334
+Tùng sam cao hạ tự thành khâu.,松杉高下自成丘。,松衫高下自成丘。,False,1,1,0,0,0.875
+Chuyển du khởi tích thiên kim tư.,轉輸豈惜千金資。,轉遊豈惜天金思。,False,3,3,0,0,0.625
+"Phù du chi dực,",蜉蝣之翼，,浮遊之翼，,False,2,2,0,0,0.6
+"Sách ngã lương mã,",策我良馬，,策我良馬，,True,0,0,0,0,1.0
+Mạc ngã khẳng cố.,莫我肯顧。,莫我肯顧。,True,0,0,0,0,1.0
+Y thực tận túc thường hy hy.,衣食盡足常熙熙。,伊實盡足常稀稀。,False,4,4,0,0,0.5
+"Nhất tùng tiêu hồng nhất tùng mặc,",一松梢紅一松墨，,一松蕭紅一松默，,False,2,2,0,0,0.75
+"Khải đễ quân tử,",豈弟君子，,豈弟君子，,True,0,0,0,0,1.0
+Mỹ nhân lai hề tuế mộ.,美人來兮歲暮。,美人來兮歲暮。,True,0,0,0,0,1.0
+"Nhất triêu nghĩ tặc mãn Trường An,",一朝蟻賊滿長安。,一朝擬賊滿長安，,False,2,2,0,0,0.75
+"Kỳ gian hiệu Thiên Bình,",其間號天平，,其間效天平，,False,1,1,0,0,0.8333333333333334
+Triêu dương sơn khứ tịch dương hoàn.,朝陽山去夕陽還。,朝陽山去夕陽還。,True,0,0,0,0,1.0
+"Lưu niên tiêu tráng chí,",流年消壯志，,流年蕭壯至，,False,2,2,0,0,0.6666666666666666
+Hoả vân chung bất di.,火雲終不移。,火雲終不夷。,False,1,1,0,0,0.8333333333333334
+"Thế gian vạn sự hôi trần phi,",世間萬事灰塵飛，,世間萬事灰塵飛，,True,0,0,0,0,1.0
+"Hoặc thái minh châu,",或採明珠，,或采明珠，,False,1,1,0,0,0.8
+"Thiên phong, hải đảo nhật dạ kích,",天風海島日夜激，,天風海倒日夜擊，,False,2,2,0,0,0.75
+"Cố độc tả chân truyền thế nhân,",故獨寫真傳世人，,故獨左真傳世人，,False,1,1,0,0,0.875
+Dục trú tu du cánh bất đắc.,欲住須臾竟不得。,欲晝須遊更不得。,False,3,3,0,0,0.625
+"Tu đoản cố thiên,",修短故天，,修短故天，,True,0,0,0,0,1.0
+"Trùng trùng thổ kiên thí hành chuỳ,",重重土堅試行錐，,重重土堅試行錐，,True,0,0,0,0,1.0
+Thiết lộc tố xan tâm tự quý.,竊祿素餐心自愧。,鐵祿素餐心自貴。,False,2,2,0,0,0.75
+"Đông sàng quyển tịch bãi,",東床卷席罷，,東床捲夕罷，,False,2,2,0,0,0.6666666666666666
+"Bất lộ trảo nha dữ giác độc,",不露爪牙與角毒，,不路爪牙與覺獨，,False,3,3,0,0,0.625
+Viễn phụ mẫu huynh đệ.,遠父母兄弟。,遠婦母兄弟。,False,1,1,0,0,0.8333333333333334
+"Chính dụng sơ thông hợp điển tắc,",政用疏通合典則，,政用初通合典則，,False,1,1,0,0,0.875
+Như kim như tích.,如金如錫，,如今如跡。,False,3,3,0,0,0.4
+Thân đối Giang Tây xuân.,身對江西春。,身對江西春。,True,0,0,0,0,1.0
+Chỉ hữu Kính Đình san.,只有敬亭山。,只有敬庭山。,False,1,1,0,0,0.8333333333333334
+Bất ký thảo đường ty.,不寄草堂貲。,不既草堂絲。,False,2,2,0,0,0.6666666666666666
+"Miên phân hoàng độc thảo,",眠分黄犢草，,綿分黃獨草，,False,3,3,0,0,0.5
+Thán tung tích chi không lưu.,嘆蹤跡之空留。,嘆蹤跡之空流。,False,1,1,0,0,0.8571428571428571
+Ưu du nhĩ hưu hĩ.,優游爾休矣。,憂遊爾休矣。,False,2,2,0,0,0.6666666666666666
+"Bỉ ký vi ác,",彼既為惡，,彼既為惡，,True,0,0,0,0,1.0
+Dĩ án tồ lữ.,以按徂旅。,以按徂旅。,True,0,0,0,0,1.0
+Phú Lộc thất tổng quy bắc tam.,富禄七總歸北三。,富鹿失總歸北三。,False,2,2,0,0,0.75
+"Thượng thiên chi tái,",上天之載，,上天之載，,True,0,0,0,0,1.0
+"Xích diệp phong lâm bách thiệt minh,",赤葉楓林百舌鳴，,赤葉風林百舌明，,False,2,2,0,0,0.75
+"Nhi kim yên như mộng như giác, như tuý như tinh.",而今焉如夢如覺，如醉如醒。,兒今煙如夢如角，如醉如星。,False,4,4,0,0,0.6923076923076923
+Đối hoa khởi tỉnh tằng từ bôi.,對花豈省曾辭杯。,對花起省曾辭杯。,False,1,1,0,0,0.875
+Thế giới huyễn nhập đâu la miên,世界幻入兜羅綿。,世界幻入丟羅眠,False,3,2,1,0,0.6666666666666666
+Như hữu ẩn ưu.,如有隱憂。,如有隱憂。,True,0,0,0,0,1.0
+Thiền Vu lạp hoả chiếu Lang San.,單于獵火照狼山。,單于粒火照郎珊。,False,3,3,0,0,0.625
+"Quy lai thanh hương do tại thủ,",歸來清香猶在手，,歸來青香猶在首，,False,2,2,0,0,0.75
+"Sơn hồng giản bích phân lạn mạn,",山紅澗碧紛爛漫，,山紅澗碧紛爛漫，,True,0,0,0,0,1.0
+"Thâm tiêu trầm tuý khởi,",深宵沉醉起，,深蕭沉醉起，,False,1,1,0,0,0.8333333333333334
+"Tâm địa thanh lương,",心地清涼，,心地青良，,False,2,2,0,0,0.6
+"Mạc nhạ tây trầm khứ,",莫訝西沉去，,莫惹西沉去，,False,1,1,0,0,0.8333333333333334
+Như cương như lăng.,如岡如陵，,如岡如凌。,False,2,2,0,0,0.6
+Hà dị cầm thú.,何異禽獸。,何異琴戍。,False,2,2,0,0,0.6
+Cánh bất hướng chư gia.,更不向諸家。,更不向諸家。,True,0,0,0,0,1.0
+"Thỉnh quân độc thính, diệc san nhiên.",請君獨聽亦潸然。,請君獨聽亦山然。,False,1,1,0,0,0.875
+Bạch vân mãn địa chi thảo phì.,白雲滿地芝草肥。,白雲滿地枝草肥。,False,1,1,0,0,0.875
+"Sử thiên tải chi nghịch loạn hề, thượng văn phong nhi chuý chuý.",使千載之逆亂兮，尚聞風而惴惴。,使天載之逆亂兮，上文風而捶捶。,False,5,5,0,0,0.6666666666666666
+"Dĩ giới my thọ,",以介眉壽，,以介眉壽，,True,0,0,0,0,1.0
+Ngư thoa tạm thác Đào gia bích.,漁梭暫托陶家壁。,漁釵暫錯桃家碧。,False,4,4,0,0,0.5
+"Truy tư dạ chí tinh hoả cấp,",追胥夜至星火急，,追思夜至星火急，,False,1,1,0,0,0.875
+Đạc quân tử phúc.,度君子腹。,度君子福。,False,1,1,0,0,0.8
+Thường đảm ngoạ tân giả cái phi nhất nhật.,嘗膽臥薪者蓋非一日。,常膽臥新者蓋飛一日。,False,3,3,0,0,0.7
+Hồ thượng diệp như thuyền.,湖上葉如船。,胡上葉如船。,False,1,1,0,0,0.8333333333333334
+Bất kiến tương tư nhân.,不見相思人。,不見相思人。,True,0,0,0,0,1.0
+Tứ nguyên bàng bàng.,駟騵彭彭。,四原傍傍。,False,4,4,0,0,0.2
+Khổ hàn tặng ngã thanh cao cừu.,苦寒贈我青羔裘。,苦寒贈我聲高裘。,False,2,2,0,0,0.75
+Chung thân an phận độ thời quang.,終身安分度時光。,終身安分度時光。,True,0,0,0,0,1.0
+Vật sắc phân lưu dữ lão phu.,物色分留與老夫。,勿色紛流與老夫。,False,3,3,0,0,0.625
+"Tiểu nhi ngũ tuế khí thực Ngưu,",小兒五歲氣食牛，,小兒五歲氣實牛，,False,1,1,0,0,0.875
+Trần tiêu khước bộ cánh giai tiền.,塵消却步更皆前。,塵消卻步更皆前。,False,1,1,0,0,0.875
+"Cổ đạo thiểu nhân hành,",古道少人行，,古道少人行，,True,0,0,0,0,1.0
+"Tố tưởng tượng ư hồng mông, uyển long mã chi tương nhược.",溯想像於鴻蒙，苑龍馬之相若。,素想象於紅蒙，苑龍馬之相若。,False,3,3,0,0,0.7857142857142857
+Cấp trường vi hoãn ưu tâm đảo.,急觴為緩懮心搗。,急長為緩憂心倒。,False,3,3,0,0,0.625
+"Duy thử Yêm Tức,",維此奄息，,維此厭即，,False,2,2,0,0,0.6
+Duy Vũ chi tích.,維禹之績。,維武之跡。,False,2,2,0,0,0.6
+Thệ khẳng lai du?,噬肯來遊。,逝肯來遊？,False,2,2,0,0,0.6
+Khủng cụ khí quyên nhẫn ky lữ.,恐戄棄捐忍羈旅。,恐具氣娟忍羈旅。,False,3,3,0,0,0.625
+"Triều đình ký thất Tử Kinh quan,",朝廷既失紫荊關，,朝廷既失子荊關，,False,1,1,0,0,0.875
+"Quân tử hữu tửu,",君子有酒，,君子有酒，,True,0,0,0,0,1.0
+"Ngang thình vu đậu,",卬盛于豆，,卬盛于豆，,True,0,0,0,0,1.0
+"Bình hào khởi vũ,",蓱號起雨，,平豪豈雨，,False,3,3,0,0,0.4
+"Ký kiến quân tử,",既見君子，,既見君子，,True,0,0,0,0,1.0
+"Đảo chi đân chi,",倒之顛之，,倒之巔之，,False,1,1,0,0,0.8
+Duyên thuỷ mịch bành kỳ.,沿水覓蟛蜞。,緣水覓彭期。,False,3,3,0,0,0.5
+Tương dữ cảm kích giai thế linh.,相與感激皆涕零。,相與敢擊皆世靈。,False,4,4,0,0,0.5
+Song phong vị ngã phiên thư diệp.,窗風為我翻書葉。,雙風未我翻書葉。,False,2,2,0,0,0.75
+Tất dụng độc thư nhân.,必用讀書人。,必用獨書人。,False,1,1,0,0,0.8333333333333334
+Liêu dữ tử như nhất hề!,聊與子如一兮。,聊與子如一兮。,True,0,0,0,0,1.0
+Ốc để đạt quan tẩu tị Hồ.,屋底達官走避胡。,屋底達官走避胡。,True,0,0,0,0,1.0
+Sung nhĩ dĩ tổ hồ nhi.,充耳以素乎而，,充耳以祖乎而。,False,2,2,0,0,0.7142857142857143
+Ô thước nam phi khả nại hà.,烏鵲南飛可奈何。,嗚鵲南飛可奈何。,False,1,1,0,0,0.875
+"Trung hữu nhất nhân tự Thái Chân,",中有一人字太真，,中有一人自太真，,False,1,1,0,0,0.875
+"Bảo thân tồn danh,",保身存名，,寶身存名，,False,1,1,0,0,0.8
+"Ngã tương ngã hưởng,",我將我享，,我將我響，,False,1,1,0,0,0.8
+"Du ty bách xích đãng không khoát,",遊絲百尺盪空闊，,遊絲百尺蕩空闊，,False,1,1,0,0,0.875
+"Nam thanh hân hân nữ nhan duyệt,",男聲欣欣女顏悅，,南聲欣欣女顏閱，,False,2,2,0,0,0.75
+"Cảnh ế ế dĩ tương nhập, phủ cô tùng nhi bàn hoàn.",景翳翳以將入，撫孤松而盤桓。,景翳翳以相入，府孤松而盤還。,False,3,3,0,0,0.7857142857142857
+Hận bất chú đắc Lưu Tinh Châu.,恨不鑄得劉并州。,恨不注得劉星州。,False,2,2,0,0,0.75
+Tây vọng thiên sơn vạn sơn xích.,西望千山萬山赤。,西望千山萬山尺。,False,1,1,0,0,0.875
+Phong lưu thái thủ tri bất tri?,風流太守知不知?,風流太守知不知？,False,1,1,0,0,0.875
+Tín thủ niêm xuất giai thành chương.,信手拈出皆成章。,信首粘出皆成章。,False,2,2,0,0,0.75
+"Thuỳ gia tư phụ thu đảo bạch,",誰家思婦秋搗帛，,誰家思婦秋倒白，,False,2,2,0,0,0.75
+Bảo Vân sơn tiền lộ bàn vu.,寶雲山前路盤紆。,寶雲山前路盤于。,False,1,1,0,0,0.875
+Cam tâm tuý sổ bôi.,甘心醉數杯。,甘心醉數杯。,True,0,0,0,0,1.0
+Phong yên thập nhị thu.,烽煙十二秋。,風煙十二秋。,False,1,1,0,0,0.8333333333333334
+Kim vô kỳ khí tồn kỳ từ.,今無其器存其辭。,今無其氣存其辭。,False,1,1,0,0,0.875
+Vạn sự chung thương bất tự bảo.,萬事終傷不自保。,萬事終蒼不自保。,False,1,1,0,0,0.875
+Tự hướng thu bình di lệ chúc.,自向秋屏移淚燭。,自向秋平夷淚燭。,False,2,2,0,0,0.75
+Diệp gian phác phác thu nga sinh.,葉間扑扑秋蛾生。,葉間扑扑秋峨生。,False,1,1,0,0,0.875
+Hà thượng không bồi hồi.,河上空徘徊。,何上空徘徊。,False,1,1,0,0,0.8333333333333334
+Thánh học tiên sinh uý hậu sinh.,聖學先生畏後生。,聖學先生畏後生。,True,0,0,0,0,1.0
+"Xuyết ngô văn hề, ngâm ngô thi,",綴吾文兮吟吾詩，,處吾聞兮吟吾詩，,False,2,2,0,0,0.75
+Lâm song khấp huyết thư.,臨窗泣血書。,臨窗泣血書。,True,0,0,0,0,1.0
+"Hứng hàm lạc bút dao ngũ nhạc,",興酣落筆搖五嶽，,興含落筆遙五樂，,False,3,3,0,0,0.625
+Tri thiếp giải Tần tranh.,知妾解秦箏。,知妾解秦爭。,False,1,1,0,0,0.8333333333333334
+Mộ hiềm kiếm quang lãnh.,暮嫌劍光冷。,暮嫌劍光冷。,True,0,0,0,0,1.0
+“Kim thạch khắc hoạch thần năng vi.,金石刻畫臣能為。,金金石刻神能為。,False,3,1,1,1,0.75
+"Phàm nhân bất học,",凡人不學，,凡人不學，,True,0,0,0,0,1.0
+"Luân chuyển như hử cực phiền trọng,",輪轉如許極煩重，,輪轉如許極煩重，,True,0,0,0,0,1.0
+Tự giác tửu tu xa.,自覺酒須賒。,自覺酒須車。,False,1,1,0,0,0.8333333333333334
+"Hán sơ Triệu Đà tổng hùng cứ,",漢初趙佗總雄據，,漢初趙沱總雄據，,False,1,1,0,0,0.875
+Toạ trung Huyền Đức thân tương nguy.,坐中玄德身將危。,坐中玄德身相危。,False,1,1,0,0,0.875
+"Phụ nữ hành khấp, phu tẩu tàng.",婦女行泣夫走藏。,婦女行泣夫走藏。,True,0,0,0,0,1.0
+Mạc quái anh hùng lưỡng thủ mô.,莫怪英雄兩手摸。,莫怪英雄兩首模。,False,2,2,0,0,0.75
+Nhật lệnh xuân thảo thâm.,日令春草深。,日令春草深。,True,0,0,0,0,1.0
+"Cung giới trụ dĩ vi y, thực thái căn nhi vi lương.",躬介胄以為衣，食菜根而為糧。,弓介柱以為衣，實太根而為良。,False,5,5,0,0,0.6428571428571429
+Hồi mã vấn hà thì?,迴馬問何時？,回馬問何時？,False,1,1,0,0,0.8333333333333334
+Kiền cung nhĩ vị.,虔共爾位。,銀弓爾未。,False,3,3,0,0,0.4
+"Ngã hữu gia tân,",我有嘉賓，,我有嘉賓，,True,0,0,0,0,1.0
+Nguyệt xuất hạo hề!,月出皓兮，,月出浩兮，,False,1,1,0,0,0.8
+Thành đầu nhật xuất sứ xa hồi.,城頭日出使車回。,城頭日出使車回。,True,0,0,0,0,1.0
+Huống nãi sơ ngoan lâm sự chuyết.,況乃疏頑臨事拙。,況乃初黿林事拙。,False,3,3,0,0,0.625
+"Ý tự cận nhi ký viễn hề, nhược tương lai nhi phục toàn.",意似近而既遠兮，若將來而復旋。,意自近而寄遠兮，若相來而復全。,False,4,4,0,0,0.7333333333333333
+"Đối tửu đương ca,",對酒當歌，,對酒當歌，,True,0,0,0,0,1.0
+"Nguyện đắc Yên cung xạ thiên tướng,",願得燕弓射天將，,願得燕宮射天相，,False,2,2,0,0,0.75
+"Ngân hoa há tán bố thuỷ đài,",銀花下散布水臺，,銀花下散布水臺，,True,0,0,0,0,1.0
+Ngư xiệp điệp dĩ hưởng.,魚唼喋以響。,漁枕疊已響。,False,4,4,0,0,0.3333333333333333
+Bộ khúc hữu khứ giai vô quy.,部曲有去皆無歸。,步曲有去皆無歸。,False,1,1,0,0,0.875
+"Lão thiếu tương huề lai tựu nam,",老少相攜來就南，,老少相攜來就南，,True,0,0,0,0,1.0
+Nãi kiến cuồng thư.,乃見狂且。,乃見狂書。,False,1,1,0,0,0.8
+Hắc nhân thái âm lôi vũ thuỳ.,黑人太陰雷雨垂。,黑人太陰雷雨誰。,False,1,1,0,0,0.875
+Giai kỳ phản tác trường tương ức.,佳期返作長相憶。,佳其反作長相憶。,False,2,2,0,0,0.75
+"Quan thụ diệp tắc tư “Vực phác” tác nhân chi phương, “Tinh nga” dục tài chi nghĩa.",觀樹葉則思棫樸作人之方，菁莪育才之義。,關樹葉則思義域，,False,14,3,11,0,0.37037037037037035
+"Phi quan ngự bí, thục kỳ ký chi khả câu; tri kỷ xuân thu, tiếu huệ cô chi tương hiệp.",非關御轡，孰騏驥之可拘；知幾春秋，笑蟪蛄之相狎。,非關御轡，孰其既之可俱；知幾春秋，笑惠孤之相挾。,False,6,6,0,0,0.75
+"Nguyện quân đa thái hiệt,",願君多採擷，,願君多太黠，,False,2,2,0,0,0.6666666666666666
+"Tiếu lãm Thanh Khê nguyệt,",笑攬清溪月，,笑覽青溪月，,False,2,2,0,0,0.6666666666666666
+Ô hô thống tai!,嗚呼痛哉！,於乎痛哉！,False,2,2,0,0,0.6
+Hổ uý tướng công kim tỵ tẩu.,虎畏相公今避走。,虎畏將公金避走。,False,2,2,0,0,0.75
+Hà tất trường kiếm trụ di sự ngọc giai.,何必長劍拄頤事玉階。,何必長劍柱夷事玉皆。,False,3,3,0,0,0.7
+"Phú hào hữu tiền giá đại khả,",富豪有錢駕大舸，,富豪有前嫁大可，,False,3,3,0,0,0.625
+"Đình thoản lộc trường,",町曈鹿場、,停枕鹿長，,False,4,4,0,0,0.2
+Dịch tử nhi giáo.,易子而教。,易子而教。,True,0,0,0,0,1.0
+"Thác oán cuồng phong dương lạc hoa,",錯怨狂風颺落花，,錯怨狂風陽落花，,False,1,1,0,0,0.875
+Giáp đạo phong truyền lan xạ huân.,夾道風傳蘭麝薰。,峽道風傳蘭射勳。,False,3,3,0,0,0.625
+"Dạ lai cơ trường như chuyển lôi,",夜來飢腸如轉雷，,夜來機長如轉雷，,False,2,2,0,0,0.75
+Tả vĩ mạo chi.,左右芼之。,左尾貌之。,False,2,2,0,0,0.6
+"Hách hách anh thanh nghĩa khái, trực dục xương Thục Hán nhi điễn Tôn Tào.",赫赫英聲義概，直欲昌蜀漢而殄孫曹。,赫赫英聲義慨，直欲昌蜀漢而殄孫曹。,False,1,1,0,0,0.9411764705882353
+Vạn biến thần kỳ tòng thử xuất.,萬變神奇從此出。,萬變神旗從此出。,False,1,1,0,0,0.875
+"Khởi tri tích nhật cư thâm cung,",豈知昔日居深宮，,豈知惜日居深宮，,False,1,1,0,0,0.875
+Tạc thạch tác cổ huy tha nga.,鑿石作鼓隳嵯峨。,昨石作鼓輝他峨。,False,3,3,0,0,0.625
+"Quân mạc học Thục cuồng tuý khách,",君莫學蜀狂醉客，,君莫學蜀狂醉客，,True,0,0,0,0,1.0
+"Ngã tâm phỉ giám,",我心匪鑒，,我心匪監，,False,1,1,0,0,0.8
+Vi bá chi thủ.,為霸之首。,為伯之首。,False,1,1,0,0,0.8
+"Mỹ thất mỹ gia,",靡室靡家，,美室美家，,False,2,2,0,0,0.6
+"Nguỵ quan khiên xa chỉ thiên lý,",魏官牽車指千里，,魏關牽車只千里，,False,2,2,0,0,0.75
+Bạch thạch hào hào.,白石皓皓。,白石豪號。,False,2,2,0,0,0.6
+Hậu tự nhi phùng trường?,後嗣而逢長？,後自而逢長？,False,1,1,0,0,0.8333333333333334
+"Lập song đài ư tả hữu hề,",立雙臺於左右兮，,立窗臺於左有兮，,False,2,2,0,0,0.75
+"Nghiêm Lăng cao ấp Hán thiên tử,",嚴陵高揖漢天子，,嚴陵高邑漢天子，,False,1,1,0,0,0.875
+Hoa thời sái lệ đông phong tiền.,花時灑淚東風前。,花時灑淚東風前。,True,0,0,0,0,1.0
+Kỳ hoàng nhi vân.,其黃而隕。,其皇而雲。,False,2,2,0,0,0.6
+"Vô ngã xú hề,",無我醜兮，,無我醜兮，,True,0,0,0,0,1.0
+Tranh đạo chu đề kiêu niết tất.,爭道朱蹄驕齧膝。,爭道舟啼驕揘必。,False,4,4,0,0,0.5
+Vương Mẫu trú há vân kỳ phiên.,王母晝下雲旗翻。,王母晝下雲旗翻。,True,0,0,0,0,1.0
+Khoảnh khắc năng linh quỳnh tác tiết.,頃刻能令瓊作屑。,頃刻能靈瓊作節。,False,2,2,0,0,0.75
+Tạ vu thành quy.,謝于誠歸。,謝于成歸。,False,1,1,0,0,0.8
+Kiệt lực đương vi mạc hận cừ.,竭力當為莫恨渠。,孔力當為莫恨渠。,False,1,1,0,0,0.875
+"Duy cơ duy khang, vô lạc vô dật.",惟幾惟康，無樂無逸。,惟機惟康，無樂無逸。,False,1,1,0,0,0.9
+"Nhân tích sở chí,",人跡所至，,人惜所至，,False,1,1,0,0,0.8
+"Thán ngã thê thê cầu hữu thiên,",歎我悽悽求友篇，,嘆我棲棲求有天，,False,5,5,0,0,0.375
+Ám điểm xuân trù phiên kỷ độ.,暗點春籌翻幾度。,暗點春惆翻幾度。,False,1,1,0,0,0.875
+Thôn thổ cố tại Phùng Di cung.,吞吐故在馮夷宮。,村土故在逢夷宮。,False,3,3,0,0,0.625
+"Tại ngã thất hề,",在我室兮，,在我失兮，,False,1,1,0,0,0.8
+Bất khả cầu ti.,不可求思。,不可求絲。,False,1,1,0,0,0.8
+Bội ngọc minh loan bãi ca vũ.,佩玉鳴鸞罷歌舞。,佩玉明鸞罷歌舞。,False,1,1,0,0,0.875
+"Tạ thượng tự năng cù dục vũ,",謝尚自能鴝鵒舞，,謝上自能衢欲雨，,False,4,4,0,0,0.5
+Hồ nhiên ngã nhiệm chi?,胡然我念之？,胡然我任之？,False,1,1,0,0,0.8333333333333334
+"Thượng hữu bán tử chi tùng bách,",上有半死之松柏，,上有半死之松百，,False,1,1,0,0,0.875
+"Truyền ngôn vũ lạp, hàm mai vô thanh.",傳言羽獵，銜枚無聲。,傳言雨粒，含埋無聲。,False,4,4,0,0,0.6
+"Gia thế kham lân Triệu thị cô,",家世堪憐趙氏孤，,家世堪鄰趙是孤，,False,2,2,0,0,0.75
+Thắng tự chinh man phụ huynh khứ.,勝似征蠻父兄去。,勝自征蠻婦兄去。,False,2,2,0,0,0.75
+"Mao trai định vương thành quách môn,",茅齋定王城郭門，,茅齋定王成郭門，,False,1,1,0,0,0.875
+"Tật uy thượng đế,",疾威上帝，,疾威上帝，,True,0,0,0,0,1.0
+"Lũng phản uy di cự Tây Vực,",隴阪逶迤距西域，,隴反威夷巨西域，,False,4,4,0,0,0.5
+"Túng nhiên bất sát Tần hoàng đế,",縱然不殺秦皇帝，,縱然不殺秦黃帝，,False,1,1,0,0,0.875
+"Ký tuý ký bão,",既醉既飽，,既醉既飽，,True,0,0,0,0,1.0
+Vô nại cận thị nhãn.,無奈近視眼。,無奈近是眼。,False,1,1,0,0,0.8333333333333334
+Quân bất kiến:,君不見：,君不見：,True,0,0,0,0,1.0
+"Hữu đạo đức giả,",有道德者，,有道德者，,True,0,0,0,0,1.0
+Kỳ tội y hà?,其罪伊何？,其罪伊何？,True,0,0,0,0,1.0
+Sĩ ngã ư đường hồ nhi.,俟我於堂乎而，,士我於堂乎而。,False,2,2,0,0,0.7142857142857143
+"Hô hoàn nã úng niệu nhất niệu,",呼鬟拿甕尿一尿，,呼還作甕嫋一嫋，,False,4,4,0,0,0.5
+Nhung hữu lương hàn.,戎有良翰。,戎有良寒。,False,1,1,0,0,0.8
+"Vô cạnh duy nhân,",無競維人，,無競維人，,True,0,0,0,0,1.0
+"Trẫm trẫm lộ tư,",湛湛露斯，,湛湛路思，,False,2,2,0,0,0.6
+Bách trượng du ty dị nhạ khiên.,百丈游絲易惹牽。,百丈遊絲易惹牽。,False,1,1,0,0,0.875
+Duy kỳ gia hỹ.,維其嘉矣。,維其家矣。,False,1,1,0,0,0.8
+Ngọc trướng giai nhân toạ trung lão.,玉帳佳人坐中老。,玉帳佳人坐中老。,True,0,0,0,0,1.0
+"Việt Vương đài hạ thị nông gia,",越王臺下是儂家，,越王臺下是農家，,False,1,1,0,0,0.875
+"Hữu phương chi sĩ, Tiện Môn, Cao Khê,",有方之士，羨門高谿。,有方之士，便門，高溪，,False,4,3,0,1,0.6666666666666666
+Thệ bất cổ xử.,逝不古處。,逝不鼓處。,False,1,1,0,0,0.8
+"Tích tao suy thế giai hối tích,",昔遭衰世皆晦跡，,昔遭衰世皆悔惜，,False,2,2,0,0,0.75
+"Tử hệ Trung sơn lang,",子系中山狼，,子繫中山郎，,False,2,2,0,0,0.6666666666666666
+Đào hoa đàm thượng xuân vân âm.,桃花潭上春雲陰。,桃花潭上春雲陰。,True,0,0,0,0,1.0
+"Việt Vương thường đảm yên khả địch,",越王嘗膽安可敵，,越王常膽煙可笛，,False,3,3,0,0,0.625
+Danh nghĩa vi trọng lợi hại vi khinh.,名義為重利害為輕。,名義為重利害為輕。,True,0,0,0,0,1.0
+Dữ tử giai lão.,與子偕老。,與子皆老。,False,1,1,0,0,0.8
+Lương dạ ba gian ngâm cổ long.,涼夜波間吟古龍。,涼夜波間吟鼓龍。,False,1,1,0,0,0.875
+"Công thi yến ẩm,",公尸燕飲，,公尸燕飲，,True,0,0,0,0,1.0
+Hoàng vân tiêu điều bạch nhật ám.,黃雲蕭條白日暗。,黃雲蕭條白日暗。,True,0,0,0,0,1.0
+"Phỉ ngã ngôn mạo,",匪我言耄，,匪我言貌，,False,1,1,0,0,0.8
+Âm khí hối muội vô thanh phong.,陰氣晦昧無清風。,陰氣晦昧無聲風。,False,1,1,0,0,0.875
+Bất ngã dĩ quy,不我以歸，,不我以歸,False,1,0,1,0,0.8888888888888888
+"Dân diệc lao chỉ,",民亦勞止，,民亦勞止，,True,0,0,0,0,1.0
+Quân lại chấp tiên thôi tác trì.,軍吏執鞭催作遲。,君吏執先催作持。,False,3,3,0,0,0.625
+"Táng loạn miệt tư,",喪亂蔑資，,葬亂襪思，,False,3,3,0,0,0.4
+"Sở ta bất cập Ngưu Nữ tinh,",所嗟不及牛女星，,楚嗟不及牛女星，,False,1,1,0,0,0.875
+Ưu tư nan vong.,憂思難忘。,憂思難亡。,False,1,1,0,0,0.8
+Đại xa lỗi lạc đồi trường bình.,大車磊落堆長瓶。,大車磊落頹長平。,False,2,2,0,0,0.75
+Lục trúc a a.,綠竹猗猗。,綠竹阿阿。,False,2,2,0,0,0.6
+"Yến diên tằng ngữ Tô Quý Tử,",宴筵曾語蘇季子，,燕筵曾語蘇貴子，,False,2,2,0,0,0.75
+Tế khán hương hàn uyển thả nhu;,細看香翰婉且柔；,細看香寒苑且柔；,False,2,2,0,0,0.75
+"Mạnh đông thập quận lương gia tử,",孟冬十郡良家子，,孟東十郡良家子，,False,1,1,0,0,0.875
+"Thành trung mỹ niên thiếu,",城中美年少，,城中美年少，,True,0,0,0,0,1.0
+Nùng âm phúc hạm vãn thuỳ thuỳ.,濃陰復檻晚垂垂。,濃陰福檻晚誰誰。,False,3,3,0,0,0.625
+Đính thốc hào hạch tuỳ sở sưu.,飣簇殽核隨所搜。,定簇豪知隨所颼。,False,4,4,0,0,0.5
+Thị nữ huân hương hộ tảo triều.,侍女薰香護早朝。,是女勳香戶早朝。,False,3,3,0,0,0.625
+Thử khúc ai oán hà thì chung.,此曲哀怨何時終。,此曲哀怨何時終。,True,0,0,0,0,1.0
+"Trường châu tuy nhiên mai thử nhân,",長洲雖然埋此人，,長珠雖然埋此人，,False,1,1,0,0,0.875
+"Trượng phu ngũ thập công vị lập,",丈夫五十功未立，,丈夫五十公未立，,False,1,1,0,0,0.875
+Bạch đầu thập di đồ bộ quy.,白頭拾遺徒步歸。,白頭十夷徒步歸。,False,2,2,0,0,0.75
+Giai ngôn tứ hải đồng.,皆言四海同。,佳言四海同。,False,1,1,0,0,0.8333333333333334
+"Đại mộng thuỳ tiên giác,",大夢誰先覺，,大夢誰先覺，,True,0,0,0,0,1.0
+"Tòng tha nhiễu nhiễu,",從他擾擾，,從他繞繞，,False,2,2,0,0,0.6
+"Tạo thư khế dĩ lợi dụng hề, hiệp tư văn ư tải tịch.",造書契以利用兮，協斯文於載籍。,造書契以利用兮，挾思聞於載夕。,False,4,4,0,0,0.7333333333333333
+"Ngưỡng duy: thánh trí chi năng, nhi phi chúng nhân chi sở khả nghị dã.",仰惟：聖智之能，而非眾人之所可議也。,仰維：聖致之能，而非眾人之所可議也。,False,2,2,0,0,0.8888888888888888
+Tịch dương thiên vạn phong.,夕陽千萬峰。,夕陽千萬風。,False,1,1,0,0,0.8333333333333334
+"Toạ khan chiến bích vi bình thổ,",坐看戰壁爲平土，,坐看戰碧為平土，,False,2,2,0,0,0.75
+"Dân chi tham loạn,",民之貪亂，,民之貪亂，,True,0,0,0,0,1.0
+"Huệ bỉ tiểu tinh,",嘒彼小星，,惠彼小星，,False,1,1,0,0,0.8
+"Cầm thú dĩ tệ thập thất bát,",禽獸已斃十七八，,琴戍已弊十失八，,False,4,4,0,0,0.5
+"Thệ bỉ bách tuyền,",逝彼百泉，,逝彼百泉，,True,0,0,0,0,1.0
+Tác vu sở thất.,作于楚室。,作于所室。,False,1,1,0,0,0.8
+Âm vũ cáo chi.,陰雨膏之。,陰雨告之。,False,1,1,0,0,0.8
+"Tiên khứ song song tác Phạm cung,",仙去雙雙作梵宮，,先去窗窗作范宮，,False,4,4,0,0,0.5
+Bất hà hữu tá.,不遐有佐。,不河有借。,False,2,2,0,0,0.6
+"Thông minh tạc hỗn độn, anh phát táng trung tố.",聰明鑿混沌，英發喪衷素。,通明昨渾遁，英發喪中素。,False,5,5,0,0,0.5833333333333334
+"Thánh hiền câu gian xuất,",聖賢俱間出，,聖賢俱間出，,True,0,0,0,0,1.0
+Chân thị hà vật?,真是何物？,真是何物？,True,0,0,0,0,1.0
+"Tế phế cam đường,",蔽芾甘棠，,細廢甘堂，,False,3,3,0,0,0.4
+"San viễn đối thu trung,",山遠對秋中，,山遠對秋中，,True,0,0,0,0,1.0
+Mỹ hữu di trừu.,靡有夷瘳。,美有夷抽。,False,2,2,0,0,0.6
+"Cổ công Đản phủ,",古公亶父，,古公诞府，,False,2,2,0,0,0.6
+Cẩu diệc vô thung.,茍亦無從。,苟亦無從。,False,1,1,0,0,0.8
+"Dao khan nhất xứ toản vân thụ,",遙看一處攢雲樹，,遙看一處纘雲樹，,False,1,1,0,0,0.875
+"Khúc giang thiên khoảnh thu ba tịnh,",曲江千頃秋波淨，,曲江千頃秋波淨，,True,0,0,0,0,1.0
+Vương tích Hàn Hầu:,王錫韓侯：,王惜韓侯：,False,1,1,0,0,0.8
+Phục lịch tại quynh không đại tồn.,伏櫪在坰空大存。,伏歷在駉空大存。,False,2,2,0,0,0.75
+Hà dụng khổ truy tầm.,何用苦追尋。,何用苦追尋。,True,0,0,0,0,1.0
+"Bão văn tư sơn sản kỳ thạch,",飽聞玆山產奇石，,抱聞思山產奇石，,False,2,2,0,0,0.75
+Tuế duật kỳ mộ.,歲聿其莫。,歲遹其暮。,False,2,2,0,0,0.6
+Xuân thâm vị đắc quy.,春深未得歸。,春深未得歸。,True,0,0,0,0,1.0
+"Bán thất hồng sa, nhất trượng lăng",半匹紅紗一丈綾，,半失紅沙，一丈陵,False,5,3,1,1,0.5
+Quân tử chi xa.,君子之車。,君子之車。,True,0,0,0,0,1.0
+"Ký kiến quân tử,",既見君子，,既見君子，,True,0,0,0,0,1.0
+"Nhạn phi huỳnh độ sầu nan tiết,",雁飛螢度愁難歇，,雁飛螢度愁難節，,False,1,1,0,0,0.875
+Tưởng kỳ:,想其：,想其：,True,0,0,0,0,1.0
+Sĩ viết: “Muội đán”.,士曰：「昧旦。」,士曰：「亦旦」,False,2,1,1,0,0.8
+"Ký yến vu tông,",既燕于宗，,既宴于宗，,False,1,1,0,0,0.8
+"Biệt quân hà vật kham trì tặng,",別君何物堪持贈，,別君何物堪持贈，,True,0,0,0,0,1.0
+"Huyền trì đích đích đình hoa lộ,",懸池的的停華露，,玄持的的庭花路，,False,5,5,0,0,0.375
+Phương tùng độc phát huy,芳叢獨發揮。,方松獨發輝，,False,4,4,0,0,0.3333333333333333
+"Tạc dạ phỏng quân chi bị hĩ,",昨夜訪君之憊矣，,昨夜訪君之備矣，,False,1,1,0,0,0.875
+Toạ duyệt hưng vong tri kỷ hử.,坐阅興亡知幾許。,坐閱興亡知幾許。,False,1,1,0,0,0.875
+"Tái sam tái tạc,",載芟載柞，,載衫載昨，,False,2,2,0,0,0.6
+"Văn chương hữu thần giao hữu đạo,",文章有神交有道，,文章有臣教有道，,False,2,2,0,0,0.75
+Vô kinh huệ thảo tích tàn xuân.,無驚蕙草惜殘春。,無經惠草惜殘春。,False,2,2,0,0,0.75
+Linh lộ thiễn hề.,零露漙兮。,靈路枕兮。,False,3,3,0,0,0.4
+"Thích đương Linh Đài kinh thuỷ chi sơ, xuất ứng Lạc Ấp trạch trung chi tế.",適當靈臺經始之初，出應洛邑宅中之際。,適當靈臺經水之初，出應洛邑澤中之細。,False,3,3,0,0,0.8333333333333334
+"Lạc chỉ quân tử,",樂隻君子，,落止君子，,False,2,2,0,0,0.6
+Khủng lệnh cô khách thiêm sầu tuyệt.,恐令孤客添愁絶。,恐令孤客添愁絕。,False,1,1,0,0,0.875
+Chân châu liêm bạc yểm lan đường,真珠帘箔掩蘭堂。,真珠簾薄掩蘭堂，,False,3,3,0,0,0.625
+"Duy dư nhị nhân,",維予二人。,維予二人，,False,1,1,0,0,0.8
+Bạc ngôn quynh giả:,薄言駉者：,薄言駉者：,True,0,0,0,0,1.0
+Thần quang dạ phát như Ngũ Đài.,神光夜發如五臺。,神光夜發如五臺。,True,0,0,0,0,1.0
+"Kính lý kiều đề ánh song dũ,",鏡裏嬌啼映窗牖，,敬里橋啼映窗愈，,False,4,4,0,0,0.5
+"Vị văn tích trướng ngũ thập nhật,",未聞積漲五十日，,未聞惜帳五十日，,False,2,2,0,0,0.75
+Như khát như ky.,如渴如饑。,如渴如羈。,False,1,1,0,0,0.8
+"Địch phất dĩ trào,",翟茀以朝，,狄拂以潮，,False,3,3,0,0,0.4
+"Như kim Ngũ hầu bất ái khách,",如今五侯不愛客，,如今五侯不愛客，,True,0,0,0,0,1.0
+Giang khẩu hà thời bất phóng thuyền.,江口何時不放船。,江口何時不放船。,True,0,0,0,0,1.0
+"Đông thuyền tây phảng tiễu vô ngôn,",東船西舫悄無言，,東船西彷悄無言，,False,1,1,0,0,0.875
+Thuế vu Tru thự?,說于株野。,說于株曙？,False,2,2,0,0,0.6
+"Phi kiên chấp nhuệ lược Tây Cực,",披堅執銳略西極，,非堅執銳略西極，,False,1,1,0,0,0.875
+Cửu phạt Trung Nguyên không cù lao.,九伐中原空劬勞。,九伐中原空衢勞。,False,1,1,0,0,0.875
+"Đại Biệt sơn đầu bạch vân khởi,",大別山頭白雲起，,大別山頭白雲起，,True,0,0,0,0,1.0
+Nghĩ cộng vân tùng kết sào hảo.,擬共雲松結巢好。,擬共雲松結巢好。,True,0,0,0,0,1.0
+Công hầu phúc tâm.,公侯腹心。,公侯福心。,False,1,1,0,0,0.8
+"Kỳ ngã hồ Tang Trung,",期我乎桑中，,其我乎桑中，,False,1,1,0,0,0.8333333333333334
+Lữ quán đề quyên thôi dạ nguyệt.,旅館啼鵑催夜月。,旅館啼娟催夜月。,False,1,1,0,0,0.875
+Hận bất tảo giá đông gia Vương.,恨不早嫁東家王。,恨不早嫁東家王。,True,0,0,0,0,1.0
+"Duy bỉ bất thuận,",維彼不順，,維彼不順，,True,0,0,0,0,1.0
+"Nhật nguyệt hồ thiên ẩn ước, mỗi động cao tung.",日月壺天隱約，每動高蹤。,日月乎天隱約，每動高蹤。,False,1,1,0,0,0.9166666666666666
+Kỷ nhật hoàn tương kiến?,幾日還相見。,幾日還相見？,False,1,1,0,0,0.8333333333333334
+"Chu cương lăng trì tứ hải phí,",周綱陵遲四海沸，,舟岡凌遲四海費，,False,4,4,0,0,0.5
+Y quốc lương phương mạch lý thông.,醫國良方脈理通。,伊國良方麥里通。,False,3,3,0,0,0.625
+Kim bảng song hồi tam túc ô.,金牓雙迴三足烏。,金榜窗回三足烏。,False,3,3,0,0,0.625
+Du du hồ! Dương dương hồ!,悠悠乎！洋洋乎！,悠悠乎！陽陽乎！,False,2,2,0,0,0.75
+Tà huy chuyển thụ yêu.,斜暉轉樹腰。,斜輝轉樹腰。,False,1,1,0,0,0.8333333333333334
+"Triêu xu khả loát U, Tinh dạ.",朝趨可刷幽並夜。,朝趨可捋幽，星夜。,False,3,2,0,1,0.7058823529411765
+Tiêu tiêu biên mã minh.,蕭蕭邊馬鳴。,蕭蕭邊馬明。,False,1,1,0,0,0.8333333333333334
+"Thiên lý bất vi viễn,",千里不為遠，,千里不為遠，,True,0,0,0,0,1.0
+Thập gia cửu hoán sa.,十家九浣紗，,十家九喚沙。,False,3,3,0,0,0.5
+Phiên phúc bản vô cùng.,翻覆本無窮。,翻福本無窮。,False,1,1,0,0,0.8333333333333334
+"Ký kiến quân tử,",既見君子，,既見君子，,True,0,0,0,0,1.0
+Thượng học anh ngôn dục hà sĩ?,尚學嬰言欲何俟。,上學英言欲何士？,False,4,4,0,0,0.5
+"Hữu ý hoài nam nữ,",有意懷男女，,有意懷南女，,False,1,1,0,0,0.8333333333333334
+"Tắc tắc lương cử,",畟畟良耜，,則則良舉，,False,3,3,0,0,0.4
+Sơn căn chiên vị tuỳ vân lôi.,山根鱣鮪隨雲雷。,山根旃未隨雲雷。,False,2,2,0,0,0.75
+"Bàn hoàn trạch hùng thắng,",盤桓擇雄胜，,盤還澤雄勝，,False,3,3,0,0,0.5
+"Tu bạc cụ nhi tự thiết hề, quân tằng bất khẳng hồ hạnh lâm.",修薄具而自設兮，君曾不肯乎幸臨。,修薄具而自切兮，君曾不肯乎幸林。,False,2,2,0,0,0.875
+Đề viên tích tại Sở sơn ngu.,啼猿僻在楚山隅。,提猿惜在楚山愚。,False,3,3,0,0,0.625
+Xuân phong nhập y lan xạ hương.,春風入衣蘭麝香。,春風入衣蘭射香。,False,1,1,0,0,0.875
+Tý thương tẩu mã thuỳ gia nhi.,臂槍走馬誰家兒。,俾蒼走馬誰家兒。,False,2,2,0,0,0.75
+"Thao thao đại giang thuỷ,",滔滔大江水，,滔滔大江水，,True,0,0,0,0,1.0
+Thanh thiên trung đạo lưu cô nguyệt.,青天中道流孤月。,青天中道流孤月。,True,0,0,0,0,1.0
+Xuy hướng ngọc giai phi.,吹向玉階飛。,吹向玉階飛。,True,0,0,0,0,1.0
+Thân ngoại dĩ vô tâm.,身外已無心。,身外已無心。,True,0,0,0,0,1.0
+Sanh đột ba đào đĩnh xoa nhập.,撐突波濤挺叉入。,笙突波濤艇叉入。,False,2,2,0,0,0.75
+"Thiên tai lưu hành ức hoặc nhiên,",天哉流行抑或然，,天哉流行憶或然，,False,1,1,0,0,0.875
+Động phòng hoa mộng hàm bất hồi.,洞房花夢酣不回。,動房花夢含不回。,False,2,2,0,0,0.75
+Đông gia nghênh hôn tây gia khốc.,東家迎婚西家哭。,東家迎昏西家哭。,False,1,1,0,0,0.875
+Lục y hoàng lý.,綠衣黃里。,綠衣黃里。,True,0,0,0,0,1.0
+"Triêu lai tân hoả khởi tân yên,",朝來新火起新煙，,朝來新火起新煙，,True,0,0,0,0,1.0
+Xuân lai thu khứ thuỳ tằng tỉnh.,春來秋去誰曾省。,春來秋去誰曾省。,True,0,0,0,0,1.0
+"Hồng linh bạch thốc tuỳ khuynh tà,",紅翎白鏃隨傾斜。,紅靈白簇隨傾斜，,False,3,3,0,0,0.625
+Thú giác bi già thinh bất đắc.,戍角悲笳聽不得。,守覺悲笳聽不得。,False,2,2,0,0,0.75
+"Huynh đệ ký hấp,",兄弟既翕，,兄弟既吸，,False,1,1,0,0,0.8
+Quy lưu vạn quốc hoa.,歸留萬國花。,歸流萬國花。,False,1,1,0,0,0.8333333333333334
+Uyển nhược tương liên bất tương ngỗ.,宛若相憐不相忤。,宛若相連不相迕。,False,2,2,0,0,0.75
+"Lạp ca thưởng yến,",笠歌賞宴，,笠歌賞宴，,True,0,0,0,0,1.0
+"Doanh doanh liễu cốt sấu tam phân,",盈盈柳骨瘦三分，,盈盈柳骨瘦三分，,True,0,0,0,0,1.0
+Nhân diệc hữu ngôn:,人亦有言：,人亦有言：,True,0,0,0,0,1.0
+Phao khước trai mi nhất từ oản.,拋卻齋糜一瓷碗。,拋卻齋眉一辭腕。,False,3,3,0,0,0.625
+Linh vũ kỳ mông.,零雨其濛。,靈雨其蒙。,False,2,2,0,0,0.6
+"Lộ viễn mạc trí y tăng thán,",路遠莫致倚增嘆，,路遠莫致衣僧嘆，,False,2,2,0,0,0.75
+Cử thủ điên đảo phát xung quan.,舉手顛倒髮沖冠。,舉手顛倒發衝關。,False,3,3,0,0,0.625
+Thảo thư phi cổ không hùng tráng.,草書非古空雄壯。,草書飛鼓空雄壯。,False,2,2,0,0,0.75
+Quán tập viêm chưng tuế hy khích.,慣習炎蒸歲絺綌。,觀集炎烝歲熙隙。,False,5,5,0,0,0.375
+"Thiên thượng hữu thất tịch,",天上有七夕，,天上有失夕，,False,1,1,0,0,0.8333333333333334
+Đầu giác tuy vân ngang tủng;,頭角雖云昂聳；,頭覺雖雲昂聳；,False,2,2,0,0,0.7142857142857143
+"Hoài đức duy ninh,",懷德維寧，,淮德維寧，,False,1,1,0,0,0.8
+Do mộng quan hạ văn truy hô.,猶夢官下聞追呼。,猶夢關下聞追呼。,False,1,1,0,0,0.875
+"Nhất thanh lai chẩm thượng,",一聲來枕上，,一聲來枕上，,True,0,0,0,0,1.0
+"Ngã hữu thiện niệm,",我有善念，,我有善念，,True,0,0,0,0,1.0
+"Tùng phong thuỷ nguyệt minh,",松風水月明，,松風水月明，,True,0,0,0,0,1.0
+"Nhất chi nhật vu hạc,",一之日于貉，,一枝日于鶴，,False,2,2,0,0,0.6666666666666666
+"Phỉ thượng đế bất thì,",匪上帝不時，,匪上帝不時，,True,0,0,0,0,1.0
+"Mạc viễn cụ nhĩ,",莫遠具爾。,莫遠具爾，,False,1,1,0,0,0.8
+"Đức hạnh thuần hoà,",德行純和，,德幸純和，,False,1,1,0,0,0.8
+"Dữ quân thanh nhãn khách,",與君青眼客，,與君青眼客，,True,0,0,0,0,1.0
+Kỳ cao kỷ lý?,其高幾里？,其高幾里？,True,0,0,0,0,1.0
+"Chỉ kim linh lạc hoang thảo trung,",只今零落荒草中，,只今靈落荒草中，,False,1,1,0,0,0.875
+Lão nhân đường thượng vi anh nhi.,老人堂上爲嬰兒。,老人堂上為英兒。,False,2,2,0,0,0.75
+"Tương khan lệ nhãn tình nan thuyết,",相看淚眼情難說，,相看淚眼情難說，,True,0,0,0,0,1.0
+"Như kim thất quý phương tự tôn,",如今七貴方自尊，,如今失貴方自孫，,False,2,2,0,0,0.75
+Bất xướng Dương Quan đệ tứ thanh.,不唱陽關第四聲。,不唱陽關弟思聲。,False,2,2,0,0,0.75
+Tảo cứ yếu lộ tư quyên khu.,早據要路思捐軀。,早據要路思娟驅。,False,2,2,0,0,0.75
+"Chiên bao tịch khoả khả lập trí,",氈包席裹可立致，,氈苞寂裹可立致，,False,2,2,0,0,0.75
+"Đình tham dao vọng độc bồi hồi,",停驂遙望獨徘徊，,亭參遙望獨徘徊，,False,2,2,0,0,0.75
+"Tuần thiềm bất phạ ngọc lâu hàn,",巡簷不怕玉樓寒，,處檐不怕玉樓寒，,False,2,2,0,0,0.75
+Lạc Dương nữ nhi danh Mạc Sầu.,洛陽女兒名莫愁。,洛陽女兒名莫愁。,True,0,0,0,0,1.0
+"Hạnh tai hôn mộ nhân bất thức,",幸哉昏暮人不識，,幸哉昏暮人不識，,True,0,0,0,0,1.0
+Cùng nhân vật ngôn.,窮人勿言。,窮人勿言。,True,0,0,0,0,1.0
+"Kim nhật vị quân tận,",今日為君盡，,今日未君盡，,False,1,1,0,0,0.8333333333333334
+Tây lâu nhất dạ phong tranh cấp.,西樓一夜風箏急。,西樓一夜風爭急。,False,1,1,0,0,0.875
+"Thuỳ vân sơ kiếm thuật,",誰雲疏劍術，,誰雲初劍述，,False,2,2,0,0,0.6666666666666666
+"Phù du quật duyệt,",蜉蝣掘閱，,浮遊窟閱，,False,3,3,0,0,0.4
+"Thiên vong phi chiến tội,",天亡非戰罪，,天亡飛戰罪，,False,1,1,0,0,0.8333333333333334
+"Hạ sĩ mục hãi tự thiên lạc,",下士目駭自天落，,下士目駭自天落，,True,0,0,0,0,1.0
+Ký ngôn chúng nhi nữ:,寄言眾兒女：,既言眾而女：,False,2,2,0,0,0.6666666666666666
+"Nguyệt lai tương đối hựu hàm bôi,",月來相對又啣杯，,月來相對又含杯，,False,1,1,0,0,0.875
+Hồng cân thức lệ sinh nhân uân,紅巾拭淚生氤氳。,紅巾識淚生人氳,False,3,2,1,0,0.6666666666666666
+"Lệnh nghi lệnh sắc,",令儀令色，,令儀令色，,True,0,0,0,0,1.0
+"Động vụ hộc dĩ từ bộ hề, phất trì thanh chi san san.",動霧縠以徐步兮，拂墀聲之珊珊。,洞霧鵠以辭步兮，拂持聲之山山。,False,6,6,0,0,0.6
+"Đê mi tín thủ tục tục đàn,",低眉信手續續彈，,低眉信首俗俗彈，,False,3,3,0,0,0.625
+Trạch vi sư hữu.,擇為師友。,澤為師有。,False,2,2,0,0,0.6
+Bình vân bất đãi.,荓云不逮。,平雲不待。,False,3,3,0,0,0.4
+"Hoặc hiến hoặc tạc,",或献或酢，,或獻或昨，,False,2,2,0,0,0.6
+Tường vi kỷ độ hoa?,薔薇幾度花。,牆為幾度花？,False,3,3,0,0,0.5
+Đồ sử lao nhân lực.,徒使勞人力。,徒使勞人力。,True,0,0,0,0,1.0
+"Nguyện giả tu du, Thần nữ xưng cự.",願假須臾，神女稱遽。,願者須臾，神女稱巨。,False,2,2,0,0,0.8
+Tiêu hàn dược khí nùng.,宵寒藥氣濃。,蕭寒躍氣儂。,False,3,3,0,0,0.5
+Tùng ảnh hướng bối vân cao đê.,松影向背雲高低。,松影向背雲高低。,True,0,0,0,0,1.0
+"Bị chi kỳ kỳ,",被之祁祁、,被之其期，,False,3,3,0,0,0.4
+"Kỳ đình mỹ tửu nhật nhật cô,",旗亭美酒日日沽，,其亭美酒日日孤，,False,2,2,0,0,0.75
+Hoặc ỷ trượng dĩ nghinh phong.,或倚杖以迎風。,或倚丈以迎風。,False,1,1,0,0,0.8571428571428571
+"Tú y sứ giả túc phong kỷ,",繡衣使者肅風紀，,繡衣使者足風幾，,False,2,2,0,0,0.75
+"Sinh vị nhân anh một dũ hùng,",生為人英沒愈雄，,生未人英沒愈雄，,False,1,1,0,0,0.875
+"Kỳ tân khổng gia,",其新孔嘉、,其新孔家，,False,2,2,0,0,0.6
+Mai dịch sổ thiên câu thản bộ.,梅驛數千俱坦步。,梅驛數天俱坦步。,False,1,1,0,0,0.875
+Các tự bát quy thuyền.,各自撥歸船。,各自八歸船。,False,1,1,0,0,0.8333333333333334
+Ngã ca thả dao.,我歌且謠。,我歌且遙。,False,1,1,0,0,0.8
+Diệc khổng chi cố.,亦孔之固。,亦孔之故。,False,1,1,0,0,0.8
+Bất giác thân niên tứ thập thất.,不覺身年四十七。,不覺身年四十失。,False,1,1,0,0,0.875
+Nhập ư nhất quỹ.,入於一揆。,入於一揆。,True,0,0,0,0,1.0
+"Đạt nhi tướng thiên hạ,",達而相天下，,達兒相天下，,False,1,1,0,0,0.8333333333333334
+"Tiểu linh độc xa yến đê sa,",小鈴犢車宴堤沙，,小靈獨車燕低沙，,False,4,4,0,0,0.5
+Sơn điểu quần phi.,山鳥群飛。,山鳥群飛。,True,0,0,0,0,1.0
+Tam phân đỉnh túc.,三分鼎足。,三分鼎足。,True,0,0,0,0,1.0
+"Phụ mẫu hành ác,",父母行惡，,父母行惡，,True,0,0,0,0,1.0
+Tùng Tôn Tử Trọng.,從孫子仲，,松孫子仲。,False,2,2,0,0,0.6
+Vu thì ngữ ngữ.,于時語語。,于時語語。,True,0,0,0,0,1.0
+"Thánh nhân bất đắc dĩ nhi dụng chi, thành phi sở quí.",聖人不得已而用之，誠非所貴。,聖人不得以而用之，成非所貴。,False,2,2,0,0,0.8571428571428571
+Ba thuyền khứ nhược phi.,巴船去若飛。,波船去若飛。,False,1,1,0,0,0.8333333333333334
+"Thảo lý cao đê đa thiểu phần,",草里高低多少墳，,草里高低多少焚，,False,1,1,0,0,0.875
+Thập niên tích súc đa tài tư.,十年積蓄多財資。,十年昔縮多才思。,False,4,4,0,0,0.5
+"Tiệt bỉ Hoài phổ,",截彼淮浦，,女彼淮溥，,False,2,2,0,0,0.6
+Bạch thủ vị thuỳ hùng.,白首為誰雄。,白首未誰雄。,False,1,1,0,0,0.8333333333333334
+"Diệu châu thuý chi đích đích hề, áp lục nga hoàng.",耀珠翠之的的兮，鴨綠鵝黃。,妙珠翠之的的兮，壓綠峨皇。,False,4,4,0,0,0.6923076923076923
+"Ức tạc lộ nhiễu Cẩm đình đông,",憶昨路繞錦亭東，,憶昨路繞錦庭東，,False,1,1,0,0,0.875
+Phiên phi duy điểu.,拚飛維鳥。,翻飛維鳥。,False,1,1,0,0,0.8
+"Giao chiến tuy lệnh phó thang hoả,",教戰雖令赴湯火，,交戰雖令付湯火，,False,2,2,0,0,0.75
+Hữu nhân mại tửu nhưng mại hoa.,有人賣酒仍賣花。,有人賣酒仍賣花。,True,0,0,0,0,1.0
+Giai dữ thử đồ cân cốt đồng.,皆與此圖筋骨同。,佳與此圖巾骨同。,False,2,2,0,0,0.75
+"Mạch đầu đảm đắc xuân phong hành,",陌頭擔得春風行，,麥頭膽得春風行，,False,2,2,0,0,0.75
+Mị vu thiên tử.,媚于天子。,媚于天子。,True,0,0,0,0,1.0
+Đan quyết tâm.,單厥心。,丹厥心。,False,1,1,0,0,0.75
+"Yến tiếu ngữ hề,",燕笑語兮，,燕笑語兮，,True,0,0,0,0,1.0
+"Tích ngã sơ thiên,",昔我初遷，,積我初天，,False,2,2,0,0,0.6
+Cập dĩ trưởng thành thượng ký ức.,及已長成尚記憶。,及以長成上既憶。,False,3,3,0,0,0.625
+"Cao đài thiên xích đối tằng loan,",高臺千尺對層巒，,高臺千尺對曾鸞，,False,2,2,0,0,0.75
+Bất tai ngã cung?,不災我躬？,不哉我宮？,False,2,2,0,0,0.6
+"Bạch mã tử liên tiền,",白馬紫連錢，,白馬死連前，,False,2,2,0,0,0.6666666666666666
+Sổ bôi thanh mính hề cố nhân tâm.,數杯清茗兮故人心。,數杯青酩兮故人心。,False,2,2,0,0,0.7777777777777778
+Vân sơn hứng đáo thiêm tân cú.,雲山興到添新句。,雲山興到添新句。,True,0,0,0,0,1.0
+Thiền táo dã phong thu.,蟬噪野風秋。,單噪野風秋。,False,1,1,0,0,0.8333333333333334
+"Hạo hạo như nguyệt,",皎皎如月，,浩浩如月，,False,2,2,0,0,0.6
+Cao dữ bạch vân phan.,高與白雲攀。,高與白雲攀。,True,0,0,0,0,1.0
+Xuyên nguyên diểu hà cực.,川原杳何極。,川原渺河極。,False,2,2,0,0,0.6666666666666666
+"Truy hoan tuế nguyệt dĩ bất tái,",追歡歲月已不再，,追歡歲月已不塞，,False,1,1,0,0,0.875
+Sương hàn tiễn đao lãnh.,霜寒剪刀冷。,霜寒剪刀冷。,True,0,0,0,0,1.0
+"Bạc phạt Nghiễm doãn,",薄伐玁狁，,薄伐玁狁，,True,0,0,0,0,1.0
+"Thử dạ phùng giai tiết,",此夜逢佳節，,此夜逢佳節，,True,0,0,0,0,1.0
+Tiểu kính khúc thông thôn.,小徑曲通村。,小徑曲通村。,True,0,0,0,0,1.0
+Khởi nhân cách đấu cầu long câu.,豈因格鬥求龍駒。,豈人隔鬥求龍俱。,False,3,3,0,0,0.625
+Thủ kỳ lễ nghĩa.,守其禮義。,手其禮義。,False,1,1,0,0,0.8
+"Nhật nguyệt dương chỉ,",日月陽止，,日月揚止，,False,1,1,0,0,0.8
+Nhữ đắc tàn xan cứu hề bổ?,汝得殘餐究奚補？,女得殘餐救兮補？,False,3,3,0,0,0.625
+"Hình dung Đường sự phiến ngôn trung,",形容唐事片言中，,形容唐事片言中，,True,0,0,0,0,1.0
+Doanh lương vạn lý tầm Sơ Bình.,贏糧萬里尋初平。,盈良萬里尋初平。,False,2,2,0,0,0.75
+"Lâm lục thuỷ hề đăng sùng cơ,",臨淥水兮登崇基，,臨綠水兮登崇機，,False,2,2,0,0,0.75
+"Chí thái hoành xuất, bất khả thắng ký.",志態橫出，不可勝記。,至太橫出，不可勝既。,False,3,3,0,0,0.7
+Thạch Lẫm đằng trịch đồi Chúc Dung.,石廩騰擲堆祝融。,石凜騰擲頹燭容。,False,4,4,0,0,0.5
+"Giác túc vị đán,",角宿未旦，,覺足未旦，,False,2,2,0,0,0.6
+"Thượng huyền minh nguyệt bán,",上弦明月半，,上弦明月半，,True,0,0,0,0,1.0
+"Thành trung đại quan lâm quảng đường,",城中大官臨廣堂，,城中大關林廣堂，,False,2,2,0,0,0.75
+Giang thanh chẩm thượng lai.,江聲枕上來。,江聲枕上來。,True,0,0,0,0,1.0
+Hà dĩ xuyên ngã dung?,何以穿我墉？,何以川我容？,False,2,2,0,0,0.6666666666666666
+Vô hữu hậu gian.,無有後艱。,無有後間。,False,1,1,0,0,0.8
+Dĩ hưng tự tuế.,以興嗣歲。,以興自歲。,False,1,1,0,0,0.8
+"Ai oán bồi hồi cảm bất ngữ,",哀怨徘徊感不語，,哀怨徘徊敢不語，,False,1,1,0,0,0.875
+"Đào Diệp, Đào Căn song tỷ muội.",桃葉桃根雙姊妹。,桃葉桃李雙比昧。,False,3,3,0,0,0.625
+Hà huống nhĩ vi bài ưu quan.”,何況爾為排優官。,何況爾為排憂關，,False,3,3,0,0,0.625
+"Trĩ vĩ tà khai, vân cừu tiến ngự.",雉尾斜開，雲裘進御。,雉尾斜開，雲仇進御。,False,1,1,0,0,0.9
+Dương ba sử quan.,揚波使官。,揚波使關。,False,1,1,0,0,0.8
+"Như kim vô nại hạnh viên nhân,",如今無奈杏園人，,如今無奈幸猿人，,False,2,2,0,0,0.75
+"Nãi cập Vương Quý,",乃及王季，,乃及王貴，,False,1,1,0,0,0.8
+"Mạch thượng trường, tàm xuất khuông,",麥上場，蚕出筐，,麥上長，慚出筐，,False,2,2,0,0,0.75
+Kỳ ngư phòng quân.,其魚魴鰥。,其魚房君。,False,2,2,0,0,0.6
+Mẫu viết: “Ta! Dư quý hành dịch!,母曰：「嗟！予季行役，,母曰：「嗟！予貴行易！,False,3,3,0,0,0.7272727272727273
+"Hoàng cẩu thai bối,",黄耇台背，,黃狗胎輩，,False,4,4,0,0,0.2
+Dân chi du ký.,民之攸塈。,民之遊既。,False,2,2,0,0,0.6
+"Xuất sư vị tiệp, thả tương tâm sự thác lai sinh.",出師未捷，且將心事託來生。,出師未生，且相心事托來生。,False,3,3,0,0,0.7692307692307693
+"Tích niên thị khách xứ,",昔年是客處，,昔年是客處，,True,0,0,0,0,1.0
+Tằng mạc huệ ngã sư.,曾莫惠我師。,曾莫惠我師。,True,0,0,0,0,1.0
+Bị ngã khinh cừu.,被我輕裘。,被我輕裘。,True,0,0,0,0,1.0
+"Thánh triều thiên tử chí minh triết,",聖朝天子至明哲，,聖朝天子至明哲，,True,0,0,0,0,1.0
+Dữ chi dĩ bạch bão dĩ mi.,予之以帛飽以糜。,與之已白飽已眉。,False,5,5,0,0,0.375
+"Tam Sơn vân hải kỷ thiên lý,",三山雲海幾千里，,三山雲海幾千里，,True,0,0,0,0,1.0
+Dĩ dẫn dĩ dực.,以引以翼。,以引以翼。,True,0,0,0,0,1.0
+Dục tòng giang hải vấn Tây Thi.,欲從江海問西施。,欲從江海問西施。,True,0,0,0,0,1.0
+Đô kiêm chúng mĩ.,都兼眾美。,都兼眾美。,True,0,0,0,0,1.0
+Ngũ Hồ phong lãng dũng.,五湖風浪湧。,五湖風浪勇。,False,1,1,0,0,0.8333333333333334
+"Thúc vu thú,",叔于狩，,叔于戍，,False,1,1,0,0,0.75
+"Phụ hữu trường thiệt,",婦有長舌，,父有長舌，,False,1,1,0,0,0.8
+Trường yểm bồng phi trần bất động.,長掩蓬扉塵不動。,長掩蓬飛塵不動。,False,1,1,0,0,0.875
+"Bồng bồng thử miêu,",芃芃黍苗，,蓬蓬此苗，,False,3,3,0,0,0.4
+"Ẩn sĩ hưu ca “Tử chi” khúc,",隱士休歌紫芝曲，,隱士休歌子之曲，,False,2,2,0,0,0.75
+Cước xao lưỡng huyền khiếu Ngô ca.,腳敲兩舷叫吳歌。,腳敲兩弦叫吳歌。,False,1,1,0,0,0.875
+Phúc lộc lai phản.,福祿來反。,福祿來反。,True,0,0,0,0,1.0
+"Sự biến hà thường,",事變何常，,事變何裳，,False,1,1,0,0,0.8
+Loạn đảo hồ trừu tố bất trụ.,亂搗胡抽做不住。,亂倒乎抽素不柱。,False,4,4,0,0,0.5
+Kiểu hồn ưng bạn Tương phi khốc.,矯魂應伴湘妃哭。,矯魂應伴湘飛哭。,False,1,1,0,0,0.875
+"Niệm tích thiếu niên trước du yến,",念昔少年著遊燕，,念惜少年著遊宴，,False,2,2,0,0,0.75
+"Lỗ đạo hữu đãng,",魯道有蕩，,虜道有蕩，,False,1,1,0,0,0.8
+Hà dĩ giải chi duy thuần ly.,何以解之惟醇醨。,何以解之惟純離。,False,2,2,0,0,0.75
+Kỳ sanh kỳ cư.,其檉其椐。,其撐其居。,False,2,2,0,0,0.6
+"Hoàn như cố viên thụ,",還如故園樹，,還如故園樹，,True,0,0,0,0,1.0
+Tảo kiến Đồ Sơn ban vạn ngọc.,早見塗山班萬玉。,早見徒山班萬玉。,False,1,1,0,0,0.875
+"Tuy nhiên,",雖然，,雖然，,True,0,0,0,0,1.0
+Hà sở bất tử?,何所不死？,何所不子？,False,1,1,0,0,0.8
+Hạt ấm tự chi?,曷飲食之？,曷蔭自之？,False,2,2,0,0,0.6
+Phong tiêu tiêu hề Dịch Thuỷ hàn.,風蕭蕭兮易水寒。,風蕭蕭兮易水寒。,True,0,0,0,0,1.0
+Tự tân dĩ bất vũ.,序賓以不侮。,自新已不雨。,False,4,4,0,0,0.3333333333333333
+"Vu Chu vu kinh,",于周于京。,于周于京，,False,1,1,0,0,0.8
+Yển quế hiệp u tình.,偃桂協幽情。,偃桂挾幽情。,False,1,1,0,0,0.8333333333333334
+"Chung tạ đề phòng xuất chúng lực,",終藉堤防出眾力，,終謝啼房出眾力，,False,3,3,0,0,0.625
+"Vân căn đài tiển san thượng thạch,",雲根臺蘚山上石，,雲根臺鮮山上石，,False,1,1,0,0,0.875
+"Nhật tà chẩm trửu tẩm dĩ thục,",日斜枕肘寢已熟，,日斜枕肘寢已熟，,True,0,0,0,0,1.0
+"Khuyến quân nhất trản quân mạc từ,",勸君一醆君莫辭，,勸君一盞君莫辭，,False,1,1,0,0,0.875
+Kỷ tuế mai tàng trịch thâm tỉnh.,幾歲埋藏擲深井。,幾歲埋藏擲深井。,True,0,0,0,0,1.0
+Do cầu hữu thanh.,猶求友聲；,猶求有聲。,False,2,2,0,0,0.6
+"Tư dục đăng tiên,",思欲登仙，,思欲登先，,False,1,1,0,0,0.8
+Cầm tôn dật trí.,琴樽逸致。,琴孫逸致。,False,1,1,0,0,0.8
+"Tao gia bất tạo,",遭家不造，,遭家不造，,True,0,0,0,0,1.0
+"Toạ trung Tiết Hoa thiện tuý ca,",坐中薛華善醉歌，,坐中節華善醉歌，,False,1,1,0,0,0.875
+"Ngã mã duy nhân,",我馬維骃，,我馬維人，,False,1,1,0,0,0.8
+Vu dĩ tuyết thiên địa vô cùng chi sỉ.,于以雪天地無窮之恥。,于以雪天地無窮之恥。,True,0,0,0,0,1.0
+"Độc liên bất kiến ỷ môn thân,",獨憐不見倚門親，,獨憐不見倚門身，,False,1,1,0,0,0.875
+Dĩ thử phát mông đồng.,以此發矇童。,以此發蒙同。,False,2,2,0,0,0.6666666666666666
+"Quyết thập ký thứ,",決拾既佽，,厥十既庶，,False,3,3,0,0,0.4
+Mạc đãi hiểu phong xuy.,莫待曉風吹。,莫待曉風吹。,True,0,0,0,0,1.0
+"Kỳ đồng kỳ y,",其桐其椅，,其童其衣，,False,2,2,0,0,0.6
+Vô chi khả y.,無枝可依。,無之可衣。,False,2,2,0,0,0.6
+"Chiêm bỉ trung lâm,",瞻彼中林，,瞻彼中林，,True,0,0,0,0,1.0
+Nhữ phúc thoát chi.,女覆說之。,女福脫之。,False,2,2,0,0,0.6
+"Tiểu kỳ khiếu hô thôi tảo biệt,",小旗叫呼催早別，,小其叫呼催早別，,False,1,1,0,0,0.875
+"Tảo tri triều hữu tín,",早知潮有信，,早知朝有信，,False,1,1,0,0,0.8333333333333334
+"Thiệt nhu năng tồn,",舌柔能存，,舌柔能存，,True,0,0,0,0,1.0
+Phiêu hốt nhược thần.,飄忽若神。,飄忽若臣。,False,1,1,0,0,0.8
+Triều tụ hân triêm thú đỉnh hương.,朝袖欣沾獸鼎香。,朝袖欣沾戍鼎香。,False,1,1,0,0,0.875
+Thị trọng kỳ thân.,是重其身。,是重其身。,True,0,0,0,0,1.0
+Nhật mạc Tần binh mãn Yên thị.,日莫秦兵滿燕市。,日莫秦兵滿燕是。,False,1,1,0,0,0.875
+"Bỉ ký chi tử,",彼其之子，,彼其之子，,True,0,0,0,0,1.0
+"Kình như ngũ bách nghĩa sĩ tòng Điền Hoành,",勁如五百義士從田橫，,鯨如五百義士從田橫，,False,1,1,0,0,0.9
+"Cẩm bảo tằng chiêm mộng nguyệt thì,",錦褓曾占夢月時，,錦保曾瞻夢月時，,False,2,2,0,0,0.75
+"Giang Nam mạnh xuân thiên,",江南孟春天，,江南孟春天，,True,0,0,0,0,1.0
+Vị ngã tâm ưu.,謂我心憂；,謂我心憂。,False,1,1,0,0,0.8
+Nhược cá thị chân mai?,若箇是真梅。,若個是真埋？,False,3,3,0,0,0.5
+Huyền đông thị ngã hồ quốc đao.,玄冬示我胡國刀。,玄東是我乎國刀。,False,3,3,0,0,0.625
+Thị dã bà thoa.,市也婆娑。,是也琶釵。,False,3,3,0,0,0.4
+"Chu phất tư hoàng,",朱芾斯皇，,舟拂斯皇，,False,2,2,0,0,0.6
+"Bách tuế chi hộ,",百歲之後，,百歲之戶，,False,1,1,0,0,0.8
+"Dục đố mai tương liễu,",欲妒梅將柳，,欲妒埋相柳，,False,2,2,0,0,0.6666666666666666
+Sí thuỳ khẩu cấm tâm thậm lao.,翅垂口噤心甚勞。,翅誰口禁心甚勞。,False,2,2,0,0,0.75
+"Văn đạo Tửu Tuyền hương tự tửu,",聞道酒泉香似酒，,聞道酒泉香自酒，,False,1,1,0,0,0.875
+Lâu đài minh diệt san hữu vô.,樓臺明滅山有無。,樓臺明滅山有無。,True,0,0,0,0,1.0
+Chấp thủ khiên y lý tiền thệ.,執手牽衣理前誓。,執手牽衣裏前逝。,False,2,2,0,0,0.75
+"Thụ tứ khuê toản,",受賜珪瓚，,受思閨纘，,False,3,3,0,0,0.4
+Vị từ tiễn phạt thuỳ năng tống.,未辭剪伐誰能送。,謂辭剪伐誰能送。,False,1,1,0,0,0.875
+"Viễn mục ngưu,",遠牧牛，,遠目牛，,False,1,1,0,0,0.75
+Tự cầu tân thích.,自求辛螫。,自求新適。,False,2,2,0,0,0.6
+Lý Tư thuế giá khổ bất tảo.,李斯稅駕苦不早。,李思說駕苦不早。,False,2,2,0,0,0.75
+Túc tảo kinh phi.,足埽荊扉。,夙掃經飛。,False,4,4,0,0,0.2
+Du nhân hoàn đắc ỷ lan can.,游人還得倚闌乾。,遊人還得倚欄干。,False,3,3,0,0,0.625
+Thấp hữu du.,隰有榆。,隰有遊。,False,1,1,0,0,0.75
+Nam Quan “thất cáo” khảo phân du.,南關七誥考分猷。,南關失告告考考紛遊。,False,6,4,0,2,0.4444444444444444
+"Dụng như khoái cốt phong hoả sinh,",用如快鶻風火生，,用如快骨風火生，,False,1,1,0,0,0.875
+"Tư quân quân bất kiến,",思君君不見，,思君君不見，,True,0,0,0,0,1.0
+Mị ư ngữ ngôn.,媚於語言。,媚於語言。,True,0,0,0,0,1.0
+"Dĩ hưởng dĩ tự,",以享以祀，,以響以自，,False,2,2,0,0,0.6

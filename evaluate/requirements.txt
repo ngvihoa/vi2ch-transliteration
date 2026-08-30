@@ -1,0 +1,5 @@
+torch>=2.1
+transformers>=4.38,<4.47
+huggingface-hub>=0.20
+safetensors>=0.4
+sacrebleu>=2.4
