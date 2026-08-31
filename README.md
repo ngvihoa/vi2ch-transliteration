@@ -1,32 +1,43 @@
-# VietHanBERT
+# VietHanBERT — Sino-Vietnamese to Han-character Transliteration
 
-VietHanBERT là mô hình thử nghiệm cho bài toán **Việt → Hán**, được xây dựng dựa trên ý tưởng sử dụng **BERT encoder** của NomBERT nhưng thay phần output head dạng per-token classification bằng **Transformer Decoder** để sinh chuỗi Hán có độ dài khác chuỗi tiếng Việt.
+VietHanBERT là baseline sequence-to-sequence cho bài toán **âm Hán–Việt → chữ
+Hán**. Mô hình dùng **BERT encoder** để mã hóa chuỗi âm Hán–Việt và
+**Transformer Decoder** để sinh chuỗi Hán theo cơ chế autoregressive. Decoder
+giúp mô hình chọn Hán tự theo ngữ cảnh và mô hình hóa quan hệ giữa các ký tự
+đầu ra, thay vì phân loại độc lập từng token nguồn.
+
+- Model đã huấn luyện: [`noah-nguyen-297/VietHanBERT-vi2cn-v1`](https://huggingface.co/noah-nguyen-297/VietHanBERT-vi2cn-v1)
+- Notebook huấn luyện: [`kaggle-scripts/vi2cn-transliteration.ipynb`](kaggle-scripts/vi2cn-transliteration.ipynb)
+- Script và tài liệu đánh giá: [`evaluate/`](evaluate/README.md)
 
 ## 1. Bài toán
 
 Input:
 
 ```text
-Tôi đã học tiếng Hán.
+Phiên phiên bạch cưu
 ```
 
 Output:
 
 ```text
-我已學漢。
+翩翩白鳩
 ```
 
-Mô hình nhận một câu tiếng Việt, mã hóa toàn bộ câu bằng BERT Encoder, sau đó sử dụng Transformer Decoder để sinh từng token Hán theo cơ chế autoregressive.
+Mô hình nhận chuỗi phiên âm Hán–Việt, mã hóa toàn bộ chuỗi bằng BERT Encoder,
+sau đó sử dụng Transformer Decoder để sinh từng Hán tự theo cơ chế
+autoregressive. Đây là bài toán chuyển tự/khôi phục tự dạng, không phải dịch
+một câu tiếng Việt hiện đại sang tiếng Hán.
 
 ---
 
 ## 2. Kiến trúc
 
 ```text
-Vietnamese sentence
+Sino-Vietnamese reading
         │
         ▼
-Vietnamese Tokenizer
+Source Tokenizer
         │
         ▼
 Input IDs
@@ -84,7 +95,7 @@ BERT
 H ∈ R^(batch × source_length × hidden_size)
 ```
 
-Mỗi hidden state chứa thông tin ngữ cảnh của câu tiếng Việt.
+Mỗi hidden state chứa thông tin ngữ cảnh của chuỗi âm Hán–Việt.
 
 ### 2.2 Target Embedding
 
@@ -510,7 +521,7 @@ Hán/Nôm character
 VietHanBERT:
 
 ```text
-Vietnamese
+Sino-Vietnamese reading
     ↓
 BERT Encoder
     ↓
@@ -521,25 +532,16 @@ Autoregressive generation
 Hán sequence
 ```
 
-Lý do thay đổi là bài toán Việt → Hán của VietHanBERT dựa trên **parallel sentences**, và source length không nhất thiết bằng target length.
+Với dữ liệu chuẩn, mỗi âm tiết Hán–Việt thường tương ứng với một Hán tự. Ví
+dụ `Phiên phiên bạch cưu` có bốn âm tiết và `翩翩白鳩` có bốn Hán tự. Chênh
+lệch số token kỹ thuật có thể xuất hiện do token đặc biệt hoặc dấu câu, nhưng
+đó không phải lý do chính để xem đây là bài toán sequence-to-sequence.
 
-Ví dụ:
-
-```text
-Việt Nam
-    ↓
-越南
-```
-
-hoặc:
-
-```text
-10 giờ
-    ↓
-十点
-```
-
-Do đó decoder sequence-to-sequence linh hoạt hơn per-token classification.
+Lý do dùng decoder là một âm Hán–Việt có thể ứng với nhiều Hán tự. Mô hình cần
+ngữ cảnh toàn câu và các ký tự đã sinh để giải quyết nhập nhằng, đồng thời
+không buộc mỗi output phải là nhãn độc lập của token nguồn cùng vị trí. Đây là
+một lựa chọn kiến trúc cho chuyển tự theo chuỗi; không hàm ý bài toán là dịch
+máy hay source/target thường khác số đơn vị nội dung.
 
 ---
 
@@ -552,7 +554,7 @@ vocab_vi.json
 vocab_han.json
 ```
 
-Vietnamese vocabulary:
+Source Hán–Việt vocabulary:
 
 ```text
 <PAD>
@@ -583,19 +585,17 @@ Vocabulary được xây từ training corpus.
 ### Input
 
 ```text
-Tôi đã học tiếng Hán.
+Phiên phiên bạch cưu
 ```
 
-### Vietnamese tokens
+### Source tokens
 
 ```text
 [CLS]
-Tôi
-đã
-học
-tiếng
-Hán
-.
+Phiên
+phiên
+bạch
+cưu
 [SEP]
 ```
 
@@ -603,18 +603,17 @@ Hán
 
 ```text
 <BOS>
-我
-已
-學
-漢
-。
+翩
+翩
+白
+鳩
 <EOS>
 ```
 
 ### Model
 
 ```text
-Vietnamese IDs
+Source IDs
     ↓
 BERT Encoder
     ↓
@@ -624,19 +623,22 @@ Transformer Decoder
     ↓
 Hán logits
     ↓
-我 已 學 漢 。
+翩 翩 白 鳩
 ```
 
 ---
 
-## 12. Current Version
+## 12. Phiên bản hiện tại
 
 ```text
 Model name:
-VietHanBERT-v1
+VietHanBERT-vi2cn-v1
+
+Hugging Face:
+noah-nguyen-297/VietHanBERT-vi2cn-v1
 
 Task:
-Vietnamese → Hán
+Sino-Vietnamese reading → Han characters
 
 Encoder:
 BERT
@@ -648,7 +650,7 @@ Training:
 From scratch
 
 Source tokenization:
-Vietnamese word/syllable-level + punctuation
+Hán–Việt syllable-level + punctuation
 
 Target tokenization:
 Hán character-level
@@ -665,14 +667,52 @@ vocab_vi.json
 
 ---
 
-## 13. Future Experiments
+## 13. Kết quả đánh giá
+
+Baseline được đánh giá ngày **30/08/2026** trên toàn bộ `poem.test.csv` gồm
+**2.496** cặp âm Hán–Việt và chữ Hán. Lần chạy dùng greedy decoding trên CPU,
+giữ nguyên dấu câu và cố định snapshot Hugging Face tại revision
+`10da3a6a9911120cb85da3471337ff001a675245`.
+
+| Metric | Kết quả |
+| --- | ---: |
+| Exact match / Top-1 ACC | **25,80%** (644/2.496 câu) |
+| Character Error Rate (CER) ↓ | **22,54%** |
+| Character accuracy (`1 - CER`) ↑ | **77,46%** |
+| NEWS mean F-score ↑ | **79,32%** |
+| Character BLEU ↑ | **54,94** |
+| chrF2 ↑ | **47,22** |
+| Teacher-forced token NLL ↓ | **0,9916** |
+| Teacher-forced perplexity ↓ | **2,6954** |
+
+Trong 18.026 ký tự reference, Levenshtein breakdown ghi nhận 3.649 phép thay
+thế, 354 phép xóa và 60 phép chèn. Khi bỏ dấu câu, exact match tăng lên
+**27,20%** (679/2.496 câu); CER là **25,10%** do mẫu số ký tự reference giảm
+còn 15.280 và phần lớn lỗi nằm ở Hán tự.
+
+Chạy lại đánh giá từ thư mục gốc:
+
+```bash
+python -m pip install -r evaluate/requirements.txt
+python evaluate/evaluate_transliteration.py
+```
+
+Kết quả đầy đủ và prediction theo từng câu nằm tại
+[`evaluate/outputs/metrics.json`](evaluate/outputs/metrics.json) và
+[`evaluate/outputs/predictions.csv`](evaluate/outputs/predictions.csv). Xem
+[`evaluate/README.md`](evaluate/README.md) để biết định nghĩa metric, smoke
+test và các tùy chọn như batch size, device hoặc model revision.
+
+---
+
+## 14. Hướng phát triển
 
 Các hướng mở rộng có thể thử sau baseline:
 
 ```text
-VietHanBERT-v1
+VietHanBERT-vi2cn-v1
     ↓
-+ pretrained Vietnamese encoder
++ pretrained Vietnamese/Hán–Việt encoder
     ↓
 + Hán-Việt lexical resource
     ↓
@@ -685,11 +725,13 @@ VietHanBERT-v1
 + LLM-based verification
 ```
 
-Mục tiêu của phiên bản hiện tại là xây dựng một **baseline Việt → Hán hoàn chỉnh**, xác minh pipeline tokenization → encoder → decoder → generation trước khi đưa thêm lexical resource hoặc các cơ chế ràng buộc.
+Mục tiêu của phiên bản hiện tại là xây dựng một **baseline âm Hán–Việt → chữ
+Hán hoàn chỉnh**, xác minh pipeline tokenization → encoder → decoder →
+generation trước khi đưa thêm lexical resource hoặc các cơ chế ràng buộc.
 
 ---
 
-## 14. Pipeline dữ liệu thơ
+## 15. Pipeline dữ liệu thơ
 
 Dataset thơ được tạo theo luồng sau:
 
@@ -708,10 +750,10 @@ chia riêng từng thể loại theo train/test/val
     ↓
 poem.clean.csv + poem.train.csv + poem.test.csv + poem.val.csv
     ↓
-kaggle-scripts/viet-han-bert.ipynb
+kaggle-scripts/vi2cn-transliteration.ipynb
 ```
 
-### 14.1 Định dạng dữ liệu crawl
+### 15.1 Định dạng dữ liệu crawl
 
 Mỗi CSV từng bài và CSV đã merge có đúng hai cột:
 
@@ -721,7 +763,7 @@ Phiên phiên bạch cưu,翩翩白鳩
 ```
 
 - `vi`: câu phiên âm Hán-Việt.
-- `ch`: câu chữ Hán tương ứng.
+- `cn`: câu chữ Hán tương ứng.
 - Mỗi record phải có đủ cả hai trường.
 - Tiêu đề, bản dịch nghĩa, bản dịch thơ và chú thích không được dùng làm cặp
   huấn luyện.
@@ -737,7 +779,7 @@ Các crawler hiện có:
 | Tứ ngôn             | `pipelines/thivien_tu_ngon/scripts/crawl_tu_ngon.py`                         | `merge_tu_ngon_csvs.py` → `outputs/tu-ngon.csv`                         |
 | Thất ngôn cổ phong  | `pipelines/thivien_that_ngon_co_phong/scripts/crawl_that_ngon_co_phong.py`   | `merge_that_ngon_co_phong_csvs.py` → `outputs/that-ngon-co-phong.csv`   |
 | Đường luật biến thể | `pipelines/thivien_duong_luat_bien_the/scripts/crawl_duong_luat_bien_the.py` | `merge_duong_luat_bien_the_csvs.py` → `outputs/duong-luat-bien-the.csv` |
-| Thất ngôn bát cú (shallow test) | `pipelines/thivien_that_ngon_bat_cu/scripts/crawl_that_ngon_bat_cu.py` | `merge_that_ngon_bat_cu_csvs.py` → `outputs/that-ngon-bat-cu.csv` |
+| Thất ngôn bát cú (shallow crawl) | `pipelines/thivien_that_ngon_bat_cu/scripts/crawl_that_ngon_bat_cu.py` | `merge_that_ngon_bat_cu_csvs.py` → `outputs/that-ngon-bat-cu.csv` |
 
 Chạy các lệnh từ thư mục gốc `vi2ch-model`. Nên crawl thử một số lượng nhỏ
 trước:
@@ -764,7 +806,7 @@ Script merge kiểm tra header và dữ liệu rỗng trước khi tạo CSV th�
 pipeline chưa có script merge riêng, cần gom các CSV từng bài thành một CSV
 `vi,cn` cho thể loại đó trước khi thực hiện bước chia tập.
 
-### 14.2 Chuẩn bị input để chia tập
+### 15.2 Chuẩn bị input để chia tập
 
 Đặt mỗi CSV đã merge vào
 `pipelines/poetry_dataset_split/input/`. Mỗi file phải đại diện cho đúng một
@@ -783,7 +825,7 @@ Không gộp tất cả thể loại thành một file trước bước này. Pi
 giới file để chia riêng từng thể loại, nhờ đó train, test và validation đều
 giữ được dữ liệu từ từng nhóm thơ.
 
-### 14.3 Chia train/test/validation
+### 15.3 Chia train/test/validation
 
 Chạy:
 
@@ -820,6 +862,9 @@ pipelines/poetry_dataset_split/outputs/poem.test.csv
 pipelines/poetry_dataset_split/outputs/poem.val.csv
 ```
 
+Các artifact hiện tại có 24.943 cặp hợp lệ: 19.954 mẫu train, 2.496 mẫu test
+và 2.493 mẫu validation.
+
 `poem.clean.csv` chứa toàn bộ dòng hợp lệ đã gom từ các input, trước khi chia
 tập. File này thuận tiện để kiểm tra tổng dữ liệu; quá trình train vẫn sử dụng
 ba file split để tránh rò rỉ giữa train, test và validation.
@@ -838,15 +883,15 @@ Ba tỷ lệ phải lớn hơn `0` và có tổng bằng `1.0`. Có thể dùng
 `--input-dir`/`--output-dir` nếu dữ liệu nằm ở vị trí khác. Xem thêm tài liệu
 chi tiết tại `pipelines/poetry_dataset_split/README.md`.
 
-### 14.4 Dùng dataset trên Kaggle
+### 15.4 Dùng dataset trên Kaggle
 
 Upload ba file split vào Kaggle Dataset. Notebook
-`kaggle-scripts/viet-han-bert.ipynb` mặc định tìm các file:
+`kaggle-scripts/vi2cn-transliteration.ipynb` mặc định tìm các file:
 
 ```text
-/kaggle/input/datasets/hoanguyen/dataset/poem.train.csv
-/kaggle/input/datasets/hoanguyen/dataset/poem.val.csv
-/kaggle/input/datasets/hoanguyen/dataset/poem.test.csv
+/kaggle/input/datasets/hoanguen/thivien-dataset/poem.train.csv
+/kaggle/input/datasets/hoanguen/thivien-dataset/poem.val.csv
+/kaggle/input/datasets/hoanguen/thivien-dataset/poem.test.csv
 ```
 
 Nếu Kaggle mount dataset ở đường dẫn khác, chỉ cần sửa `INPUT_DIR` trong
@@ -854,7 +899,7 @@ notebook. Cả notebook và code model đều dùng trực tiếp schema `vi,cn`
 Vocabulary chỉ được xây từ `poem.train.csv`, tránh rò rỉ dữ liệu từ test hoặc
 validation.
 
-### 14.5 Kiểm tra pipeline chia tập
+### 15.5 Kiểm tra pipeline chia tập
 
 ```bash
 python3 -B -m unittest discover \
