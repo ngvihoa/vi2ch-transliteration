@@ -1,0 +1,5 @@
+vi,cn_ref,cn_pred,exact_match,edit_distance,substitutions,deletions,insertions,news_fscore
+"Sinh tử do lai bãi vấn trình,",生死由來罷問程，,生死猶來罷問程，,False,1,1,0,0,0.875
+Nhân duyên thời tiết tự nhiên thành.,因緣時節自然成。,人緣時節自然成。,False,1,1,0,0,0.875
+"Sơn vân dã hữu xuất sơn thế,",山雲也有出山勢，,山雲野有出山世，,False,2,2,0,0,0.75
+Giản thuỷ chung vô đầu giản thanh.,澗水終無投澗聲。,澗水終無頭澗聲。,False,1,1,0,0,0.875
